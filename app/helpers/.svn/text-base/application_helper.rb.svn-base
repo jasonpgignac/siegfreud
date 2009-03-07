@@ -1,0 +1,10 @@
+# Methods added to this helper will be available to all templates in the application.
+module ApplicationHelper
+  def sms_server
+    smsServer = SmsServer.new
+    smsServer.address = "oldtas247"
+    smsServer.username = "PEROOT\\ugignja"
+    smsServer.password = "M0xMcMaherty"
+    return smsServer
+  end
+end

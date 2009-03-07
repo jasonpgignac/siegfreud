@@ -1,0 +1,14 @@
+class ContentServer < ActiveRecord::Base
+
+  def contentServerObject
+    if self.server_type == "SMS"
+      serverObject = SmsServer.new
+    end
+    serverObject.address = self.address
+    serverObject.username = self.username
+    serverObject.password = self.password
+    serverObject.server_id = self.id
+    serverObject.server_name = self.name
+    return serverObject
+  end
+end

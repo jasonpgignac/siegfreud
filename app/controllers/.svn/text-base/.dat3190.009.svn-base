@@ -1,0 +1,73 @@
+class PackagePusherController < ApplicationController
+  def index
+    @package_manufacturer != ""
+    @package_name != ""
+    @package_version != ""
+  end
+  def push
+    smsServer = SmsServer.new
+    smsServer.address = "oldtas247"
+    smsServer.username = "PEROOT\\ugignja"
+    smsServer.password = "M0xMcMaherty"
+    
+    if (params[:computer_id])
+      computer = SmsComputer.new(params[:computer_id], smsServer)
+      @computer_id = computer.smsId
+    else
+      computerList = searchForComputersByKeyword(params[:computer_query])
+      unless(computerList.length != 1)
+        computer = computerList[0]
+        @computer_id = computer.smsId
+      else
+        if (computerList.size == 0)
+          flash[:error] = "No computer matches the query"
+        else
+          flash[:error] = "Not specific enough - too many results of computers"
+          @computersList = computerList
+        end
+      end
+    end
+
+    packageHash = searchForPackagesByKeyword(params[:package_query])
+    unless(packageHash.length != 1)
+      package = packageHash[0]
+      @package_id = package
+    else
+      if (packageHash.size == 0)
+        flash[:error] = "No package matches the query"
+      else
+        flash[:error] = "Not specific enough - too many packages match"
+        packagesList = packageHash.sort { |a,b|
+          a[1] <=> b[1]
+        }
+        packagesList.each_index do |x|
+          packagesList[x] = SMSPackage.new(packagesList[x][0],smsServer)
+        end
+        @packagesList = packageList
+      end
+    end
+    
+    unless(flash[:error])
+      collection_name = "109_" + Time.now.gmtime.strftime("%m%d%Y%H%M%S") + "_ugignja"
+      parentCollectionList = smsServer.findComputerGroupsByName("Distribution")
+      parentCollection = parentCollectionList[0]
+      collection = smsServer.createComputerGroup(collection_name, parentCollection, "ugignja")
+      collection.addComputer(computer)
+      @collection_id = collection.smsId
+    
+      taskList = package.tasks
+      task = taskList[0]
+    
+      advertisement_name = "109_" + Time.now.gmtime.strftime("%m%d%Y%H%M%S") + "_PKG" + @package_id
+      advertisement = collection.executeTask(task, advertisement_name)
+      @advertisement_id = advertisement.smsId
+      flash[:notice] = "Created Adveristement " + @advertisement_id
+    else
+      @package_manufacturer = params[:package_manufacturer]
+      @package_name = params[:package_name]
+      @package_version = params[:package_version]
+    end
+    
+    render :action => 'index'
+  end
+end

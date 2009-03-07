@@ -1,0 +1,97 @@
+8
+
+dir
+11
+svn+ssh://ussatx-xsod-001.peroot.com/Volumes/Untitled/svnrepo/siegfreud/config
+svn+ssh://ussatx-xsod-001.peroot.com/Volumes/Untitled/svnrepo
+
+
+
+2009-01-26T19:58:52.408358Z
+6
+ugignja
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0718b5f7-957e-493b-a72e-9d21866deb52
+
+locales
+dir
+
+routes.rb
+file
+
+
+
+
+2009-01-09T23:00:53.000000Z
+53f38ce8526821ed084c69658732ee85
+2009-01-09T21:00:09.395396Z
+1
+root
+
+database.yml
+file
+
+
+
+
+2009-01-10T06:01:57.000000Z
+77aa70b9e50f9250e9c3dad20b6f7b7d
+2009-01-10T06:08:45.467696Z
+2
+root
+
+boot.rb
+file
+
+
+
+
+2009-01-09T23:00:53.000000Z
+9792ccadfdbcc30afb84c8815b81374c
+2009-01-09T21:00:09.395396Z
+1
+root
+
+initializers
+dir
+
+environment.rb
+file
+
+
+
+
+2009-01-09T23:00:53.000000Z
+67485d528d3e5bdc6f329b7a0bb9a0a8
+2009-01-09T21:00:09.395396Z
+1
+root
+
+environments
+dir
+
+deploy.rb
+file
+13
+
+
+
+2009-02-09T22:08:37.000000Z
+e2e3ee8ff7a9de40e3a21c73dc16492f
+2009-02-09T22:16:57.678588Z
+13
+ugignja
+

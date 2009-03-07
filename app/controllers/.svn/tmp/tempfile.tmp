@@ -1,0 +1,164 @@
+class MainController < ApplicationController
+  
+  # response routines
+  def index
+    @tabset = get_tabset;
+	  @sidebar_buttons = get_sidebar_buttons;
+#	  @sidebar_items = perform_search(nil , @sidebar_buttons);
+  end
+  def search
+    search_string = (params[:query])
+    @tabset = get_tabset;
+    @sidebar_buttons = get_sidebar_buttons;
+    @sidebar_items = perform_search(search_string, @sidebar_buttons)
+    render :action => 'index'
+  end
+  def open_content
+    content_type = (params[:type]).camelize.constantize;
+    server = ContentServer.find(params[:server_id]).contentServerObject;
+    content = (params[:id]) ? content_type.findOrCreate(params[:id], server) : content_type.new();
+    get_tabset.open_and_activate(content);
+    redraw_tabset;
+  end
+  def select_tab
+    tabset = get_tabset;
+    tabset.active_tab=(Tab.find(params[:id]));
+    tabset.save;
+    redraw_tabset;
+  end
+  def add_package_to_group
+    groupToAddTo = SmsComputerGroup.find_by_remote_id(params[:computer_group_id])
+    packageToAdd = SmsPackage.find_by_remote_id(params[:package_id])
+    taskToAdd = params[:package_name]
+    advertisement_name = "109_" + Time.now.gmtime.strftime("%m%d%Y%H%M%S") + "_PKG" + packageToAdd.remote_id
+    packageTasks = packageToAdd.tasks
+    
+    if(taskToAdd)
+      packageTasks.each do |packageTask|
+        taskToExecute = packageTask if packageTask.name = taskToAdd
+      end
+      if taskToExecute
+        groupToAddTo.executeTask(taskToExecute, advertisement_name)
+        redraw_active_tab
+        @successString = "Advertisement Created : " + advertisement_name
+      else
+        @tasksToChoose = nil
+        @errorString = "ERROR : An invalid task was entered" 
+      end
+    else
+      if packageTasks.size == 1
+        groupToAddTo.executeTask(packageToAdd.tasks.first, advertisement_name)
+        redraw_active_tab
+        @successString = "Advertisement Created : " + advertisement_name
+      else
+        @tasksToChoose = packageTasks
+      end
+    end
+    @tabset = get_tabset;
+    
+    render :update do |page|
+      page << "RedBox.showInline('hidden_content_add_package_to_group_" + @tabset.active_tab.content.content_id + "')"
+      page << "$('spinner').hide();"
+    end
+  end
+  def add_computer_to_group
+    puts "Group ID is " + params[:computer_group_id]
+    puts "Computer ID is " + params[:computer_id]
+    groupToAddTo = SmsComputerGroup.find_by_remote_id(params[:computer_group_id])
+    computerToAdd = SmsComputer.find_by_remote_id(params[:computer_id])
+    groupToAddTo.addComputer(computerToAdd)
+    @tabset = get_tabset;
+    render :update do |page| 
+      page.replace_html 'current_tab', :partial => 'current_tab'
+    end
+  end
+
+  def delete_computer_from_group
+    computer_id = params[:computer_id]
+    group_id = params[:group_id]
+    group = SmsComputerGroup.find(group_id)
+    group.removeComputer(computer_id)
+    @tabset = get_tabset;
+    render :update do |page| 
+      page.replace_html 'current_tab', :partial => 'current_tab'
+    end
+  end
+  
+  def close_tab
+    tab = Tab.find(params[:id]);
+    if tab.active?
+      get_tabset.switch_to_next_tab;
+    end
+    tab.destroy;
+    redraw_tabset;
+  end
+  
+  private
+  
+  # redraw routines
+  def redraw_tabset
+    @tabset = get_tabset;
+    render :update do |page|
+      page.replace_html 'contentwrapper', :partial => 'content_pane'
+    end
+  end
+  def redraw_active_tab
+    @tabset = get_tabset;
+    render :update do |page| 
+      page.replace_html 'current_tab', :partial => 'current_tab'
+    end
+  end
+  # Session Variable Management
+  def get_found_set
+    if (session[:found]) 
+      return session[:found]
+    else
+      update_found_set;
+      return session[:found]
+    end
+  end
+  def perform_search (search_field, sidebar_buttons)
+    foundset = Array.new;
+    if (search_field)
+      if(sidebar_buttons["Packages"])
+        foundset = foundset + searchForPackagesByKeyword(search_field)
+      end
+      if(sidebar_buttons["Computers"])
+        foundset = foundset + searchForComputersByKeyword(search_field)
+      end
+      if(sidebar_buttons["Groups"] || true)
+          foundset = foundset + searchForComputerGroupsByKeyword(search_field)
+      end
+      #if(sidebar_buttons["Users"])
+      #  foundset = foundset + User.find(:all)
+      #end
+      #if(sidebar_buttons["Departments"])
+      #  foundset = foundset + Department.find(:all)
+      #end
+    end if
+    foundset.sort do |a, b|
+      b[1] <=> a[1]
+    end
+    foundset.each_index do |x|
+      foundset[x] = foundset[x][0]
+    end
+    return foundset;
+  end
+  def get_tabset
+    unless (session[:tabset_id])
+      session[:tabset_id] = Tabset.create.id;
+    end
+    return Tabset.find(session[:tabset_id]);
+  end
+  def get_sidebar_buttons
+  	if (session[:sidebar_buttons])
+  		return session[:sidebar_buttons]
+  	else
+  		return session[:sidebar_buttons] = Hash["Packages"		=>	true, 
+  												                    "Computers"		=>	true,
+  												                    "Users"			=>	true,
+  												                    "Departments"	=>	false];
+  	end
+  end
+
+end

@@ -1,0 +1,8 @@
+<div style="padding: 5px; height: 200px; width: 300px; background: #FFF">
+	<p style="align: right">
+		<%= link_to_close_redbox("close") %>
+	</p>
+	<div style="height: 190px; overflow: auto">
+		Error!
+	</div>
+</div>

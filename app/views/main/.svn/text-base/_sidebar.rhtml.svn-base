@@ -1,0 +1,11 @@
+<div class="search_box">
+	<% form_remote_tag(:url => {:action => "search"}) do%>
+		<%= text_field_tag(:query, @query, :size => 15) %>
+	<% end %>
+	<%= button_to_remote("+", :url => {:action => "create_computer_group"})%>
+</div>
+<div class="content_list" id="content_list">
+	<% if (@sidebar_items)%>	
+		<%= render :partial => 'item_list' %>
+	<% end %>
+</div>

@@ -1,0 +1,25 @@
+<% form_for :content, @tabset.active_tab.content, :url => { :action => :save_content, :id => @tabset.active_tab.content } do |form| %>
+	<%= form.hidden_field :lock_version %>
+	<input id = "class" name = "class" type = "hidden" value = <%= @tabset.active_tab.content.class %> />
+	<p>Name: <%= form.text_field :first_name %> <%= form.text_field :last_name  %></p>
+	<p>Department ID: <%= form.text_field :department_id  %></p>
+	<%= submit_tag %>
+	<div id="user_computers", class="association_table">
+		<table>
+			<% @tabset.active_tab.content.computers.each do |c| %>
+		    	<tr class="<%= cycle("even","odd") %>" >
+		      		<td>
+		      			<%= c.short_name %>
+		 			</td>
+				</tr>
+		    <% end %>
+		</table>
+	</div>
+	<%= drop_receiving_element('user_computers', 
+		:accept => 'Computer', 
+		:complete => "$('spinner').hide();", 
+		:before => "$('spinner').show();", 
+		:hoverclass => 'hover', 
+		:with => "'comp=' + encodeURIComponent(element.id.split('_').last())", 
+		:url => {:action=>:add_user_to_computer, :user=>@tabset.active_tab.content.id})%>
+<% end %>

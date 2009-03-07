@@ -1,0 +1,158 @@
+class SmsComputerGroup < ActiveRecord::Base
+  include SmsRestCall
+  include SmsObject
+  belongs_to :content_server;
+  has_many  :sms_computer_group_static_membership_rules,
+            :foreign_key  => "computer_group_id",
+            :dependent    => :destroy;
+  has_many  :sms_computer_group_dynamic_membership_rules,
+            :foreign_key => "computer_group_id",
+            :dependent    => :destroy;
+  has_many :package_deployments,
+           :class_name => "SmsPackageDeployment",
+           :foreign_key => "computer_group_id",
+           :dependent    => :destroy;
+
+  def destroy
+    query = URI.escape("id=" + self.remote_id)
+    url = URI.parse('http://' + self.server.address + "/sms_rest/deleteCollection.asp?" + query)
+    puts url
+    http = Net::HTTP.new(url.host, url.port)
+    http.start do |http|
+      req = Net::HTTP::Get.new(url.path + "?" + url.query)
+      req.basic_auth(self.server.username, self.server.password)
+      res = http.request(req)
+      puts "Response from package deployment delete : " + res.body.to_s
+    end
+    
+    super
+  end
+  
+  def ==(otherSmsComputerGroup)
+    return ((self.remote_id == otherSmsComputerGroup.remote_id) && (@server == otherSmsComputerGroup.server))
+  end
+  
+  def to_s
+    "SMS Group " + self.remote_id
+  end
+  
+  def short_name
+    name
+  end
+  def content_id
+    self.remote_id
+  end
+  def name
+    unless (super && ((Date.today - self.last_cached) < 3))
+      refreshAttributes
+    else
+    end
+    super
+  end
+  
+  def rules
+    rules = Array.new()
+    rules = rules + self.sms_computer_group_static_membership_rules
+    rules = rules + self.sms_computer_group_dynamic_membership_rules
+    unless rules.size > 0
+      refreshAttributes
+      newRules = Array.new()
+      newRules = newRules + self.sms_computer_group_static_membership_rules
+      newRules = newRules + self.sms_computer_group_dynamic_membership_rules
+      return newRules
+    end
+    return rules
+  end
+  def members
+    members = Array.new()
+    self.rules.each do |rule|
+      puts "Rule is " + rule.to_s
+      members = members + rule.members
+    end
+    return members
+  end
+  def refreshAttributes
+    doc = sms_rest_call("getDetailsForCollection", {"id" => self.remote_id.to_s})
+    searchResponse = doc.elements["smsRestCollectionRecord"]
+    self.name = searchResponse.elements['name'].get_text.to_s
+    searchResponse.elements.each('Rule') do |rule|
+      generate_rule_from_xml(rule)
+    end
+    server.findPackageDeploymentByComputerGroupId(remote_id)
+    self.last_cached = Date.today
+    self.save
+  end
+  def template_class
+    return "computer_group"
+  end
+  def fullQuery
+    conditions = Array.new()
+    rules.each do |rule|
+      if rule.fullQuery
+        conditions << rule.fullQuery
+      end
+    end
+    if conditions.size > 0
+      return "(" + conditions.join(" OR ") + ")"
+    else
+      return nil
+    end
+  end
+  def package_deployments
+    server.findPackageDeploymentByComputerGroupId(remote_id)
+    deployments = SmsPackageDeployment.find_all_by_computer_group_id(id)
+    if deployments
+      return deployments
+    else
+      return Array.new()
+    end
+  end
+  
+  def addComputer(computer)
+    doc = sms_rest_call("addComputerToCollection", {  "collectionId"  => self.remote_id,
+                                                      "resourceId"    => computer.remote_id})
+    doc.elements.each("smsRestCollectionRuleRecord") do |rule|
+      generate_rule_from_xml(rule)
+    end
+  end
+  def removeComputer(computer_id)
+    computer = SmsComputer.find(computer_id)
+    ruleToDelete = SmsComputerGroupStaticMembershipRule.find(:first, :conditions => {:computer_group_id    => id,
+                                                                                     :computer_id => computer.id})
+    ruleToDelete.delete
+  end
+  def delete
+    doc = sms_rest_call("deleteCollection", {  "id"  => self.remote_id})
+    super
+  end
+  def executeTask(newTask, name)
+    query = URI.escape("collectionId=" + self.remote_id+ "&packageId=" + newTask.package.remote_id + "&programName=" + newTask.name + "&name=" + name)
+    url = URI.parse('http://' + self.server.address + "/sms_rest/createAdvertisement.asp?" + query)
+    http = Net::HTTP.new(url.host, url.port)
+    http.start do |http|
+      req = Net::HTTP::Get.new(url.path + "?" + url.query)
+      req.basic_auth(self.server.username, self.server.password)
+      res = http.request(req)
+      doc = REXML::Document.new res.body
+      searchResponse = doc.elements["smsRestSearchResponse"]
+      advertisementRecord = searchResponse.elements["advertisement"]
+      newAdvertisement = SmsPackageDeployment.findOrCreate(advertisementRecord.get_text.to_s, self.server)
+      newAdvertisement.assignNow()
+      return newAdvertisement
+    end
+  end
+  
+  def generate_rule_from_xml(rule)
+    if(rule.get_elements('Type')[0].get_text.to_s == 'Direct')
+      ruleName = rule.get_elements('Name')[0].get_text.to_s
+      computerId = rule.get_elements('ResourceID')[0].get_text.to_s
+      computer = SmsComputer.findOrCreate(computerId, self.server)
+      SmsComputerGroupStaticMembershipRule.findOrCreate(self, ruleName, computer)
+    elsif (rule.get_elements('Type')[0].get_text.to_s == 'Dynamic')
+      ruleName = rule.get_elements('Name')[0].get_text.to_s
+      ruleQuery = rule.get_elements('Query')[0].get_text.to_s
+      limitingCollectionId = rule.get_elements('LimitToCollectionID')[0].get_text.to_s
+      SmsComputerGroupDynamicMembershipRule.findOrCreate(self, ruleName, ruleQuery, limitingCollectionId)
+    end
+  end
+end

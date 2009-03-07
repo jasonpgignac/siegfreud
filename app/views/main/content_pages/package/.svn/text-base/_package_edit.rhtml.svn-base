@@ -1,0 +1,3 @@
+<p>Manufacturer: <%= @tabset.active_tab.content.manufacturer %></p>
+<p>Title: <%= @tabset.active_tab.content.name %></p>
+<p>Version: <%= @tabset.active_tab.content.version %></p>

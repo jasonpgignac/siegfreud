@@ -1,0 +1,14 @@
+<table>
+	<tbody>
+		<% @sidebar_buttons.sort.each do |key, value| %>
+			<tr>
+				<td><%= check_box_tag key, 1, value%> <%= key %></td>
+			</tr>		
+			<%= observe_field key, 	:url 		=> 	{	:action	 	=>	:update_sidebar_filter,
+														:id		=>	key,
+														},
+										:with 		=> 'value'%>
+		<% end %>
+
+	</tbody>
+</table>

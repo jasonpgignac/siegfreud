@@ -1,0 +1,6 @@
+<% unless (@tabset.tabs.count == 0)%><%= render :partial => ("main/content_pages/" +
+								@tabset.active_tab.content.template_class + "/" +
+								@tabset.active_tab.content.template_class + "_edit")%>
+<% else %>
+	<%= render :partial => 'empty_tab' %>
+<% end %>

@@ -1,0 +1,291 @@
+require 'net/https'
+require 'uri'
+require 'openssl'
+require "rexml/document"
+
+class SmsServer 
+  
+  attr_accessor :address, :username, :password, :server_id, :server_name
+
+  attr_accessor :smsServer
+  USER_ID = 1
+  COMPUTER_NAME = 2
+  COMPUTER_SERIAL = 3
+  COMPUTER_ID = 4
+  GROUP_ID = 5
+  GROUP_NAME = 6
+  PACKAGE_ID = 7
+  PACKAGE_MANUFACTURER = 8
+  PACKAGE_NAME = 9
+  PACKAGE_VERSION = 10
+  
+  def == (otherSmsServer)
+    return (@server_id = otherSmsServer.server_id)
+  end
+  
+  
+  # Computer Group Functions
+  def findComputerGroups(query)
+    query = URI.escape(query)
+    url = URI.parse('http://' + self.address + "/sms_rest/findCollection.asp?query=" + query)
+    http = Net::HTTP.new(url.host, url.port)
+    puts url
+    #http.use_ssl = (url.scheme == 'https')
+    http.start do |http|
+      req = Net::HTTP::Get.new(url.path + "?" + url.query)
+      req.basic_auth(self.username, self.password)
+      res = http.request(req)
+      unless(res.body.to_s.include?("error") || res.body.to_s.include?("Error"))
+        doc = REXML::Document.new res.body
+        searchResponse = doc.elements["smsRestSearchResponse"]
+        resultsArray = []
+        searchResponse.elements.each("collection") do |collection|
+          resultsArray << SmsComputerGroup.findOrCreate(collection.get_text.to_s, self)
+        end
+      else
+        if(res.body.to_s.include?("No Collection bears the name"))
+          resultsArray = Array.new;
+        else
+          raise "SMS HTML Error: " + res.body.to_s
+        end
+      end
+      resultsArray
+    end
+  end
+  def findComputerGroupsByConditions(conditions)
+    query = ""
+    conditions.each { |field, value|
+      if(field.is_a?(Numeric))          # IF field is numeric, it is using one of the field constants. Translate it to the SMS Equivalent
+        case field
+          when GROUP_ID
+            field = "SMS_Collection.CollectionID"
+          when GROUP_NAME
+            field = "SMS_Collection.Name"
+          else
+            print "ERROR - INVALID VALUE"
+          end
+      end
+      query = query + field + " LIKE '%" + value + "%' & "
+    }
+   
+    query = query.chop.chop.chop
+    findComputerGroups(query)
+  end
+  def findComputerGroupsByName(computerGroupName)
+    return findComputerGroupsByConditions({ GROUP_NAME => computerGroupName })
+  end
+  def findComputerGroupsByID(computerGroupID)
+    return findComputerGroupsByConditions({ GROUP_ID => computerGroupID })
+  end
+  def createComputerGroup(name, parentGroup, owner)
+    query = URI.escape("name=" + name + "&parentCollectionID=" + parentGroup.remote_id + "&owner=" + owner)
+    url = URI.parse('http://' + self.address + "/sms_rest/createCollection.asp?" + query)
+    http = Net::HTTP.new(url.host, url.port)
+    #http.use_ssl = (url.scheme == 'https')
+    http.start do |http|
+      req = Net::HTTP::Get.new(url.path + "?" + url.query)
+      req.basic_auth(self.username, self.password)
+      res = http.request(req)
+      return SmsComputerGroup.findOrCreate(res.body.to_s, self)
+    end
+  end
+
+  # Computer Functions
+  def findComputers(query)
+    if(query)
+      query = "?query=" + URI.escape(query)
+    else
+      query = String.new()
+    end
+    url = URI.parse('http://' + self.address + "/sms_rest/findComputer.asp" + query)
+    puts url
+    http = Net::HTTP.new(url.host, url.port)
+    #http.use_ssl = (url.scheme == 'https')
+    http.start do |http|
+      req = Net::HTTP::Get.new(url.path + (url.query ? ("?" + url.query) : ""))
+      req.basic_auth(self.username, self.password)
+      res = http.request(req)
+      unless(res.body.to_s.include?("error") || res.body.to_s.include?("Error")) 
+        doc = REXML::Document.new res.body
+        searchResponse = doc.elements["smsRestSearchResponse"]
+        resultsArray = []
+        searchResponse.elements.each("computer") do |computer|
+          resultsArray << SmsComputer.findOrCreate(computer.get_text.to_s, self)
+        end
+      else
+        if(res.body.to_s.include?("No Computer bears the name"))
+          resultsArray = Array.new;
+        else
+          raise "SMS HTML Error: " + res.body.to_s
+        end
+      end
+      resultsArray
+    end
+  end
+  def findComputersByConditions(conditions)
+    query = ""
+    conditions.each { |field, value|
+      if(field.is_a?(Numeric))          # IF field is numeric, it is using one of the field constants. Translate it to the SMS Equivalent
+        case field
+        when USER_ID
+          field = "SMS_R_System.LastLogonUserName"
+        when COMPUTER_NAME
+          field = "SMS_R_System.NetbiosName"
+        when COMPUTER_SERIAL
+          print "ERROR - Cannot Search SMS by Computer Serial Number"
+        when COMPUTER_ID
+          field = "SMS_R_System.ResourceID"
+        else
+          print "ERROR - INVALID VALUE"
+        end
+      end
+      query = query + field + " LIKE '%" + value + "%' & "
+    }
+    query = query.chop.chop.chop
+    findComputers(query)  
+  end
+  def findComputersByUser(userId)
+    return findComputersByConditions({ USER_ID => userId })
+  end
+  def findComputersByName(computerName)
+    return findComputersByConditions({ COMPUTER_NAME => computerName })
+  end
+  def findComputersBySerial(serialNumber)
+    return findComputersByConditions({ COMPUTER_SERIAL => serialNumber })
+  end
+  def findComputersByID(computerID)
+    cleanID = computerID.to_i.to_s
+    if (cleanID.to_i > 0)
+      return findComputersByConditions({ COMPUTER_ID => computerID.to_i.to_s })
+    else
+      return Array.new()
+    end
+  end
+  
+  # Package Functions
+  def findPackages(query)
+    query = URI.escape(query)
+    
+    url = URI.parse('http://' + self.address + "/sms_rest/findPackage.asp?query=" + query)
+    print url
+    http = Net::HTTP.new(url.host, url.port)
+    #http.use_ssl = (url.scheme == 'https')
+    http.start do |http|
+      req = Net::HTTP::Get.new(url.path + "?" + url.query)
+      req.basic_auth(self.username, self.password)
+      res = http.request(req)
+      unless(res.body.to_s.include?("error") || res.body.to_s.include?("Error")) 
+        doc = REXML::Document.new res.body
+        searchResponse = doc.elements["smsRestSearchResponse"]
+        resultsArray = []
+        searchResponse.elements.each("package") do |package|
+          resultsArray << SmsPackage.findOrCreate(package.get_text.to_s, self)
+        end
+      else
+        if(res.body.to_s.include?("No PAckages meet the conditions"))
+          resultsArray = Array.new;
+        else
+          raise "SMS HTML Error: " + res.body.to_s
+        end
+      end
+      resultsArray
+    end
+  end
+  def findPackagesByConditions(conditions)
+    query = ""
+    conditions.each { |field, value|
+      if(field.is_a?(Numeric))          # IF field is numeric, it is using one of the field constants. Translate it to the SMS Equivalent
+        case field
+          when PACKAGE_ID
+            field = "SMS_Package.PackageID"
+          when PACKAGE_NAME
+            field = "SMS_Package.Name"
+          when PACKAGE_MANUFACTURER
+            field = "SMS_Package.Manufacturer"
+          when PACKAGE_VERSION
+            field = "SMS_Package.Version"
+          else
+            print "ERROR - INVALID VALUE"
+          end
+      end
+      query = query + field + " LIKE '%" + value + "%' AND "
+    }
+    query = query.chop.chop.chop.chop.chop
+    findPackages(query)
+  end
+  def findPackagesByManufacturerNameAndVersion(manufacturer, name, version)
+    return findPackagesByConditions({ PACKAGE_MANUFACTURER  => manufacturer,
+                          PACKAGE_NAME          => name,
+                          PACKAGE_VERSION       => version})
+  end
+  def findPackagesByManufacturer(manufacturer)
+    return findPackagesByConditions({ PACKAGE_MANUFACTURER  => manufacturer})
+  end
+  def findPackagesByName(name)
+    return findPackagesByConditions({ PACKAGE_NAME          => name})
+  end
+  def findPackagesByVersion(version)
+    return findPackagesByConditions({ PACKAGE_VERSION       => version})
+  end
+  def findPackagesByID(packageID)
+    return findPackagesByConditions({ PACKAGE_ID => packageID })
+  end
+
+  # Computer Group Functions
+  def findPackageDeployment(query)
+    query = URI.escape(query)
+    url = URI.parse('http://' + self.address + "/sms_rest/findAdvertisement.asp?query=" + query)
+    http = Net::HTTP.new(url.host, url.port)
+    puts url
+    #http.use_ssl = (url.scheme == 'https')
+    http.start do |http|
+      req = Net::HTTP::Get.new(url.path + "?" + url.query)
+      req.basic_auth(self.username, self.password)
+      res = http.request(req)
+      puts "Deploymments : " + res.body.to_s
+      unless(res.body.to_s.include?("error") || res.body.to_s.include?("Error"))
+        doc = REXML::Document.new res.body
+        searchResponse = doc.elements["smsRestSearchResponse"]
+        resultsArray = []
+        searchResponse.elements.each("Advertisement") do |advertisement|
+          newDeployment = SmsPackageDeployment.findOrCreate(advertisement.get_text.to_s, self)
+          newDeployment.refreshAttributes
+          resultsArray << newDeployment
+        end
+      else
+        if(res.body.to_s.include?("No Advertisements meet the conditions"))
+          resultsArray = Array.new;
+        else
+          raise "SMS HTML Error: " + res.body.to_s
+        end
+      end
+      resultsArray
+    end
+  end
+  def findPackageDeploymentByConditions(conditions)
+    query = ""
+    conditions.each { |field, value|
+      if(field.is_a?(Numeric))          # IF field is numeric, it is using one of the field constants. Translate it to the SMS Equivalent
+        case field
+          when GROUP_ID
+            field = "SMS_Advertisement.CollectionID"
+          when PACKAGE_ID
+            field = "SMS_Advertisement.PackageID"
+          else
+            print "ERROR - INVALID VALUE"
+          end
+      end
+      query = query + field + " LIKE '%" + value + "%' & "
+    }
+   
+    query = query.chop.chop.chop
+    findPackageDeployment(query)
+  end
+  def findPackageDeploymentByPackageId(packageId)
+    return findPackageDeploymentByConditions({ PACKAGE_ID => packageId })
+  end
+  def findPackageDeploymentByComputerGroupId(computerGroupID)
+    return findPackageDeploymentByConditions({ GROUP_ID => computerGroupID })
+  end
+  
+end

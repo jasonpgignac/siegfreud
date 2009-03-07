@@ -1,0 +1,55 @@
+8
+
+dir
+11
+svn+ssh://ussatx-xsod-001.peroot.com/Volumes/Untitled/svnrepo/siegfreud/lib
+svn+ssh://ussatx-xsod-001.peroot.com/Volumes/Untitled/svnrepo
+
+
+
+2009-01-09T21:00:09.395396Z
+1
+root
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+0718b5f7-957e-493b-a72e-9d21866deb52
+
+tasks
+dir
+
+sms_rest_error.rb
+file
+14
+
+
+
+2009-02-08T18:48:06.000000Z
+661b224563858db995ec9ac0dccde5f7
+2009-02-09T22:24:03.914425Z
+14
+ugignja
+
+sms_rest_call.rb
+file
+14
+
+
+
+2009-02-09T19:16:54.000000Z
+d0c0b47c96dcc97ce28aec629f110590
+2009-02-09T22:24:03.914425Z
+14
+ugignja
+

@@ -1,0 +1,44 @@
+<p>
+	Name: <%= @tabset.active_tab.content.name %>
+</p>
+
+<p>
+	Members: <br />
+</p>
+<div id="computer_group_members">
+	<%if @tabset.active_tab.content.members.size > 0 %>	
+		<% @tabset.active_tab.content.members.each do |member| %>
+			<%= member.short_name %> 
+			<%= link_to_remote "X", :url => {  :action			=> 	:delete_computer_from_group,
+						:computer_id	=>	member.id,
+						:group_id		=>	@tabset.active_tab.content.id,
+						:server_id		=> 	member.server.server_id},
+						:confirm	=>	("Are you sure you want to delete " + member.short_name + "?")%><br />
+		<% end %>
+	<% end %>
+</div>
+
+<div id="computer_group_advertisements">
+	Software Pushes:<br/>
+	<% @tabset.active_tab.content.package_deployments.each do |package_deployment| %>
+		<%= package_deployment.short_name %><br/>
+	<% end %>
+</div>
+	<%= drop_receiving_element('computer_group_members', 
+		:accept => 'SmsComputer', 
+		:complete => "$('spinner').hide();", 
+		:before => "$('spinner').show();", 
+		:hoverclass => 'hover', 
+		:with => "'computer_id=' + encodeURIComponent(element.id.split('_').last())", 
+		:url => {   :action             =>  :add_computer_to_group, 
+					:computer_group_id  =>  @tabset.active_tab.content.content_id}) %>
+	<%= generate_redbox_hidden_content( :url => {   :action             =>  :add_package_to_group, 
+													:computer_group_id  =>  @tabset.active_tab.content.content_id})%>
+	<%= drop_receiving_element('computer_group_advertisements', 
+		:accept => 'SmsPackage',
+		:before => "$('spinner').show();", 
+		:hoverclass => 'hover', 
+		:with => "'package_id=' + encodeURIComponent(element.id.split('_').last())", 
+		:url => {   :action             =>  :add_package_to_group, 
+											:computer_group_id  =>  @tabset.active_tab.content.content_id},
+		:update => "hidden_content_add_package_to_group_" + @tabset.active_tab.content.content_id )%>

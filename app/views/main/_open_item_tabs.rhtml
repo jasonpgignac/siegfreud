@@ -1,0 +1,31 @@
+<% unless @tabset.tabs.count == 0 %>
+	<ul class="openitemnav">
+		<% @tabset.tabs.each do |tab| %>
+			<li id="<%= tab.id %>"<%= (tab.id == @tabset.active_tab.id) ? ' class=active': '' %>> 
+				<div class="title">
+					<%= link_to_remote tab.title,
+							:url =>{ 	:action	=> 	:select_tab,
+										:id		=>	tab.id
+									}%> 
+				</div>
+				<div class="delete">
+					<%= link_to_remote (image_tag("close.jpg", :size => "15x15", :alignment => "center")),
+										:url =>{	:action =>	:close_tab, :id => tab.id  }%>
+				</div>
+			</li>
+		<% end %>
+		<% if @newTab %>
+			<li id="activelink">
+				<div class="title">
+					<i>
+						<%= ("New " + @newTab.content.class.to_s ) %>
+					</i> 
+				</div>
+				<div class="delete">
+					<%= link_to_remote (image_tag("close.jpg", :size => "15x15", :alignment => "center")),
+							:url =>{	:action =>	:close_new_tab  }%>
+				</div>
+			</li>
+		<% end%>
+	</ul>
+<% end %>

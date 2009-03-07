@@ -1,0 +1,7 @@
+<%= generate_redbox_hidden_content( :url => {   :action             =>  :alert})%>
+<div class="sidebarwrapper" id="sidebarwrapper">
+	<%= render :partial =>	'sidebar'%>
+</div>
+<div class="contentwrapper" id="contentwrapper">
+	<%= render :partial => 'content_pane'%>
+</div>

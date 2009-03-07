@@ -1,0 +1,19 @@
+<div style="padding: 5px; height: 200px; width: 300px; background: #FFF">
+	<p style="align: right">
+		<%= link_to_close_redbox("close") %>
+	</p>
+	<% if @create_computer_error_status %>
+		<p><%= @create_computer_error_status %></p>
+	<% end %>
+	<div style="height: 190px; overflow: auto">
+		<% form_remote_tag :url => {:action 			=> :create_computer_group} do %>
+			<p>
+				<% ContentServer.find(:all).each do |server| %>
+				 	<%= radio_button_tag :server_id, server.id%> <%= server.name %><br />
+				<% end %>
+				Name : <%= text_field_tag :computer_group_name %>
+			</p>
+			<%= submit_tag 'Install' %>
+		<% end %>
+	</div>
+</div>

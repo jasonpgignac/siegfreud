@@ -1,0 +1,7 @@
+<% form_for :content, @newTab.content, :url => { :action => :create_content, :id => @newTab.content } do |form| %>
+	<%= form.hidden_field :lock_version %>
+	<input id = "class" name = "class" type = "hidden" value = <%= @newTab.content.class %> />
+	<p>Name: <%= form.text_field :first_name %> <%= form.text_field :last_name  %></p>
+	<p>Department ID: <%= form.text_field :department_id  %></p>
+	<%= submit_tag %>
+<% end %>

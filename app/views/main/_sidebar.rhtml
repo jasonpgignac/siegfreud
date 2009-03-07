@@ -1,0 +1,13 @@
+<div class="search_box">
+	<% form_remote_tag(:url => {:action => "search"},
+						:complete => "$('spinner').hide();", 
+						:before => "$('spinner').show();") do%>
+		<%= text_field_tag(:query, @query, :size => 15) %>
+	<% end %>
+</div>
+<%= button_to_remote("Add Collection", :url => {:action => "create_computer_group"})%>
+<div class="content_list" id="content_list">
+	<% if (@sidebar_items)%>	
+		<%= render :partial => 'item_list' %>
+	<% end %>
+</div>

@@ -1,0 +1,112 @@
+body{
+	height:100%;
+	background: #BBD9EE;
+	background-image:url('../images/logo.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	font: 70% Arial, sans-serif;
+}
+div.maincontainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 790px;
+	height: 490px;
+}
+
+div.header{
+	height: 60px; /*Height of top section*/
+}
+div.body {
+	height: 410px;
+}
+
+
+div.sidebarwrapper {
+	float: left;
+	margin: 10px;
+	height: 100%;
+	width: 180px;
+	background: #FFF;
+	overflow: hidden;
+}
+div.search_box{
+	margin: 5px;
+	width: 170px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.content_list{
+	margin: 5px;
+	height: 370px;
+	overflow: auto;
+}
+
+div.contentwrapper{
+	float: left;
+	width: 550px;
+	margin: 10px;
+	height: 100%;
+}
+div.current_tab {
+	padding:5px;
+	height:400px;
+	background:#FF0;
+}
+div.opentablist {
+	float:left;
+	background: #BBD9EE;
+	width: 100%;
+}
+
+table.associated_object_table {
+	border-color: #600;
+	border-width: 0 0 1px 1px;
+	border-style: solid;
+}
+table.associated_object_table th {
+	border-color: #600;
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	margin: 0;
+	padding: 4px;
+	background-color: #FFF
+}
+table.associated_object_table td {
+	border-color: #600;
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	margin: 0;
+	padding: 4px;
+	background-color: #FFC
+}
+
+div.hover { 
+	background-color: #ABCDE1; 
+}
+
+ul.openitemnav {
+	margin-top:0px;
+	width:100%;
+	list-style-type:none;
+	padding:0
+}
+ul.openitemnav li{
+	float:left;
+	margin-right: 3px;
+	background: #0F0;
+	height:25px;
+}
+ul.openitemnav div {
+	margin: 3px;
+	float:left;
+}
+ul.openitemnav :hover{
+	background: #FFA826;
+	color: #FFF
+}
+ul.openitemnav li.active,ul.openitemnav li.active :hover{
+	background: #FF0;
+	color: #003
+}
