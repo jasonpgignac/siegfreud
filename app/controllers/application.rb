@@ -123,8 +123,9 @@ class ApplicationController < ActionController::Base
   protected
   
   def authenticate
+    puts "Starting Authentication"
     authenticate_or_request_with_http_basic do |username, password|
-      ldap_con = initialize_ldap_con(username,password)
+      ldap_con = initialize_ldap_con(DOMAIN + username,password)
       treebase = TREEBASE 
       user_filter = Net::LDAP::Filter.eq( 'sAMAccountName', username )
       op_filter = Net::LDAP::Filter.eq( 'objectClass', 'organizationalPerson' ) 
@@ -132,6 +133,7 @@ class ApplicationController < ActionController::Base
       ldap_con.search( :base => treebase, :filter => op_filter & user_filter, :attributes=> 'dn') do |entry|
         dn = entry.dn
       end
+      puts "Finished Searching"
       login_succeeded = false
       unless dn.empty?
         puts "Dn : " + dn.to_s
@@ -144,12 +146,14 @@ class ApplicationController < ActionController::Base
             self.cs_set_credentials(:default, (DOMAIN + username), password)
           end
           ContentServer.content_store = self.cs
+          puts "Content store : " + self.cs.to_s
         else
           puts "Bind failed!"
           login_succeeded = false
         end
       end
-      return login_succeeded
+      puts login_succeeded.to_s
+      login_succeeded
     end
   end
   def initialize_ldap_con(user_name, password)
