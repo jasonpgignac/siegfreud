@@ -1,0 +1,17 @@
+<p>Select the package you purchased</p>
+<% form_remote_tag :url => {:action => :save_new_license } do %>
+	<%= select_tag("package_id", @select_options)%>
+	x <%= @quantity %><br />
+	Group License: <%= check_box_tag(	"group_license", "1", @group_license, 
+										:onchange => remote_function(	
+													:url => { 	:action => 'change_new_licenses_state',
+																:id => @quantity},
+										 			:with => "Form.Element.serialize(this)"))%><br />
+	<div id='new_license_licensing'>
+		<%= render :partial => 'new_license_licensing'%>
+	</div>
+	<%= hidden_field_tag('po_number', @po_number) %>
+	<%= hidden_field_tag('division', @division) %>
+	<%= hidden_field_tag('quantity', @quantity) %>
+	<%= submit_tag("Go")%>
+<% end %>

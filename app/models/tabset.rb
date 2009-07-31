@@ -13,7 +13,7 @@ class Tabset < ActiveRecord::Base
   end
   
   def find_open_tab_for_content(tab_content)
-    self.tabs.find_by_content_type(tab_content.class.to_s, :conditions => ["content_id = ?", tab_content.content_id])
+    self.tabs.find_by_content_type(tab_content.class.to_s, :conditions => ["tabs.content_id = ?", tab_content.id])
   end
   
   def open(tab_content)

@@ -1,0 +1,15 @@
+<div style="padding: 5px; height: 200px; width: 300px; background: #FFF">
+	<p style="align: right">
+		<%= link_to_close_redbox("close") %>
+	</p>
+	<div style="height: 190px; overflow: auto">
+		<% remote_form_for @computer, :url => {:action => :save_edited_computer_deployment_data, :id => @computer.id} do |f| %>
+			Owner: <%= f.text_field :owner %><br />
+			System Role: <%= f.text_field :system_role %><br />
+			Name: <%= f.text_field :name %><br />
+			Domain: <%= f.text_field :domain%><br />
+			<%= f.submit "Save"%>
+		<% end %>
+	</div>
+</div>
+

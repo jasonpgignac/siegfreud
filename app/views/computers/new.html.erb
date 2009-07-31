@@ -1,0 +1,60 @@
+<h1>New computer</h1>
+
+<% form_for(@computer) do |f| %>
+  	<%= f.error_messages %>
+	<div class="databox">
+		<table>
+			<tr>
+				<td>MAC Address:</td> 
+				<td><%= f.text_field(:mac_address) %></td>
+			</tr>
+			<tr>
+				<td>Serial:</td> 
+				<td><%= f.text_field(:serial_number) %></td>
+			</tr>
+			<tr>
+				<td>Model:</td> 
+				<td><%= f.text_field(:model) %></td>
+			</tr>
+			<tr>
+				<td>System Class:</td> 
+				<td><%= f.text_field(:system_class) %></td>
+			</tr>
+		</table>
+	</div>
+	<div class="databox">
+		<table>
+			<tr>
+				<td>Stage:</td>
+				<td><%= f.text_field(:stage) %></td>
+			</tr>
+			<tr>
+				<td>Owner:</td> 
+				<td><%= f.text_field(:owner) %></td>
+			</tr>
+			<tr>
+				<td>System Role:</td> 
+				<td><%= f.text_field(:system_role) %></td>
+			</tr>
+			<tr>
+				<td>System Name:</td> 
+				<td><%= f.text_field(:name) %></td>
+			</tr>
+		</table>
+	</div>
+	<div class="databox">
+		<table>
+			<tr>
+				<td>PO Number:</td> 
+				<td><%= f.text_field(:po_number) %></td>
+			</tr>
+			<tr>
+				<td>Division:</td> 
+				<td><%= f.text_field(:division) %></td>
+			</tr>
+		</table>
+	</div>
+  	<p><%= f.submit 'Create' %></p>
+<% end %>
+
+<%= link_to 'Back', computers_path %>

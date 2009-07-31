@@ -1,7 +1,6 @@
 body{
 	height:100%;
-	background: #BBD9EE;
-	background-image:url('../images/logo.jpg');
+	background: #5FB04D;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center;
@@ -17,14 +16,17 @@ div.maincontainer {
 div.header{
 	height: 60px; /*Height of top section*/
 }
+div.header h1 {
+	color: #FFFFFF;
+}
 div.body {
-	height: 410px;
+	height: 430px;
 }
 
 div.sidebarwrapper {
 	float: left;
 	margin: 10px;
-	height: 100%;
+	height: 410px;
 	width: 180px;
 	background: #FFF;
 	overflow: hidden;
@@ -48,19 +50,56 @@ table.found_items tr.even {
 
 div.contentwrapper{
 	float: left;
-	width: 550px;
+	width: 570px;
 	margin: 10px;
-	height: 100%;
+	height: 410px;
+}
+div.no_open_tab {
+	background: #5FB04D;;
+	width: 100%;
+	height: 410px;
 }
 div.current_tab {
-	padding:5px;
-	height:400px;
-	background:#FF0;
+	height: 410px;
+	background:#B6DCAD;
 }
 div.opentablist {
 	float:left;
-	background: #BBD9EE;
-	width: 100%;
+	background: #5FB04D;
+	width: 570px;
+}
+ul.openitemnav {
+	margin-top:0px;
+	width:100%;
+	list-style-type:none;
+	padding:0
+}
+ul.openitemnav li{
+	float:left;
+	margin-right: 3px;
+	background: #868A08;
+	height:25px;
+	width: 139px;
+}
+
+ul.openitemnav div {
+	margin: 3px;
+	float:left;
+}
+ul.openitemnav li div.title {
+	font-size: 10px;
+	margin-top: 5px;
+	width: 108px;
+	height: 10px;
+	overflow:hidden;
+}
+ul.openitemnav :hover{
+	background: #FFA826;
+	color: #FFF
+}
+ul.openitemnav li.active,ul.openitemnav li.active :hover{
+	background: #B6DCAD;
+	color: #003
 }
 
 table.associated_object_table {
@@ -89,27 +128,41 @@ div.hover {
 	background-color: #ABCDE1; 
 }
 
-ul.openitemnav {
-	margin-top:0px;
-	width:100%;
-	list-style-type:none;
-	padding:0
+div.databox {
+	border: thin solid #0000FF;
+	padding: 3px;
+	margin-bottom: 3px;
 }
-ul.openitemnav li{
-	float:left;
-	margin-right: 3px;
-	background: #0F0;
-	height:25px;
+div.list_box {
+	padding: 5px;
+	width: 558px;
+	height: 100px;	
+	float: left;
 }
-ul.openitemnav div {
-	margin: 3px;
-	float:left;
+div.list_box div.table {
+	border: 1px solid #000000;
+	height: 80px;
+	overflow: auto;
 }
-ul.openitemnav :hover{
-	background: #FFA826;
-	color: #FFF
+div.list_box div.table table td {
+	background: #FFFFFF;
 }
-ul.openitemnav li.active,ul.openitemnav li.active :hover{
-	background: #FF0;
-	color: #003
+div.list_box div.table table td.title {
+	width: 600px;
+}
+div.info_box {
+	padding: 5px;
+	width: 273px;
+	height: 150px;
+	float: left;	
+}
+
+table.itemlisting th{
+	padding: 2px;
+	background: #FFFFFF;
+}
+table.itemlisting td{
+	border: thin solid #0000FF;
+	background: #888888;
+	padding: 2px;
 }

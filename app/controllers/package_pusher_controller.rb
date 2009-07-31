@@ -76,9 +76,6 @@ class PackagePusherController < ApplicationController
     else
       @computersList = computersList
       @packagesList = packagesList
-      puts "Sample Listings :"
-      puts @computersList[0].to_s
-      puts @packagesList[0].to_s
     end
     
     render :action => 'index'

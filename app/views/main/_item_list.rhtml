@@ -1,12 +1,11 @@
 <table class="found_items" summary="Found Items Table">
 	<tbody>
 		<% @sidebar_items.each do |p| %>
-			<% domid = (p.class.to_s + "_" + p.remote_id.to_s)%>
+			<% domid = (p.class.to_s + "_" + p.id.to_s)%>
 			<tr 	class=		"<%= cycle("even","odd") %>" 
-					ondblclick=	"<%= remote_function(	:url 	=> 	{:action => :open_content, 
-														:id 	=>	p.remote_id,
-														:server_id => p.server.server_id,
-														:type 	=> 	p.class},
+					ondblclick=	"<%= remote_function(	:url 	=> 	{	:action => :open_content, 
+																		:id 	=>	p.id,
+																		:type 	=> 	p.class},
 														:complete => "$('spinner').hide();", 
 														:before => "$('spinner').show();") %>">
       			<td class="<%= p.class.to_s%>" id='<%= domid %>'>

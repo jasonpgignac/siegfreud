@@ -18,14 +18,13 @@ class Tab < ActiveRecord::Base
     return (tabset.active_tab.id == self.id);
   end
   def content=(content_item)
-    self.content_id = content_item.remote_id
+    self.content_id = content_item.id
     self.content_type = content_item.class.to_s
-    self.content_server = ContentServer.find(content_item.server.server_id)
     return 0;
   end
   def content
     content_class = self.content_type.camelize.constantize
-    content = content_class.findOrCreate(self.content_id, self.content_server.contentServerObject);
+    content = content_class.find(self.content_id);
   end
   
   def destroy

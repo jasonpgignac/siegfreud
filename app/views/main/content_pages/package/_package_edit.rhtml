@@ -1,3 +1,36 @@
 <p>Manufacturer: <%= @tabset.active_tab.content.manufacturer %></p>
 <p>Title: <%= @tabset.active_tab.content.name %></p>
 <p>Version: <%= @tabset.active_tab.content.version %></p>
+<div id="licensed_computers">
+	Licensed systems: <br />
+	<%if @tabset.active_tab.content.licenses.size > 0 %>	
+		<table id="licensed_computers" class="associated_object_table">
+			<tr>
+				<th>Computer Name</th>
+				<th></th>
+			</tr>
+			<% @tabset.active_tab.content.computers.each do |member| %>
+				<tr>
+					<td>
+						<%= member.short_name %> 
+					</td>
+					<td>
+						<%= link_to_remote "X", :url => {  	:action	=> :remove_licensed_computer,
+															:computer_id	=>	member.id,
+															:package_id	=>	@tabset.active_tab.content.id,
+															:confirm	=>	("Are you sure you want to delete " + member.short_name + "?")} %><br />
+					</td>
+				</tr>
+			<% end %>
+		</table>
+	<% end %>
+</div>
+
+<%= drop_receiving_element('licensed_computers', 
+	:accept => 'Computer', 
+	:complete => "$('spinner').hide();", 
+	:before => "$('spinner').show();", 
+	:hoverclass => 'hover', 
+	:with => "'computer_id=' + encodeURIComponent(element.id.split('_').last())", 
+	:url => {   :action      =>  :add_licensed_computer, 
+				:package_id  =>  @tabset.active_tab.content.id}) %>

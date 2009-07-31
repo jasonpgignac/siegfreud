@@ -1,0 +1,27 @@
+<div class="contentwrapper" id="contentwrapper">
+	<div class="current_tab" id ="current_tab">
+		<div class="databox">
+			MAC Address: <%= @computer.mac_address %><br />
+			Serial: <%= @computer.serial_number %><br />
+			Model: <%= @computer.model %><br />
+			System Class: <%= @computer.system_class %><br />
+		</div>
+		<div class="databox">
+			Stage: <%= @computer.stage %><br />
+			Owner: <%= @computer.owner %><br />
+			System Role: <%= @computer.system_role %><br />
+			System Name: <%= @computer.name %><br />
+		</div>
+		<div class="databox">
+			PO Number: <%= @computer.po_number %><br />
+			Division: <%= @computer.division %><br />
+		</div>
+		<div class="databox">
+			Last Updated: <%= @computer.updated_at%><br />
+			Last Audited: <%= @computer.last_audited %><br />
+			Record Created: <%= @computer.created_at %><br />
+		</div>
+		<%= link_to 'Edit', edit_computer_path(@computer) %> |
+		<%= link_to 'Back', computers_path %>
+	</div>
+</div>

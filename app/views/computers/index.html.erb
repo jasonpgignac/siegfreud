@@ -1,0 +1,27 @@
+<h1>Listing computers</h1>
+
+<table class="itemlisting">
+	<tr>
+		<th>Serial</th>
+		<th>Model</th>
+		<th>Stage</th>
+		<th>Owner</th>
+  	</tr>
+
+	<% @computers.each do |computer| %>
+		<tr>
+			<td><%= computer.serial_number %></td>
+			<td><%= computer.model %></td>
+			<td><%= computer.stage %></td>
+			<td><%= computer.owner %></td>
+    		<td><%= link_to 'Show', computer %></td>
+    		<td><%= link_to 'Edit', edit_computer_path(computer) %></td>
+    		<td><%= link_to 'Destroy', computer, :confirm => 'Are you sure?', :method => :delete %></td>
+  		</tr>
+	<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New computer', new_computer_path %>
+<%= link_to 'Import CSV File', :action => :csv_import %>

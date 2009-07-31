@@ -1,0 +1,40 @@
+<table>
+	<tr>
+		<th>Serial Number</th>
+		<th>Model</th>
+		<th>System Class</th>
+	</tr>
+	<% Computer.find_all_by_po_number(@po_number).each do |computer|%>
+		<%= "<tr id=\"new_computer_" + computer.id.to_s + "\">" %>
+			<td><%= computer.serial_number%></td>
+			<td><%= computer.model%></td>
+			<td><%= computer.system_class%></td>
+			<td>
+				<% form_remote_tag :url => { 	:action => :edit_computer } do %>
+					<%= hidden_field_tag('po_number', @po_number) %>
+					<%= hidden_field_tag('division', @division) %>
+					<%= hidden_field_tag('id', computer.id)%>
+					<%= submit_tag("Edit")%>
+				<% end %>
+			</td>
+			<td>				
+				<% form_remote_tag :url => { 	:action => :delete_computer_from_po },
+												:confirm	=>	("Are you sure you want to delete this computer?") do %>
+					<%= hidden_field_tag('po_number', @po_number) %>
+					<%= hidden_field_tag('division', @division) %>
+					<%= hidden_field_tag('id', computer.id)%>
+					<%= submit_tag("Delete")%>
+				<% end %>
+			</td>
+		</tr>
+	<% end %>
+	<tr>
+		<td>
+			<% form_remote_tag :url => { :action => :make_new_computer_in_po } do %>
+				<%= hidden_field_tag('po_number', @po_number) %>
+				<%= hidden_field_tag('division', @division) %>
+				<%= submit_tag("New Computer")%>
+			<% end %>
+		</td>
+	</tr>
+</table>
