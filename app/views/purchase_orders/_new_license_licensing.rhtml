@@ -1,0 +1,11 @@
+<% if(@group_license) %>
+	License Number: <%= text_field_tag("license_key")%><br />
+<% else %>
+	License Numbers:<br />
+	<div id='license_numbers' class='redbox_list'>
+		<% (1..(@quantity.to_i)).each do |r| %>
+			<% puts r.to_s %>
+			<%= text_field_tag("license_key_" + r.to_s)%>
+		<% end%>
+	</div>
+<% end %>	

@@ -1,0 +1,39 @@
+<p>Manufacturer: <%= @package.manufacturer %></p>
+<p>Title: <%= @package.name %></p>
+<p>Version: <%= @package.version %></p>
+<div id="licensed_computers">
+	Licensed systems: <br />
+	<%if @package.licenses.size > 0 %>	
+		<table id="licensed_computers" class="associated_object_table">
+			<tr>
+				<th>Computer Name</th>
+				<th></th>
+			</tr>
+			<% @package.assigned_licenses.each do |member| %>
+				<tr>
+					<td>
+						<%= member.computer.short_name %> 
+					</td>
+					<td>
+						<%= link_to "History", license_actions_path(member), :popup => true %><br />
+					</td>
+					<td>
+						<%= link_to_remote "X", :url => {  	:action	=> :remove_licensed_package,
+															:computer_id	=>	member.computer.id,
+															:package_id	=>	@package.id,
+															:confirm	=>	("Are you sure you want to delete " + member.short_name + "?")} %><br />
+					</td>
+				</tr>
+			<% end %>
+		</table>
+	<% end %>
+</div>
+
+<%= drop_receiving_element('licensed_computers', 
+	:accept => 'Computer', 
+	:complete => "$('spinner').hide();", 
+	:before => "$('spinner').show();", 
+	:hoverclass => 'hover', 
+	:with => "'computer_id=' + encodeURIComponent(element.id.split('_').last())", 
+	:url => {   :action      =>  :add_licensed_computer, 
+				:package_id  =>  @package.id}) %>

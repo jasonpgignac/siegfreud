@@ -1,0 +1,36 @@
+<%= generate_redbox_hidden_content( :url => {   :action  =>  :alert})%>
+<h3>New Purchase</h3>
+<h4>Purchase Order Information<h4>
+<div>
+	<table>
+		<tr>
+			<td>
+				PO Number
+			</td>
+			<td>
+				<%= @purchase_order.po_number %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Division
+			</td>
+			<td>
+				<%= @purchase_order.division %>
+			</td>
+		</tr>
+	</table>
+</div>
+<h4>Computers</h4>
+<div id="new_computers" >
+	<%= render :partial =>	'computers_in_po'%>
+</div>
+<h4>Peripherals</h4>
+<div id="new_peripherals" >
+	<%= render :partial =>	'peripherals_in_po'%>
+</div>
+<h4>Licenses</h4>
+<div id="new_licenses" >
+	<%= render :partial =>	'licenses_in_po'%>
+</div>
+<%= link_to "Done", :action => "index", :controller => "main"%>

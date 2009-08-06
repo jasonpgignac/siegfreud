@@ -1,199 +1,159 @@
-[Tue Jun 16 09:31:08.533 2009] [ 5413] accepting connections
-[Tue Jun 16 13:13:25.107 2009] [ 5413] rotating indices (seamless=1)
-[Tue Jun 16 13:13:25.130 2009] [ 5413] rotating index 'computer_delta': success
-[Tue Jun 16 13:13:25.131 2009] [ 5413] rotating finished
-[Tue Jun 16 13:13:25.699 2009] [ 5413] rotating indices (seamless=1)
-[Tue Jun 16 13:13:25.708 2009] [ 5413] rotating index 'computer_delta': success
-[Tue Jun 16 13:13:25.708 2009] [ 5413] rotating finished
-[Tue Jun 16 13:13:46.715 2009] [ 5413] rotating indices (seamless=1)
-[Tue Jun 16 13:13:46.722 2009] [ 5413] rotating index 'computer_delta': success
-[Tue Jun 16 13:13:46.722 2009] [ 5413] rotating finished
-[Tue Jun 16 13:13:48.187 2009] [ 5413] rotating indices (seamless=1)
-[Tue Jun 16 13:13:48.196 2009] [ 5413] rotating index 'computer_delta': success
-[Tue Jun 16 13:13:48.197 2009] [ 5413] rotating finished
-[Wed Jun 17 12:44:25.598 2009] [ 5413] caught SIGTERM, shutting down
-[Wed Jun 17 12:44:25.786 2009] [ 5413] shutdown complete
-[Wed Jun 17 21:30:53.560 2009] [ 2171] accepting connections
-[Wed Jun 17 21:31:55.676 2009] [ 2171] rotating indices (seamless=1)
-[Wed Jun 17 21:31:55.690 2009] [ 2171] rotating index 'computer_delta': success
-[Wed Jun 17 21:31:55.690 2009] [ 2171] rotating finished
-[Wed Jun 17 21:34:46.472 2009] [ 2171] rotating indices (seamless=1)
-[Wed Jun 17 21:34:46.480 2009] [ 2171] rotating index 'computer_delta': success
-[Wed Jun 17 21:34:46.480 2009] [ 2171] rotating finished
-[Wed Jun 17 21:34:48.209 2009] [ 2171] rotating indices (seamless=1)
-[Wed Jun 17 21:34:48.219 2009] [ 2171] rotating index 'computer_delta': success
-[Wed Jun 17 21:34:48.219 2009] [ 2171] rotating finished
-[Fri Jun 19 12:26:55.735 2009] [  290] accepting connections
-[Sat Jun 20 12:33:02.084 2009] [  290] caught SIGTERM, shutting down
-[Sat Jun 20 12:33:35.108 2009] [  290] shutdown complete
-[Mon Jun 22 14:27:36.602 2009] [ 4601] accepting connections
-[Mon Jun 22 15:42:48.029 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:42:48.042 2009] [ 4601] rotating index 'package_core': success
-[Mon Jun 22 15:42:48.083 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:42:48.433 2009] [ 4601] rotating index 'computer_core': success
-[Mon Jun 22 15:42:48.461 2009] [ 4601] rotating index 'bundle_core': success
-[Mon Jun 22 15:42:48.461 2009] [ 4601] rotating finished
-[Mon Jun 22 15:42:48.585 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:42:48.590 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:42:48.590 2009] [ 4601] rotating finished
-[Mon Jun 22 15:42:51.174 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:42:51.191 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:42:51.192 2009] [ 4601] rotating finished
-[Mon Jun 22 15:46:29.157 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:46:29.163 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:46:29.163 2009] [ 4601] rotating finished
-[Mon Jun 22 15:46:29.253 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:46:29.259 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:46:29.259 2009] [ 4601] rotating finished
-[Mon Jun 22 15:46:31.133 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:46:31.140 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:46:31.140 2009] [ 4601] rotating finished
-[Mon Jun 22 15:46:36.961 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:46:36.966 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:46:36.966 2009] [ 4601] rotating finished
-[Mon Jun 22 15:46:37.060 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:46:37.066 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:46:37.066 2009] [ 4601] rotating finished
-[Mon Jun 22 15:46:39.579 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:46:39.589 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:46:39.589 2009] [ 4601] rotating finished
-[Mon Jun 22 15:46:57.957 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:46:57.964 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:46:57.964 2009] [ 4601] rotating finished
-[Mon Jun 22 15:46:58.064 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:46:58.070 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:46:58.070 2009] [ 4601] rotating finished
-[Mon Jun 22 15:47:02.298 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:47:02.304 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:47:02.304 2009] [ 4601] rotating finished
-[Mon Jun 22 15:48:46.803 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:48:46.810 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:48:46.810 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:07.140 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:07.146 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:07.148 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:07.244 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:07.250 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:07.250 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:08.964 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:08.970 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:08.970 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:16.626 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:16.636 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:16.637 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:16.731 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:16.740 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:16.740 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:19.182 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:19.187 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:19.188 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:39.201 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:39.208 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:39.209 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:39.317 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:39.323 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:39.323 2009] [ 4601] rotating finished
-[Mon Jun 22 15:49:41.185 2009] [ 4601] rotating indices (seamless=1)
-[Mon Jun 22 15:49:41.190 2009] [ 4601] rotating index 'computer_delta': success
-[Mon Jun 22 15:49:41.190 2009] [ 4601] rotating finished
-[Tue Jun 23 14:42:02.425 2009] [ 4601] rotating indices (seamless=1)
-[Tue Jun 23 14:42:02.488 2009] [ 4601] rotating index 'computer_delta': success
-[Tue Jun 23 14:42:02.488 2009] [ 4601] rotating finished
-[Tue Jun 23 14:42:02.616 2009] [ 4601] rotating indices (seamless=1)
-[Tue Jun 23 14:42:02.626 2009] [ 4601] rotating index 'computer_delta': success
-[Tue Jun 23 14:42:02.626 2009] [ 4601] rotating finished
-[Thu Jun 25 09:37:14.152 2009] [ 4601] caught SIGTERM, shutting down
-[Thu Jun 25 09:37:15.078 2009] [ 4601] shutdown complete
-[Wed Jul  1 15:25:47.490 2009] [61826] accepting connections
-[Wed Jul  1 15:27:03.393 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:27:03.561 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:27:03.561 2009] [61826] rotating finished
-[Wed Jul  1 15:27:03.949 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:27:04.041 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:27:04.042 2009] [61826] rotating finished
-[Wed Jul  1 15:27:04.668 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:27:04.680 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:27:04.680 2009] [61826] rotating finished
-[Wed Jul  1 15:27:04.942 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:27:04.949 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:27:04.950 2009] [61826] rotating finished
-[Wed Jul  1 15:27:05.965 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:27:06.059 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:27:06.059 2009] [61826] rotating finished
-[Wed Jul  1 15:27:06.236 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:27:06.325 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:27:06.325 2009] [61826] rotating finished
-[Wed Jul  1 15:28:13.824 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:28:13.833 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:28:13.833 2009] [61826] rotating finished
-[Wed Jul  1 15:28:14.848 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:28:14.862 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:28:14.863 2009] [61826] rotating finished
-[Wed Jul  1 15:28:20.573 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:28:20.584 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:28:20.584 2009] [61826] rotating finished
-[Wed Jul  1 15:28:20.934 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:28:21.011 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:28:21.011 2009] [61826] rotating finished
-[Wed Jul  1 15:28:25.406 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:28:25.507 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:28:25.507 2009] [61826] rotating finished
-[Wed Jul  1 15:28:33.744 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:28:33.844 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:28:33.845 2009] [61826] rotating finished
-[Wed Jul  1 15:28:34.014 2009] [61826] rotating indices (seamless=1)
-[Wed Jul  1 15:28:34.141 2009] [61826] rotating index 'computer_delta': success
-[Wed Jul  1 15:28:34.141 2009] [61826] rotating finished
-[Wed Jul  1 15:29:23.384 2009] [61826] caught SIGTERM, shutting down
-[Wed Jul  1 15:29:23.435 2009] [61826] shutdown complete
-[Wed Jul  1 15:29:57.553 2009] [62293] accepting connections
-[Wed Jul  1 15:41:57.048 2009] [62293] caught SIGTERM, shutting down
-[Wed Jul  1 15:41:57.049 2009] [62293] shutdown complete
-[Wed Jul  1 15:42:03.403 2009] [62440] accepting connections
-[Wed Jul  1 15:42:43.818 2009] [62440] rotating indices (seamless=1)
-[Wed Jul  1 15:42:43.823 2009] [62440] rotating index 'computer_delta': success
-[Wed Jul  1 15:42:43.823 2009] [62440] rotating finished
-[Wed Jul  1 15:42:43.908 2009] [62440] rotating indices (seamless=1)
-[Wed Jul  1 15:42:43.914 2009] [62440] rotating index 'computer_delta': success
-[Wed Jul  1 15:42:43.914 2009] [62440] rotating finished
-[Wed Jul  1 15:42:45.951 2009] [62440] rotating indices (seamless=1)
-[Wed Jul  1 15:42:45.957 2009] [62440] rotating index 'computer_delta': success
-[Wed Jul  1 15:42:45.957 2009] [62440] rotating finished
-[Wed Jul  1 15:42:46.044 2009] [62440] rotating indices (seamless=1)
-[Wed Jul  1 15:42:46.052 2009] [62440] rotating index 'computer_delta': success
-[Wed Jul  1 15:42:46.052 2009] [62440] rotating finished
-[Wed Jul  1 15:42:48.500 2009] [62440] rotating indices (seamless=1)
-[Wed Jul  1 15:42:48.505 2009] [62440] rotating index 'computer_delta': success
-[Wed Jul  1 15:42:48.505 2009] [62440] rotating finished
-[Wed Jul  1 15:42:57.129 2009] [62440] rotating indices (seamless=1)
-[Wed Jul  1 15:42:57.135 2009] [62440] rotating index 'computer_delta': success
-[Wed Jul  1 15:42:57.135 2009] [62440] rotating finished
-[Wed Jul  1 15:42:57.209 2009] [62440] rotating indices (seamless=1)
-[Wed Jul  1 15:42:57.214 2009] [62440] rotating index 'computer_delta': success
-[Wed Jul  1 15:42:57.214 2009] [62440] rotating finished
-[Wed Jul  1 15:51:45.622 2009] [62440] caught SIGTERM, shutting down
-[Wed Jul  1 15:51:45.624 2009] [62440] shutdown complete
-[Wed Jul  1 16:00:39.035 2009] [62852] accepting connections
-[Wed Jul  1 16:12:28.439 2009] [62852] caught SIGTERM, shutting down
-[Wed Jul  1 16:12:28.441 2009] [62852] shutdown complete
-[Wed Jul  1 16:12:35.402 2009] [62939] accepting connections
-[Wed Jul  1 16:31:13.387 2009] [62939] caught SIGTERM, shutting down
-[Wed Jul  1 16:31:13.412 2009] [62939] shutdown complete
-[Wed Jul  1 16:36:11.787 2009] [66493] accepting connections
-[Sun Jul  5 20:10:24.258 2009] [23986] accepting connections
-[Sun Jul  5 20:20:42.114 2009] [23986] caught SIGTERM, shutting down
-[Sun Jul  5 20:20:42.115 2009] [23986] shutdown complete
-[Mon Jul  6 21:13:15.272 2009] [  479] accepting connections
-[Mon Jul 27 09:54:19.221 2009] [ 2703] accepting connections
-[Mon Jul 27 09:54:43.849 2009] [ 2703] rotating indices (seamless=1)
-[Mon Jul 27 09:54:43.856 2009] [ 2703] rotating index 'computer_delta': success
-[Mon Jul 27 09:54:43.857 2009] [ 2703] rotating finished
-[Mon Jul 27 09:54:43.955 2009] [ 2703] rotating indices (seamless=1)
-[Mon Jul 27 09:54:43.961 2009] [ 2703] rotating index 'computer_delta': success
-[Mon Jul 27 09:54:43.961 2009] [ 2703] rotating finished
-[Mon Jul 27 09:54:49.003 2009] [ 2703] rotating indices (seamless=1)
-[Mon Jul 27 09:54:49.011 2009] [ 2703] rotating index 'computer_delta': success
-[Mon Jul 27 09:54:49.011 2009] [ 2703] rotating finished
-[Mon Jul 27 09:54:49.093 2009] [ 2703] rotating indices (seamless=1)
-[Mon Jul 27 09:54:49.098 2009] [ 2703] rotating index 'computer_delta': success
-[Mon Jul 27 09:54:49.098 2009] [ 2703] rotating finished
+[Wed Aug  5 16:31:23.943 2009] [  605] accepting connections
+[Wed Aug  5 16:33:25.669 2009] [  605] rotating indices (seamless=1)
+[Wed Aug  5 16:33:25.673 2009] [  605] WARNING: rotating index 'peripheral_delta': cur to old rename failed: rename /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.spa to /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.old.spa failed: No such file or directory
+[Wed Aug  5 16:33:25.677 2009] [  605] WARNING: rotating index 'peripheral_core': cur to old rename failed: rename /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_core.spa to /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_core.old.spa failed: No such file or directory
+[Wed Aug  5 16:33:25.684 2009] [  605] WARNING: rotating index 'package_core': cur to old rename failed: rename /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/package_core.spa to /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/package_core.old.spa failed: No such file or directory
+[Wed Aug  5 16:33:25.688 2009] [  605] WARNING: rotating index 'computer_delta': cur to old rename failed: rename /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/computer_delta.spa to /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/computer_delta.old.spa failed: No such file or directory
+[Wed Aug  5 16:33:25.692 2009] [  605] WARNING: rotating index 'computer_core': cur to old rename failed: rename /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/computer_core.spa to /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/computer_core.old.spa failed: No such file or directory
+[Wed Aug  5 16:33:25.698 2009] [  605] WARNING: rotating index 'bundle_core': cur to old rename failed: rename /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/bundle_core.spa to /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/bundle_core.old.spa failed: No such file or directory
+[Wed Aug  5 16:33:25.699 2009] [  605] rotating finished
+[Wed Aug  5 16:34:22.449 2009] [  605] caught SIGTERM, shutting down
+[Wed Aug  5 16:34:22.449 2009] [  605] shutdown complete
+[Wed Aug  5 16:35:24.941 2009] [  703] accepting connections
+[Wed Aug  5 16:38:39.988 2009] [  703] caught SIGTERM, shutting down
+[Wed Aug  5 16:39:12.990 2009] [  703] shutdown complete
+[Wed Aug  5 16:43:53.585 2009] [  302] accepting connections
+[Thu Aug  6 12:32:21.543 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 12:32:21.571 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 12:32:21.571 2009] [  302] rotating finished
+[Thu Aug  6 12:32:31.202 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 12:32:31.203 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 12:32:31.203 2009] [  302] rotating finished
+[Thu Aug  6 13:11:06.746 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:11:06.746 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:11:06.752 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:11:06.752 2009] [  302] rotating finished
+[Thu Aug  6 13:12:31.786 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:12:31.786 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:12:31.790 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:12:31.790 2009] [  302] rotating finished
+[Thu Aug  6 13:46:12.798 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:46:12.799 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:46:12.803 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:46:12.803 2009] [  302] rotating finished
+[Thu Aug  6 13:48:18.677 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:48:18.678 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:48:18.683 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:48:18.683 2009] [  302] rotating finished
+[Thu Aug  6 13:49:32.086 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:49:32.086 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:49:32.090 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:49:32.091 2009] [  302] rotating finished
+[Thu Aug  6 13:52:41.673 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:52:41.673 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:52:41.678 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:52:41.678 2009] [  302] rotating finished
+[Thu Aug  6 13:55:25.247 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:55:25.248 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:55:25.252 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:55:25.252 2009] [  302] rotating finished
+[Thu Aug  6 13:55:32.909 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:55:32.910 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:55:32.914 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:55:32.914 2009] [  302] rotating finished
+[Thu Aug  6 13:55:37.453 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 13:55:37.453 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 13:55:37.459 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 13:55:37.459 2009] [  302] rotating finished
+[Thu Aug  6 14:02:38.713 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:02:38.714 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 14:02:38.719 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:02:38.719 2009] [  302] rotating finished
+[Thu Aug  6 14:04:56.715 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:04:56.716 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 14:04:56.720 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:04:56.721 2009] [  302] rotating finished
+[Thu Aug  6 14:06:44.767 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:06:44.768 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 14:06:44.772 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:06:44.773 2009] [  302] rotating finished
+[Thu Aug  6 14:10:40.885 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:10:40.885 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 14:10:40.890 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:10:40.890 2009] [  302] rotating finished
+[Thu Aug  6 14:11:21.192 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:11:21.193 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 14:11:21.198 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:11:21.198 2009] [  302] rotating finished
+[Thu Aug  6 14:11:39.186 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:11:39.186 2009] [  302] WARNING: rotating index 'peripheral_delta': prealloc: failed to load /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_delta.new.spa: bad size 0 (at least 20 bytes expected); using old index
+[Thu Aug  6 14:11:39.192 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:11:39.192 2009] [  302] rotating finished
+[Thu Aug  6 14:12:55.162 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:12:55.167 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 14:12:55.167 2009] [  302] rotating finished
+[Thu Aug  6 14:13:03.102 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:13:03.109 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 14:13:03.109 2009] [  302] rotating finished
+[Thu Aug  6 14:58:12.922 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:58:12.927 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:58:12.927 2009] [  302] rotating finished
+[Thu Aug  6 14:58:13.267 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:58:13.273 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:58:13.273 2009] [  302] rotating finished
+[Thu Aug  6 14:58:28.296 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:58:28.301 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:58:28.301 2009] [  302] rotating finished
+[Thu Aug  6 14:58:28.642 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:58:28.648 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:58:28.649 2009] [  302] rotating finished
+[Thu Aug  6 14:58:58.628 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:58:58.634 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:58:58.634 2009] [  302] rotating finished
+[Thu Aug  6 14:58:58.984 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:58:58.990 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:58:58.991 2009] [  302] rotating finished
+[Thu Aug  6 14:59:29.266 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:59:29.271 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:59:29.271 2009] [  302] rotating finished
+[Thu Aug  6 14:59:29.620 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:59:29.626 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:59:29.626 2009] [  302] rotating finished
+[Thu Aug  6 14:59:41.519 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:59:41.524 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:59:41.524 2009] [  302] rotating finished
+[Thu Aug  6 14:59:41.871 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 14:59:41.878 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 14:59:41.878 2009] [  302] rotating finished
+[Thu Aug  6 15:00:09.264 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:00:09.270 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 15:00:09.270 2009] [  302] rotating finished
+[Thu Aug  6 15:00:09.619 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:00:09.627 2009] [  302] rotating index 'computer_delta': success
+[Thu Aug  6 15:00:09.627 2009] [  302] rotating finished
+[Thu Aug  6 15:22:05.412 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:22:05.417 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:22:05.417 2009] [  302] rotating finished
+[Thu Aug  6 15:22:05.771 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:22:05.781 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:22:05.781 2009] [  302] rotating finished
+[Thu Aug  6 15:22:44.861 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:22:44.866 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:22:44.866 2009] [  302] rotating finished
+[Thu Aug  6 15:22:45.213 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:22:45.221 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:22:45.221 2009] [  302] rotating finished
+[Thu Aug  6 15:22:46.888 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:22:46.894 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:22:46.894 2009] [  302] rotating finished
+[Thu Aug  6 15:22:47.251 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:22:47.259 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:22:47.259 2009] [  302] rotating finished
+[Thu Aug  6 15:23:25.533 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:23:25.539 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:23:25.539 2009] [  302] rotating finished
+[Thu Aug  6 15:23:25.887 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:23:25.893 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:23:25.893 2009] [  302] rotating finished
+[Thu Aug  6 15:23:46.629 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:23:46.634 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:23:46.634 2009] [  302] rotating finished
+[Thu Aug  6 15:23:46.978 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:23:46.985 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:23:46.985 2009] [  302] rotating finished
+[Thu Aug  6 15:23:55.585 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:23:55.592 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:23:55.592 2009] [  302] rotating finished
+[Thu Aug  6 15:23:55.945 2009] [  302] rotating indices (seamless=1)
+[Thu Aug  6 15:23:55.952 2009] [  302] rotating index 'peripheral_delta': success
+[Thu Aug  6 15:23:55.953 2009] [  302] rotating finished

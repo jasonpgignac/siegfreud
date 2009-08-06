@@ -1,0 +1,38 @@
+<table>
+	<tr>
+		<th>Serial Number</th>
+		<th>Model</th>
+	</tr>
+	<% Peripheral.find_all_by_po_number(@purchase_order.po_number).each do |periph|%>
+		<%= "<tr id=\"new_computer_" + periph.id.to_s + "\">" %>
+			<td><%= periph.serial_number%></td>
+			<td><%= periph.model%></td>
+			<td>
+				<% form_remote_tag :url => { 	:action => :edit_peripheral } do %>
+					<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+					<%= hidden_field_tag('division', @purchase_order.division) %>
+					<%= hidden_field_tag('id', periph.id)%>
+					<%= submit_tag("Edit")%>
+				<% end %>
+			</td>
+			<td>				
+				<% form_remote_tag :url => { 	:action => :delete_peripheral_from_po },
+												:confirm	=>	("Are you sure you want to delete this peripheral?") do %>
+					<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+					<%= hidden_field_tag('division', @purchase_order.division) %>
+					<%= hidden_field_tag('id', periph.id)%>
+					<%= submit_tag("Delete")%>
+				<% end %>
+			</td>
+		</tr>
+	<% end %>
+	<tr>
+		<td>
+			<% form_remote_tag :url => { :action => :make_new_peripheral_in_po } do %>
+				<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+				<%= hidden_field_tag('division', @purchase_order.division) %>
+				<%= submit_tag("New Peripheral")%>
+			<% end %>
+		</td>
+	</tr>
+</table>

@@ -3,7 +3,7 @@
 		<%= link_to_close_redbox("close") %>
 	</p>
 	<div style="height: 190px; overflow: auto">
-		<% remote_form_for @computer, :url => {:action => :save_edited_computer_deployment_data, :id => @computer.id} do |f| %>
+		<% remote_form_for @computer, :url => {:action => :change_state_of_system, :id => @computer.id, :stage => @new_stage} do |f| %>
 			Owner: <%= f.text_field :owner %><br />
 			System Role: <%= f.text_field :system_role %><br />
 			Name: <%= f.text_field :name %><br />

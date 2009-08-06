@@ -2,6 +2,10 @@ class Tabset < ActiveRecord::Base
   has_many :tabs, :order => :position, :dependent => :destroy;
   belongs_to :active_tab, :class_name => "Tab";
   
+  def active_tab?
+    return true unless self.active_tab.nil?
+    return false
+  end
   def switch_to_next_tab
     unless(self.active_tab.last?)
       next_tab = self.active_tab.lower_item;

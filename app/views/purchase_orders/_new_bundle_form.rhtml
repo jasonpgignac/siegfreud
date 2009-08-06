@@ -1,0 +1,14 @@
+<div style="padding: 5px; height: 200px; width: 300px; background: #FFF">
+	<p style="align: right">
+		<%= link_to_close_redbox("close") %>
+	</p>
+	<div style="height: 190px; overflow: auto" id="licensing_redbox_form">
+		<% form_remote_tag :url => {:action => :save_new_bundle } do %>
+			Bundle: <%= select_tag :id, options_for_select(@bundles)%><br />
+			Quantity: <%= text_field_tag :quantity%><br />
+			<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+			<%= hidden_field_tag('division', @purchase_order.division) %>
+			<%= submit_tag("Go")%>
+		<% end %>
+	</div>
+</div>

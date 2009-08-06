@@ -1,0 +1,14 @@
+<div style="padding: 5px; height: 200px; width: 300px; background: #FFF">
+	<p style="align: right">
+		<%= link_to_close_redbox("close") %>
+	</p>
+	<div style="height: 190px; overflow: auto">
+		<% remote_form_for @periph, :url => {:action => :save_edited_peripheral, :id => @periph.id} do |f| %>
+			Serial: <%= f.text_field :serial_number%><br />
+			Model: <%= f.text_field :model%><br />
+			<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+			<%= hidden_field_tag('division', @purchase_order.division) %>
+			<%= f.submit "Save"%>
+		<% end %>
+	</div>
+</div>

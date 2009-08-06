@@ -1,13 +1,13 @@
 class MainController < ApplicationController
   
-  # response routines
+  # Display response routines
   def index
-    @tabset = get_tabset;
+    get_tabset;
 	  @sidebar_buttons = get_sidebar_buttons;
   end
   def search
     session[:search_string] = params[:query]
-    @tabset = get_tabset;
+    get_tabset;
     #@sidebar_buttons = get_sidebar_buttons;
     @sidebar_items = perform_search(session[:search_string], @sidebar_buttons)
     update_page do |page|
@@ -17,20 +17,41 @@ class MainController < ApplicationController
   def open_content
     content_type = (params[:type]).camelize.constantize;
     content = (params[:id]) ? content_type.find(params[:id]) : content_type.new();
-    get_tabset.open_and_activate(content);
-    @tabset = get_tabset;
+    get_tabset
+    @tabset.open_and_activate(content);
+    get_active_content
     update_page do |page|
       page.redraw_tabset;
     end
   end
   def select_tab
-    @tabset = get_tabset;
+    get_tabset;
     @tabset.active_tab=(Tab.find(params[:id]));
     @tabset.save;
     update_page do |page|
       page.redraw_tabset;
     end
   end
+  def close_tab
+    tab = Tab.find(params[:id]);
+    tab.delete;
+    get_tabset;
+    update_page do |page|
+      page.redraw_tabset
+    end
+  end
+  def add_inventory
+    puts "Division: " + params[:division].to_s
+    puts "PO: " + params[:po_number].to_s
+    if(params[:division].nil? || params[:po_number].nil?)
+      redirect_to :action => "start_new_po"
+    else
+      @division = params[:division]
+      @po_number = params[:po_number]
+    end
+  end
+  
+  # Currently inactive objects - non-inventory
   def add_package_to_group
     groupToAddTo = SmsComputerGroup.find_by_remote_id(params[:computer_group_id])
     packageToAdd = SmsPackage.find_by_remote_id(params[:package_id])
@@ -60,7 +81,7 @@ class MainController < ApplicationController
     end
     @group_id = groupToAddTo.remote_id
     @package_id = packageToAdd.remote_id
-    @tabset = get_tabset;
+    get_tabset;
     
     update_page do |page|
       page.hide_spinner
@@ -80,7 +101,7 @@ class MainController < ApplicationController
     groupToAddTo = SmsComputerGroup.find_by_remote_id(params[:computer_group_id])
     computerToAdd = SmsComputer.find_by_remote_id(params[:computer_id])
     groupToAddTo.addComputer(computerToAdd)
-    @tabset = get_tabset;
+    get_tabset;
     update_page do |page| 
       page.redraw_active_tab
     end
@@ -107,7 +128,7 @@ class MainController < ApplicationController
     group_id = params[:group_id]
     group = SmsComputerGroup.find(group_id)
     group.removeComputer(computer_id)
-    @tabset = get_tabset;
+    get_tabset;
     update_page do |page| 
       page.redraw_active_tab
     end
@@ -115,7 +136,7 @@ class MainController < ApplicationController
   def delete_package_deployment
     deploymentToDelete = SmsPackageDeployment.find(params[:package_deployment_id])
     deploymentToDelete.delete
-    @tabset = get_tabset;
+    get_tabset;
     update_page do |page| 
       page.redraw_active_tab
     end
@@ -133,7 +154,7 @@ class MainController < ApplicationController
     puts "Deleting the content, now"
     content_to_delete.destroy
     
-    @tabset = get_tabset
+    get_tabset
     @sidebar_buttons = get_sidebar_buttons;
     @sidebar_items = perform_search(session[:search_string], @sidebar_buttons)
 
@@ -142,14 +163,8 @@ class MainController < ApplicationController
       page.redraw_item_list
     end
   end
-  def close_tab
-    tab = Tab.find(params[:id]);
-    tab.delete;
-    @tabset = get_tabset;
-    update_page do |page|
-      page.redraw_tabset
-    end
-  end
+
+  # Non-implemented actions
   def import_from_csv
     parsed_file=CSV.parse(params[:dump][:file])
     parsed_file.each  do |row|
@@ -164,137 +179,60 @@ class MainController < ApplicationController
       flash.now[:message]="CSV Import Successful, new records added to data base"
     end
   end
-  def add_inventory
-    puts "Division: " + params[:division].to_s
-    puts "PO: " + params[:po_number].to_s
-    if(params[:division].nil? || params[:po_number].nil?)
-      puts "Epic Fail!"
-      redirect_to :action => "start_new_po"
-    else
-      puts "OK! Let's add_inventory!"
-      @division = params[:division]
-      @po_number = params[:po_number]
-    end
-  end
   
-  def remove_licensed_computer
-    lic = License.find_by_computer_id(params[:computer_id], :conditions => { :package_id => params[:package_id] })
-    lic.computer_id = nil
-    lic.save
-    @tabset = get_tabset
-    update_page do |page|
-      page.redraw_active_tab
-    end
-  end
+  # Main Inventory Actions
+  # --Manage Licenses
   def add_licensed_computer
     begin
       comp = Computer.find(params[:computer_id])
       pkg = Package.find(params[:package_id])
-      lic = pkg.get_open_license(comp.division)
-      lic.computer = comp
-      lic.save
-      @tabset = get_tabset
+      comp.add_package(pkg)
+      get_tabset
       update_page do |page|
         page.redraw_active_tab
       end
     rescue RuntimeError => error
       if error.message == "No Licenses Available" then
-        @tabset = get_tabset
-        update_page do |page|
-          page.set_redbox('license_not_found')
-        end
+        @error_msg = "There are no licenses of #{pkg.short_name} available for this division."
       else
-        throw
+        @error_msg = "Unknown Error: #{error.message}"
+      end
+      get_tabset
+      update_page do |page|
+        page.set_redbox('error_alert')
       end
     end
   end
   
+  # --Manage Computer
   def change_state_of_system
-    comp = Computer.find(params[:id])
-    old_stage = comp.stage
-    new_stage = params[:stage]
-    if (old_stage == "Repair")
-      comp.stage = params[:stage]
-      comp.last_stage_change = Date.today;
-      comp.save
-    else
-      case [old_stage, new_stage]
-      when  ["Storage", "Rollout"], 
-            ["Storage", "Active"]
-        redbox_partial = 'edit_deployment_data'    
-        comp.stage = params[:stage]
-        comp.last_stage_change = Date.today;
-        comp.save
-      when  ["Storage", "Repair"], 
-            ["Active", "Repair"]
-        # Commented out this temporarily, until we put in ticketing system
-        # redbox_partial = 'set_ticket_data'  
-        comp.stage = params[:stage]
-        comp.last_stage_change = Date.today;
-        comp.save
-      when  ["Rollout", "Storage"], 
-            ["Rollout", "Disposal"],
-            ["Active", "Storage"],
-            ["Active", "Disposal"],
-            ["Repair", "Storage"],
-            ["Retrieval", "Storage"],
-            ["Retrieval", "Disposal"]
-        comp.clear_deployment_data
-        redbox_partial = 'set_location'
-        comp.stage = params[:stage]
-        comp.last_stage_change = Date.today;
-        comp.save
-      when  ["Active", "Retrieval"], # Good!
-            ["Rollout", "Retrieval"],
-            ["Disposal", "Storage"]
-        redbox_partial = 'set_location'
-        comp.stage = params[:stage]
-        comp.last_stage_change = Date.today;
-        comp.save
-      when  ["Rollout", "Active"]
-        # do nothing
-        comp.stage = params[:stage]
-        comp.last_stage_change = Date.today;
-        comp.save
-      when  ["Rollout", "Repair"]
-        clear_deployment_data
-        # redbox_partial = 'set_ticket_data'
-        comp.stage = params[:stage]
-        comp.last_stage_change = Date.today;
-        comp.save
-      when  ["Storage", "Retrieval"],
-            ["Active", "Rollout"],
-            ["Retrieval", "Rollout"],
-            ["Retrieval", "Active"],
-            ["Disposal", "Rollout"],
-            ["Disposal", "Active"],
-            ["Disposal", "Retrieval"],
-        @error_msg = "Siegfreud will not let you change directly from " + old_stage + " to " + new_stage + "."
-        redbox_partial = 'error_alert'
-      else  
-        @error_msg = "Siegfreud does not recognize either the stage " + old_stage + " or " + new_stage + "."
-        redbox_partial = 'error_alert'
-      end
-    end
-    @tabset = get_tabset
-    update_page do |page|
-      page.redraw_active_tab
-      unless(redbox_partial.nil?)
-        page.set_redbox(redbox_partial)
-      end
-    end
-  end
-  def save_edited_computer_deployment_data
-    @computer = Computer.find(params[:id])
-    if @computer.update_attributes(params[:computer])
-      @computer.delta=true
-      @computer.save
-      @tabset = get_tabset
+    begin
+      @computer = Computer.find(params[:id])
+      @new_stage = params[:stage]
+      @computer.change_stage(params[:stage], params[:computer])
+      get_tabset
       update_page do |page|
         page.close_redbox
         page.redraw_active_tab
       end
-    end  
+    rescue RuntimeError => error
+      case error.message
+      when "TransitionRequiresDeploymentData"
+        redbox_partial = 'edit_deployment_data'
+      when "TransitionRequiresLocationData"
+        redbox_partial = 'set_location'
+      when "TransitionIsIllegal"
+        redbox_partial = 'error_alert'
+        @error_msg = "You cannot transition legally between these two states"
+      else
+        redbox_partial = 'error_alert'
+        @error_msg = "Unknown Error: #{error.message}"
+      end
+      @stage = params[:stage]
+      update_page do |page|
+        page.set_redbox(redbox_partial)
+      end  
+    end
   end
   def add_licensed_package_or_bundle
     begin
@@ -303,269 +241,71 @@ class MainController < ApplicationController
       comp = Computer.find(params[:computer_id])
       if pkg_or_bundle == "Package"
         pkg = Package.find(id)
-        lic = pkg.get_open_license(comp.division)
-        lic.computer = comp
-        lic.save
+        comp.add_package(pkg)
       else
         bundle = Bundle.find(id)
-        lics = bundle.get_open_licenses(comp.division)
-        lics.each do |lic|
-          
-          lic.computer = comp
-          lic.save
-        end
+        comp.add_bundle(bundle)
       end
-      @tabset = get_tabset
+      get_tabset
       update_page do |page|
         page.redraw_active_tab
       end
     rescue RuntimeError => error
       if error.message == "No Licenses Available" then
-        @tabset = get_tabset
-        @error_msg = "Unfortunately, this division has no licenses available for this product."
-        update_page do |page|
-          page.set_redbox('error_alert')
+        if pkg
+          @error_msg = "There are no licenses of #{pkg.short_name} available for this division."
+        else
+          @error_msg = "There are no licenses of #{bundle.short_name} available for this division."
         end
       else
-        throw
+        @error_msg = "Unknown Error: #{error.message}"
       end
-    end
-  end
-  def remove_licensed_package
-    lic = License.find_by_computer_id(params[:computer_id], :conditions => { :package_id => params[:package_id] })
-    lic.computer_id = nil
-    lic.save
-    @tabset = get_tabset
-    update_page do |page|
-      page.redraw_active_tab
-    end
-  end
-  def add_installed_peripheral
-    periph = Peripheral.find(params[:peripheral_id])
-    comp = Computer.find(params[:computer_id])
-    if(periph.computer_id.nil? && periph.division == comp.division && comp.stage != "Storage" && comp.stage != "Disposal")
-      periph.computer = comp
-      periph.save
-      @tabset = get_tabset
-      update_page do |page|
-        page.redraw_active_tab
-      end
-    else
-      @tabset = get_tabset
-      @error_msg = "Errors in adding this peripheral:"
-      unless(periph.computer_id.nil?)
-        @error_msg = @error_msg + "<br />This peripheral is already installed on a system"
-      end
-      if(periph.division != comp.division)
-        @error_msg = @error_msg + "<br />This peripheral is in division " + periph.division.to_s + " while the computer is in division " + comp.division.to_s + "."
-      end
-      if(comp.stage == "Storage" || comp.stage = "Disposal")
-        @error_msg = @error_msg + "<br />This computer is in " + comp.stage + "."
-      end
+      get_tabset
       update_page do |page|
         page.set_redbox('error_alert')
       end
     end
   end
-  def remove_installed_peripheral
-    periph = Peripheral.find(params[:peripheral_id])
-    periph.computer_id = nil
-    periph.save
-    @tabset = get_tabset
+  def remove_licensed_package
+    lic = License.find_by_computer_id(params[:computer_id], :conditions => { :package_id => params[:package_id] })
+    lic.remove_from_computer
+    get_tabset
     update_page do |page|
       page.redraw_active_tab
     end
   end
-  def make_new_computer_in_po
-    @po_number = params[:po_number]
-    @division = params[:division]
-    @computer = Computer.new()
-    @computer.last_stage_change = Date.today;
-    @computer.po_number = @po_number
-    @computer.division = @division
-    @computer.stage = "Storage"
-    @computer.save
-    update_page do |page|
-      page.set_redbox('edit_computer_form')
-    end
-  end
-  def edit_computer
-    @po_number = params[:po_number]
-    @division = params[:division]
-    id = params[:id]
-    @computer = Computer.find(id)
-    row_id = "new_computer_" + @computer.id.to_s
-    update_page do |page|
-      page.set_redbox('edit_computer_form')
-    end
-  end
-  def save_edited_computer
-    @computer = Computer.find(params[:id])
-    @po_number = @computer.po_number
-    @division = @computer.division
-    if @computer.update_attributes(params[:computer])
-      flash[:notice] = 'Computer was successfully updated.'
+  def add_installed_peripheral
+    begin
+      Computer.find(params[:computer_id]).add_peripheral(Peripheral.find(params[:peripheral_id]))
+      get_tabset
       update_page do |page|
-        page.close_redbox
-        page.redraw_new_computers
+        page.redraw_active_tab
       end
-    else
-    end
-  end
-  def delete_computer_from_po
-    @po_number = params[:po_number]
-    @division = params[:division]
-    Computer.find(params[:id]).delete
-    update_page do |page|
-      page.redraw_new_computers
-    end
-  end
-  def computer_manifest
-  end
-  
-  def remove_computer_from_peripheral
-  end
-  def add_computer_to_peripheral
-  end
-  
-  def make_new_peripheral_in_po
-    @po_number = params[:po_number]
-    @division = params[:division]
-    @periph = Peripheral.new()
-    @periph.po_number = @po_number
-    @periph.division = @division
-    @periph.save
-    update_page do |page|
-      page.set_redbox('edit_peripheral_form')
-    end
-  end
-  def edit_peripheral
-    @po_number = params[:po_number]
-    @division = params[:division]
-    id = params[:id]
-    @computer = Computer.find(id)
-    row_id = "new_periph_" + @computer.id.to_s
-    update_page do |page|
-      page.set_redbox('edit_peripheral_form')
-    end
-  end
-  def save_edited_peripheral
-    @periph = Peripheral.find(params[:id])
-    @po_number = @periph.po_number
-    @division = @periph.division
-    if @periph.update_attributes(params[:peripheral])
-      flash[:notice] = 'Computer was successfully updated.'
-      update_page do |page|
-        page.close_redbox
-        page.redraw_new_peripherals
-      end
-    else
-    end
-  end
-  def delete_peripheral_from_po
-    @po_number = params[:po_number]
-    @division = params[:division]
-    Peripheral.find(params[:id]).delete
-    update_page do |page|
-      page.redraw_new_peripherals
-    end
-  end
-  
-  def make_new_license_in_po
-    @po_number = params[:po_number]
-    @division = params[:division]
-    update_page do |page|
-      page.set_redbox('new_license_form')
-    end
-  end
-  def confirm_new_license
-    @po_number = params[:po_number]
-    @division = params[:division]
-    @quantity = params[:quantity]
-    packages = Package.search(params[:search_string])
-    @select_options = ""
-    packages.each do |pkg|
-      @select_options = @select_options + "<option value=\"" + pkg.id.to_s + "\">" + pkg.short_name + "</option>"
-    end
-    @group_license = true
-    update_page do |page|
-      page.switch_to_package_search_results_in_redbox
-    end
-  end
-  def change_new_licenses_state
-    @quantity = params[:id]
-    @group_license = params[:group_license]
-    update_page do |page|
-      page.update_new_license_licensing
-    end
-  end
-  def save_new_license
-    pkg = Package.find(params[:package_id])
-    @po_number = params[:po_number]
-    @division = params[:division]
-    quantity = params[:quantity]
-    group_license = params[:group_license]
-    
-    quantity.to_i.times do |i|
-      new_license = License.new
-      new_license.po_number = @po_number
-      new_license.division = @divison
-      new_license.package = pkg
-      new_license.group_license = (group_license ? true : false )
-      if(group_license)
-        license_number = params['license_number']
+    rescue RuntimeError => error
+      if error.message == "PeripheralAlreadyAssigned" then
+        @error_msg = "This peripheral is already installed on a system"
+      elsif error.message == "PeripheralComputerDivisionMismatch"
+        @error_msg = "This peripheral is in a different division."
+      elsif error.message == "IllegalStageForPeripheralAssignment"
+        @error_msg = "This computer is in either disposal or storage."
       else
-        license_number = params['license_number_' + (i + 1).to_s]
+        @error_msg = "Unknown Error: #{error.message}"
       end
-      new_license.save
-    end  
-    update_page do |page|
-      page.close_redbox
-      page.redraw_new_licenses
+      get_tabset
+      update_page do |page|
+        page.set_redbox('error_alert')
+      end
     end
+    
   end
-  def delete_license_from_po
-    @po_number = params[:po_number]
-    @division = params[:division]
-    License.find_all_by_po_number(@po_number, :conditions => ["package_id = ?", params[:id]]).each do |lic|
-      lic.delete
-    end
+  def remove_installed_peripheral
+    Peripheral.find(params[:peripheral_id]).remove_from_computer
+    get_tabset
     update_page do |page|
-      page.redraw_new_licenses
+      page.redraw_active_tab
     end
   end
   
-  def make_new_bundle_in_po
-    @po_number = params[:po_number]
-    @division = params[:division]
-    puts "Division is " + @division
-    @bundles = Array.new()
-    Bundle.find(:all).each do |bndl|
-      @bundles << [bndl.name, bndl.id]
-    end
-    update_page do |page|
-      page.set_redbox('new_bundle_form')
-    end
-  end
-  def save_new_bundle
-    bundle_to_add = Bundle.find(params[:id])
-    @po_number = params[:po_number]
-    @division = params[:division]
-    quantity = params[:quantity]
-    bundle_to_add.packages.each do |pkg|
-      quantity.to_i.times do
-        new_license = License.new
-        new_license.po_number = @po_number
-        new_license.division = @division
-        new_license.package = pkg
-        new_license.save
-      end
-    end
-    update_page do |page|
-      page.close_redbox
-      page.redraw_new_licenses
-    end
-  end
   private
   
   # redraw routines
@@ -625,11 +365,18 @@ class MainController < ApplicationController
       foundset = foundset + Peripheral.search(search_field)
     end
   end
+  def get_active_content
+    if @tabset.active_tab?
+      ivarsym = "@#{@tabset.active_tab.content.class.to_s.downcase}".to_sym
+      self.instance_variable_set(ivarsym, @tabset.active_tab.content)
+    end
+  end
   def get_tabset
     unless (session[:tabset_id])
       session[:tabset_id] = Tabset.create.id;
     end
-    return Tabset.find(session[:tabset_id]);
+    @tabset = Tabset.find(session[:tabset_id])
+    get_active_content
   end
   def get_sidebar_buttons
   	if (session[:sidebar_buttons])

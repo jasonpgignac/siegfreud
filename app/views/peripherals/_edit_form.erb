@@ -1,0 +1,36 @@
+<div id="peripheral_general_info" class="info_box">
+	<b>General Info</b>
+	<p>
+		Serial: <%= @peripheral.serial_number %><br />
+		Model: <%= @peripheral.model %><br />
+		PO Number: <%= @peripheral.po_number %><br />
+		Division: <%= @peripheral.division %><br />
+		<%= link_to "View History", peripheral_actions_path(@peripheral), :popup => true %><br />	
+	</p>
+</div>
+<div id="current_status" class="info_box">
+	<b>Current Status</b>
+	<p>
+		<% if (@peripheral.computer_id.nil?)%>
+			Not Deployed
+		<% else %>
+			Deployed: (
+			<%= link_to_remote "Remove", :url => {  	:action	=> :remove_installed_peripheral,
+												:peripheral_id	=>	@peripheral.id,
+												:confirm	=>	("Are you sure you want to delete " + @peripheral.short_name + "?")} %>
+			)<br />
+			Owner: <%= @peripheral.computer.owner %><br />
+			System Role: <%= @peripheral.computer.system_role %><br />
+			Name: <%= @peripheral.computer.name%><br />
+			Domain: <%= @peripheral.computer.domain%><br />
+		<% end %>
+	</p>
+</div>
+<%= drop_receiving_element('current_status', 
+	:accept => ['Computer'],
+	:complete => "$('spinner').hide();", 
+	:before => "$('spinner').show();", 
+	:hoverclass => 'hover', 
+	:with => "'computer_id=' + encodeURIComponent(element.id.split('_').last())",
+	:url => {   :action      =>  :add_installed_peripheral, 
+				:peripheral_id  =>  @peripheral.id}) %>

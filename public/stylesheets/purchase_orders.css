@@ -1,0 +1,168 @@
+body{
+	height:100%;
+	background: #5FB04D;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	font: 70% Arial, sans-serif;
+}
+div.maincontainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 790px;
+	height: 490px;
+}
+
+div.header{
+	height: 60px; /*Height of top section*/
+}
+div.header h1 {
+	color: #FFFFFF;
+}
+div.body {
+	height: 430px;
+}
+
+div.sidebarwrapper {
+	float: left;
+	margin: 10px;
+	height: 410px;
+	width: 180px;
+	background: #FFF;
+	overflow: hidden;
+}
+div.search_box{
+	margin: 5px;
+	width: 170px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.content_list{
+	margin: 5px;
+	height: 345px;
+	overflow: auto;
+	font: 90% Arial, sans-serif;
+}
+table.found_items tr.even {
+	background: #AAAAAA;
+}
+
+div.contentwrapper{
+	float: left;
+	width: 570px;
+	margin: 10px;
+	height: 410px;
+}
+div.no_open_tab {
+	background: #5FB04D;;
+	width: 100%;
+	height: 410px;
+}
+div.current_tab {
+	height: 410px;
+	background:#B6DCAD;
+}
+div.opentablist {
+	float:left;
+	background: #5FB04D;
+	width: 570px;
+}
+ul.openitemnav {
+	margin-top:0px;
+	width:100%;
+	list-style-type:none;
+	padding:0
+}
+ul.openitemnav li{
+	float:left;
+	margin-right: 3px;
+	background: #868A08;
+	height:25px;
+	width: 139px;
+}
+
+ul.openitemnav div {
+	margin: 3px;
+	float:left;
+}
+ul.openitemnav li div.title {
+	font-size: 10px;
+	margin-top: 5px;
+	width: 108px;
+	height: 10px;
+	overflow:hidden;
+}
+ul.openitemnav :hover{
+	background: #FFA826;
+	color: #FFF
+}
+ul.openitemnav li.active,ul.openitemnav li.active :hover{
+	background: #B6DCAD;
+	color: #003
+}
+
+table.associated_object_table {
+	border-color: #600;
+	border-width: 0 0 1px 1px;
+	border-style: solid;
+}
+table.associated_object_table th {
+	border-color: #600;
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	margin: 0;
+	padding: 4px;
+	background-color: #FFF
+}
+table.associated_object_table td {
+	border-color: #600;
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	margin: 0;
+	padding: 4px;
+	background-color: #FFC
+}
+
+div.hover { 
+	background-color: #ABCDE1; 
+}
+
+div.databox {
+	border: thin solid #0000FF;
+	padding: 3px;
+	margin-bottom: 3px;
+}
+div.list_box {
+	padding: 5px;
+	width: 558px;
+	height: 100px;	
+	float: left;
+}
+div.list_box div.table {
+	border: 1px solid #000000;
+	height: 80px;
+	overflow: auto;
+}
+div.list_box div.table table td {
+	background: #FFFFFF;
+}
+div.list_box div.table table td.title {
+	width: 600px;
+}
+div.info_box {
+	padding: 5px;
+	width: 273px;
+	height: 150px;
+	float: left;	
+}
+
+table.itemlisting th{
+	padding: 2px;
+	background: #FFFFFF;
+}
+table.itemlisting td{
+	border: thin solid #0000FF;
+	background: #888888;
+	padding: 2px;
+}

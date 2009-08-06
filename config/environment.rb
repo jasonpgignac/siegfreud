@@ -32,8 +32,7 @@ Rails::Initializer.run do |config|on = {
   config.gem "prawn"
   config.gem(
     'freelancing-god-thinking-sphinx',
-    :lib         => 'thinking_sphinx',
-    :version     => '1.1.21'
+    :lib         => 'thinking_sphinx'
   )
   config.action_controller.session = { :key => "_siegfreud_session", :secret => "96bb8a78448163d608007fe7429d20a72de0cea6e9bcdc2866ba610767fa73a48f982e385852bb4e36734c05eaeb7b78575880415029c11488913fe2094a960f" }
 end

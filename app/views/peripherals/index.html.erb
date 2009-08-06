@@ -1,0 +1,18 @@
+<h1>Listing peripherals</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @peripherals.each do |peripheral| %>
+  <tr>
+    <td><%= link_to 'Show', peripheral %></td>
+    <td><%= link_to 'Edit', edit_peripheral_path(peripheral) %></td>
+    <td><%= link_to 'Destroy', peripheral, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New peripheral', new_peripheral_path %>

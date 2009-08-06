@@ -1,6 +1,5 @@
-<% unless (@tabset.tabs.count == 0)%><%= render :partial => ("main/content_pages/" +
-								@tabset.active_tab.content.class.to_s.downcase + "/" +
-								@tabset.active_tab.content.class.to_s.downcase + "_edit")%>
+<% unless (@tabset.tabs.count == 0)%>
+	<%= render :partial => "#{@tabset.active_tab.content.class.to_s.downcase.pluralize}/edit_form" %>
 <% else %>
 	<%= render :partial => 'empty_tab' %>
 <% end %>
