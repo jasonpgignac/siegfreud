@@ -1,3 +1,0 @@
-module PackagePusherHelper
-  
-end

@@ -1,6 +1,0 @@
-<% form_for :content, @newTab.content, :url => { :action => :create_content, :id => @newTab.content } do |form| %>
-	<%= form.hidden_field :lock_version %>
-	<input id = "class" name = "class" type = "hidden" value = <%= @newTab.content.class %> />
-	<p>Mac Address: <%= form.text_field :mac_address %></p>
-	<%= submit_tag %>
-<% end %>

@@ -1,7 +1,11 @@
 set :application, "siegfreud"
 
-set :repository,	"svn+ssh://ussatx-xsod-001.peroot.com/Volumes/Untitled/svnrepo/siegfreud"
+set :repository,	"git@github.com:jasonpgignac/siegfreud.git"
+set :scm, "git"
+set :scm_passphrase, "lamia6713"
 set :deploy_to,		"/Library/WebServer/siegfreud"
+set :branch, "master"
+ssh_options[:forward_agent] = true
 # set :deploy_via,	:export
 
 role :app, "ussatx-xsod-001"
