@@ -17,3 +17,11 @@ role :app, "ussatx-xsod-001"
 role :web, "ussatx-xsod-001"
 role :db,  "ussatx-xsod-001", :primary => true
 
+namespace :passenger do
+  desc "Restart Application"
+  task :restart do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
+
+after :deploy, "passenger:restart"
