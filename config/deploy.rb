@@ -4,6 +4,8 @@ set :repository,  "git@github.com:jasonpgignac/siegfreud.git"
 set :scm, "git"
 set :scm_passphrase, "lamia6713"
 set :user, "ptadmin"
+set :password, "sys051976"
+set :runner, "ptadmin"
 # If you have previously been relying upon the code to start, stop 
 # and restart your mongrel application, or if you rely on the database
 # migration code, please uncomment the lines you require below
