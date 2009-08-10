@@ -79,7 +79,7 @@ class Computer < ActiveRecord::Base
   
   # Software Licensing Functions
   def add_bundle(bndl)
-    lics = bndl.get_open_licenses(comp.division)
+    lics = bndl.get_open_licenses(self.division)
     lics.each do |lic|
       self.add_license(lic)
     end
