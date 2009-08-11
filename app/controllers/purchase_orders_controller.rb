@@ -46,8 +46,9 @@ class PurchaseOrdersController < ApplicationController
     @purchase_order.division = @division
     @purchase_order.division ||= params[:division]
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @purchase_order }
+      #format.html # show.html.erb
+      #format.xml  { render :xml => @purchase_order }
+      format.pdf
     end
   end
   

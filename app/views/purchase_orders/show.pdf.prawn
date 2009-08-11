@@ -1,5 +1,5 @@
-pdf.text "PO: ##{@po.po_number}", :size => 18, :style => :bold
-licenses = @po.licenses.map do |lic|
+pdf.text "PO: ##{@purchase_order.po_number}", :size => 18, :style => :bold
+licenses = @purchase_order.licenses.map do |lic|
   [
     lic.short_name.to_s,
     lic.division.to_s,
@@ -7,7 +7,7 @@ licenses = @po.licenses.map do |lic|
     lic.license_key.to_s
   ]
 end
-peripherals = @po.peripherals.map do |periph|
+peripherals = @purchase_order.peripherals.map do |periph|
   [
     periph.model.to_s,
     periph.serial_number.to_s,
@@ -15,7 +15,7 @@ peripherals = @po.peripherals.map do |periph|
     periph.current_location
   ]
 end
-computers = @po.computers.map do |computer|
+computers = @purchase_order.computers.map do |computer|
   [
     computer.model.to_s,
     computer.serial_number.to_s,
