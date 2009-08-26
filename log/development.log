@@ -34028,3 +34028,46 @@ ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search in
   [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
   [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MainController#index (for ::1 at 2009-08-26 15:49:19) [GET]
+  [4;36;1mSQL (26.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mINSERT INTO "tabsets" ("active_tab_id", "created_at", "updated_at") VALUES(NULL, '2009-08-26 15:49:19.535245', '2009-08-26 15:49:19.535245') RETURNING "id"[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mTabset Load (31.4ms)[0m   [0mSELECT * FROM "tabsets" WHERE ("tabsets"."id" = 23) [0m
+Rendering template within layouts/main
+Rendering main/index
+Rendered main/_sidebar (2.5ms)
+  [4;36;1mSQL (74.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+Rendered main/_open_item_tabs (87.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+Rendered main/_empty_tab (0.5ms)
+Rendered main/_current_tab (10.1ms)
+Rendered main/_content_pane (115.3ms)
+Completed in 603ms (View: 109, DB: 245) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MainController#search (for ::1 at 2009-08-26 15:49:27) [POST]
+  Parameters: {"authenticity_token"=>"4YiS5xY8zdZC1FSZQBMXF14vsXCf+Ltsh3j2vuO60Uw=", "query"=>"adobe", "commit"=>"->"}
+  [4;35;1mTabset Load (0.8ms)[0m   [0mSELECT * FROM "tabsets" WHERE ("tabsets"."id" = 23) [0m
+Querying Sphinx: adobe
+Querying Sphinx: adobe
+  [4;36;1mPackage Load (0.9ms)[0m   [0;1mSELECT * FROM "packages" WHERE ("packages"."id" IN (1)) [0m
+Querying Sphinx: adobe
+Querying Sphinx: adobe
+Rendered main/_item_list (16.5ms)
+Completed in 132ms (View: 25, DB: 2) | 200 OK [http://localhost/main/search]
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m

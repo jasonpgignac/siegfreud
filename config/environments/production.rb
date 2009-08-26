@@ -23,5 +23,3 @@ config.action_controller.perform_caching             = true
 # Disable delivery errors, bad email addresses will be ignored
 # config.action_mailer.raise_delivery_errors = false
 
-# Line inserted temporarily to agree with our production server
-config.action_controller.relative_url_root = "/siegfreud"
