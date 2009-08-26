@@ -1,0 +1,29 @@
+<div class='list_box'>	
+	<%if @computer.licenses.size > 0 %>	
+		<table 	id="licensed_packages_table" 	
+				class="associated_object_table">
+			<% @computer.licenses.each do |member| %>
+				<tr>
+					<td class="title">
+						<%= member.package.short_name %> 
+					</td>
+					<td class="title">
+						<%= member.license_key.to_s %>
+					</td>
+					<td>
+						<%= link_to_remote "X", 
+							:url => {  		
+									:action	=> 
+									:remove_licensed_package,					
+									:computer_id =>	@computer.id,					
+									:package_id	=>	member.package.id,
+									:confirm	=>	
+										("Are you sure you want to delete " + member.short_name + "?")} %>
+					</td>
+				</tr>
+			<% end %>
+		</table>
+	<% end %>
+	
+	
+</div>

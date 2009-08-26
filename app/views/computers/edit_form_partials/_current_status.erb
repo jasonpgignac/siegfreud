@@ -1,0 +1,32 @@
+<div id="computer_general_info" class="info_box" style="float: left">
+	Serial: <%= @computer.serial_number %><br />
+	Model: <%= @computer.model %><br />
+	System Class: <%= @computer.system_class %>
+	Mac Address: <%= @computer.mac_address %><br />
+	PO Number: <%= @computer.po_number %><br />
+	Division: <%= @computer.division %><br />
+	Last Audited: <%= @computer.last_audited.to_s %>
+</div>
+<div id="current_status_2" class="info_box">
+	<%= select_tag(:stage, 
+						options_for_select(%w{ 	Storage
+												Rollout
+												Active
+												Repair
+												Retrieval
+												Disposal }, 
+											@computer.stage),
+						:onchange => remote_function(	:url => {  	
+															:action => 'change_state_of_system', 
+															:id => @computer.id},
+													 		:with => 'Form.Element.serialize(this)'))%>
+	since <%= @computer.last_stage_change.to_s %><br />
+	<% if (@computer.stage != "Storage" && @computer.stage != "Disposal")%>
+		Owner: <%= @computer.owner %><br />
+		System Role: <%= @computer.system_role %><br />
+		Name: <%= @computer.name%><br />
+		Domain: <%= @computer.domain%>
+	<% else %>
+		Location: <%= @computer.location %>
+	<% end %>
+</div>
