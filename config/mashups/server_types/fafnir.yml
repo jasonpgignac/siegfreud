@@ -1,0 +1,12 @@
+title: Fafnir
+
+services:
+    - 
+        type: ComputerInformation
+        platform: Win32
+    -
+        type: PackageInformation
+        platform: Win32
+    -
+        type: SoftwareManagement
+        platform: Win32

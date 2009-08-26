@@ -1,0 +1,15 @@
+title: Brunhilde
+
+services:
+    - 
+        type: PackageInformation
+        platform: Mac
+    - 
+        type: PackageInformation
+        platform: Win32
+    - 
+        type: Deployment
+        platform: Mac
+    - 
+        type: Deployment
+        platform: Win32
