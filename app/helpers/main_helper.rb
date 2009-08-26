@@ -20,7 +20,8 @@ module MainHelper
         :url => url, 
         :update => update,
         :complete => "$('spinner').hide();", 
-		    :before => "$('spinner').show();",) + "</td>"
+		    :before => "$('spinner').show();",
+		    :after => "$('spinner').hide();") + "</td>"
     div_title = "<td><b>#{title}</b></td>"
     
     return opening + disclosure_arrow + div_title + closing
