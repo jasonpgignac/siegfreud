@@ -9,6 +9,16 @@ class Package < ActiveRecord::Base
       indexes version
     end
     
+    def to_json(options=nil)
+      @package_hash = Hash.new
+      @package_hash[:id] = self.id
+      @package_hash[:manufacturer] = self.manufacturer
+      @package_hash[:name] = self.name
+      @package_hash[:version] = self.version
+      @package_hash[:description] = nil
+      @package_hash[:freshness_date] = DateTime.now
+      @package_hash.to_json
+    end
     def assigned_licenses
       self.licenses.delete_if do |license| license.open? end
     end

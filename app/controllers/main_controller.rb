@@ -306,8 +306,90 @@ class MainController < ApplicationController
     end
   end
   
+  # View Actions
+  # --Computer View
+  def open_assigned_licenses
+    @computer = Computer.find(params[:id])
+    @view = params[:view]
+    render :partial => "open_disclosure"
+  end
+  def close_assigned_licenses
+    @computer = Computer.find(params[:id])
+    @view = params[:view]
+    render :partial => "closed_disclosure"
+  end
+  def open_installed_peripherals
+    @computer = Computer.find(params[:id])
+    @view = params[:view]
+    render :partial => "open_disclosure"
+  end
+  def close_installed_peripherals
+    @computer = Computer.find(params[:id])
+    @view = params[:view]
+    render :partial => "closed_disclosure"
+  end
+  def open_current_status
+     @computer = Computer.find(params[:id])
+     @view = params[:view]
+     render :partial => "open_disclosure"
+  end
+  def close_current_status
+    @computer = Computer.find(params[:id])
+    @view = params[:view]
+    render :partial => "closed_disclosure"
+  end
+  def open_remote_status(server_name)
+    @computer = Computer.find(params[:id])
+    @view = params[:view]
+    services = service_list(@computer.system_class,
+    				                @computer.domain,
+    				                "ComputerInformation")
+    services.delete_if do |service|
+      service.server_name.sub(" ","_") != server_name
+    end
+    @service = services[0]
+    @title = @service.server_name
+    @div = "remote_status__" + @service.server_name.sub(" ","_")
+    @remote_data_sets ||= Hash.new
+    begin
+      @remote_data_sets[@service.server_name] = @service.get_info(@computer.serial_number)
+    rescue RemoteRecordNotFound
+      @view = "#{@view}_no_record"
+    end
+    render :partial => "open_disclosure"
+  end
+  def close_remote_status(server_name)
+    @computer = Computer.find(params[:id])
+    @view = params[:view].sub("_no_record", "")
+    services = service_list(@computer.system_class,
+    				                @computer.domain,
+    				                "ComputerInformation")
+    services.delete_if do |service|
+      service.server_name.sub(" ","_") != server_name
+    end
+    @service = services[0]
+    @title = @service.server_name
+    @div = "remote_status__" + @service.server_name.sub(" ","_")
+    render :partial => "closed_disclosure"
+  end
+  
+  def method_missing(symbol, *args)
+    if symbol.to_s.include?("__")
+      function_split = symbol.to_s.split("__")
+      function = function_split[0]
+      param = function_split[1]
+      eval("#{function}(\"#{param}\")")
+    end
+  end
+  
   private
   
+  def service_list(platform, domain, service_type)
+    return Array.new() unless @services.key?(platform)
+    return Array.new() unless @services[platform].key?(domain)
+    return Array.new() unless @services[platform][domain].key?(service_type)
+    return @services[platform][domain][service_type]
+  end
   # redraw routines
   def update_page
     render :update do |page|
@@ -391,4 +473,4 @@ class MainController < ApplicationController
   def hash_to_html_select_options
     
   end
-end
+  end

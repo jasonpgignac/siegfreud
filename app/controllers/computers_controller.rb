@@ -15,7 +15,6 @@ class ComputersController < ApplicationController
   # GET /computers/1.xml
   def show
     @computer = Computer.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @computer }
@@ -27,7 +26,7 @@ class ComputersController < ApplicationController
   # GET /computers/new.xml
   def new
     @computer = Computer.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @computer }

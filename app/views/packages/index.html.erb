@@ -2,13 +2,22 @@
 
 <table>
   <tr>
+	<th>Manufacturer</th>
+	<th>Product</th>
+	<th>Version</th>
   </tr>
 
 <% @packages.each do |package| %>
   <tr>
+	<td><%= package.manufacturer %></td>
+	<td><%= package.name %></td>
+	<td><%= package.version %></td>
+	
     <td><%= link_to 'Show', package %></td>
     <td><%= link_to 'Edit', edit_package_path(package) %></td>
-    <td><%= link_to 'Destroy', package, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', package, 
+				:confirm => 'Are you sure?', 
+				:method => :delete %></td>
   </tr>
 <% end %>
 </table>

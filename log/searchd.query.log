@@ -181,3 +181,191 @@
 [Thu Aug  6 15:33:38.073 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] Adobe
 [Thu Aug  6 15:34:18.484 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] Adobe
 [Thu Aug  6 15:34:38.798 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Tue Aug 11 09:38:24.211 2009] 0.026 sec [all/2/rel 4 (0,20)] [*] dell
+[Tue Aug 11 09:38:24.288 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] dell
+[Tue Aug 11 09:38:24.291 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] dell
+[Tue Aug 11 09:38:24.294 2009] 0.001 sec [all/2/rel 29 (0,20)] [*] dell
+[Mon Aug 17 13:51:32.948 2009] 0.025 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 13:51:33.073 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 13:51:33.076 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 13:51:33.079 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 13:51:57.912 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Aug 17 13:51:57.915 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_delta] 
+[Mon Aug 17 13:51:58.022 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Mon Aug 17 14:03:07.568 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:03:07.595 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:03:07.599 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:03:07.601 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:03:26.530 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:03:26.560 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:03:26.563 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:03:26.566 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:39.434 2009] 0.029 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:39:39.472 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:39.475 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:39.478 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:43.187 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:39:43.214 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:43.217 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:43.220 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:44.384 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:39:44.412 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:44.415 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:44.418 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:56.718 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:39:56.746 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:56.748 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:56.751 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:57.904 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:39:57.931 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:57.935 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:57.938 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:58.707 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:39:58.734 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:58.737 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:39:58.740 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:40:00.185 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Mon Aug 17 14:40:00.211 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:40:00.214 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Mon Aug 17 14:40:00.217 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 08:47:04.845 2009] 0.060 sec [all/2/rel 1 (0,20)] [*] 7c1m1g1
+[Thu Aug 20 08:47:04.924 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Thu Aug 20 08:47:04.927 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Thu Aug 20 08:47:04.930 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Thu Aug 20 11:05:35.055 2009] 0.091 sec [all/2/rel 11 (0,20)] [*] d630
+[Thu Aug 20 11:05:35.124 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 11:05:35.127 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 11:05:35.130 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 11:06:06.232 2009] 0.013 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:06:06.235 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:06:06.238 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] pc
+[Thu Aug 20 11:06:06.295 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:06:22.043 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] monitor
+[Thu Aug 20 11:06:22.047 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] monitor
+[Thu Aug 20 11:06:22.049 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] monitor
+[Thu Aug 20 11:06:22.052 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] monitor
+[Thu Aug 20 11:06:25.891 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] display
+[Thu Aug 20 11:06:25.894 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] display
+[Thu Aug 20 11:06:25.897 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] display
+[Thu Aug 20 11:06:25.900 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] display
+[Thu Aug 20 11:06:27.948 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] display
+[Thu Aug 20 11:06:27.951 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] display
+[Thu Aug 20 11:06:27.955 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] display
+[Thu Aug 20 11:06:27.958 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] display
+[Thu Aug 20 11:06:30.219 2009] 0.032 sec [all/2/rel 4 (0,20)] [*] dell
+[Thu Aug 20 11:06:30.231 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] dell
+[Thu Aug 20 11:06:30.234 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] dell
+[Thu Aug 20 11:06:30.237 2009] 0.001 sec [all/2/rel 29 (0,20)] [*] dell
+[Thu Aug 20 11:07:45.190 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:07:45.194 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:07:45.198 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] pc
+[Thu Aug 20 11:07:45.206 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:07:52.728 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:07:53.086 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:07:53.210 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:07:53.353 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:07:53.477 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:07:53.601 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:07:53.726 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:07:53.849 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:07:53.973 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:54.973 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:08:54.977 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:08:54.980 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] pc
+[Thu Aug 20 11:08:54.986 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] pc
+[Thu Aug 20 11:08:57.512 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:57.798 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:57.925 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:58.207 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:58.332 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:58.459 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:58.585 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:58.710 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:08:58.833 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:09:06.629 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] dock
+[Thu Aug 20 11:09:06.631 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] dock
+[Thu Aug 20 11:09:06.634 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] dock
+[Thu Aug 20 11:09:06.637 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] dock
+[Thu Aug 20 11:09:11.122 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] stand
+[Thu Aug 20 11:09:11.125 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] stand
+[Thu Aug 20 11:09:11.128 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] stand
+[Thu Aug 20 11:09:11.131 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] stand
+[Thu Aug 20 11:09:15.158 2009] 0.001 sec [all/2/rel 4 (0,20)] [*] dell
+[Thu Aug 20 11:09:15.170 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] dell
+[Thu Aug 20 11:09:15.174 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] dell
+[Thu Aug 20 11:09:15.177 2009] 0.001 sec [all/2/rel 29 (0,20)] [*] dell
+[Thu Aug 20 11:09:33.823 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Thu Aug 20 11:09:33.851 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 11:09:33.854 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 11:09:33.857 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 11:09:47.174 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Aug 20 11:09:47.181 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_delta] 
+[Thu Aug 20 11:09:47.290 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Thu Aug 20 11:10:14.302 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Thu Aug 20 11:10:14.407 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Thu Aug 20 12:54:40.388 2009] 0.026 sec [all/2/rel 2 (0,20)] [*] ugignja
+[Thu Aug 20 12:54:40.520 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] ugignja
+[Thu Aug 20 12:54:40.524 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] ugignja
+[Thu Aug 20 12:54:40.527 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] ugignja
+[Thu Aug 20 12:56:15.949 2009] 0.001 sec [all/2/rel 11 (0,20)] [*] d630
+[Thu Aug 20 12:56:15.977 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 12:56:15.980 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 12:56:15.983 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] d630
+[Thu Aug 20 13:01:32.002 2009] 0.018 sec [all/2/rel 0 (0,20)] [*] Acrobat
+[Thu Aug 20 13:01:32.026 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] Acrobat
+[Thu Aug 20 13:01:32.034 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] Acrobat
+[Thu Aug 20 13:01:32.038 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] Acrobat
+[Mon Aug 24 22:56:53.274 2009] 0.054 sec [all/2/rel 1 (0,20)] [*] adobe
+[Mon Aug 24 22:57:02.440 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] adobe
+[Mon Aug 24 22:57:10.775 2009] 0.001 sec [all/2/rel 6 (0,20)] [*] microsoft
+[Mon Aug 24 22:58:57.826 2009] 0.001 sec [all/2/rel 6 (0,20)] [*] microsoft
+[Mon Aug 24 22:59:03.424 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] adobe
+[Mon Aug 24 22:59:26.080 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] 2003
+[Mon Aug 24 22:59:35.448 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] mrfls
+[Mon Aug 24 22:59:46.488 2009] 0.001 sec [all/2/rel 6 (0,20)] [*] microsoft
+[Mon Aug 24 22:59:49.895 2009] 0.001 sec [all/2/rel 6 (0,20)] [*] microsoft
+[Wed Aug 26 09:40:37.028 2009] 0.117 sec [all/2/rel 1 (0,20)] [*] adobe
+[Wed Aug 26 09:46:06.771 2009] 0.064 sec [all/2/rel 1 (0,20)] [*] adobe
+[Wed Aug 26 09:47:01.539 2009] 0.011 sec [all/2/rel 1 (0,20)] [*] adobe
+[Wed Aug 26 09:59:56.828 2009] 0.026 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 10:01:02.731 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 10:01:57.952 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 10:02:43.353 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 10:02:56.042 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] Adobe Acrobat Pro 9
+[Wed Aug 26 10:03:01.559 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] Adobe Acrobat Pro
+[Wed Aug 26 10:03:05.999 2009] 0.025 sec [all/2/rel 1 (0,20)] [*] Adobe Acrobat
+[Wed Aug 26 10:05:00.925 2009] 0.027 sec [all/2/rel 1 (0,20)] [*] Adobe Acrobat
+[Wed Aug 26 10:06:42.439 2009] 0.026 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Wed Aug 26 10:07:14.506 2009] 0.022 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Wed Aug 26 10:08:08.864 2009] 0.114 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Wed Aug 26 10:26:43.814 2009] 0.034 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Wed Aug 26 12:40:51.734 2009] 0.055 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Wed Aug 26 12:42:59.140 2009] 0.013 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 12:44:09.325 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 12:44:34.992 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 12:46:12.516 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 12:47:30.379 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 12:51:31.351 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Wed Aug 26 12:51:45.363 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Wed Aug 26 12:54:30.503 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 12:57:24.341 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] adobe
+[Wed Aug 26 12:57:32.161 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] adobe acrobat pro 9
+[Wed Aug 26 12:58:04.878 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] adobe acrobat pro 9
+[Wed Aug 26 12:59:29.249 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] adobe | acrobat pro 9
+[Wed Aug 26 12:59:30.433 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] adobe | acrobat pro 9
+[Wed Aug 26 13:01:12.044 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] adobe | acrobat | pro | 9
+[Wed Aug 26 13:01:26.912 2009] 0.034 sec [all/2/rel 1 (0,20)] [*] adobe | acrobat
+[Wed Aug 26 13:01:35.807 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe | acrobat | pro
+[Wed Aug 26 13:01:40.691 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] adobe | acrobat
+[Wed Aug 26 13:06:01.423 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] adobe acrobat
+[Wed Aug 26 13:06:05.496 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] adobe acrobat 9
+[Wed Aug 26 13:06:11.225 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] 109-adobe acrobat 9
+[Wed Aug 26 13:06:24.444 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 13:07:34.625 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 13:08:04.979 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 13:11:44.061 2009] 0.002 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 13:13:38.501 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 13:14:16.044 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 13:15:12.312 2009] 0.020 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 13:16:12.107 2009] 0.001 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 9
+[Wed Aug 26 13:26:36.103 2009] 0.067 sec [any/2/rel 1 (0,20)] [*] 109 Adobe Acrobat Pro 7

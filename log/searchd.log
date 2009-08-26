@@ -157,3 +157,33 @@
 [Thu Aug  6 15:23:55.945 2009] [  302] rotating indices (seamless=1)
 [Thu Aug  6 15:23:55.952 2009] [  302] rotating index 'peripheral_delta': success
 [Thu Aug  6 15:23:55.953 2009] [  302] rotating finished
+[Tue Aug 11 08:28:05.359 2009] [  302] caught SIGTERM, shutting down
+[Tue Aug 11 08:28:05.524 2009] [  302] WARNING: index computer_core: attrs save failed: failed to open /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/computer_core.spa.tmpnew: No such file or directory
+[Tue Aug 11 08:28:05.525 2009] [  302] WARNING: index peripheral_core: attrs save failed: failed to open /Users/ugignja/Desktop/siegfreud0.2/db/sphinx/development/peripheral_core.spa.tmpnew: No such file or directory
+[Tue Aug 11 08:28:05.527 2009] [  302] shutdown complete
+[Tue Aug 11 09:38:14.603 2009] [  496] accepting connections
+[Fri Aug 14 11:26:57.198 2009] [  496] caught SIGTERM, shutting down
+[Fri Aug 14 11:26:57.503 2009] [  496] shutdown complete
+[Mon Aug 17 13:51:21.996 2009] [ 2374] accepting connections
+[Mon Aug 17 13:51:57.804 2009] [ 2374] rotating indices (seamless=1)
+[Mon Aug 17 13:51:57.847 2009] [ 2374] rotating index 'computer_delta': success
+[Mon Aug 17 13:51:57.847 2009] [ 2374] rotating finished
+[Thu Aug 20 08:46:55.572 2009] [ 4223] accepting connections
+[Thu Aug 20 11:09:46.898 2009] [ 4223] rotating indices (seamless=1)
+[Thu Aug 20 11:09:47.177 2009] [ 4223] rotating index 'computer_delta': success
+[Thu Aug 20 11:09:47.177 2009] [ 4223] rotating finished
+[Thu Aug 20 11:10:14.195 2009] [ 4223] rotating indices (seamless=1)
+[Thu Aug 20 11:10:14.201 2009] [ 4223] rotating index 'computer_delta': success
+[Thu Aug 20 11:10:14.201 2009] [ 4223] rotating finished
+[Mon Aug 24 08:46:10.132 2009] [ 4223] caught SIGTERM, shutting down
+[Mon Aug 24 08:46:11.247 2009] [ 4223] shutdown complete
+[Mon Aug 24 22:56:43.731 2009] [ 2612] accepting connections
+[Wed Aug 26 09:38:38.698 2009] [ 1292] accepting connections
+[Wed Aug 26 09:38:49.080 2009] [ 1292] rotating indices (seamless=1)
+[Wed Aug 26 09:38:49.166 2009] [ 1292] rotating index 'peripheral_delta': success
+[Wed Aug 26 09:38:49.170 2009] [ 1292] rotating index 'peripheral_core': success
+[Wed Aug 26 09:38:49.174 2009] [ 1292] rotating index 'package_core': success
+[Wed Aug 26 09:38:49.179 2009] [ 1292] rotating index 'computer_delta': success
+[Wed Aug 26 09:38:49.184 2009] [ 1292] rotating index 'computer_core': success
+[Wed Aug 26 09:38:49.190 2009] [ 1292] rotating index 'bundle_core': success
+[Wed Aug 26 09:38:49.190 2009] [ 1292] rotating finished

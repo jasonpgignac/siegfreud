@@ -2,11 +2,15 @@ class PackagesController < ApplicationController
   # GET /packages
   # GET /packages.xml
   def index
-    @packages = Package.all
-
+    if(params.key?(:query))
+      @packages = Package.search(params[:query], :match_mode => :any)
+    else
+      @packages = Package.all
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @packages }
+      format.json { render :json => @packages }
     end
   end
 
@@ -18,6 +22,7 @@ class PackagesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @package }
+      format.json { render :json => @package }
     end
   end
 
@@ -82,4 +87,5 @@ class PackagesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
 end

@@ -181,4 +181,9 @@ class Computer < ActiveRecord::Base
       remove_peripheral(periph)
     end
   end
+
+  # Other
+  def to_json
+    
+  end
 end

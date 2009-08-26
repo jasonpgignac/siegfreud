@@ -50,9 +50,10 @@ table.found_items tr.even {
 
 div.contentwrapper{
 	float: left;
-	width: 570px;
+	width: 550px;
 	margin: 10px;
 	height: 410px;
+	background: #FF33AA;
 }
 div.no_open_tab {
 	background: #5FB04D;;
@@ -60,8 +61,10 @@ div.no_open_tab {
 	height: 410px;
 }
 div.current_tab {
-	height: 410px;
+	height: 379px;
 	background:#B6DCAD;
+	overflow: auto;
+	padding: 3px;
 }
 div.opentablist {
 	float:left;
@@ -106,6 +109,7 @@ table.associated_object_table {
 	border-color: #600;
 	border-width: 0 0 1px 1px;
 	border-style: solid;
+	width: 380px;
 }
 table.associated_object_table th {
 	border-color: #600;
@@ -135,14 +139,14 @@ div.databox {
 }
 div.list_box {
 	padding: 5px;
-	width: 558px;
-	height: 100px;	
-	float: left;
+	width: 400px;
+	height: 100px;
 }
-div.list_box div.table {
+div.list_box {
 	border: 1px solid #000000;
 	height: 80px;
 	overflow: auto;
+	background: #D6ECCD;
 }
 div.list_box div.table table td {
 	background: #FFFFFF;
@@ -152,9 +156,9 @@ div.list_box div.table table td.title {
 }
 div.info_box {
 	padding: 5px;
-	width: 273px;
-	height: 150px;
-	float: left;	
+	width: 260px;
+	height: 110px;
+	overflow: auto;	
 }
 
 table.itemlisting th{

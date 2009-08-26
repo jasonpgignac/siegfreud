@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   
   helper :all # include all helpers, all the time
   # before_filter :authenticate
-  
+  before_filter :services
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery #:secret => '052cb93edcaaa126e814e2908a5faaed'
@@ -67,4 +67,45 @@ class ApplicationController < ActionController::Base
     return Net::LDAP.new( { :host => "ussatx-ad-001.peroot.com", :port => 389, :auth => {:method => :simple, :username => "peroot\\ugignja", :password => "Car0lineBlack" }}) 
   end
 
+  def services
+    require "mashup_services/mashup_service"
+    require "mashup_services/computer_information_service"
+    require "mashup_services/deployment_service"
+    require "mashup_services/package_information_service"
+    require "mashup_services/software_management_service"
+    require "mashup_services/user_information_service"
+ 
+    server_type_files = Dir["#{RAILS_ROOT}/config/mashups/server_types/*.yml"]
+    server_files = Dir["#{RAILS_ROOT}/config/mashups/servers/*.yml"]
+    
+    @server_types = Hash.new
+    server_type_files.each do |file|
+      server_type_hash = YAML.load_file(file)
+      @server_types[server_type_hash["title"]] = server_type_hash["services"]
+    end
+
+    @services = Hash.new
+    server_files.each do |file|
+      server_hash = YAML.load_file(file)
+      services = @server_types[server_hash["type"]]
+      address = server_hash["address"]
+      domains = server_hash["domains"]
+      name = server_hash["name"]
+      services.each do |service|
+        platform = service["platform"]
+        type = service["type"]
+        instantiated_service = eval(type + "Service").new
+        instantiated_service.address = address
+        instantiated_service.domains = domains
+        instantiated_service.platform = platform
+        instantiated_service.server_name = name
+        domains.each do |domain|
+          @services[platform] ||= Hash.new
+          @services[platform][domain] ||= Hash.new
+          @services[platform][domain][type] ||= Array.new()
+          @services[platform][domain][type] << instantiated_service
+        end
+      end
+    end
+  end
 end
