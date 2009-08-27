@@ -34071,3 +34071,165 @@ ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search in
   [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
   [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PackagesController#index to html (for ::1 at 2009-08-26 16:06:37) [GET]
+  Parameters: {"query"=>"adobe"}
+Rendering template within layouts/packages
+Rendering packages/index
+Querying Sphinx: adobe
+  [4;36;1mPackage Load (2.8ms)[0m   [0;1mSELECT * FROM "packages" WHERE ("packages"."id" IN (1)) [0m
+Completed in 132ms (View: 107, DB: 3) | 200 OK [http://localhost/packages.html?query=adobe]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MainController#index (for ::1 at 2009-08-26 16:06:48) [GET]
+  [4;36;1mTabset Load (0.8ms)[0m   [0;1mSELECT * FROM "tabsets" WHERE ("tabsets"."id" = 23) [0m
+Rendering template within layouts/main
+Rendering main/index
+Rendered main/_sidebar (1.7ms)
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+Rendered main/_open_item_tabs (5.4ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+Rendered main/_empty_tab (0.6ms)
+Rendered main/_current_tab (8.3ms)
+Rendered main/_content_pane (25.6ms)
+Completed in 117ms (View: 57, DB: 2) | 200 OK [http://localhost/main/]
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MainController#index (for ::1 at 2009-08-26 19:21:10) [GET]
+  [4;36;1mTabset Load (1.3ms)[0m   [0;1mSELECT * FROM "tabsets" WHERE ("tabsets"."id" = 23) [0m
+Rendering template within layouts/main
+Rendering main/index
+Rendered main/_sidebar (17.3ms)
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+Rendered main/_open_item_tabs (17.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+Rendered main/_empty_tab (25.9ms)
+Rendered main/_current_tab (41.5ms)
+Rendered main/_content_pane (75.0ms)
+Completed in 400ms (View: 163, DB: 3) | 200 OK [http://localhost/main/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MainController#search (for ::1 at 2009-08-26 19:21:17) [POST]
+  Parameters: {"authenticity_token"=>"4YiS5xY8zdZC1FSZQBMXF14vsXCf+Ltsh3j2vuO60Uw=", "query"=>"adobe", "commit"=>"->"}
+  [4;36;1mTabset Load (0.8ms)[0m   [0;1mSELECT * FROM "tabsets" WHERE ("tabsets"."id" = 23) [0m
+Querying Sphinx: adobe
+Querying Sphinx: adobe
+  [4;35;1mPackage Load (0.9ms)[0m   [0mSELECT * FROM "packages" WHERE ("packages"."id" IN (1)) [0m
+Querying Sphinx: adobe
+Querying Sphinx: adobe
+Rendered main/_item_list (2.1ms)
+Completed in 120ms (View: 10, DB: 2) | 200 OK [http://localhost/main/search]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MainController#open_content (for ::1 at 2009-08-26 19:21:20) [POST]
+  Parameters: {"authenticity_token"=>"4YiS5xY8zdZC1FSZQBMXF14vsXCf+Ltsh3j2vuO60Uw=", "type"=>"Package", "id"=>"1"}
+  [4;35;1mPackage Load (1.1ms)[0m   [0mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+  [4;36;1mTabset Load (0.6ms)[0m   [0;1mSELECT * FROM "tabsets" WHERE ("tabsets"."id" = 23) [0m
+  [4;35;1mTab Load (91.2ms)[0m   [0mSELECT * FROM "tabs" WHERE (tabs.content_id = 1) AND (("tabs".tabset_id = 23) AND ("tabs"."content_type" = E'Package')) ORDER BY position LIMIT 1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTab Load (0.7ms)[0m   [0mSELECT * FROM "tabs" WHERE (tabset_id = 23) ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mSQL (64.7ms)[0m   [0;1mINSERT INTO "tabs" ("content_type", "tabset_id", "position", "is_active", "created_at", "updated_at", "content_server_id", "content_id") VALUES(NULL, 23, 1, NULL, '2009-08-26 19:21:20.269053', '2009-08-26 19:21:20.269053', NULL, NULL) RETURNING "id"[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTab Update (25.6ms)[0m   [0mUPDATE "tabs" SET "content_id" = 1, "content_type" = E'Package', "updated_at" = '2009-08-26 19:21:20.348541' WHERE "id" = 130[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+Tab id : 130
+  [4;35;1mTab Load (1.8ms)[0m   [0mSELECT * FROM "tabs" WHERE (tabs.content_id = 1) AND (("tabs".tabset_id = 23) AND ("tabs"."content_type" = E'Package')) ORDER BY position LIMIT 1[0m
+Tab id : 130
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mTabset Update (19.5ms)[0m   [0mUPDATE "tabsets" SET "active_tab_id" = 130, "updated_at" = '2009-08-26 19:21:20.404360' WHERE "id" = 23[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPackage Load (0.6ms)[0m   [0mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+  [4;36;1mTab Load (0.6ms)[0m   [0;1mSELECT * FROM "tabs" WHERE ("tabs".tabset_id = 23) ORDER BY position[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+Rendered main/_open_item_tabs (6.3ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+  [4;36;1mSQL (43.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "licenses" WHERE ("licenses".package_id = 1) [0m
+  [4;35;1mLicense Load (43.7ms)[0m   [0mSELECT * FROM "licenses" WHERE ("licenses".package_id = 1) [0m
+Rendered packages/_edit_form (137.7ms)
+Rendered main/_current_tab (147.7ms)
+Rendered main/_content_pane (154.5ms)
+Completed in 503ms (View: 69, DB: 300) | 200 OK [http://localhost/main/open_content/1?type=Package]
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MainController#index (for ::1 at 2009-08-26 21:06:11) [GET]
+  [4;36;1mTabset Load (1.3ms)[0m   [0;1mSELECT * FROM "tabsets" WHERE ("tabsets"."id" = 23) [0m
+  [4;35;1mTab Load (0.9ms)[0m   [0mSELECT * FROM "tabs" WHERE ("tabs"."id" = 130) [0m
+  [4;36;1mPackage Load (1.0ms)[0m   [0;1mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+Rendering template within layouts/main
+Rendering main/index
+Rendered main/_sidebar (2.2ms)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+  [4;35;1mTab Load (1.1ms)[0m   [0mSELECT * FROM "tabs" WHERE ("tabs".tabset_id = 23) ORDER BY position[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+Rendered main/_open_item_tabs (10.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "tabs" WHERE ("tabs".tabset_id = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "packages" WHERE ("packages"."id" = 1) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM "licenses" WHERE ("licenses".package_id = 1) [0m
+  [4;36;1mLicense Load (0.9ms)[0m   [0;1mSELECT * FROM "licenses" WHERE ("licenses".package_id = 1) [0m
+Rendered packages/_edit_form (12.5ms)
+Rendered main/_current_tab (24.5ms)
+Rendered main/_content_pane (51.7ms)
+Completed in 228ms (View: 91, DB: 8) | 200 OK [http://localhost/main/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#index (for ::1 at 2009-08-26 21:06:20) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: change_new_licenses_state, confirm_new_license, create, cs, cs_credentials, cs_reset, cs_set_credentials, delete_computer_from_po, delete_license_from_po, delete_peripheral_from_po, edit, edit_computer, edit_peripheral, make_new_bundle_in_po, make_new_computer_in_po, make_new_license_in_po, make_new_peripheral_in_po, new, refresh_po_instance, save_edited_computer, save_edited_peripheral, save_new_bundle, save_new_license, show, and update_page):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#new (for ::1 at 2009-08-26 21:06:27) [GET]
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/new
+Completed in 91ms (View: 66, DB: 1) | 200 OK [http://localhost/purchase_orders/new/]

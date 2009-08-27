@@ -1,5 +1,5 @@
 module PurchaseOrdersHelper
-  def division_option_list
+  def division_options
    "<option value='National and State Services'>Nat. & State Serv (360,420,425,426)</option>
 		<option value='ITRC'>ITRC</option>
 		<option value='Educational Assessment'>Educational Assessment (650)</option>

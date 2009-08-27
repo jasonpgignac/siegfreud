@@ -2,7 +2,7 @@
 <% form_for(@purchase_order) do |f| %>
 	<%= f.error_messages %>
 	PO: <%= f.text_field(:po_number) %><br />
-	Division: <%= f.text_field(:division) %>
+	Division: <%= f.select(:division, division_options) %>
   	<p>
     	<%= f.submit 'Create' %>
   	</p>
