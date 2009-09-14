@@ -1,0 +1,21 @@
+<h1>New package_map for package <%= @package.short_name %> </h1>
+
+<% form_tag package_maps_path(@package.id) do |f| %>
+
+  
+  <p>
+    Service Name: <%= select :package_map, :service_name, @service_list,
+				{:include_blank => false },
+				{:onchange => 
+				    remote_function(:url => {:action => "research_packages"},
+						    :with => "'service='+value+'&query='+$('query').value")}%>
+  </p>
+  <div id="remote_package_data">
+    <%= render :partial => 'remote_package_data' %>
+  </div>
+  <p>
+    <%= submit_tag 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', package_maps_path %>

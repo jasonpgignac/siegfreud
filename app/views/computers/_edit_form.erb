@@ -28,7 +28,17 @@
 				"ComputerInformation").each do |server| %>
 	<% @view = "/computers/edit_form_partials/remote_status" %>
 	<% @div = "remote_status__" + server.server_name.sub(" ","_")%>
-	<% @title = server.server_name %>
+	<% @title = "Computer Info (#{server.server_name})" %>
+	<div id=<%= "'#{@div}'" %>>
+		<%= render :partial => 'closed_disclosure' %>
+	</div>
+<% end %>
+<% service_list(@computer.system_class,
+				@computer.domain,
+				"SoftwareManagement").each do |server| %>
+	<% @view = "/computers/edit_form_partials/advertisements" %>
+	<% @div = "advertisements__" + server.server_name.sub(" ","_")%>
+	<% @title = "Advertisements (#{server.server_name})" %>
 	<div id=<%= "'#{@div}'" %>>
 		<%= render :partial => 'closed_disclosure' %>
 	</div>

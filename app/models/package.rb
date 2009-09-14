@@ -2,6 +2,7 @@ class Package < ActiveRecord::Base
     has_many :licenses
     has_many :bundle_members
     has_many :computers, :through => :licenses
+    has_many :package_maps
     
     define_index do
       indexes manufacturer

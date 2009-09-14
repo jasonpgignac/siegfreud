@@ -1,0 +1,32 @@
+<h1>Editing package_map</h1>
+
+<% form_for(@package_map) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :package_id %><br />
+    <%= f.text_field :package_id %>
+  </p>
+  <p>
+    <%= f.label :remote_package_id %><br />
+    <%= f.text_field :remote_package_id %>
+  </p>
+  <p>
+    <%= f.label :service_name %><br />
+    <%= f.text_field :service_name %>
+  </p>
+  <p>
+    <%= f.label :default_install_task %><br />
+    <%= f.text_field :default_install_task %>
+  </p>
+  <p>
+    <%= f.label :default_uninstall_task %><br />
+    <%= f.text_field :default_uninstall_task %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @package_map %> |
+<%= link_to 'Back', package_maps_path %>

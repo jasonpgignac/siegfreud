@@ -378,3 +378,213 @@
 [Wed Aug 26 19:21:17.563 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] adobe
 [Wed Aug 26 19:21:17.626 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
 [Wed Aug 26 19:21:17.629 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Wed Sep  9 13:01:07.154 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] stuffit
+[Wed Sep  9 13:11:14.164 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] 7c1m1g1
+[Wed Sep  9 13:11:14.177 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Wed Sep  9 13:11:14.180 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Wed Sep  9 13:11:14.183 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Wed Sep  9 13:12:40.931 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] 7c1m1g1
+[Wed Sep  9 13:12:40.944 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Wed Sep  9 13:12:40.947 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Wed Sep  9 13:12:40.950 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Wed Sep  9 13:58:42.503 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Wed Sep  9 13:58:42.508 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_delta] 
+[Wed Sep  9 13:58:42.620 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Wed Sep  9 15:03:43.377 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] stuffit
+[Wed Sep  9 15:03:43.381 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] stuffit
+[Wed Sep  9 15:03:43.728 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] stuffit
+[Wed Sep  9 15:03:43.731 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] stuffit
+[Fri Sep 11 14:26:56.723 2009] 0.041 sec [any/2/rel 1 (0,20)] [*] Stuffit
+[Fri Sep 11 14:30:51.017 2009] 0.000 sec [scan/2/rel 1 (0,20)] [package_core] 
+[Fri Sep 11 14:30:51.129 2009] 0.000 sec [scan/2/rel 0 (0,20)] [package_core] 
+[Fri Sep 11 14:31:05.244 2009] 0.000 sec [scan/2/rel 0 (0,20)] [package_core] 
+[Fri Sep 11 14:38:50.364 2009] 0.000 sec [scan/2/rel 0 (0,20)] [package_core] 
+[Fri Sep 11 14:38:50.480 2009] 0.000 sec [scan/2/rel 0 (0,20)] [package_core] 
+[Fri Sep 11 14:40:17.378 2009] 0.000 sec [scan/2/rel 0 (0,20)] [package_core] 
+[Fri Sep 11 14:48:54.679 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 745
+[Fri Sep 11 14:48:54.682 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 745
+[Fri Sep 11 14:48:54.684 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 745
+[Fri Sep 11 14:48:54.687 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 745
+[Fri Sep 11 14:48:56.680 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 745
+[Fri Sep 11 14:48:56.683 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 745
+[Fri Sep 11 14:48:56.686 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 745
+[Fri Sep 11 14:48:56.688 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 745
+[Fri Sep 11 14:49:16.846 2009] 0.014 sec [all/2/rel 1 (0,20)] [*] 7c1m1g1
+[Fri Sep 11 14:49:16.874 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Fri Sep 11 14:49:16.876 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Fri Sep 11 14:49:16.879 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7c1m1g1
+[Fri Sep 11 14:50:33.498 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 14:50:33.501 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 14:50:33.503 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 14:50:33.506 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 14:50:46.582 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7
+[Fri Sep 11 14:50:46.585 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7
+[Fri Sep 11 14:50:46.588 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7
+[Fri Sep 11 14:50:46.591 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] 7
+[Fri Sep 11 14:50:53.875 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Fri Sep 11 14:50:53.881 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Fri Sep 11 14:50:53.884 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Fri Sep 11 14:50:53.887 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Fri Sep 11 14:51:32.068 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Fri Sep 11 14:51:32.071 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] adobe
+[Fri Sep 11 14:51:32.373 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Fri Sep 11 14:51:32.375 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Fri Sep 11 16:28:29.678 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] Adobe
+[Fri Sep 11 16:28:44.156 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobt
+[Fri Sep 11 16:28:44.159 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobt
+[Fri Sep 11 16:28:44.162 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobt
+[Fri Sep 11 16:28:44.165 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobt
+[Fri Sep 11 16:28:45.936 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:28:45.939 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:28:45.947 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:28:45.950 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:28:49.038 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:29:57.530 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:32:06.791 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:33:19.453 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:33:46.084 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:35:34.549 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:36:37.304 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:36:37.309 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:36:37.320 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:36:37.323 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:36:55.894 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:37:35.823 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:37:35.826 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:37:35.834 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:37:35.838 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:37:39.271 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:38:41.545 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:38:41.549 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:38:41.557 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:38:41.560 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:38:42.454 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:38:42.457 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:38:42.467 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:38:42.470 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:38:44.281 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:40:08.159 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:41:57.554 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:41:57.557 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:41:57.567 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:41:57.571 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:42:00.220 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:46:10.326 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:46:54.634 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:46:54.637 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:46:54.645 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:46:54.648 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:46:57.763 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:47:43.989 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:47:43.994 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:47:44.017 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:47:44.023 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:47:46.592 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:47:53.024 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:49:13.471 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:49:13.477 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:49:13.485 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:49:13.487 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:49:15.998 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:53:20.018 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:53:20.021 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:53:20.396 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:53:20.399 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:53:23.939 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:54:27.090 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:55:29.946 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:56:58.070 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:57:20.052 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:59:13.736 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 16:59:44.556 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acro
+[Fri Sep 11 16:59:44.570 2009] 0.001 sec [all/2/rel 0 (0,20)] [*] acro
+[Fri Sep 11 16:59:44.586 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acro
+[Fri Sep 11 16:59:44.607 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acro
+[Fri Sep 11 16:59:48.455 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:59:48.458 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 16:59:48.879 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:59:48.885 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 16:59:51.834 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Fri Sep 11 17:01:14.827 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 17:01:14.834 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Fri Sep 11 17:01:14.842 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 17:01:14.846 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Fri Sep 11 17:01:31.023 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Sep 10 21:07:51.125 2009] 0.076 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:07:51.142 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] adobe
+[Thu Sep 10 21:07:51.476 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:07:51.478 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:07:52.391 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:07:52.394 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] adobe
+[Thu Sep 10 21:07:52.413 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:07:52.433 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:08:52.043 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:08:52.046 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] adobe
+[Thu Sep 10 21:08:52.056 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:08:52.059 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Thu Sep 10 21:08:55.084 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Sep 10 21:21:15.194 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Sep 10 21:22:28.735 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Sep 10 21:24:43.343 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Sep 10 21:29:07.358 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Thu Sep 10 21:32:10.067 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Sat Sep 12 09:31:22.755 2009] 0.082 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 09:31:22.781 2009] 0.003 sec [all/2/rel 1 (0,20)] [*] adobe
+[Sat Sep 12 09:31:23.328 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 09:31:23.347 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 11:32:05.468 2009] 0.075 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 11:32:05.481 2009] 0.001 sec [all/2/rel 1 (0,20)] [*] adobe
+[Sat Sep 12 11:32:05.800 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 11:32:05.803 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 11:33:02.770 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Sat Sep 12 11:38:00.615 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Sat Sep 12 11:45:36.279 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 11:45:36.283 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] adobe
+[Sat Sep 12 11:45:36.291 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 11:45:36.294 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] adobe
+[Sat Sep 12 11:45:39.742 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Sat Sep 12 11:47:18.394 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Sat Sep 12 11:48:58.389 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Sat Sep 12 11:53:50.688 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 09:02:22.440 2009] 0.008 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 09:02:22.443 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Mon Sep 14 09:02:22.930 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 09:02:22.938 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 09:02:28.194 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 09:08:14.616 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 10:53:45.148 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:53:45.153 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Mon Sep 14 10:53:45.658 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:53:45.661 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:53:50.003 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 10:54:56.441 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:54:56.445 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Mon Sep 14 10:54:56.482 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:54:56.491 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:55:26.950 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:55:26.959 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Mon Sep 14 10:55:26.968 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:55:26.970 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 10:55:30.004 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 10:56:05.518 2009] 0.000 sec [scan/2/rel 1 (0,20)] [*] 
+[Mon Sep 14 10:56:05.537 2009] 0.000 sec [scan/2/rel 1 (0,20)] [*] 
+[Mon Sep 14 10:56:05.550 2009] 0.000 sec [scan/2/rel 0 (0,20)] [*] 
+[Mon Sep 14 10:56:05.553 2009] 0.000 sec [scan/2/rel 0 (0,20)] [*] 
+[Mon Sep 14 10:56:11.603 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 10:57:15.729 2009] 0.000 sec [scan/2/rel 1 (0,20)] [*] 
+[Mon Sep 14 10:57:15.753 2009] 0.000 sec [scan/2/rel 1 (0,20)] [*] 
+[Mon Sep 14 10:57:15.764 2009] 0.000 sec [scan/2/rel 0 (0,20)] [*] 
+[Mon Sep 14 10:57:15.767 2009] 0.000 sec [scan/2/rel 0 (0,20)] [*] 
+[Mon Sep 14 10:57:34.574 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 12:56:41.937 2009] 0.021 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 12:56:41.958 2009] 0.000 sec [all/2/rel 1 (0,20)] [*] acrobat
+[Mon Sep 14 12:56:42.340 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 12:56:42.344 2009] 0.000 sec [all/2/rel 0 (0,20)] [*] acrobat
+[Mon Sep 14 12:56:47.390 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 14:21:57.803 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Mon Sep 14 14:21:57.810 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_delta] 
+[Mon Sep 14 14:21:57.826 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Mon Sep 14 14:23:34.664 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Mon Sep 14 14:23:34.667 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Mon Sep 14 14:31:50.104 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Mon Sep 14 14:31:50.107 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 

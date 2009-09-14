@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090803172325) do
+ActiveRecord::Schema.define(:version => 20090910140537) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -82,6 +82,16 @@ ActiveRecord::Schema.define(:version => 20090803172325) do
     t.datetime "updated_at"
     t.string   "license_key"
     t.boolean  "group_license"
+  end
+
+  create_table "package_maps", :force => true do |t|
+    t.string   "remote_package_id"
+    t.string   "service_name"
+    t.string   "default_install_task"
+    t.string   "default_uninstall_task"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "package_id"
   end
 
   create_table "packages", :force => true do |t|

@@ -3,7 +3,7 @@ class MainController < ApplicationController
   # Display response routines
   def index
     get_tabset;
-	  @sidebar_buttons = get_sidebar_buttons;
+    @sidebar_buttons = get_sidebar_buttons;
   end
   def search
     session[:search_string] = params[:query]
@@ -38,16 +38,6 @@ class MainController < ApplicationController
     get_tabset;
     update_page do |page|
       page.redraw_tabset
-    end
-  end
-  def add_inventory
-    puts "Division: " + params[:division].to_s
-    puts "PO: " + params[:po_number].to_s
-    if(params[:division].nil? || params[:po_number].nil?)
-      redirect_to :action => "start_new_po"
-    else
-      @division = params[:division]
-      @po_number = params[:po_number]
     end
   end
   
@@ -238,22 +228,29 @@ class MainController < ApplicationController
     begin
       pkg_or_bundle = params[:pkg_or_bundle].split('_').first
       id = params[:pkg_or_bundle].split('_').last
-      comp = Computer.find(params[:computer_id])
+      @computer = Computer.find(params[:computer_id])
       if pkg_or_bundle == "Package"
-        pkg = Package.find(id)
-        comp.add_package(pkg)
+        @package = Package.find(id)
+        @computer.add_package(@package)
       else
         bundle = Bundle.find(id)
-        comp.add_bundle(bundle)
+        @computer.add_bundle(bundle)
       end
+      @package_maps = PackageMap.find_all_by_package_id(@package.id)
+      @package_maps.delete_if do |map|
+	map.default_install_task.nil? || map.default_install_task.empty?
+      end
+      @task_type=:install
+    
       get_tabset
       update_page do |page|
-        page.redraw_active_tab
+        page.redraw_active_tab 
+	# page.set_redbox('push_license') if @package
       end
     rescue RuntimeError => error
       if error.message == "No Licenses Available" then
-        if pkg
-          @error_msg = "There are no licenses of #{pkg.short_name} available for this division."
+        if @package
+          @error_msg = "There are no licenses of #{@package.short_name} available for this division."
         else
           @error_msg = "There are no licenses of #{bundle.short_name} available for this division."
         end
@@ -274,6 +271,13 @@ class MainController < ApplicationController
       page.redraw_active_tab
     end
   end
+  def trigger_task
+    package_map = PackageMap.find(params[:package_map_id])
+    task_type = params[:task_type]
+    computer = Computer.find(params[:computer_id])
+    install_to_computer(computer, package_map)
+  end
+
   def add_installed_peripheral
     begin
       Computer.find(params[:computer_id]).add_peripheral(Peripheral.find(params[:peripheral_id]))
@@ -296,7 +300,8 @@ class MainController < ApplicationController
         page.set_redbox('error_alert')
       end
     end
-    
+    package_map = PackageMap.find(params[:package_map_id])
+    task_type = params[:task_type]
   end
   def remove_installed_peripheral
     Peripheral.find(params[:peripheral_id]).remove_from_computer
@@ -348,7 +353,7 @@ class MainController < ApplicationController
       service.server_name.sub(" ","_") != server_name
     end
     @service = services[0]
-    @title = @service.server_name
+    @title = "Computer Info: #{@service.server_name}"
     @div = "remote_status__" + @service.server_name.sub(" ","_")
     @remote_data_sets ||= Hash.new
     begin
@@ -368,10 +373,45 @@ class MainController < ApplicationController
       service.server_name.sub(" ","_") != server_name
     end
     @service = services[0]
-    @title = @service.server_name
+    @title = "Computer Info (#{@service.server_name})"
     @div = "remote_status__" + @service.server_name.sub(" ","_")
     render :partial => "closed_disclosure"
   end
+  def open_advertisements(server_name)
+    @computer = Computer.find(params[:id])
+    @view = params[:view]
+    services = service_list(@computer.system_class,
+			    @computer.domain,
+			    "SoftwareManagement")
+    services.delete_if do |service|
+      service.server_name.sub(" ","_") != server_name
+    end
+    @service = services[0]
+    @title = "Advertisements: #{@service.server_name}"
+    @div = "advertisements__" + @service.server_name.sub(" ","_")
+    @advertisements ||= Hash.new
+    begin
+      @advertisements[@service.server_name] = @service.get_advertisements_for_computer(@computer.serial_number)
+    rescue RemoteRecordNotFound
+      @view = "#{@view}_no_record"
+    end
+    render :partial => "open_disclosure"
+  end
+  def close_advertisements(server_name)
+    @computer = Computer.find(params[:id])
+    @view = params[:view].sub("_no_record", "")
+    services = service_list(@computer.system_class,
+    				                @computer.domain,
+    				                "ComputerInformation")
+    services.delete_if do |service|
+      service.server_name.sub(" ","_") != server_name
+    end
+    @service = services[0]
+    @title = "Advertisements (#{@service.server_name})"
+    @div = "advertisements__" + @service.server_name.sub(" ","_")
+    render :partial => "closed_disclosure"
+  end
+  
   
   def method_missing(symbol, *args)
     if symbol.to_s.include?("__")
@@ -382,8 +422,8 @@ class MainController < ApplicationController
     end
   end
   
-  private
-  
+private
+
   def service_list(platform, domain, service_type)
     return Array.new() unless @services.key?(platform)
     return Array.new() unless @services[platform].key?(domain)
@@ -470,7 +510,18 @@ class MainController < ApplicationController
   												                    "Departments"	=>	false];
   	end
   end
-  def hash_to_html_select_options
-    
+  def service(package_map)
+    this_service = nil
+    @services.each do |platform, domains|
+      domains.each do |domain, service_types|
+	service_types["SoftwareManagement"].each do |service|
+	  this_service = service if service.server_name == package_map.service_name
+	end
+      end
+    end
+    return this_service
   end
+  def install_to_computer(computer, package_map)
+    service(package_map).push_task_to_computer(package_map.remote_package_id, package_map.default_install_task, computer.serial_number)
   end
+end

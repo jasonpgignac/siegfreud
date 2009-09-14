@@ -1,5 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :packages
+
+  map.resources :packages do |r|
+    r.resources :maps, :controller => :package_maps
+  end
   map.resources :licenses, :has_many => :actions
   map.resources :peripherals, :has_many => :actions
   map.resources :computers, :has_many => :actions

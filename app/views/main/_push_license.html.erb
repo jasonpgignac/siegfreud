@@ -1,0 +1,12 @@
+<div style="padding: 5px; height: 200px; width: 300px; background: #FFF">
+  <p style="align: right">
+    <%= link_to_close_redbox("close") %>
+  </p>
+  <% form_remote_tag :url => {:action => 'trigger_task'} do %>   
+    How should we deploy <%= @package.short_name %>?<br />
+    <%= select_tag(:package_map_id, options_from_collection_for_select(@package_maps, :id, :service_name)) %> 
+    <%= hidden_field_tag(:task_type, @task_type) %>
+    <%= hidden_field_tag(:computer_id, @computer.id) %>
+    <%= submit_tag %>
+  <% end %>
+</div>

@@ -110,7 +110,8 @@ class Computer < ActiveRecord::Base
     case [self.stage, new_stage]
     when  ["Storage", "Rollout"],
           ["Active", "Repair"],
-          ["Storage", "Active"]
+          ["Storage", "Active"],
+	  ["Rollout", "Active"]
       test_deployment_data(attributes)
     when  ["Rollout", "Storage"],
           ["Rollout", "Disposal"],
@@ -121,7 +122,8 @@ class Computer < ActiveRecord::Base
           ["Retrieval", "Disposal"],
           ["Active", "Retrieval"],
           ["Rollout", "Retrieval"],
-          ["Disposal", "Storage"]
+          ["Disposal", "Storage"],
+	  ["Storage", "Disposal"]
       test_location_data(attributes)
     when  ["Storage", "Retrieval"],
           ["Active", "Rollout"],

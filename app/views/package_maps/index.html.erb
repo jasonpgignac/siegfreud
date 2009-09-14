@@ -1,0 +1,28 @@
+<h1>Listing package_maps</h1>
+
+<table>
+  <tr>
+    <th>Package</th>
+    <th>Remote package</th>
+    <th>Service name</th>
+    <th>Default install task</th>
+    <th>Default uninstall task</th>
+  </tr>
+
+<% @package_maps.each do |package_map| %>
+  <tr>
+    <td><%=h package_map.package_id %></td>
+    <td><%=h package_map.remote_package_id %></td>
+    <td><%=h package_map.service_name %></td>
+    <td><%=h package_map.default_install_task %></td>
+    <td><%=h package_map.default_uninstall_task %></td>
+    <td><%= link_to 'Show', package_map_path(@package, package_map) %></td>
+    <td><%= link_to 'Edit', edit_package_map_path(@package, package_map) %></td>
+    <td><%= link_to 'Destroy', package_map_path(@package, package_map), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New package_map', new_package_map_path %>

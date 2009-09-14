@@ -187,3 +187,30 @@
 [Wed Aug 26 09:38:49.184 2009] [ 1292] rotating index 'computer_core': success
 [Wed Aug 26 09:38:49.190 2009] [ 1292] rotating index 'bundle_core': success
 [Wed Aug 26 09:38:49.190 2009] [ 1292] rotating finished
+[Wed Sep  9 13:00:40.115 2009] [20277] accepting connections
+[Wed Sep  9 13:58:42.396 2009] [20277] rotating indices (seamless=1)
+[Wed Sep  9 13:58:42.507 2009] [20277] rotating index 'computer_delta': success
+[Wed Sep  9 13:58:42.507 2009] [20277] rotating finished
+[Fri Sep 11 14:51:12.240 2009] [20277] rotating indices (seamless=1)
+[Fri Sep 11 14:51:13.298 2009] [20277] rotating index 'package_core': success
+[Fri Sep 11 14:51:13.302 2009] [20277] rotating index 'bundle_core': success
+[Fri Sep 11 14:51:13.306 2009] [20277] rotating index 'computer_delta': success
+[Fri Sep 11 14:51:13.309 2009] [20277] rotating index 'computer_core': success
+[Fri Sep 11 14:51:13.317 2009] [20277] rotating index 'peripheral_delta': success
+[Fri Sep 11 14:51:13.321 2009] [20277] rotating index 'peripheral_core': success
+[Fri Sep 11 14:51:13.321 2009] [20277] rotating finished
+[Thu Sep 10 21:06:30.648 2009] [ 4753] accepting connections
+[Sat Sep 12 09:31:05.348 2009] [ 4808] accepting connections
+[Mon Sep 14 08:57:10.582 2009] [15606] accepting connections
+[Mon Sep 14 11:42:36.884 2009] [15606] caught SIGTERM, shutting down
+[Mon Sep 14 11:42:36.885 2009] [15606] shutdown complete
+[Mon Sep 14 12:56:21.789 2009] [ 8803] accepting connections
+[Mon Sep 14 14:21:57.795 2009] [ 8803] rotating indices (seamless=1)
+[Mon Sep 14 14:21:57.808 2009] [ 8803] rotating index 'computer_delta': success
+[Mon Sep 14 14:21:57.808 2009] [ 8803] rotating finished
+[Mon Sep 14 14:23:34.658 2009] [ 8803] rotating indices (seamless=1)
+[Mon Sep 14 14:23:34.667 2009] [ 8803] rotating index 'computer_delta': success
+[Mon Sep 14 14:23:34.667 2009] [ 8803] rotating finished
+[Mon Sep 14 14:31:50.097 2009] [ 8803] rotating indices (seamless=1)
+[Mon Sep 14 14:31:50.107 2009] [ 8803] rotating index 'computer_delta': success
+[Mon Sep 14 14:31:50.107 2009] [ 8803] rotating finished
