@@ -3,11 +3,17 @@ class ComputersController < ApplicationController
   # GET /computers
   # GET /computers.xml
   def index
-    @computers = Computer.all
+    if(params[:division_id])
+      @division = Division.find(params[:division_id])
+      @computers = @division.computers
+    else
+      @computers = Computer.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @computers }
+      format.pdf
     end
   end
 

@@ -8,7 +8,7 @@ class License < ActiveRecord::Base
   def self.create_with_po(po, params)
     license = License.new
     license.po_number = po.po_number
-    license.division = po.division
+    license.division_id = po.division_id
     license.update_attributes(params)
     license.save
     

@@ -4,6 +4,7 @@ class Computer < ActiveRecord::Base
   has_many :packages, :through => :licenses
   has_many :action_inventory_objects, :as => :inventory_object
   has_many :actions, :through => :action_inventory_objects
+  belongs_to :division
   define_index do
     indexes :name
     indexes serial_number
@@ -31,14 +32,14 @@ class Computer < ActiveRecord::Base
     computer = Computer.new
     computer.last_stage_change = Date.today;
     computer.po_number = po.po_number
-    computer.division = po.division
+    computer.division_id = po.division_id
     computer.stage = "Storage"
     computer.update_attributes(params)
     computer.save
     
     Action.create_with_inventory_objects( "Create Record", 
                                           "PO\# #{computer.po_number}\n" +
-                                          "Division #{computer.division}\n" +
+                                          "Division #{computer.division_id}\n" +
                                           params.to_s, 
                                           [ computer ])
     return computer
@@ -58,7 +59,7 @@ class Computer < ActiveRecord::Base
     # Error Checking
     if(!(periph.computer_id.nil?))
       raise(RuntimeError,"PeripheralAlreadyAssigned",caller)
-    elsif(periph.division != self.division)
+    elsif(periph.division_id != self.division_d)
       raise(RuntimeError,"PeripheralComputerDivisionMismatch",caller)
     elsif(self.stage == "Storage" || self.stage == "Disposal")
       raise(RuntimeError,"IllegalStageForPeripheralAssignment",caller)

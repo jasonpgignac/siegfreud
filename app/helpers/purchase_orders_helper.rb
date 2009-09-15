@@ -8,6 +8,7 @@ module PurchaseOrdersHelper
 		<option value='Facilities'>Facilities (160)</option>
 		<option>Pearson Technology (150)</option>
 		<option value='Corp'>Corp (110)</option>
-		<option value='Clinical'>Clinical (410)</option>"
+		<option value='Clinical'>Clinical (410)</option>
+		<option value='Shared Operations'>Shared Operations (170)</option>"
   end
 end

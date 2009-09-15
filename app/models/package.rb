@@ -27,7 +27,7 @@ class Package < ActiveRecord::Base
       self.manufacturer.to_s + " " + self.name.to_s + " " + self.version.to_s
     end
     def get_open_license(division)
-      lic = License.find_by_package_id(self.id, :conditions => {:computer_id => nil, :division => division.to_s})
+      lic = License.find_by_package_id(self.id, :conditions => {:computer_id => nil, :division_id => division.id})
       raise(RuntimeError,"No Licenses Available",caller) if lic.nil?
       lic
     end

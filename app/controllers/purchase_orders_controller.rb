@@ -28,8 +28,8 @@ class PurchaseOrdersController < ApplicationController
     respond_to do |format|
       if @purchase_order.save
         flash[:notice] = 'Purchase Order was successfully created.'
-        @division = @purchase_order.division
-        format.html { redirect_to(edit_purchase_order_path(:id => @purchase_order.po_number, :division => @purchase_order.division)) }
+        @division = Division.find(@purchase_order.division_id)
+        format.html { redirect_to(edit_purchase_order_path(:id => @purchase_order.po_number, :division_id => @purchase_order.division_id)) }
         format.xml  { render :xml => @purchase_order, :status => :created, :location => @purchase_order }
       else
         format.html { render :action => "new" }
@@ -43,8 +43,8 @@ class PurchaseOrdersController < ApplicationController
   def show
     @purchase_order = PurchaseOrder.new()
     @purchase_order.po_number = params[:id]
-    @purchase_order.division = @division
-    @purchase_order.division ||= params[:division]
+    @purchase_order.division_id = @division
+    @purchase_order.division_id ||= params[:division_id]
     respond_to do |format|
       #format.html # show.html.erb
       #format.xml  { render :xml => @purchase_order }
@@ -56,21 +56,21 @@ class PurchaseOrdersController < ApplicationController
   def edit
     @purchase_order = PurchaseOrder.new()
     @purchase_order.po_number = params[:id]
-    @purchase_order.division ||= params[:division]
-    
+    @purchase_order.division_id ||= params[:division_id]
+    @division = Division.find(@purchase_order.division_id)
   end
   
   # Edit Actions (Associated objects)
   def make_new_computer_in_po
     @computer = Computer.new()
     
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     update_page do |page|
       page.set_redbox('edit_computer_form')
     end
   end
   def edit_computer
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     @computer = Computer.find(params[:id])
     row_id = "new_computer_" + @computer.id.to_s
     update_page do |page|
@@ -78,7 +78,7 @@ class PurchaseOrdersController < ApplicationController
     end
   end
   def save_edited_computer
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     if params.key?(:id)
       @computer = Computer.find(params[:id])
       @computer.edit_with_params(params[:computer])
@@ -93,7 +93,7 @@ class PurchaseOrdersController < ApplicationController
     end
   end
   def delete_computer_from_po
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     Computer.find(params[:id]).delete
     update_page do |page|
       page.redraw_new_computers
@@ -101,14 +101,14 @@ class PurchaseOrdersController < ApplicationController
   end
   
   def make_new_peripheral_in_po
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     @periph = Peripheral.new()
     update_page do |page|
       page.set_redbox('edit_peripheral_form')
     end
   end
   def edit_peripheral
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     @periph = Peripheral.find(params[:id])
     row_id = "new_periph_" + @periph.id.to_s
     update_page do |page|
@@ -116,7 +116,7 @@ class PurchaseOrdersController < ApplicationController
     end
   end
   def save_edited_peripheral
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     if params.key?(:id)    
       @periph = Peripheral.find(params[:id])
       @periph.edit_with_params(params[:peripheral])
@@ -131,7 +131,7 @@ class PurchaseOrdersController < ApplicationController
     end  
   end
   def delete_peripheral_from_po
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     Peripheral.find(params[:id]).delete
     update_page do |page|
       page.redraw_new_peripherals
@@ -139,13 +139,13 @@ class PurchaseOrdersController < ApplicationController
   end
   
   def make_new_license_in_po
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     update_page do |page|
       page.set_redbox('new_license_form')
     end
   end
   def confirm_new_license
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     @quantity = params[:quantity]
     packages = Package.search(params[:search_string])
     @select_options = ""
@@ -166,7 +166,7 @@ class PurchaseOrdersController < ApplicationController
     end
   end
   def save_new_license
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     pkg = Package.find(params[:package_id])
     quantity = params[:quantity]
     group_license = params[:group_license]
@@ -186,7 +186,7 @@ class PurchaseOrdersController < ApplicationController
     end
   end
   def delete_license_from_po
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     License.find_all_by_po_number(@purchase_order.po_number, :conditions => ["package_id = ?", params[:id]]).each do |lic|
       lic.delete
     end
@@ -196,7 +196,7 @@ class PurchaseOrdersController < ApplicationController
   end
   
   def make_new_bundle_in_po
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id])
     @bundles = Array.new()
     Bundle.find(:all).each do |bndl|
       @bundles << [bndl.name, bndl.id]
@@ -206,7 +206,7 @@ class PurchaseOrdersController < ApplicationController
     end
   end
   def save_new_bundle
-    refresh_po_instance(params[:po_number], params[:division])
+    refresh_po_instance(params[:po_number], params[:division_id ])
     bundle_to_add = Bundle.find(params[:id])
     quantity = params[:quantity]
     bundle_to_add.packages.each do |pkg|
@@ -256,10 +256,10 @@ class PurchaseOrdersController < ApplicationController
       yield(page)
     end
   end
-  def refresh_po_instance(po_number, division)
+  def refresh_po_instance(po_number, division_id)
     @purchase_order = PurchaseOrder.new
     @purchase_order.po_number = po_number
-    @purchase_order.division = division
+    @purchase_order.division_id = division_id
   end
     
 end

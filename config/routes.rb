@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.connect 'divisions/:division_id/computers.:format',
+	:controller => "computers",
+	:action => "index"
+  map.resources :divisions
 
   map.resources :packages do |r|
     r.resources :maps, :controller => :package_maps

@@ -7,13 +7,13 @@
 													:url => { 	:action => 'change_new_licenses_state',
 																:quantity => @quantity,
 																:po_number => @purchase_order.po_number,
-																:division => @purchase_order.division},
+																:division_id => @purchase_order.division_id},
 										 			:with => "Form.Element.serialize(this)"))%><br />
 	<div id='new_license_licensing'>
 		<%= render :partial => 'new_license_licensing'%>
 	</div>
 	<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
-	<%= hidden_field_tag('division', @purchase_order.division) %>
+	<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
 	<%= hidden_field_tag('quantity', @quantity) %>
 	<%= submit_tag("Go")%>
 <% end %>

@@ -1,5 +1,6 @@
 class Peripheral < ActiveRecord::Base
   belongs_to :computer
+  belongs_to :division
   has_many :action_inventory_objects, :as => :inventory_object
   has_many :actions, :through => :action_inventory_objects
   
@@ -13,13 +14,13 @@ class Peripheral < ActiveRecord::Base
   def self.create_with_po(po, params)
     periph = Peripheral.new
     periph.po_number = po.po_number
-    periph.division = po.division
+    periph.division_id = po.division_id
     periph.update_attributes(params)
     periph.save
     
     Action.create_with_inventory_objects( "Create Record", 
                                           "PO\# #{periph.po_number}\n" +
-                                          "Division #{periph.division}\n" +
+                                          "Division #{periph.division.display_name}\n" +
                                           params.to_s, 
                                           [ periph ])
     return periph

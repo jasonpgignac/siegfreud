@@ -4,7 +4,7 @@
 	System Class: <%= @computer.system_class %>
 	Mac Address: <%= @computer.mac_address %><br />
 	PO Number: <%= @computer.po_number %><br />
-	Division: <%= @computer.division %><br />
+	Division: <%= @computer.division.display_name %><br />
 	Last Audited: <%= @computer.last_audited.to_s %>
 </div>
 <div id="current_status_2" class="info_box">

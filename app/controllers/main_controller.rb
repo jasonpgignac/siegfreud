@@ -163,7 +163,7 @@ class MainController < ApplicationController
       c.model=row[2]
       c.system_class=row[3]
       c.po_number=row[4]
-      c.division=row[5]
+      c.division_id=row[5]
       c.stage=row[6]
       c.save
       flash.now[:message]="CSV Import Successful, new records added to data base"

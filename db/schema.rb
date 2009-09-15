@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090910140537) do
+ActiveRecord::Schema.define(:version => 20090914204145) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(:version => 20090910140537) do
     t.string   "location"
     t.string   "site"
     t.date     "last_stage_change"
+    t.integer  "division_id"
   end
 
   create_table "content_servers", :force => true do |t|
@@ -68,6 +69,13 @@ ActiveRecord::Schema.define(:version => 20090910140537) do
     t.string   "username"
     t.string   "password"
     t.string   "server_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "divisions", :force => true do |t|
+    t.string   "name"
+    t.string   "divisions"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -82,6 +90,7 @@ ActiveRecord::Schema.define(:version => 20090910140537) do
     t.datetime "updated_at"
     t.string   "license_key"
     t.boolean  "group_license"
+    t.integer  "division_id"
   end
 
   create_table "package_maps", :force => true do |t|
@@ -111,6 +120,7 @@ ActiveRecord::Schema.define(:version => 20090910140537) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "delta",         :default => true, :null => false
+    t.integer  "division_id"
   end
 
   create_table "sessions", :force => true do |t|

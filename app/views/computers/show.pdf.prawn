@@ -19,7 +19,7 @@ pdf.text "Model: #{@computer.model}", :size => 8
 pdf.text "System Class: #{@computer.system_class}", :size => 8 
 pdf.text "Mac Address: #{@computer.mac_address}", :size => 8
 pdf.text "PO Number: #{@computer.po_number}", :size => 8
-pdf.text "Division: #{@computer.division}", :size => 8
+pdf.text "Division: #{@computer.division.display_name}", :size => 8
 pdf.text "Last Audited: #{@computer.last_audited.to_s}", :size => 8	
 
 pdf.move_down 20

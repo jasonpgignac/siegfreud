@@ -8,7 +8,7 @@
 			Model: <%= f.text_field :model%><br />
 			System Class: <%= f.select(:system_class, %w{ Win32 Mac } )%><br />
 			<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
-			<%= hidden_field_tag('division', @purchase_order.division) %>
+			<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
 			<%= f.submit "Save"%>
 		<% end %>
 	</div>

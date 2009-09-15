@@ -2,7 +2,10 @@
 <% form_for(@purchase_order) do |f| %>
 	<%= f.error_messages %>
 	PO: <%= f.text_field(:po_number) %><br />
-	Division: <%= f.select(:division, division_options) %>
+	Division: <%= f.select(:division_id, 
+			  options_from_collection_for_select(Division.find(:all),
+			  "id",
+			  "display_name")) %>
   	<p>
     	<%= f.submit 'Create' %>
   	</p>

@@ -7,7 +7,7 @@
 			Bundle: <%= select_tag :id, options_for_select(@bundles)%><br />
 			Quantity: <%= text_field_tag :quantity%><br />
 			<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
-			<%= hidden_field_tag('division', @purchase_order.division) %>
+			<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
 			<%= submit_tag("Go")%>
 		<% end %>
 	</div>

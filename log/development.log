@@ -50599,3 +50599,1796 @@ Querying Sphinx:
   [4;36;1mSQL (4.6ms)[0m   [0;1mCOMMIT[0m
   [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (24.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTabsets (20090105163148)
+Migrating to CreateTabs (20090105163152)
+Migrating to CreateSessions (20090105163844)
+Migrating to CreateContentServers (20090120174832)
+Migrating to AddServerIdFieldToTabs (20090122134329)
+Migrating to ChangeContentIdFieldInTabToString (20090122144925)
+Migrating to CreateComputers (20090126220649)
+Migrating to CreateLicenses (20090519200103)
+Migrating to CreatePackages (20090519200323)
+Migrating to CreateBundles (20090609182927)
+Migrating to CreateBundleMembers (20090609183000)
+Migrating to CreatePeripherals (20090610211934)
+Migrating to AddDeltaIndexing (20090615193242)
+Migrating to AddLicenseKeyField (20090616134024)
+Migrating to AddLocationToComputer (20090623215358)
+Migrating to AddStageChangeDate (20090727143318)
+Migrating to CreateActions (20090803172317)
+Migrating to CreateActionInventoryObjects (20090803172325)
+Migrating to CreatePackageMaps (20090909202256)
+Migrating to AddPackageIdToPackageMaps (20090910140537)
+Migrating to CreateDivisions (20090914201339)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (473.0ms)[0m   [0mCREATE TABLE "divisions" ("id" serial primary key, "name" character varying(255), "divisions" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090914201339')[0m
+  [4;35;1mSQL (3.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTabsets (20090105163148)
+Migrating to CreateTabs (20090105163152)
+Migrating to CreateSessions (20090105163844)
+Migrating to CreateContentServers (20090120174832)
+Migrating to AddServerIdFieldToTabs (20090122134329)
+Migrating to ChangeContentIdFieldInTabToString (20090122144925)
+Migrating to CreateComputers (20090126220649)
+Migrating to CreateLicenses (20090519200103)
+Migrating to CreatePackages (20090519200323)
+Migrating to CreateBundles (20090609182927)
+Migrating to CreateBundleMembers (20090609183000)
+Migrating to CreatePeripherals (20090610211934)
+Migrating to AddDeltaIndexing (20090615193242)
+Migrating to AddLicenseKeyField (20090616134024)
+Migrating to AddLocationToComputer (20090623215358)
+Migrating to AddStageChangeDate (20090727143318)
+Migrating to CreateActions (20090803172317)
+Migrating to CreateActionInventoryObjects (20090803172325)
+Migrating to CreatePackageMaps (20090909202256)
+Migrating to AddPackageIdToPackageMaps (20090910140537)
+Migrating to CreateDivisions (20090914201339)
+Migrating to AddDivisionId (20090914204145)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090914204145')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:43:44) [GET]
+  [4;36;1mDivision Load (1.9ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 231ms (View: 100, DB: 3) | 200 OK [http://localhost/divisions/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:43:47) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 177ms (View: 134, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:43:48) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 144ms (View: 8, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:44:57) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"National and State Services", "divisions"=>"360,420,425,426"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'National and State Services', E'360,420,425,426', '2009-09-14 15:44:57.238739', '2009-09-14 15:44:57.238739') RETURNING "id"[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/1
+Completed in 63ms (DB: 4) | 302 Found [http://localhost/divisions]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:44:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDivision Load (2.3ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 70ms (View: 21, DB: 11) | 200 OK [http://localhost/divisions/1]
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTabsets (20090105163148)
+Migrating to CreateTabs (20090105163152)
+Migrating to CreateSessions (20090105163844)
+Migrating to CreateContentServers (20090120174832)
+Migrating to AddServerIdFieldToTabs (20090122134329)
+Migrating to ChangeContentIdFieldInTabToString (20090122144925)
+Migrating to CreateComputers (20090126220649)
+Migrating to CreateLicenses (20090519200103)
+Migrating to CreatePackages (20090519200323)
+Migrating to CreateBundles (20090609182927)
+Migrating to CreateBundleMembers (20090609183000)
+Migrating to CreatePeripherals (20090610211934)
+Migrating to AddDeltaIndexing (20090615193242)
+Migrating to AddLicenseKeyField (20090616134024)
+Migrating to AddLocationToComputer (20090623215358)
+Migrating to AddStageChangeDate (20090727143318)
+Migrating to CreateActions (20090803172317)
+Migrating to CreateActionInventoryObjects (20090803172325)
+Migrating to CreatePackageMaps (20090909202256)
+Migrating to AddPackageIdToPackageMaps (20090910140537)
+Migrating to CreateDivisions (20090914201339)
+Migrating to AddDivisionId (20090914204145)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTabsets (20090105163148)
+Migrating to CreateTabs (20090105163152)
+Migrating to CreateSessions (20090105163844)
+Migrating to CreateContentServers (20090120174832)
+Migrating to AddServerIdFieldToTabs (20090122134329)
+Migrating to ChangeContentIdFieldInTabToString (20090122144925)
+Migrating to CreateComputers (20090126220649)
+Migrating to CreateLicenses (20090519200103)
+Migrating to CreatePackages (20090519200323)
+Migrating to CreateBundles (20090609182927)
+Migrating to CreateBundleMembers (20090609183000)
+Migrating to CreatePeripherals (20090610211934)
+Migrating to AddDeltaIndexing (20090615193242)
+Migrating to AddLicenseKeyField (20090616134024)
+Migrating to AddLocationToComputer (20090623215358)
+Migrating to AddStageChangeDate (20090727143318)
+Migrating to CreateActions (20090803172317)
+Migrating to CreateActionInventoryObjects (20090803172325)
+Migrating to CreatePackageMaps (20090909202256)
+Migrating to AddPackageIdToPackageMaps (20090910140537)
+Migrating to CreateDivisions (20090914201339)
+Migrating to AddDivisionId (20090914204145)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (49.6ms)[0m   [0;1mSET search_path TO public[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mComputer Load (2.4ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+  [4;36;1mDivision Load (1.6ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+  [4;35;1mComputer Load (1.8ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+  [4;36;1mComputer Load (1.7ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+  [4;35;1mDivision Load (10.2ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+  [4;36;1mComputer Load (1.7ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+  [4;35;1mDivision Load (5.8ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTabsets (20090105163148)
+Migrating to CreateTabs (20090105163152)
+Migrating to CreateSessions (20090105163844)
+Migrating to CreateContentServers (20090120174832)
+Migrating to AddServerIdFieldToTabs (20090122134329)
+Migrating to ChangeContentIdFieldInTabToString (20090122144925)
+Migrating to CreateComputers (20090126220649)
+Migrating to CreateLicenses (20090519200103)
+Migrating to CreatePackages (20090519200323)
+Migrating to CreateBundles (20090609182927)
+Migrating to CreateBundleMembers (20090609183000)
+Migrating to CreatePeripherals (20090610211934)
+Migrating to AddDeltaIndexing (20090615193242)
+Migrating to AddLicenseKeyField (20090616134024)
+Migrating to AddLocationToComputer (20090623215358)
+Migrating to AddStageChangeDate (20090727143318)
+Migrating to CreateActions (20090803172317)
+Migrating to CreateActionInventoryObjects (20090803172325)
+Migrating to CreatePackageMaps (20090909202256)
+Migrating to AddPackageIdToPackageMaps (20090910140537)
+Migrating to CreateDivisions (20090914201339)
+Migrating to AddDivisionId (20090914204145)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddDivisionId (20090914204145)
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: column "division_id" of relation "computers" does not exist
+: ALTER TABLE "computers" DROP "division_id"[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddDivisionId (20090914204145)
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090914204145'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (10.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTabsets (20090105163148)
+Migrating to CreateTabs (20090105163152)
+Migrating to CreateSessions (20090105163844)
+Migrating to CreateContentServers (20090120174832)
+Migrating to AddServerIdFieldToTabs (20090122134329)
+Migrating to ChangeContentIdFieldInTabToString (20090122144925)
+Migrating to CreateComputers (20090126220649)
+Migrating to CreateLicenses (20090519200103)
+Migrating to CreatePackages (20090519200323)
+Migrating to CreateBundles (20090609182927)
+Migrating to CreateBundleMembers (20090609183000)
+Migrating to CreatePeripherals (20090610211934)
+Migrating to AddDeltaIndexing (20090615193242)
+Migrating to AddLicenseKeyField (20090616134024)
+Migrating to AddLocationToComputer (20090623215358)
+Migrating to AddStageChangeDate (20090727143318)
+Migrating to CreateActions (20090803172317)
+Migrating to CreateActionInventoryObjects (20090803172325)
+Migrating to CreatePackageMaps (20090909202256)
+Migrating to AddPackageIdToPackageMaps (20090910140537)
+Migrating to CreateDivisions (20090914201339)
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTabsets (20090105163148)
+Migrating to CreateTabs (20090105163152)
+Migrating to CreateSessions (20090105163844)
+Migrating to CreateContentServers (20090120174832)
+Migrating to AddServerIdFieldToTabs (20090122134329)
+Migrating to ChangeContentIdFieldInTabToString (20090122144925)
+Migrating to CreateComputers (20090126220649)
+Migrating to CreateLicenses (20090519200103)
+Migrating to CreatePackages (20090519200323)
+Migrating to CreateBundles (20090609182927)
+Migrating to CreateBundleMembers (20090609183000)
+Migrating to CreatePeripherals (20090610211934)
+Migrating to AddDeltaIndexing (20090615193242)
+Migrating to AddLicenseKeyField (20090616134024)
+Migrating to AddLocationToComputer (20090623215358)
+Migrating to AddStageChangeDate (20090727143318)
+Migrating to CreateActions (20090803172317)
+Migrating to CreateActionInventoryObjects (20090803172325)
+Migrating to CreatePackageMaps (20090909202256)
+Migrating to AddPackageIdToPackageMaps (20090910140537)
+Migrating to CreateDivisions (20090914201339)
+Migrating to AddDivisionId (20090914204145)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (17.8ms)[0m   [0mALTER TABLE "computers" ADD COLUMN "division_id" integer[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090914204145')[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mComputer Load (2.5ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+  [4;36;1mDivision Load (1.0ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+  [4;35;1mComputer Load (1.8ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+  [4;36;1mComputer Load (1.7ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mComputer Update (3.9ms)[0m   [0;1mUPDATE "computers" SET "division_id" = 1, "updated_at" = '2009-09-14 15:53:16.504286' WHERE "id" = 1[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCOMMIT[0m
+Querying Sphinx: 
+Querying Sphinx: 
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:53:40) [GET]
+  [4;36;1mDivision Load (21.0ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 637ms (View: 312, DB: 23) | 200 OK [http://localhost/divisions]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:53:41) [GET]
+  [4;36;1mDivision Load (1.7ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 151ms (View: 107, DB: 3) | 200 OK [http://localhost/divisions]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:53:44) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 158ms (View: 27, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:53:56) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"ITRC", "divisions"=>"NONE"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'ITRC', E'NONE', '2009-09-14 15:53:56.421556', '2009-09-14 15:53:56.421556') RETURNING "id"[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/2
+Completed in 58ms (DB: 4) | 302 Found [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:53:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mDivision Load (1.1ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 2) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 71ms (View: 25, DB: 2) | 200 OK [http://localhost/divisions/2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:54:00) [GET]
+  [4;35;1mDivision Load (1.3ms)[0m   [0mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 55ms (View: 15, DB: 2) | 200 OK [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:54:02) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 193ms (View: 7, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:54:15) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"Pearson Technology", "divisions"=>"365"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'Pearson Technology', E'365', '2009-09-14 15:54:15.255158', '2009-09-14 15:54:15.255158') RETURNING "id"[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/3
+Completed in 118ms (DB: 4) | 302 Found [http://localhost/divisions]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:54:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mDivision Load (1.2ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 3) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 54ms (View: 5, DB: 3) | 200 OK [http://localhost/divisions/3]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:54:19) [GET]
+  [4;36;1mDivision Load (1.4ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 56ms (View: 15, DB: 2) | 200 OK [http://localhost/divisions]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:54:21) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 156ms (View: 14, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:54:31) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"Educational Assessment", "divisions"=>"650"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'Educational Assessment', E'650', '2009-09-14 15:54:31.622882', '2009-09-14 15:54:31.622882') RETURNING "id"[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/4
+Completed in 63ms (DB: 6) | 302 Found [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:54:32) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mDivision Load (1.3ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 4) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 55ms (View: 5, DB: 2) | 200 OK [http://localhost/divisions/4]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:54:34) [GET]
+  [4;35;1mDivision Load (12.1ms)[0m   [0mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 103ms (View: 18, DB: 14) | 200 OK [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:54:37) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 146ms (View: 105, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:54:50) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"AI HQ", "divisions"=>"225"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'AI HQ', E'225', '2009-09-14 15:54:50.993033', '2009-09-14 15:54:50.993033') RETURNING "id"[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/5
+Completed in 158ms (DB: 6) | 302 Found [http://localhost/divisions]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:54:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mDivision Load (3.4ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 5) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 52ms (View: 5, DB: 4) | 200 OK [http://localhost/divisions/5]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:54:54) [GET]
+  [4;36;1mDivision Load (1.6ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 66ms (View: 24, DB: 4) | 200 OK [http://localhost/divisions]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:55:01) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 53ms (View: 11, DB: 2) | 200 OK [http://localhost/divisions/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:55:14) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"Facilities", "divisions"=>"160"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'Facilities', E'160', '2009-09-14 15:55:14.855891', '2009-09-14 15:55:14.855891') RETURNING "id"[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/6
+Completed in 157ms (DB: 4) | 302 Found [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:55:15) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mDivision Load (1.1ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 6) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 148ms (View: 5, DB: 2) | 200 OK [http://localhost/divisions/6]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:55:20) [GET]
+  [4;35;1mDivision Load (1.8ms)[0m   [0mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 65ms (View: 15, DB: 3) | 200 OK [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:55:22) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 50ms (View: 8, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:55:35) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"Pearson Technology", "divisions"=>"150"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'Pearson Technology', E'150', '2009-09-14 15:55:35.308869', '2009-09-14 15:55:35.308869') RETURNING "id"[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/7
+Completed in 62ms (DB: 7) | 302 Found [http://localhost/divisions]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:55:35) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mDivision Load (1.4ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 7) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 148ms (View: 5, DB: 2) | 200 OK [http://localhost/divisions/7]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:55:38) [GET]
+  [4;36;1mDivision Load (1.6ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 57ms (View: 15, DB: 2) | 200 OK [http://localhost/divisions]
+  [4;35;1mSQL (1.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:55:41) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 132ms (View: 7, DB: 3) | 200 OK [http://localhost/divisions/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:55:51) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"Corp", "divisions"=>"110"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'Corp', E'110', '2009-09-14 15:55:51.406593', '2009-09-14 15:55:51.406593') RETURNING "id"[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/8
+Completed in 65ms (DB: 4) | 302 Found [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:55:52) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mDivision Load (1.0ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 8) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 148ms (View: 6, DB: 2) | 200 OK [http://localhost/divisions/8]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:55:52) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"Corp", "divisions"=>"110"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'Corp', E'110', '2009-09-14 15:55:52.835949', '2009-09-14 15:55:52.835949') RETURNING "id"[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/9
+Completed in 172ms (DB: 4) | 302 Found [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:55:53) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mDivision Load (1.1ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 9) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 50ms (View: 5, DB: 2) | 200 OK [http://localhost/divisions/9]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:55:56) [GET]
+  [4;35;1mDivision Load (2.6ms)[0m   [0mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 65ms (View: 23, DB: 4) | 200 OK [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:55:59) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 70ms (View: 8, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:56:10) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"Clinical", "divisions"=>"410"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'Clinical', E'410', '2009-09-14 15:56:10.458492', '2009-09-14 15:56:10.458492') RETURNING "id"[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/10
+Completed in 158ms (DB: 4) | 302 Found [http://localhost/divisions]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:56:11) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mDivision Load (1.1ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 10) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 50ms (View: 5, DB: 2) | 200 OK [http://localhost/divisions/10]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:56:13) [GET]
+  [4;36;1mDivision Load (4.6ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 65ms (View: 19, DB: 6) | 200 OK [http://localhost/divisions]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#new (for 127.0.0.1 at 2009-09-14 15:56:18) [GET]
+Rendering template within layouts/divisions
+Rendering divisions/new
+Completed in 51ms (View: 7, DB: 1) | 200 OK [http://localhost/divisions/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#create (for 127.0.0.1 at 2009-09-14 15:56:29) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "division"=>{"name"=>"Shared Operations", "divisions"=>"170"}, "commit"=>"Create"}
+  [4;35;1mSQL (1.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mINSERT INTO "divisions" ("name", "divisions", "created_at", "updated_at") VALUES(E'Shared Operations', E'170', '2009-09-14 15:56:30.050383', '2009-09-14 15:56:30.050383') RETURNING "id"[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/divisions/11
+Completed in 167ms (DB: 8) | 302 Found [http://localhost/divisions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:56:30) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mDivision Load (1.1ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 11) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 151ms (View: 5, DB: 2) | 200 OK [http://localhost/divisions/11]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 15:56:32) [GET]
+  [4;35;1mDivision Load (1.8ms)[0m   [0mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 72ms (View: 20, DB: 3) | 200 OK [http://localhost/divisions]
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-14 15:56:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDivision Load (1.0ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 58ms (View: 5, DB: 4) | 200 OK [http://localhost/divisions/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing ComputersController#show (for 127.0.0.1 at 2009-09-14 16:00:40) [GET]
+  Parameters: {"division_id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Computer without an ID):
+  app/controllers/computers_controller.rb:22:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (99.5ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (not_found)
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing ComputersController#index (for 127.0.0.1 at 2009-09-14 16:02:00) [GET]
+  Parameters: {"division_id"=>"1"}
+  [4;36;1mDivision Load (1.1ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/computers
+Rendering computers/index
+  [4;35;1mComputer Load (2.1ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers".division_id = 1) [0m
+Completed in 252ms (View: 52, DB: 4) | 200 OK [http://localhost/divisions/1/computers]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing ComputersController#show (for 127.0.0.1 at 2009-09-14 16:02:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mComputer Load (2.9ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers"."id" = 1) [0m
+Rendering template within layouts/computers
+Rendering computers/show
+  [4;36;1mDivision Load (1.0ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Completed in 180ms (View: 131, DB: 5) | 200 OK [http://localhost/computers/1]
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#1 to pdf (for 127.0.0.1 at 2009-09-14 16:08:48) [GET]
+  Parameters: {"id"=>"computers"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, cs, cs_credentials, cs_reset, cs_set_credentials, destroy, edit, index, new, show, and update):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing ComputersController#index to pdf (for 127.0.0.1 at 2009-09-14 16:10:06) [GET]
+  Parameters: {"division_id"=>"1"}
+  [4;36;1mDivision Load (1.6ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering computers/index
+
+ActionView::TemplateError (can't convert Division into String) on line #1 of app/views/computers/index.pdf.prawn:
+1: title = "Computers" + @division ? ": #{@division.name}" : ""
+2: pdf.text title, :size => 18, :style => :bold
+3: computers = @computers.map do |computer|
+4:   [
+
+    app/views/computers/index.pdf.prawn:1:in `+'
+    app/views/computers/index.pdf.prawn:1:in `_run_prawn_app47views47computers47index46pdf46prawn'
+    app/controllers/computers_controller.rb:13:in `index'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (131.0ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing ComputersController#index to pdf (for 127.0.0.1 at 2009-09-14 16:13:02) [GET]
+  Parameters: {"division_id"=>"1"}
+  [4;36;1mDivision Load (1.5ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering computers/index
+  [4;35;1mComputer Load (3.4ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers".division_id = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Completed in 697ms (View: 650, DB: 6) | 200 OK [http://localhost/divisions/1/computers.pdf]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#index (for 127.0.0.1 at 2009-09-14 16:21:50) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: change_new_licenses_state, confirm_new_license, create, cs, cs_credentials, cs_reset, cs_set_credentials, delete_computer_from_po, delete_license_from_po, delete_peripheral_from_po, edit, edit_computer, edit_peripheral, make_new_bundle_in_po, make_new_computer_in_po, make_new_license_in_po, make_new_peripheral_in_po, new, refresh_po_instance, save_edited_computer, save_edited_peripheral, save_new_bundle, save_new_license, show, and update_page):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#new (for 127.0.0.1 at 2009-09-14 16:21:55) [GET]
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/new
+Completed in 84ms (View: 45, DB: 1) | 200 OK [http://localhost/purchase_orders/new]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-14 16:24:40) [GET]
+  [4;36;1mDivision Load (1.9ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 199ms (View: 156, DB: 4) | 200 OK [http://localhost/divisions/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#new (for 127.0.0.1 at 2009-09-14 16:25:30) [GET]
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.find) on line #6 of app/views/purchase_orders/new.html.erb:
+3: 	<%= f.error_messages %>
+4: 	PO: <%= f.text_field(:po_number) %><br />
+5: 	Division: <%= f.select(:division_id, 
+6: 			  options_from_collection_for_select(@division.find(:all),
+7: 			  "id",
+8: 			  "display_name")) %>
+9:   	<p>
+
+    app/views/purchase_orders/new.html.erb:6:in `block in _run_erb_app47views47purchase_orders47new46html46erb'
+    app/views/purchase_orders/new.html.erb:2
+    app/controllers/purchase_orders_controller.rb:17:in `new'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (148.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#new (for 127.0.0.1 at 2009-09-14 16:25:56) [GET]
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/new
+  [4;35;1mDivision Load (2.0ms)[0m   [0mSELECT * FROM "divisions" [0m
+
+ActionView::TemplateError (undefined method `division_id' for #<PurchaseOrder po_number: nil, division: nil>) on line #5 of app/views/purchase_orders/new.html.erb:
+2: <% form_for(@purchase_order) do |f| %>
+3: 	<%= f.error_messages %>
+4: 	PO: <%= f.text_field(:po_number) %><br />
+5: 	Division: <%= f.select(:division_id, 
+6: 			  options_from_collection_for_select(Division.find(:all),
+7: 			  "id",
+8: 			  "display_name")) %>
+
+    app/views/purchase_orders/new.html.erb:5:in `block in _run_erb_app47views47purchase_orders47new46html46erb'
+    app/views/purchase_orders/new.html.erb:2
+    app/controllers/purchase_orders_controller.rb:17:in `new'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (158.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#new (for 127.0.0.1 at 2009-09-14 16:26:26) [GET]
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/new
+  [4;35;1mDivision Load (3.9ms)[0m   [0mSELECT * FROM "divisions" [0m
+Completed in 185ms (View: 139, DB: 5) | 200 OK [http://localhost/purchase_orders/new]
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddDivisionId (20090914204145)
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mALTER TABLE "computers" DROP "division_id"[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090914204145'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTabsets (20090105163148)
+Migrating to CreateTabs (20090105163152)
+Migrating to CreateSessions (20090105163844)
+Migrating to CreateContentServers (20090120174832)
+Migrating to AddServerIdFieldToTabs (20090122134329)
+Migrating to ChangeContentIdFieldInTabToString (20090122144925)
+Migrating to CreateComputers (20090126220649)
+Migrating to CreateLicenses (20090519200103)
+Migrating to CreatePackages (20090519200323)
+Migrating to CreateBundles (20090609182927)
+Migrating to CreateBundleMembers (20090609183000)
+Migrating to CreatePeripherals (20090610211934)
+Migrating to AddDeltaIndexing (20090615193242)
+Migrating to AddLicenseKeyField (20090616134024)
+Migrating to AddLocationToComputer (20090623215358)
+Migrating to AddStageChangeDate (20090727143318)
+Migrating to CreateActions (20090803172317)
+Migrating to CreateActionInventoryObjects (20090803172325)
+Migrating to CreatePackageMaps (20090909202256)
+Migrating to AddPackageIdToPackageMaps (20090910140537)
+Migrating to CreateDivisions (20090914201339)
+Migrating to AddDivisionId (20090914204145)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mALTER TABLE "computers" ADD COLUMN "division_id" integer[0m
+  [4;36;1mSQL (29.9ms)[0m   [0;1mALTER TABLE "peripherals" ADD COLUMN "division_id" integer[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mALTER TABLE "licenses" ADD COLUMN "division_id" integer[0m
+  [4;36;1mSQL (23.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090914204145')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#new (for 127.0.0.1 at 2009-09-14 16:45:07) [GET]
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/new
+  [4;36;1mDivision Load (2.7ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+
+ActionView::TemplateError (undefined method `division_id' for #<PurchaseOrder po_number: nil, division: nil>) on line #5 of app/views/purchase_orders/new.html.erb:
+2: <% form_for(@purchase_order) do |f| %>
+3: 	<%= f.error_messages %>
+4: 	PO: <%= f.text_field(:po_number) %><br />
+5: 	Division: <%= f.select(:division_id, 
+6: 			  options_from_collection_for_select(Division.find(:all),
+7: 			  "id",
+8: 			  "display_name")) %>
+
+    app/views/purchase_orders/new.html.erb:5:in `block in _run_erb_app47views47purchase_orders47new46html46erb'
+    app/views/purchase_orders/new.html.erb:2
+    app/controllers/purchase_orders_controller.rb:17:in `new'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (220.0ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#new (for 127.0.0.1 at 2009-09-14 16:45:55) [GET]
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/new
+  [4;36;1mDivision Load (1.6ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Completed in 59ms (View: 17, DB: 7) | 200 OK [http://localhost/purchase_orders/new]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:46:01) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+
+NoMethodError (undefined method `division' for #<PurchaseOrder po_number: "SamplyPamply", division_id: "1">):
+  app/controllers/purchase_orders_controller.rb:31:in `block in create'
+  app/controllers/purchase_orders_controller.rb:28:in `create'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (101.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:48:10) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mSQL (2.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDivision Load (1.2ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/SamplyPamply/edit?division=1
+Completed in 160ms (DB: 6) | 302 Found [http://localhost/purchase_orders]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-14 16:48:10) [GET]
+  Parameters: {"division"=>"1", "id"=>"SamplyPamply"}
+
+NoMethodError (undefined method `division' for #<PurchaseOrder po_number: "SamplyPamply", division_id: nil>):
+  app/controllers/purchase_orders_controller.rb:59:in `edit'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (97.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:48:45) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mDivision Load (1.5ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/SamplyPamply/edit?division_id=1
+Completed in 55ms (DB: 5) | 302 Found [http://localhost/purchase_orders]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-14 16:48:45) [GET]
+  Parameters: {"division_id"=>"1", "id"=>"SamplyPamply"}
+
+NoMethodError (undefined method `division' for #<PurchaseOrder po_number: "SamplyPamply", division_id: nil>):
+  app/controllers/purchase_orders_controller.rb:59:in `edit'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (191.8ms)
+Rendered rescues/_request_and_response (5.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:50:22) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDivision Load (1.1ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/SamplyPamply/edit?division_id=1
+Completed in 91ms (DB: 3) | 302 Found [http://localhost/purchase_orders]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-14 16:50:22) [GET]
+  Parameters: {"division_id"=>"1", "id"=>"SamplyPamply"}
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/edit
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.display_name) on line #19 of app/views/purchase_orders/edit.html.erb:
+16: 				Division
+17: 			</td>
+18: 			<td>
+19: 				<%= @division.display_name %>
+20: 			</td>
+21: 		</tr>
+22: 	</table>
+
+    app/views/purchase_orders/edit.html.erb:19
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (354.0ms)
+Rendered rescues/_request_and_response (4.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:52:11) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mDivision Load (1.5ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/SamplyPamply/edit?division_id=1
+Completed in 49ms (DB: 4) | 302 Found [http://localhost/purchase_orders]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-14 16:52:11) [GET]
+  Parameters: {"division_id"=>"1", "id"=>"SamplyPamply"}
+  [4;36;1mDivision Load (1.1ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/edit
+  [4;35;1mComputer Load (3.5ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'SamplyPamply') [0m
+
+ActionView::TemplateError (undefined method `division' for #<PurchaseOrder po_number: "SamplyPamply", division_id: "1">) on line #35 of app/views/purchase_orders/_computers_in_po.rhtml:
+32: 		<td>
+33: 			<% form_remote_tag :url => { :action => :make_new_computer_in_po } do %>
+34: 				<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+35: 				<%= hidden_field_tag('division', @purchase_order.division) %>
+36: 				<%= submit_tag("New Computer")%>
+37: 			<% end %>
+38: 		</td>
+
+    app/views/purchase_orders/_computers_in_po.rhtml:35:in `block in _run_rhtml_app47views47purchase_orders47_computers_in_po46rhtml_locals_computers_in_po_object'
+    app/views/purchase_orders/_computers_in_po.rhtml:33:in `_run_rhtml_app47views47purchase_orders47_computers_in_po46rhtml_locals_computers_in_po_object'
+    app/views/purchase_orders/edit.html.erb:26
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (301.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:53:53) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDivision Load (1.2ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/SamplyPamply/edit?division_id=1
+Completed in 59ms (DB: 3) | 302 Found [http://localhost/purchase_orders]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-14 16:53:54) [GET]
+  Parameters: {"division_id"=>"1", "id"=>"SamplyPamply"}
+  [4;35;1mDivision Load (2.3ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/edit
+  [4;36;1mComputer Load (2.7ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'SamplyPamply') [0m
+Rendered purchase_orders/_computers_in_po (24.3ms)
+  [4;35;1mPeripheral Load (1.4ms)[0m   [0mSELECT * FROM "peripherals" WHERE ("peripherals"."po_number" = E'SamplyPamply') [0m
+
+ActionView::TemplateError (undefined method `division' for #<PurchaseOrder po_number: "SamplyPamply", division_id: "1">) on line #33 of app/views/purchase_orders/_peripherals_in_po.rhtml:
+30: 		<td>
+31: 			<% form_remote_tag :url => { :action => :make_new_peripheral_in_po } do %>
+32: 				<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+33: 				<%= hidden_field_tag('division', @purchase_order.division) %>
+34: 				<%= submit_tag("New Peripheral")%>
+35: 			<% end %>
+36: 		</td>
+
+    app/views/purchase_orders/_peripherals_in_po.rhtml:33:in `block in _run_rhtml_app47views47purchase_orders47_peripherals_in_po46rhtml_locals_object_peripherals_in_po'
+    app/views/purchase_orders/_peripherals_in_po.rhtml:31:in `_run_rhtml_app47views47purchase_orders47_peripherals_in_po46rhtml_locals_object_peripherals_in_po'
+    app/views/purchase_orders/edit.html.erb:30
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (196.2ms)
+Rendered rescues/_request_and_response (4.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:55:05) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDivision Load (1.1ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/SamplyPamply/edit?division_id=1
+Completed in 47ms (DB: 3) | 302 Found [http://localhost/purchase_orders]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-14 16:55:06) [GET]
+  Parameters: {"division_id"=>"1", "id"=>"SamplyPamply"}
+  [4;35;1mDivision Load (1.0ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/edit
+  [4;36;1mComputer Load (2.3ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'SamplyPamply') [0m
+Rendered purchase_orders/_computers_in_po (178.5ms)
+  [4;35;1mPeripheral Load (1.9ms)[0m   [0mSELECT * FROM "peripherals" WHERE ("peripherals"."po_number" = E'SamplyPamply') [0m
+Rendered purchase_orders/_peripherals_in_po (9.8ms)
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all, package_id AS package_id FROM "licenses" WHERE (po_number = E'SamplyPamply') GROUP BY package_id [0m
+
+ActionView::TemplateError (undefined method `division' for #<PurchaseOrder po_number: "SamplyPamply", division_id: "1">) on line #30 of app/views/purchase_orders/_licenses_in_po.rhtml:
+27: 		<td>
+28: 			<% form_remote_tag :url => { :action => :make_new_license_in_po } do %>
+29: 				<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+30: 				<%= hidden_field_tag('division', @purchase_order.division) %>
+31: 				<%= submit_tag("New License")%>
+32: 			<% end %>
+33: 		</td>
+
+    app/views/purchase_orders/_licenses_in_po.rhtml:30:in `block in _run_rhtml_app47views47purchase_orders47_licenses_in_po46rhtml_locals_licenses_in_po_object'
+    app/views/purchase_orders/_licenses_in_po.rhtml:28:in `_run_rhtml_app47views47purchase_orders47_licenses_in_po46rhtml_locals_licenses_in_po_object'
+    app/views/purchase_orders/edit.html.erb:34
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (173.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:55:28) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mDivision Load (1.7ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/SamplyPamply/edit?division_id=1
+Completed in 50ms (DB: 3) | 302 Found [http://localhost/purchase_orders]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-14 16:55:29) [GET]
+  Parameters: {"division_id"=>"1", "id"=>"SamplyPamply"}
+  [4;36;1mDivision Load (2.0ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/edit
+  [4;35;1mComputer Load (2.6ms)[0m   [0mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'SamplyPamply') [0m
+Rendered purchase_orders/_computers_in_po (11.7ms)
+  [4;36;1mPeripheral Load (1.9ms)[0m   [0;1mSELECT * FROM "peripherals" WHERE ("peripherals"."po_number" = E'SamplyPamply') [0m
+Rendered purchase_orders/_peripherals_in_po (4.8ms)
+  [4;35;1mSQL (2.1ms)[0m   [0mSELECT count(*) AS count_all, package_id AS package_id FROM "licenses" WHERE (po_number = E'SamplyPamply') GROUP BY package_id [0m
+
+ActionView::TemplateError (undefined method `division' for #<PurchaseOrder po_number: "SamplyPamply", division_id: "1">) on line #30 of app/views/purchase_orders/_licenses_in_po.rhtml:
+27: 		<td>
+28: 			<% form_remote_tag :url => { :action => :make_new_license_in_po } do %>
+29: 				<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+30: 				<%= hidden_field_tag('division', @purchase_order.division) %>
+31: 				<%= submit_tag("New License")%>
+32: 			<% end %>
+33: 		</td>
+
+    app/views/purchase_orders/_licenses_in_po.rhtml:30:in `block in _run_rhtml_app47views47purchase_orders47_licenses_in_po46rhtml_locals_licenses_in_po_object'
+    app/views/purchase_orders/_licenses_in_po.rhtml:28:in `_run_rhtml_app47views47purchase_orders47_licenses_in_po46rhtml_locals_licenses_in_po_object'
+    app/views/purchase_orders/edit.html.erb:34
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (236.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-14 16:56:21) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "purchase_order"=>{"po_number"=>"SamplyPamply", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDivision Load (1.3ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/SamplyPamply/edit?division_id=1
+Completed in 48ms (DB: 3) | 302 Found [http://localhost/purchase_orders]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-14 16:56:22) [GET]
+  Parameters: {"division_id"=>"1", "id"=>"SamplyPamply"}
+  [4;35;1mDivision Load (1.2ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/edit
+  [4;36;1mComputer Load (3.0ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'SamplyPamply') [0m
+Rendered purchase_orders/_computers_in_po (11.5ms)
+  [4;35;1mPeripheral Load (1.3ms)[0m   [0mSELECT * FROM "peripherals" WHERE ("peripherals"."po_number" = E'SamplyPamply') [0m
+Rendered purchase_orders/_peripherals_in_po (4.5ms)
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSELECT count(*) AS count_all, package_id AS package_id FROM "licenses" WHERE (po_number = E'SamplyPamply') GROUP BY package_id [0m
+Rendered purchase_orders/_licenses_in_po (42.2ms)
+Completed in 214ms (View: 83, DB: 8) | 200 OK [http://localhost/purchase_orders/SamplyPamply/edit?division_id=1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#make_new_computer_in_po (for 127.0.0.1 at 2009-09-14 16:56:30) [POST]
+  Parameters: {"authenticity_token"=>"uppLhHyRRlvQcNO6uJAZLo05+b6b+0AuSoknRGrZPeI=", "po_number"=>"SamplyPamply", "division_id"=>"1", "commit"=>"New Computer"}
+
+NoMethodError (undefined method `division=' for #<PurchaseOrder po_number: "SamplyPamply", division_id: nil>):
+  app/controllers/purchase_orders_controller.rb:262:in `refresh_po_instance'
+  app/controllers/purchase_orders_controller.rb:67:in `make_new_computer_in_po'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (87.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+ThinkingSphinx::Search.search is deprecated. Please use ThinkingSphinx.search instead.
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#index (for 127.0.0.1 at 2009-09-15 09:05:18) [GET]
+  [4;36;1mDivision Load (38.6ms)[0m   [0;1mSELECT * FROM "divisions" [0m
+Rendering template within layouts/divisions
+Rendering divisions/index
+Completed in 577ms (View: 336, DB: 40) | 200 OK [http://localhost/divisions/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing DivisionsController#show (for 127.0.0.1 at 2009-09-15 09:05:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDivision Load (23.9ms)[0m   [0;1mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/divisions
+Rendering divisions/show
+Completed in 166ms (View: 104, DB: 25) | 200 OK [http://localhost/divisions/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#index (for 127.0.0.1 at 2009-09-15 09:05:29) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: change_new_licenses_state, confirm_new_license, create, cs, cs_credentials, cs_reset, cs_set_credentials, delete_computer_from_po, delete_license_from_po, delete_peripheral_from_po, edit, edit_computer, edit_peripheral, make_new_bundle_in_po, make_new_computer_in_po, make_new_license_in_po, make_new_peripheral_in_po, new, refresh_po_instance, save_edited_computer, save_edited_peripheral, save_new_bundle, save_new_license, show, and update_page):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#new (for 127.0.0.1 at 2009-09-15 09:05:34) [GET]
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/new
+  [4;35;1mDivision Load (1.9ms)[0m   [0mSELECT * FROM "divisions" [0m
+Completed in 214ms (View: 174, DB: 3) | 200 OK [http://localhost/purchase_orders/new/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#create (for 127.0.0.1 at 2009-09-15 09:05:41) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "purchase_order"=>{"po_number"=>"83975238", "division_id"=>"1"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDivision Load (1.2ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Redirected to http://localhost:3000/purchase_orders/83975238/edit?division_id=1
+Completed in 47ms (DB: 3) | 302 Found [http://localhost/purchase_orders]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit (for 127.0.0.1 at 2009-09-15 09:05:42) [GET]
+  Parameters: {"division_id"=>"1", "id"=>"83975238"}
+  [4;35;1mDivision Load (1.1ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+Rendering template within layouts/purchase_orders
+Rendering purchase_orders/edit
+  [4;36;1mComputer Load (32.3ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'83975238') [0m
+Rendered purchase_orders/_computers_in_po (49.7ms)
+  [4;35;1mPeripheral Load (19.5ms)[0m   [0mSELECT * FROM "peripherals" WHERE ("peripherals"."po_number" = E'83975238') [0m
+Rendered purchase_orders/_peripherals_in_po (46.6ms)
+  [4;36;1mSQL (58.2ms)[0m   [0;1mSELECT count(*) AS count_all, package_id AS package_id FROM "licenses" WHERE (po_number = E'83975238') GROUP BY package_id [0m
+Rendered purchase_orders/_licenses_in_po (72.2ms)
+Completed in 299ms (View: 141, DB: 112) | 200 OK [http://localhost/purchase_orders/83975238/edit?division_id=1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#make_new_computer_in_po (for 127.0.0.1 at 2009-09-15 09:05:48) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "commit"=>"New Computer"}
+
+NoMethodError (undefined method `division=' for #<PurchaseOrder po_number: "83975238", division_id: nil>):
+  app/controllers/purchase_orders_controller.rb:262:in `refresh_po_instance'
+  app/controllers/purchase_orders_controller.rb:67:in `make_new_computer_in_po'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (137.2ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#make_new_computer_in_po (for 127.0.0.1 at 2009-09-15 09:22:25) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "commit"=>"New Computer"}
+
+ActionView::TemplateError (undefined method `division' for #<PurchaseOrder po_number: "83975238", division_id: "1">) on line #11 of app/views/purchase_orders/_edit_computer_form.rhtml:
+8: 			Model: <%= f.text_field :model%><br />
+9: 			System Class: <%= f.select(:system_class, %w{ Win32 Mac } )%><br />
+10: 			<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+11: 			<%= hidden_field_tag('division', @purchase_order.division) %>
+12: 			<%= f.submit "Save"%>
+13: 		<% end %>
+14: 	</div>
+
+    app/views/purchase_orders/_edit_computer_form.rhtml:11:in `block in _run_rhtml_app47views47purchase_orders47_edit_computer_form46rhtml_locals_edit_computer_form_object'
+    app/views/purchase_orders/_edit_computer_form.rhtml:6:in `_run_rhtml_app47views47purchase_orders47_edit_computer_form46rhtml_locals_edit_computer_form_object'
+    app/controllers/purchase_orders_controller.rb:247:in `set_redbox'
+    app/controllers/purchase_orders_controller.rb:69:in `block in make_new_computer_in_po'
+    app/controllers/purchase_orders_controller.rb:256:in `block in update_page'
+    app/controllers/purchase_orders_controller.rb:229:in `update_page'
+    app/controllers/purchase_orders_controller.rb:68:in `make_new_computer_in_po'
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (248.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#make_new_computer_in_po (for 127.0.0.1 at 2009-09-15 09:28:09) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "commit"=>"New Computer"}
+Rendered purchase_orders/_edit_computer_form (14.1ms)
+Completed in 76ms (View: 35, DB: 1) | 200 OK [http://localhost/purchase_orders/make_new_computer_in_po]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#save_edited_computer (for 127.0.0.1 at 2009-09-15 09:28:21) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "computer"=>{"serial_number"=>"kl;djfadf", "model"=>"D630", "system_class"=>"Mac"}, "po_number"=>"83975238", "division_id"=>"1", "commit"=>"Save"}
+
+NoMethodError (undefined method `division' for #<PurchaseOrder po_number: "83975238", division_id: "1">):
+  app/models/computer.rb:35:in `create_with_po'
+  app/controllers/purchase_orders_controller.rb:87:in `save_edited_computer'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (90.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#save_edited_computer (for 127.0.0.1 at 2009-09-15 09:29:13) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "computer"=>{"serial_number"=>"kl;djfadf", "model"=>"D630", "system_class"=>"Mac"}, "po_number"=>"83975238", "division_id"=>"1", "commit"=>"Save"}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (29.3ms)[0m   [0mINSERT INTO "computers" ("name", "mac_address", "domain", "owner", "system_role", "po_number", "model", "stage", "division", "serial_number", "system_class", "last_audited", "created_at", "updated_at", "delta", "location", "site", "last_stage_change", "division_id") VALUES(NULL, NULL, NULL, NULL, NULL, E'83975238', E'D630', E'Storage', NULL, E'kl;djfadf', E'Mac', NULL, '2009-09-15 09:29:13.210693', '2009-09-15 09:29:13.210693', 't', NULL, NULL, '2009-09-15', 1) RETURNING "id"[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDivision Load (1.0ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (4.8ms)[0m   [0mINSERT INTO "actions" ("title", "description", "date_of_occurrence", "created_at", "updated_at") VALUES(E'Create Record', E'PO# 83975238
+Division #<Division:0xa622b00>
+{"serial_number"=>"kl;djfadf", "model"=>"D630", "system_class"=>"Mac"}', NULL, '2009-09-15 09:29:13.858696', '2009-09-15 09:29:13.858696') RETURNING "id"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (21.9ms)[0m   [0;1mINSERT INTO "action_inventory_objects" ("action_id", "inventory_object_id", "inventory_object_type", "created_at", "updated_at") VALUES(101, 2, E'Computer', '2009-09-15 09:29:13.918678', '2009-09-15 09:29:13.918678') RETURNING "id"[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mComputer Load (2.2ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'83975238') [0m
+Rendered purchase_orders/_computers_in_po (10.2ms)
+Completed in 891ms (View: 12, DB: 68) | 200 OK [http://localhost/purchase_orders/save_edited_computer]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit_computer (for 127.0.0.1 at 2009-09-15 09:29:17) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "id"=>"2", "commit"=>"Edit"}
+  [4;36;1mComputer Load (2.2ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."id" = 2) [0m
+Rendered purchase_orders/_edit_computer_form (11.9ms)
+Completed in 54ms (View: 16, DB: 3) | 200 OK [http://localhost/purchase_orders/edit_computer]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit_computer (for 127.0.0.1 at 2009-09-15 09:29:18) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "id"=>"2", "commit"=>"Edit"}
+  [4;36;1mComputer Load (3.0ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."id" = 2) [0m
+Rendered purchase_orders/_edit_computer_form (155.1ms)
+Completed in 275ms (View: 161, DB: 4) | 200 OK [http://localhost/purchase_orders/edit_computer]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#save_edited_computer (for 127.0.0.1 at 2009-09-15 09:29:24) [PUT]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "computer"=>{"serial_number"=>"pooka", "model"=>"D630", "system_class"=>"Mac"}, "po_number"=>"83975238", "division_id"=>"1", "commit"=>"Save", "id"=>"2"}
+  [4;36;1mComputer Load (2.0ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."id" = 2) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mComputer Update (1.2ms)[0m   [0;1mUPDATE "computers" SET "serial_number" = E'pooka', "updated_at" = '2009-09-15 09:29:24.530574' WHERE "id" = 2[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO "actions" ("title", "description", "date_of_occurrence", "created_at", "updated_at") VALUES(E'Edit Record', E'{"serial_number"=>"pooka", "model"=>"D630", "system_class"=>"Mac"}', NULL, '2009-09-15 09:29:24.812547', '2009-09-15 09:29:24.812547') RETURNING "id"[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO "action_inventory_objects" ("action_id", "inventory_object_id", "inventory_object_type", "created_at", "updated_at") VALUES(102, 2, E'Computer', '2009-09-15 09:29:24.833880', '2009-09-15 09:29:24.833880') RETURNING "id"[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (8.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mComputer Load (2.1ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'83975238') [0m
+Rendered purchase_orders/_computers_in_po (19.1ms)
+Completed in 487ms (View: 21, DB: 22) | 200 OK [http://localhost/purchase_orders/save_edited_computer/2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#delete_computer_from_po (for 127.0.0.1 at 2009-09-15 09:29:31) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "id"=>"2", "commit"=>"Delete"}
+  [4;36;1mComputer Load (2.2ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."id" = 2) [0m
+  [4;35;1mComputer Delete all (1.3ms)[0m   [0mDELETE FROM "computers" WHERE ("id" IN (2)) [0m
+  [4;36;1mComputer Load (1.8ms)[0m   [0;1mSELECT * FROM "computers" WHERE ("computers"."po_number" = E'83975238') [0m
+Rendered purchase_orders/_computers_in_po (5.8ms)
+Completed in 50ms (View: 7, DB: 6) | 200 OK [http://localhost/purchase_orders/delete_computer_from_po]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#make_new_peripheral_in_po (for 127.0.0.1 at 2009-09-15 09:33:27) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "commit"=>"New Peripheral"}
+Rendered purchase_orders/_edit_peripheral_form (10.1ms)
+Completed in 63ms (View: 27, DB: 1) | 200 OK [http://localhost/purchase_orders/make_new_peripheral_in_po]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#save_edited_peripheral (for 127.0.0.1 at 2009-09-15 09:33:36) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "peripheral"=>{"serial_number"=>"fasdkjldjaf", "model"=>"Monitor"}, "po_number"=>"83975238", "division_id"=>"1", "commit"=>"Save"}
+
+NoMethodError (undefined method `division' for #<PurchaseOrder po_number: "83975238", division_id: "1">):
+  app/models/peripheral.rb:16:in `create_with_po'
+  app/controllers/purchase_orders_controller.rb:125:in `save_edited_peripheral'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (87.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#save_edited_peripheral (for 127.0.0.1 at 2009-09-15 09:35:03) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "peripheral"=>{"serial_number"=>"fasdkjldjaf", "model"=>"Monitor"}, "po_number"=>"83975238", "division_id"=>"1", "commit"=>"Save"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (24.9ms)[0m   [0mINSERT INTO "peripherals" ("computer_id", "serial_number", "po_number", "division", "model", "created_at", "updated_at", "delta", "division_id") VALUES(NULL, E'fasdkjldjaf', E'83975238', NULL, E'Monitor', '2009-09-15 09:35:03.556841', '2009-09-15 09:35:03.556841', 't', 1) RETURNING "id"[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDivision Load (1.2ms)[0m   [0mSELECT * FROM "divisions" WHERE ("divisions"."id" = 1) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO "actions" ("title", "description", "date_of_occurrence", "created_at", "updated_at") VALUES(E'Create Record', E'PO# 83975238
+Division National and State Services (360,420,425,426)
+{"serial_number"=>"fasdkjldjaf", "model"=>"Monitor"}', NULL, '2009-09-15 09:35:03.873144', '2009-09-15 09:35:03.873144') RETURNING "id"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO "action_inventory_objects" ("action_id", "inventory_object_id", "inventory_object_type", "created_at", "updated_at") VALUES(103, 1, E'Peripheral', '2009-09-15 09:35:03.900703', '2009-09-15 09:35:03.900703') RETURNING "id"[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mPeripheral Load (2.1ms)[0m   [0;1mSELECT * FROM "peripherals" WHERE ("peripherals"."po_number" = E'83975238') [0m
+Rendered purchase_orders/_peripherals_in_po (8.8ms)
+Completed in 422ms (View: 12, DB: 39) | 200 OK [http://localhost/purchase_orders/save_edited_peripheral]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#edit_peripheral (for 127.0.0.1 at 2009-09-15 09:35:09) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "id"=>"1", "commit"=>"Edit"}
+  [4;36;1mPeripheral Load (1.9ms)[0m   [0;1mSELECT * FROM "peripherals" WHERE ("peripherals"."id" = 1) [0m
+Rendered purchase_orders/_edit_peripheral_form (7.0ms)
+Completed in 48ms (View: 11, DB: 3) | 200 OK [http://localhost/purchase_orders/edit_peripheral]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#save_edited_peripheral (for 127.0.0.1 at 2009-09-15 09:35:16) [PUT]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "peripheral"=>{"serial_number"=>"fasdkjldjaf", "model"=>"Monitor"}, "po_number"=>"83975238", "division_id"=>"1", "commit"=>"Save", "id"=>"1"}
+  [4;36;1mPeripheral Load (2.0ms)[0m   [0;1mSELECT * FROM "peripherals" WHERE ("peripherals"."id" = 1) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "actions" ("title", "description", "date_of_occurrence", "created_at", "updated_at") VALUES(E'Edit Record', E'{"serial_number"=>"fasdkjldjaf", "model"=>"Monitor"}', NULL, '2009-09-15 09:35:16.587071', '2009-09-15 09:35:16.587071') RETURNING "id"[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO "action_inventory_objects" ("action_id", "inventory_object_id", "inventory_object_type", "created_at", "updated_at") VALUES(104, 1, E'Peripheral', '2009-09-15 09:35:16.615063', '2009-09-15 09:35:16.615063') RETURNING "id"[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPeripheral Load (1.8ms)[0m   [0mSELECT * FROM "peripherals" WHERE ("peripherals"."po_number" = E'83975238') [0m
+Rendered purchase_orders/_peripherals_in_po (8.9ms)
+Completed in 439ms (View: 12, DB: 17) | 200 OK [http://localhost/purchase_orders/save_edited_peripheral/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#delete_peripheral_from_po (for 127.0.0.1 at 2009-09-15 09:35:22) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "id"=>"1", "commit"=>"Delete"}
+  [4;35;1mPeripheral Load (2.0ms)[0m   [0mSELECT * FROM "peripherals" WHERE ("peripherals"."id" = 1) [0m
+  [4;36;1mPeripheral Delete all (1.3ms)[0m   [0;1mDELETE FROM "peripherals" WHERE ("id" IN (1)) [0m
+  [4;35;1mPeripheral Load (1.9ms)[0m   [0mSELECT * FROM "peripherals" WHERE ("peripherals"."po_number" = E'83975238') [0m
+Rendered purchase_orders/_peripherals_in_po (5.8ms)
+Completed in 62ms (View: 7, DB: 6) | 200 OK [http://localhost/purchase_orders/delete_peripheral_from_po]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#make_new_license_in_po (for 127.0.0.1 at 2009-09-15 09:35:25) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "po_number"=>"83975238", "division_id"=>"1", "commit"=>"New License"}
+Rendered purchase_orders/_new_license_form (5.3ms)
+Completed in 62ms (View: 24, DB: 1) | 200 OK [http://localhost/purchase_orders/make_new_license_in_po]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing PurchaseOrdersController#confirm_new_license (for 127.0.0.1 at 2009-09-15 09:35:32) [POST]
+  Parameters: {"authenticity_token"=>"iKvaEZ26Fdh0b/mkghp23YG1xH0PTs6ADKW3m6bUfJ4=", "search_string"=>"adobe", "quantity"=>"4", "po_number"=>"83975238", "division_id"=>"1", "commit"=>"Go"}
+Querying Sphinx: adobe
+
+ThinkingSphinx::ConnectionError (Connection to Sphinx Daemon (searchd) failed.):
+  /usr/local/lib/ruby/gems/1.9.1/gems/freelancing-god-thinking-sphinx-1.2.8/lib/thinking_sphinx/search.rb:229:in `rescue in block in populate'
+  /usr/local/lib/ruby/gems/1.9.1/gems/freelancing-god-thinking-sphinx-1.2.8/lib/thinking_sphinx/search.rb:225:in `block in populate'
+  /usr/local/lib/ruby/gems/1.9.1/gems/freelancing-god-thinking-sphinx-1.2.8/lib/thinking_sphinx/search.rb:303:in `call'
+  /usr/local/lib/ruby/gems/1.9.1/gems/freelancing-god-thinking-sphinx-1.2.8/lib/thinking_sphinx/search.rb:303:in `retry_on_stale_index'
+  /usr/local/lib/ruby/gems/1.9.1/gems/freelancing-god-thinking-sphinx-1.2.8/lib/thinking_sphinx/search.rb:224:in `populate'
+  /usr/local/lib/ruby/gems/1.9.1/gems/freelancing-god-thinking-sphinx-1.2.8/lib/thinking_sphinx/search.rb:96:in `method_missing'
+  app/controllers/purchase_orders_controller.rb:152:in `confirm_new_license'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (211.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)

@@ -16,7 +16,7 @@
 				<% form_remote_tag :url => { 	:action => :delete_license_from_po },
 												:confirm	=>	("Are you sure you want to delete this computer?") do %>
 					<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
-					<%= hidden_field_tag('division', @purchase_order.division) %>
+					<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
 					<%= hidden_field_tag('id', pkg.id)%>
 					<%= submit_tag("Delete")%>
 				<% end %>
@@ -27,14 +27,14 @@
 		<td>
 			<% form_remote_tag :url => { :action => :make_new_license_in_po } do %>
 				<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
-				<%= hidden_field_tag('division', @purchase_order.division) %>
+				<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
 				<%= submit_tag("New License")%>
 			<% end %>
 		</td>
 		<td>
 			<% form_remote_tag :url => { :action => :make_new_bundle_in_po } do %>
 				<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
-				<%= hidden_field_tag('division', @purchase_order.division) %>
+				<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
 				<%= submit_tag("New Bundle")%>
 			<% end %>
 		</td>
