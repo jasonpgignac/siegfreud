@@ -134,6 +134,7 @@ ActiveRecord::Schema.define(:version => 20090914204145) do
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "tabs", :force => true do |t|
+    t.string   "content_id"
     t.string   "content_type"
     t.integer  "tabset_id"
     t.integer  "position"
@@ -141,7 +142,6 @@ ActiveRecord::Schema.define(:version => 20090914204145) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "content_server_id"
-    t.integer  "content_id"
   end
 
   create_table "tabsets", :force => true do |t|

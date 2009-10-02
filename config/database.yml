@@ -3,7 +3,7 @@
 development:
         adapter: postgresql
         database: siegfreud-development
-        username: postgres
+        username: _postgres
         password: lamia6713
         host: localhost
         schema_order: public
@@ -15,7 +15,7 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
+test: &TEST
   adapter: sqlite3
   database: db/test.sqlite3
   pool: 500
@@ -28,3 +28,6 @@ production:
   password: lamia6713
   host: localhost
   schema_order: public
+
+cucumber:
+  <<: *TEST

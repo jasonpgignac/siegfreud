@@ -1,3 +1,0 @@
-class DeploymentService < MashupService
-
-end
