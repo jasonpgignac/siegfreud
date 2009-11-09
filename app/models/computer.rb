@@ -4,7 +4,12 @@ class Computer < ActiveRecord::Base
   has_many :packages, :through => :licenses
   has_many :action_inventory_objects, :as => :inventory_object
   has_many :actions, :through => :action_inventory_objects
+  belongs_to :domain
+  belongs_to :stage
   belongs_to :division
+  
+  validate :must_have_proper_location_data
+  validate :must_have_proper_deployment_data
   define_index do
     indexes :name
     indexes serial_number
@@ -16,6 +21,9 @@ class Computer < ActiveRecord::Base
   end
   
   # Virtual Attributes
+  def available_stages
+    stage.available_stages
+  end
   def short_name
     if (self.stage == "active")
       self.name + ":(" + self.owner + ")"
@@ -24,7 +32,7 @@ class Computer < ActiveRecord::Base
     end
   end
   def current_location
-    self.stage + ": " + (self.owner.nil? ? self.location.to_s : self.owner.to_s)
+    self.stage.name + ": " + (self.owner.nil? ? self.location.to_s : self.owner.to_s)
   end
 
   # Inventory Creation Functions
@@ -105,6 +113,9 @@ class Computer < ActiveRecord::Base
   end
   
   # Stage Changes
+  def valid_change?(new_stage)
+    stage.valid_change?(new_stage)
+  end
   def change_stage(new_stage, attributes = nil)
     attributes = Hash.new if attributes.nil?
     puts "Changing from #{self.stage} to #{new_stage}"
@@ -185,7 +196,22 @@ class Computer < ActiveRecord::Base
     end
   end
 
+  # External Server Data
+  def services_of_type(server_type)
+    Server.services.to_match
+  end
   # Other
+  def must_have_proper_location_data
+    if(stage.has_location)
+      errors.add_to_base("This stage requires the location field to be defined") if (location.nil? || location.empty?)
+    end
+  end
+  def must_have_proper_deployment_data
+    if(stage.has_deployment)
+      invalid_deployment_fields = owner.nil? || owner.empty? || domain.nil? || domain.empty? || system_role.nil? || system_role.empty? || name.nil? || name.empty? 
+      errors.add_to_base("This stage requires the owner, domain, system role and name to be defined") if (invalid_deployment_fields)
+    end
+  end
   def to_json
     
   end

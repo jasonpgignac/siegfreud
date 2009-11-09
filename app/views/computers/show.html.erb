@@ -1,27 +1,63 @@
-<div class="contentwrapper" id="contentwrapper">
-	<div class="current_tab" id ="current_tab">
-		<div class="databox">
-			MAC Address: <%= @computer.mac_address %><br />
-			Serial: <%= @computer.serial_number %><br />
-			Model: <%= @computer.model %><br />
-			System Class: <%= @computer.system_class %><br />
-		</div>
-		<div class="databox">
-			Stage: <%= @computer.stage %><br />
-			Owner: <%= @computer.owner %><br />
-			System Role: <%= @computer.system_role %><br />
-			System Name: <%= @computer.name %><br />
-		</div>
-		<div class="databox">
-			PO Number: <%= @computer.po_number %><br />
-			Division: <%= @computer.division.display_name %><br />
-		</div>
-		<div class="databox">
-			Last Updated: <%= @computer.updated_at%><br />
-			Last Audited: <%= @computer.last_audited %><br />
-			Record Created: <%= @computer.created_at %><br />
-		</div>
-		<%= link_to 'Edit', edit_computer_path(@computer) %> |
-		<%= link_to 'Back', computers_path %>
-	</div>
+<div>
+	<%= link_to "View History", 
+			computer_actions_path(@computer), 
+			:popup => true %>
+	<%= link_to "Print Record", 
+			{ 	:controller => "computers", 
+				:action => "show", 
+				:id => @computer.serial_number, 
+				:format => "pdf" }, 
+			:popup => true %>
 </div>
+<div class="databox">
+	Serial: <%= @computer.serial_number %><br />
+	Model: <%= @computer.model %><br />
+	Platform: <%= @computer.system_class %><br />
+	MAC Address: <%= @computer.mac_address %><br />
+	PO Number: <%= @computer.po_number %><br />
+	Division: <%= @computer.division.display_name %><br />
+</div>
+<div class="databox">
+	Stage: <%= @computer.stage.name %>
+	<% if (@computer.stage != "Storage" && @computer.stage != "Disposal")%>
+		Owner: <%= @computer.owner %><br />
+		System Role: <%= @computer.system_role %><br />
+		Name: <%= @computer.name%><br />
+		Domain: <%= @computer.domain%>
+	<% end %>
+	<% if (@computer.stage =~ /(Storage)|(Disposal)|(Retrieval)|(Repair)/) %>
+		Location: <%= @computer.location %>
+	<% end %>
+</div>
+<% if (@computer.stage.has_deployment)%>
+	<%= closed_disclosure_area("assigned_licenses", computer_licenses_path(@computer.serial_number, :format => :json)) %>
+	<div id='assigned_licenses'></div>
+	<%= closed_disclosure_area("installed_peripherals", computer_peripherals_path(@computer.serial_number, :format => :json)) %>
+	<div id='installed_peripherals'></div>
+	
+	<% service_list(@computer.system_class,
+					@computer.domain,
+					"ComputerInformation").each do |server| %>
+		<%= closed_disclosure_area("computer_info_#{server.name.sub(" ","_")}",
+		 		computer_path(	@computer.serial_number, 
+								:format 		=> :json,
+								:data_set 		=> 'computer_info',
+								:server_name	=> server.name) )%>
+		<div id="computer_info_<%= server.name.sub(" ","_") %>"></div>
+	<% end %>
+	<% service_list(@computer.system_class,
+					@computer.domain,
+					"SoftwareManagement").each do |server| %>
+		<%= closed_disclosure_area("software_management_info_#{server.name.sub(" ","_")}", 
+				{ 	:action 		=> 'get_software_management_info',
+					:id			 	=> @computer.serial_number,
+					:server_name	=> server.name,
+					:format			=> :json } )%>
+		<div id="software_management_info_<%= server.name.sub(" ","_") %>"></div>
+		
+	<% end %>
+	
+<% end %>
+
+<%= link_to("Edit", edit_computer_path(@computer.serial_number))%> |
+<%= link_to("Back", computers_path)%>

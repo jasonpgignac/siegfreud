@@ -30,10 +30,12 @@ Rails::Initializer.run do |config|on = {
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
   #	config.action_controller.relative_url_root = "/siegfreud"
   config.gem "prawn"
-  config.gem(
-    'freelancing-god-thinking-sphinx',
-    :lib         => 'thinking_sphinx'
-  )
+  config.gem('freelancing-god-thinking-sphinx',:lib => 'thinking_sphinx')
+  config.gem 'rspec-rails', :lib => false
+  config.gem 'rspec', :lib => false
+  config.gem 'cucumber'
+  config.gem 'webrat'
+  
   config.action_controller.session = { :key => "_siegfreud_session", :secret => "96bb8a78448163d608007fe7429d20a72de0cea6e9bcdc2866ba610767fa73a48f982e385852bb4e36734c05eaeb7b78575880415029c11488913fe2094a960f" }
   if RAILS_ENV=='production'
     config.action_controller.relative_url_root = "/siegfreud"

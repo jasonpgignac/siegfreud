@@ -119,7 +119,7 @@ class PackageMapsController < ApplicationController
     @services.each do |platform, domains|
       domains.each do |domain, service_types|
 	service_types["PackageInformation"].each do |service|
-	  this_service = service if service.server_name == name
+	  this_service = service if service.name == name
 	end
       end
     end
@@ -147,7 +147,7 @@ class PackageMapsController < ApplicationController
     @services.each do |platform, domains|
       domains.each do |domain, service_types|
 	service_types["PackageInformation"].each do |service|
-	  @service_list << ["#{service.server_name} (#{platform} in #{domain})", service.server_name]
+	  @service_list << ["#{service.name} (#{platform} in #{domain})", service.name]
 	end
       end
     end

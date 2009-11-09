@@ -1,14 +1,3 @@
-<div>
-	<%= link_to "View History", 
-			computer_actions_path(@computer), 
-			:popup => true %>
-	<%= link_to "Print Record", 
-			{ 	:controller => "computers", 
-				:action => "show", 
-				:id => @computer.id.to_s, 
-				:format => "pdf" }, 
-			:popup => true %>
-</div>
 <div id='current_status'>
 	<% @view = "/computers/edit_form_partials/current_status" %>
 	<%= closed_disclosure_area(@computer, @view) %>
@@ -23,26 +12,6 @@
 		<%= closed_disclosure_area(@computer, @view) %>
 	</div>
 <% end %>
-<% service_list(@computer.system_class,
-				@computer.domain,
-				"ComputerInformation").each do |server| %>
-	<% @view = "/computers/edit_form_partials/remote_status" %>
-	<% @div = "remote_status__" + server.server_name.sub(" ","_")%>
-	<% @title = "Computer Info (#{server.server_name})" %>
-	<div id=<%= "'#{@div}'" %>>
-		<%= render :partial => 'closed_disclosure' %>
-	</div>
-<% end %>
-<% service_list(@computer.system_class,
-				@computer.domain,
-				"SoftwareManagement").each do |server| %>
-	<% @view = "/computers/edit_form_partials/advertisements" %>
-	<% @div = "advertisements__" + server.server_name.sub(" ","_")%>
-	<% @title = "Advertisements (#{server.server_name})" %>
-	<div id=<%= "'#{@div}'" %>>
-		<%= render :partial => 'closed_disclosure' %>
-	</div>
-<% end %>
 
 <%= drop_receiving_element('assigned_licenses', 
 	:accept => ['Package','Bundle'],
@@ -53,11 +22,11 @@
 	:url => {   :action      =>  :add_licensed_package_or_bundle, 
 				:computer_id  =>  @computer.id}) %>
 				
-				<%= drop_receiving_element('installed_peripherals', 
-					:accept => ['Peripheral'],
-					:complete => "$('spinner').hide();", 
-					:before => "$('spinner').show();", 
-					:hoverclass => 'hover', 
-					:with => "'peripheral_id=' + encodeURIComponent(element.id.split('_').last())",
-					:url => {   :action      =>  :add_installed_peripheral, 
-								:computer_id  =>  @computer.id}) %>
+<%= drop_receiving_element('installed_peripherals', 
+	:accept => ['Peripheral'],
+	:complete => "$('spinner').hide();", 
+	:before => "$('spinner').show();", 
+	:hoverclass => 'hover', 
+	:with => "'peripheral_id=' + encodeURIComponent(element.id.split('_').last())",
+	:url => {   :action      =>  :add_installed_peripheral, 
+				:computer_id  =>  @computer.id}) %>

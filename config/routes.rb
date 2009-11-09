@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :domains
+
+  map.resources :servers
+
   map.connect 'divisions/:division_id/computers.:format',
 	:controller => "computers",
 	:action => "index"
@@ -9,7 +13,11 @@ ActionController::Routing::Routes.draw do |map|
   end
   map.resources :licenses, :has_many => :actions
   map.resources :peripherals, :has_many => :actions
-  map.resources :computers, :has_many => :actions
+  map.resources :computers do |r| 
+    r.resources :actions
+    r.resources :licenses
+    r.resources :peripherals
+  end
   map.resources :purchase_orders
   
   map.connect ':controller/:action/:id', :controller => 'main'

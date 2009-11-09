@@ -5,10 +5,6 @@
 	<div class="databox">
 		<table>
 			<tr>
-				<td>MAC Address:</td> 
-				<td><%= f.text_field(:mac_address) %></td>
-			</tr>
-			<tr>
 				<td>Serial:</td> 
 				<td><%= f.text_field(:serial_number) %></td>
 			</tr>
@@ -18,7 +14,7 @@
 			</tr>
 			<tr>
 				<td>System Class:</td> 
-				<td><%= f.text_field(:system_class) %></td>
+				<td><%= f.select(:system_class, system_classes) %></td>
 			</tr>
 		</table>
 	</div>
@@ -26,21 +22,23 @@
 		<table>
 			<tr>
 				<td>Stage:</td>
-				<td><%= f.text_field(:stage) %></td>
-			</tr>
-			<tr>
-				<td>Owner:</td> 
-				<td><%= f.text_field(:owner) %></td>
-			</tr>
-			<tr>
-				<td>System Role:</td> 
-				<td><%= f.text_field(:system_role) %></td>
-			</tr>
-			<tr>
-				<td>System Name:</td> 
-				<td><%= f.text_field(:name) %></td>
+				<td>
+					<%= f.select(	:stage_id, 
+									options_from_collection_for_select(
+										Stage.find(:all),
+				 			  			"id",
+				 			  			"name")) %>
+				</td>
 			</tr>
 		</table>
+	</div>
+	<div class="databox">
+		<div id="location_data" style='display: <%= @computer.stage.has_location ? "inline" : "none" %>'>
+			<%= render :partial => 'location_form' %>
+		</div>
+		<div id="deployment_data" style='display: <%= @computer.stage.has_deployment ? "inline" : "none" %>'>
+		<%= render :partial => 'deployment_form' %>
+	</div>
 	</div>
 	<div class="databox">
 		<table>
@@ -50,7 +48,12 @@
 			</tr>
 			<tr>
 				<td>Division:</td> 
-				<td><%= f.text_field(:division_id) %></td>
+				<td>
+					<%= f.select(:division_id, options_from_collection_for_select(
+													Division.find(:all),
+													"id",
+													"display_name")) %>
+				</td>
 			</tr>
 		</table>
 	</div>
@@ -58,3 +61,7 @@
 <% end %>
 
 <%= link_to 'Back', computers_path %>
+
+<%= observe_field('computer_stage_id',
+                  :frequency 	=> 0.5,
+                  :function 	=> stage_change) %>

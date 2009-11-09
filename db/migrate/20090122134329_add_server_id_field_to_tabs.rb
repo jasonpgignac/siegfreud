@@ -4,6 +4,6 @@ class AddServerIdFieldToTabs < ActiveRecord::Migration
   end
 
   def self.down
-    drop_column :tabs,  :content_server_id
+    remove_column :tabs,  :content_server_id
   end
 end

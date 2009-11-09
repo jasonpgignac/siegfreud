@@ -1,5 +1,11 @@
 <h1>Editing computer</h1>
-
+<%= select_tag(	:stage, 
+						options_for_select(@computer.available_stages, @computer.stage),
+						:onchange => remote_function(	:url => {  	
+															:action => 'change_state_of_system', 
+															:id => @computer.id
+														},
+											 			:with => 'Form.Element.serialize(this)'))%>
 <% form_for(@computer) do |f| %>
 	<%= f.error_messages %>
 	<div class="databox">

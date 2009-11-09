@@ -350,14 +350,14 @@ class MainController < ApplicationController
     				                @computer.domain,
     				                "ComputerInformation")
     services.delete_if do |service|
-      service.server_name.sub(" ","_") != server_name
+      service.name.sub(" ","_") != server_name
     end
     @service = services[0]
-    @title = "Computer Info: #{@service.server_name}"
-    @div = "remote_status__" + @service.server_name.sub(" ","_")
+    @title = "Computer Info: #{@service.name}"
+    @div = "remote_status__" + @service.name.sub(" ","_")
     @remote_data_sets ||= Hash.new
     begin
-      @remote_data_sets[@service.server_name] = @service.get_info(@computer.serial_number)
+      @remote_data_sets[@service.name] = @service.info_for(@computer.serial_number)
     rescue RemoteRecordNotFound
       @view = "#{@view}_no_record"
     end
@@ -370,11 +370,11 @@ class MainController < ApplicationController
     				                @computer.domain,
     				                "ComputerInformation")
     services.delete_if do |service|
-      service.server_name.sub(" ","_") != server_name
+      service.name.sub(" ","_") != server_name
     end
     @service = services[0]
-    @title = "Computer Info (#{@service.server_name})"
-    @div = "remote_status__" + @service.server_name.sub(" ","_")
+    @title = "Computer Info (#{@service.name})"
+    @div = "remote_status__" + @service.name.sub(" ","_")
     render :partial => "closed_disclosure"
   end
   def open_advertisements(server_name)
@@ -384,14 +384,14 @@ class MainController < ApplicationController
 			    @computer.domain,
 			    "SoftwareManagement")
     services.delete_if do |service|
-      service.server_name.sub(" ","_") != server_name
+      service.name.sub(" ","_") != server_name
     end
     @service = services[0]
-    @title = "Advertisements: #{@service.server_name}"
-    @div = "advertisements__" + @service.server_name.sub(" ","_")
+    @title = "Advertisements: #{@service.name}"
+    @div = "advertisements__" + @service.name.sub(" ","_")
     @advertisements ||= Hash.new
     begin
-      @advertisements[@service.server_name] = @service.get_advertisements_for_computer(@computer.serial_number)
+      @advertisements[@service.name] = @service.advertisements_for_computer(@computer.serial_number)
     rescue RemoteRecordNotFound
       @view = "#{@view}_no_record"
     end
@@ -404,11 +404,11 @@ class MainController < ApplicationController
     				                @computer.domain,
     				                "ComputerInformation")
     services.delete_if do |service|
-      service.server_name.sub(" ","_") != server_name
+      service.name.sub(" ","_") != server_name
     end
     @service = services[0]
-    @title = "Advertisements (#{@service.server_name})"
-    @div = "advertisements__" + @service.server_name.sub(" ","_")
+    @title = "Advertisements (#{@service.name})"
+    @div = "advertisements__" + @service.name.sub(" ","_")
     render :partial => "closed_disclosure"
   end
   
@@ -422,7 +422,7 @@ class MainController < ApplicationController
     end
   end
   
-private
+  private
 
   def service_list(platform, domain, service_type)
     return Array.new() unless @services.key?(platform)
@@ -515,7 +515,7 @@ private
     @services.each do |platform, domains|
       domains.each do |domain, service_types|
 	service_types["SoftwareManagement"].each do |service|
-	  this_service = service if service.server_name == package_map.service_name
+	  this_service = service if service.name == package_map.service_name
 	end
       end
     end

@@ -17,7 +17,7 @@ class ContentServer < ActiveRecord::Base
       serverObject.password = @@content_store[:default][:password]
     end
     serverObject.server_id = self.id
-    serverObject.server_name = self.name
+    serverObject.name = self.name
     return serverObject
   end
   

@@ -2,11 +2,12 @@ class LicensesController < ApplicationController
   # GET /licenses
   # GET /licenses.xml
   def index
-    @licenses = License.all
+    @licenses = params[:computer_id] ? Computer.find_by_serial_number(params[:computer_id]).licenses : License.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @licenses }
+      format.json { render :json => @licenses.size == 0 ? @licenses : @licenses.to_json(:include => :package) }
     end
   end
 
@@ -18,6 +19,7 @@ class LicensesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @license }
+      format.json { render :json => @license }
     end
   end
 

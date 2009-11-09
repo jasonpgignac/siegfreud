@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090914204145) do
+ActiveRecord::Schema.define(:version => 20091109152059) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(:version => 20090914204145) do
     t.string   "system_role"
     t.string   "po_number"
     t.string   "model"
-    t.string   "stage"
+    t.string   "old_stage"
     t.string   "division"
     t.string   "serial_number"
     t.string   "system_class"
@@ -61,6 +61,8 @@ ActiveRecord::Schema.define(:version => 20090914204145) do
     t.string   "site"
     t.date     "last_stage_change"
     t.integer  "division_id"
+    t.integer  "stage_id",          :default => 1
+    t.integer  "domain_id"
   end
 
   create_table "content_servers", :force => true do |t|
@@ -76,6 +78,12 @@ ActiveRecord::Schema.define(:version => 20090914204145) do
   create_table "divisions", :force => true do |t|
     t.string   "name"
     t.string   "divisions"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "domains", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -123,6 +131,21 @@ ActiveRecord::Schema.define(:version => 20090914204145) do
     t.integer  "division_id"
   end
 
+  create_table "server_domains", :force => true do |t|
+    t.integer  "server_id"
+    t.integer  "domain_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "servers", :force => true do |t|
+    t.string   "name"
+    t.string   "type"
+    t.string   "address"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
     t.text     "data"
@@ -133,8 +156,24 @@ ActiveRecord::Schema.define(:version => 20090914204145) do
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
+  create_table "stage_transitions", :force => true do |t|
+    t.integer  "source_id"
+    t.integer  "destination_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "stages", :force => true do |t|
+    t.string   "name"
+    t.boolean  "has_location"
+    t.boolean  "has_deployment"
+    t.boolean  "is_transitory"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "tabs", :force => true do |t|
-    t.string   "content_id"
+    t.integer  "content_id"
     t.string   "content_type"
     t.integer  "tabset_id"
     t.integer  "position"
@@ -145,7 +184,7 @@ ActiveRecord::Schema.define(:version => 20090914204145) do
   end
 
   create_table "tabsets", :force => true do |t|
-    t.string   "active_tab_id"
+    t.integer  "active_tab_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

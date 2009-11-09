@@ -68,13 +68,6 @@ class ApplicationController < ActionController::Base
   end
 
   def services
-    require "mashup_services/mashup_service"
-    require "mashup_services/computer_information_service"
-    require "mashup_services/deployment_service"
-    require "mashup_services/package_information_service"
-    require "mashup_services/software_management_service"
-    require "mashup_services/user_information_service"
- 
     server_type_files = Dir["#{RAILS_ROOT}/config/mashups/server_types/*.yml"]
     server_files = Dir["#{RAILS_ROOT}/config/mashups/servers/*.yml"]
     
@@ -94,11 +87,8 @@ class ApplicationController < ActionController::Base
       services.each do |service|
         platform = service["platform"]
         type = service["type"]
-        instantiated_service = eval(type + "Service").new
-        instantiated_service.address = address
-        instantiated_service.domains = domains
-        instantiated_service.platform = platform
-        instantiated_service.server_name = name
+        instantiated_service = eval("ValhallaMashup::" + type + "Service").new(address)
+        instantiated_service.name = name
         domains.each do |domain|
           @services[platform] ||= Hash.new
           @services[platform][domain] ||= Hash.new

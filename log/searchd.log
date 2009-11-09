@@ -217,3 +217,42 @@
 [Mon Sep 14 15:53:16.742 2009] [ 8803] rotating indices (seamless=1)
 [Mon Sep 14 15:53:16.754 2009] [ 8803] rotating index 'computer_delta': success
 [Mon Sep 14 15:53:16.754 2009] [ 8803] rotating finished
+[Wed Oct 14 15:56:05.028 2009] [ 2398] accepting connections
+[Wed Oct 14 15:59:08.725 2009] [ 2398] rotating indices (seamless=1)
+[Wed Oct 14 15:59:08.760 2009] [ 2398] rotating index 'peripheral_delta': success
+[Wed Oct 14 15:59:08.775 2009] [ 2398] rotating index 'peripheral_core': success
+[Wed Oct 14 15:59:08.793 2009] [ 2398] rotating index 'package_core': success
+[Wed Oct 14 15:59:08.798 2009] [ 2398] rotating index 'computer_delta': success
+[Wed Oct 14 15:59:08.819 2009] [ 2398] rotating index 'computer_core': success
+[Wed Oct 14 15:59:08.853 2009] [ 2398] rotating index 'bundle_core': success
+[Wed Oct 14 15:59:08.854 2009] [ 2398] rotating finished
+[Wed Oct 14 16:01:02.997 2009] [ 2398] rotating indices (seamless=1)
+[Wed Oct 14 16:01:03.001 2009] [ 2398] rotating index 'computer_delta': success
+[Wed Oct 14 16:01:03.001 2009] [ 2398] rotating finished
+[Wed Oct 14 16:01:03.354 2009] [ 2398] rotating indices (seamless=1)
+[Wed Oct 14 16:01:03.359 2009] [ 2398] rotating index 'computer_delta': success
+[Wed Oct 14 16:01:03.359 2009] [ 2398] rotating finished
+[Wed Oct 14 16:14:26.030 2009] [ 2398] rotating indices (seamless=1)
+[Wed Oct 14 16:14:26.097 2009] [ 2398] rotating index 'computer_delta': success
+[Wed Oct 14 16:14:26.097 2009] [ 2398] rotating finished
+[Wed Oct 14 16:14:26.398 2009] [ 2398] rotating indices (seamless=1)
+[Wed Oct 14 16:14:26.402 2009] [ 2398] rotating index 'computer_delta': success
+[Wed Oct 14 16:14:26.402 2009] [ 2398] rotating finished
+[Wed Oct 14 16:18:28.605 2009] [ 2398] rotating indices (seamless=1)
+[Wed Oct 14 16:18:28.670 2009] [ 2398] rotating index 'computer_delta': success
+[Wed Oct 14 16:18:28.671 2009] [ 2398] rotating finished
+[Wed Oct 14 16:18:28.962 2009] [ 2398] rotating indices (seamless=1)
+[Wed Oct 14 16:18:28.968 2009] [ 2398] rotating index 'computer_delta': success
+[Wed Oct 14 16:18:28.969 2009] [ 2398] rotating finished
+[Wed Oct 14 16:19:08.734 2009] [ 2398] rotating indices (seamless=1)
+[Wed Oct 14 16:19:08.738 2009] [ 2398] rotating index 'computer_delta': success
+[Wed Oct 14 16:19:08.738 2009] [ 2398] rotating finished
+[Wed Oct 21 09:11:37.387 2009] [ 7353] accepting connections
+[Wed Oct 21 10:34:58.999 2009] [ 7353] rotating indices (seamless=1)
+[Wed Oct 21 10:34:59.053 2009] [ 7353] rotating index 'peripheral_delta': success
+[Wed Oct 21 10:34:59.058 2009] [ 7353] rotating index 'peripheral_core': success
+[Wed Oct 21 10:34:59.063 2009] [ 7353] rotating index 'package_core': success
+[Wed Oct 21 10:34:59.069 2009] [ 7353] rotating index 'computer_delta': success
+[Wed Oct 21 10:34:59.087 2009] [ 7353] rotating index 'computer_core': success
+[Wed Oct 21 10:34:59.091 2009] [ 7353] rotating index 'bundle_core': success
+[Wed Oct 21 10:34:59.091 2009] [ 7353] rotating finished

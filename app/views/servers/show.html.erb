@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @server.name %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @server.type %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @server.address %>
+</p>
+
+
+<%= link_to 'Edit', edit_server_path(@server) %> |
+<%= link_to 'Back', servers_path %>

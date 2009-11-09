@@ -3,7 +3,7 @@
 development:
         adapter: postgresql
         database: siegfreud-development
-        username: _postgres
+        username: postgres
         password: lamia6713
         host: localhost
         schema_order: public
@@ -28,6 +28,9 @@ production:
   password: lamia6713
   host: localhost
   schema_order: public
+
+cucumber:
+  <<: *TEST
 
 cucumber:
   <<: *TEST

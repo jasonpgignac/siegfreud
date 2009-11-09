@@ -1,7 +1,7 @@
 class CreateTabsets < ActiveRecord::Migration
   def self.up
     create_table :tabsets do |t|
-      t.string  :active_tab_id;
+      t.integer  :active_tab_id;
       t.timestamps;
     end
   end

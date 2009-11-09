@@ -1,0 +1,18 @@
+<table>
+	<tr>
+		<td>Owner:</td> 
+		<td><%= text_field(:computer, :owner) %></td>
+	</tr>
+	<tr>
+		<td>System Role:</td> 
+		<td><%= select(:computer, :system_role, system_roles) %></td>
+	</tr>
+	<tr>
+		<td>System Name:</td> 
+		<td><%= text_field(:computer, :name) %></td>
+	</tr>
+	<tr>
+		<td>Domain:</td>
+		<td><%= select(:computer, :domain, domains)%></td>
+	</tr>
+</table>

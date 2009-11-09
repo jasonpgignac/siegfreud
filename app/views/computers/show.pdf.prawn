@@ -24,12 +24,12 @@ pdf.text "Last Audited: #{@computer.last_audited.to_s}", :size => 8
 
 pdf.move_down 20
 pdf.text "Current Status", :size => 14, :style => :bold
-pdf.text "Stage: #{@computer.stage}", :size => 8
+pdf.text "Stage: #{@computer.stage.name}", :size => 8
 if (@computer.stage != "Storage" && @computer.stage != "Disposal")
-	pdf.text "Owner: #{@computer.owner}"
-	pdf.text "System Role:  #{@computer.system_role}"
-	pdf.text "Name: #{@computer.name}"
-  pdf.text "Domain: #{@computer.domain}"
+	pdf.text "Owner: #{@computer.owner}", :size => 8
+	pdf.text "System Role:  #{@computer.system_role}", :size => 8
+	pdf.text "Name: #{@computer.name}", :size => 8
+  pdf.text "Domain: #{@computer.domain}", :size => 8
 end
 unless(licenses.nil? || licenses.empty?)
   pdf.move_down 20
