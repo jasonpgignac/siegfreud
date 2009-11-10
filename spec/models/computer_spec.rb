@@ -20,15 +20,6 @@ describe Computer do
     
     @computer.stage = @stage
     
-    @available_stage_1 = make_a_stage("Deployment")
-    @available_stage_1.has_location = false
-    @available_stage_1.has_deployment = true
-    @available_stage_1.save
-    @available_stage_2 = make_a_stage("Active")
-    @available_stage_2.save
-    @unavailable_stage = make_a_stage("Bad Stage")
-    @unavailable_stage.save
-    @stage.available_stages += [@available_stage_1, @available_stage_2]
     @domain = Domain.new
     @domain.save
   end
@@ -92,8 +83,15 @@ describe Computer do
   end
   describe "#stage_transition_functions" do
     before(:each) do
-      @computer.stage = @stage
-      @computer.location = "Invisibile Cage"
+      @available_stage_1 = make_a_stage("Deployment")
+      @available_stage_1.has_location = false
+      @available_stage_1.has_deployment = true
+      @available_stage_1.save
+      @available_stage_2 = make_a_stage("Active")
+      @available_stage_2.save
+      @unavailable_stage = make_a_stage("Bad Stage")
+      @unavailable_stage.save
+      @stage.available_stages += [@available_stage_1, @available_stage_2]
     end
     describe "#available_stages" do
       it "should return a list of available stages" do
@@ -130,17 +128,12 @@ describe Computer do
     end
     describe "#services_of_type" do
       it "should return a list of services given a service type" do
-        @svc.should_receive("contains_service_of_type?").with("GenericService").and_return(true)
-        @svc2.should_receive("contains_service_of_type?").with("GenericService").and_return(false)
-        @svc.should_receive("service_of_type").with("GenericService").and_return("SERVICE HERE")
+        @svc.should_receive("contains_service_of_type?").with("GenericService", "PC").and_return(true)
+        @svc2.should_receive("contains_service_of_type?").with("GenericService", "PC").and_return(false)
+        @svc.should_receive("service_of_type").with("GenericService", "PC").and_return("SERVICE HERE")
         results = @computer.services_of_type("GenericService")
         results.should == ["SERVICE HERE"]
       end
-      it "should return a specific services given a service type and server name"
-    end
-    describe "#get_data_set" do
-      it "should get information from all the correct servers"
-      it "should get information from a specific server if requested"
     end
   end
 end

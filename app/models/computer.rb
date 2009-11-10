@@ -205,7 +205,7 @@ class Computer < ActiveRecord::Base
 
   # External Server Data
   def services_of_type(service_type)
-    self.servers.delete_if {|s| !(s.contains_service_of_type?(service_type)) }.collect {|s| s.service_of_type(service_type)}
+    self.servers.delete_if {|s| !(s.contains_service_of_type?(service_type, system_class)) }.collect {|s| s.service_of_type(service_type, system_class)}
   end
   
   # Validation Routines
