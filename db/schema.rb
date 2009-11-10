@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091109152059) do
+ActiveRecord::Schema.define(:version => 20091110165021) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -44,7 +44,6 @@ ActiveRecord::Schema.define(:version => 20091109152059) do
   create_table "computers", :force => true do |t|
     t.string   "name"
     t.string   "mac_address"
-    t.string   "domain"
     t.string   "owner"
     t.string   "system_role"
     t.string   "po_number"
@@ -140,7 +139,7 @@ ActiveRecord::Schema.define(:version => 20091109152059) do
 
   create_table "servers", :force => true do |t|
     t.string   "name"
-    t.string   "type"
+    t.string   "species"
     t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"

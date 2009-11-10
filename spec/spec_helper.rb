@@ -53,3 +53,22 @@ Spec::Runner.configure do |config|
   config.include Webrat::Matchers, :type => :views
   
 end
+
+module Spec
+module Mocks
+  module Methods
+    def stub_association!(association_name, methods_to_be_stubbed = {})
+
+mock_association = Spec::Mocks::Mock.new("#{association_name} association")
+
+      methods_to_be_stubbed.each do |method, return_value|
+        mock_association.stub!(method).and_return(return_value)
+      end
+      self.stub!(association_name).and_return(mock_association)
+      mock_association
+    end
+  end
+end
+end
+
+

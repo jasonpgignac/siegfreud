@@ -7,9 +7,11 @@ class Computer < ActiveRecord::Base
   belongs_to :domain
   belongs_to :stage
   belongs_to :division
+  has_many :server_domains, :through => :domain
+  has_many :servers, :through => :server_domains
   
-  validate :must_have_proper_location_data
-  validate :must_have_proper_deployment_data
+  validates_presence_of :division
+  validate :must_have_proper_stage_data
   define_index do
     indexes :name
     indexes serial_number
@@ -21,6 +23,11 @@ class Computer < ActiveRecord::Base
   end
   
   # Virtual Attributes
+  def servers
+    server_domains.collect do |sd|
+      sd.server
+    end
+  end
   def available_stages
     stage.available_stages
   end
@@ -197,10 +204,19 @@ class Computer < ActiveRecord::Base
   end
 
   # External Server Data
-  def services_of_type(server_type)
-    Server.services.to_match
+  def services_of_type(service_type)
+    self.servers.delete_if {|s| !(s.contains_service_of_type?(service_type)) }.collect {|s| s.service_of_type(service_type)}
   end
-  # Other
+  
+  # Validation Routines
+  def must_have_proper_stage_data
+    if(stage.nil?)
+      errors.add_to_base("Stage is not defined")
+    else
+      must_have_proper_location_data
+      must_have_proper_deployment_data
+    end
+  end
   def must_have_proper_location_data
     if(stage.has_location)
       errors.add_to_base("This stage requires the location field to be defined") if (location.nil? || location.empty?)
@@ -208,10 +224,13 @@ class Computer < ActiveRecord::Base
   end
   def must_have_proper_deployment_data
     if(stage.has_deployment)
-      invalid_deployment_fields = owner.nil? || owner.empty? || domain.nil? || domain.empty? || system_role.nil? || system_role.empty? || name.nil? || name.empty? 
-      errors.add_to_base("This stage requires the owner, domain, system role and name to be defined") if (invalid_deployment_fields)
+      invalid_deployment_fields = owner.nil? || owner.empty? || system_role.nil? || system_role.empty? || name.nil? || name.empty?
+      invalid_domain = domain.nil? || !(domain.valid?) 
+      errors.add_to_base("This stage requires the owner, domain, system role and name to be defined") if (invalid_deployment_fields || invalid_domain)
     end
   end
+  
+  # Other
   def to_json
     
   end
