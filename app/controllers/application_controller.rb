@@ -67,35 +67,4 @@ class ApplicationController < ActionController::Base
     return Net::LDAP.new( { :host => "ussatx-ad-001.peroot.com", :port => 389, :auth => {:method => :simple, :username => "peroot\\ugignja", :password => "Car0lineBlack" }}) 
   end
 
-  def services
-    server_type_files = Dir["#{RAILS_ROOT}/config/mashups/server_types/*.yml"]
-    server_files = Dir["#{RAILS_ROOT}/config/mashups/servers/*.yml"]
-    
-    @server_types = Hash.new
-    server_type_files.each do |file|
-      server_type_hash = YAML.load_file(file)
-      @server_types[server_type_hash["title"]] = server_type_hash["services"]
-    end
-
-    @services = Hash.new
-    server_files.each do |file|
-      server_hash = YAML.load_file(file)
-      services = @server_types[server_hash["type"]]
-      address = server_hash["address"]
-      domains = server_hash["domains"]
-      name = server_hash["name"]
-      services.each do |service|
-        platform = service["platform"]
-        type = service["type"]
-        instantiated_service = eval("ValhallaMashup::" + type + "Service").new(address)
-        instantiated_service.name = name
-        domains.each do |domain|
-          @services[platform] ||= Hash.new
-          @services[platform][domain] ||= Hash.new
-          @services[platform][domain][type] ||= Array.new()
-          @services[platform][domain][type] << instantiated_service
-        end
-      end
-    end
-  end
 end

@@ -35,7 +35,10 @@ describe Server do
       @server.species = nil
       @server.should_not be_valid
     end
-    it "should not validate if address is not defined"
+    it "should not validate if address is not defined" do
+      @server.address = nil
+      @server.should_not be_valid
+    end
   end
   describe ":service functions" do
     describe ":species description functions" do
