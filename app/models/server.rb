@@ -11,7 +11,7 @@ class Server < ActiveRecord::Base
     species_description["services"]
   end
   def contains_service_of_type?(service_type, platform)
-    services.delete_if { |s| !(s['type'] == service_type && s['platform'] == platform) }.size > 0
+    services.clone.delete_if { |s| !(s['type'] == service_type && s['platform'] == platform) }.size > 0
   end
   def service_of_type(service_type, platform)
     raise(RuntimeError, "Server does not have a service to match [#{service_type}, #{platform}]") unless contains_service_of_type?(service_type, platform)
