@@ -207,7 +207,23 @@ class Computer < ActiveRecord::Base
   def services_of_type(service_type)
     self.servers.delete_if {|s| !(s.contains_service_of_type?(service_type, system_class)) }.collect {|s| s.service_of_type(service_type, system_class)}
   end
-  
+  def service_of_type_and_name(species, name)
+    svcs = services_of_type(species)
+    svcs.delete_if { |s| s.name != name }
+    raise(RuntimeError, "No Matching service for ['#{species}', '#{name}'] for the computer '#{short_name}'") if svcs.empty?
+    return svcs[0]
+  end
+  def get_data_set(species, name=nil)
+    if name
+      return service_of_type_and_name(species, name).info_for(self)
+    else
+      data = Hash.new()
+      services_of_type(species).each do |s|
+        data[s.name] = s.info_for(self)
+      end
+      return data
+    end
+  end
   # Validation Routines
   def must_have_proper_stage_data
     if(stage.nil?)

@@ -39,6 +39,14 @@ describe Server do
       @server.address = nil
       @server.should_not be_valid
     end
+    it "should not validate if name is not unique" do
+      @server2 = Server.new
+      @server2.name = "Test Server"
+      @server2.species = "TestServerType2"
+      @server2.address = "here.there.com/at_that/"
+      @server2.save
+      @server.should_not be_valid
+    end
   end
   describe ":service functions" do
     describe ":species description functions" do

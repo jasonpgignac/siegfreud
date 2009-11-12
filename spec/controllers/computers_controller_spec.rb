@@ -1,25 +1,20 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe ComputersController, "GET show" do
+  before :each do
+    @c = mock_model(Computer)
+    Computer.should_receive(:find_by_serial_number).with("1234567").and_return @c
+  end
   it "should find the computer matching the submitted serial number" do
-    c = mock_model(Computer)
-    Computer.stub!(:find_by_serial_number).and_return c
-    Computer.should_receive(:find_by_serial_number).with("1234567")
     get :show, :id => "1234567"
   end
-  it "should query for remote data if given a data_set parameter" do
-    c = mock_model(Computer)
-    Computer.stub!(:find_by_serial_number).and_return c
-    c.stub!(:get_data_set).and_return Hash.new()
-    c.should_receive(:get_data_set).with("computer_info", nil)
-    get :show, :id => "1234567", :data_set => "computer_info"
+  it "should query for remote data if given a service_class parameter" do
+    @c.should_receive(:get_data_set).with("ComputerInfo", nil)
+    get :show, :id => "1234567", :service_class => "ComputerInfo"
   end
-  it "should query for remote data from a single server if given a data_set and server_name parameter" do
-    c = mock_model(Computer)
-    Computer.stub!(:find_by_serial_number).and_return c
-    c.stub!(:get_data_set).and_return Hash.new()
-    c.should_receive(:get_data_set).with("computer_info", "fasolt")
-    get :show, :id => "1234567", :data_set => "computer_info", :server_name => "fasolt"
+  it "should query for remote data from a single server if given a service_class and service_name parameter" do
+    @c.should_receive(:get_data_set).with("ComputerInfo", "fasolt")
+    get :show, :id => "1234567", :service_class => "ComputerInfo", :service_name => "fasolt"
   end
 end
 describe ComputersController, "GET index" do

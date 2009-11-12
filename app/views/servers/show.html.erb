@@ -5,7 +5,7 @@
 
 <p>
   <b>Type:</b>
-  <%=h @server.type %>
+  <%=h @server.species %>
 </p>
 
 <p>
@@ -13,6 +13,14 @@
   <%=h @server.address %>
 </p>
 
+<p>
+	<b>Domains</b>
+	<ul>
+		<% @server.domains.each do |s|%>
+			<li><%= s.name %></li>
+		<% end %>
+	</ul>
+</p>	
 
 <%= link_to 'Edit', edit_server_path(@server) %> |
 <%= link_to 'Back', servers_path %>

@@ -3,7 +3,7 @@ class Server < ActiveRecord::Base
   has_many :domains, :through => :server_domains
   
   validates_presence_of :name, :species, :address
-  
+  validates_uniqueness_of :name
   def species_description
     @sd ||= YAML.load_file("#{RAILS_ROOT}/config/mashups/server_types/#{species}.yml")
   end

@@ -10,7 +10,7 @@
 <% @servers.each do |server| %>
   <tr>
     <td><%=h server.name %></td>
-    <td><%=h server.type %></td>
+    <td><%=h server.species %></td>
     <td><%=h server.address %></td>
     <td><%= link_to 'Show', server %></td>
     <td><%= link_to 'Edit', edit_server_path(server) %></td>

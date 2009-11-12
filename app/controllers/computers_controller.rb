@@ -1,9 +1,7 @@
 class ComputersController < ApplicationController
   def show
     @computer = Computer.find_by_serial_number(params[:id])
-    if(params[:data_set])
-      @computer_data = @computer.get_data_set(params[:data_set], params[:server_name])
-    end
+    @computer_data = @computer.get_data_set(params[:service_class], params[:service_name]) if params[:service_class]
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @computer_data ? @computer_data : @computer }
@@ -45,6 +43,7 @@ class ComputersController < ApplicationController
         format.xml  { render :file => "#{RAILS_ROOT}/public/404.html", :status => 404}
         format.json { render :file => "#{RAILS_ROOT}/public/404.html", :status => 404}
       end
+    
     end
   end
   def edit

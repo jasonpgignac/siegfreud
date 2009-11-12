@@ -44,3 +44,6 @@ function installed_peripherals(request) {
 	);
 	new Insertion.Bottom('installed_peripherals'), '</ul>'; 
 }
+
+function computer_information_services(request) {
+}
