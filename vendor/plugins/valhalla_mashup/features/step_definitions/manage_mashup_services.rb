@@ -1,11 +1,9 @@
 Given /^an address string (.*)$/ do |address|
   @address = address
 end
-
 When /^I define a new mashup service with it$/ do
   @service = Mashup::MashupService.new(@address)
 end
-
 Then /^the (\w*) of the mashup service should be (.*)$/ do |field, value|
   url = @service.url
   url.send(field) == value
@@ -14,7 +12,6 @@ end
 Given /^a mashup service with address (.*)$/ do |address|
   @service = Mashup::MashupService.new(address)
 end
-
 When /^I send a (\w*) request to (.*) with parameters {(.*)}$/ do |method, path, parameter_string|
   if parameter_string =~ /^\w*$/
     empty_stub_get_at_path(@service.url, path)

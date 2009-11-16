@@ -2,9 +2,6 @@ module ComputerHelper
   def system_classes
     ["Win32","Mac"]
   end
-  def domains
-    ["PEROOT.COM","NCSP.PEROOT.COM","MEASSVCS.COM"]
-  end
   def system_roles
     ["Primary","Secondary","Walkup","Loaner"]
   end

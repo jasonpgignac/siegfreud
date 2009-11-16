@@ -49,10 +49,11 @@ module MainHelper
 					              :width => "20px",
 					              :style => "border: none")
 		link_to_remote( img,
-                    :url => url,
-                    :method => :get,
-                    :complete => "#{script}(request);$('spinner').hide();$('#{div}').show();$('#{div.to_s + "_closed"}').hide();$('#{div.to_s + "_open"}').show();", 
-                    :before => "$('spinner').show();")
+                    { :url => url,
+                      :method => :get,
+                      :complete => "#{script}(request);$('spinner').hide();$('#{div}').show();$('#{div.to_s + "_closed"}').hide();$('#{div.to_s + "_open"}').show();", 
+                      :before => "$('spinner').show();"},
+                    :id => div.to_s + "_closed_link")
   end
   def title(div)
     div.to_s.split("_").collect{ |s| s.capitalize }.join(" ")

@@ -215,11 +215,11 @@ class Computer < ActiveRecord::Base
   end
   def get_data_set(species, name=nil)
     if name
-      return service_of_type_and_name(species, name).info_for(self)
+      return service_of_type_and_name(species, name).info_for(self.serial_number)
     else
       data = Hash.new()
       services_of_type(species).each do |s|
-        data[s.name] = s.info_for(self)
+        data[s.name] = s.info_for(self.serial_number)
       end
       return data
     end

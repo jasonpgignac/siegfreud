@@ -3,18 +3,23 @@
 
 function assigned_licenses(request) { 
 	licenses = request.responseText.evalJSON();
-	$('assigned_licenses').innerHTML = ' '; 
-	new Insertion.Bottom('assigned_licenses'), '<ul>'
-	licenses.each(
-		function(license, index) {
-			new Insertion.Bottom('assigned_licenses', 
-				'<li>' + license.license.package.manufacturer + 
-				' ' + license.license.package.name +
-				' ' + license.license.package.version + 
-				' (' + license.license.license_key + ')</li>');
-		}
-	); 
-	new Insertion.Bottom('assigned_licenses'), '</ul>';
+	$('assigned_licenses').innerHTML = ' ';
+	if(licenses.length > 0) {
+		insert = '<ul>' 
+		licenses.each(
+			function(license, index) {
+				insert = insert + 
+					'<li>' + license.license.package.manufacturer + 
+					' ' + license.license.package.name +
+					' ' + license.license.package.version + 
+					' (' + license.license.license_key + ')</li>';
+			}
+		);
+		insert = insert + '</ul>';
+	} else {
+		insert = "No Licenses Assigned"
+	}
+	new Insertion.Bottom('assigned_licenses', insert); 
 }
 
 function installed_peripherals(request) { 
@@ -31,19 +36,30 @@ function installed_peripherals(request) {
 	new Insertion.Bottom('installed_peripherals'), '</ul>'; 
 }
 
-function installed_peripherals(request) { 
-	peripherals = request.responseText.evalJSON();
-	$('installed_peripherals').innerHTML = ' '; 
-	new Insertion.Bottom('installed_peripherals'), '<ul>'
-	peripherals.each(
-		function(peripheral, index) {
-			new Insertion.Bottom('installed_peripherals', 
-				'<li>' + peripheral.peripheral.model + 
-				' (' + peripheral.peripheral.serial_number + ')</li>');
+function computer_information(request) {
+	info_sets = request.responseText.evalJSON();
+	var fields = new Array();
+	for(info_set_name in info_sets) {
+		
+		for(name in info_sets[info_set_name]) {
+			fields.push(name);
 		}
-	);
-	new Insertion.Bottom('installed_peripherals'), '</ul>'; 
-}
-
-function computer_information_services(request) {
+	}
+	fields = fields.uniq();
+	code = "<table><tr><th>Fields</th>";
+	for (info_set_name in info_sets) {
+		code = code + "<th>" + info_set_name + "</th>"
+	}
+	code = code + "</tr>"
+	fields.each(
+		function(field, index) {
+			code = code + "<tr><td>" + field + "</td>"
+			for (info_set_name in info_sets) {
+				code = code + "<td>" + info_sets[info_set_name][field] + "</td>"
+			}
+			code = code + "</tr>"
+		}
+	)
+	code = code + "</table>"
+	new Insertion.Bottom('computer_information', code)
 }

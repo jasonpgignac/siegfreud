@@ -4,8 +4,8 @@ class ComputersController < ApplicationController
     @computer_data = @computer.get_data_set(params[:service_class], params[:service_name]) if params[:service_class]
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @computer_data ? @computer_data : @computer }
-      format.json  { render :json => @computer_data ? @computer_data : @computer }
+      format.xml  { render :xml => (@computer_data.empty? ? @computer : @computer_data) }
+      format.json  { render :json => (@computer_data.empty? ? @computer : @computer_data) }
     end
   end
   def index

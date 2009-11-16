@@ -37,6 +37,7 @@ describe Computer do
         @computer.division = nil
         @computer.should_not be_valid
       end
+      it "should not validate if serial number is not unique"
     end
     describe "#location_data" do
       before :each do
