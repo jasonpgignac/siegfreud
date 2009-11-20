@@ -10,7 +10,10 @@ module NavigationHelpers
     
     when /the home\s?page/
       '/'
-    
+    when /^the show page for computer (.*)$/ 
+      computer_path($1)
+    when /^the edit page for computer (.*)$/ 
+      edit_computer_path($1)  
     # Add more mappings here.
     # Here is a more fancy example:
     #

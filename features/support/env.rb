@@ -19,7 +19,7 @@ require 'cucumber/rails/world'
 # after each scenario, which can lead to hard-to-debug failures in 
 # subsequent scenarios. If you do this, we recommend you create a Before
 # block that will explicitly put your database in a known state.
-Cucumber::Rails::World.use_transactional_fixtures = true
+Cucumber::Rails::World.use_transactional_fixtures = false
 
 # If you set this to false, any error raised from within your app will bubble 
 # up to your step definition and out to cucumber unless you catch it somewhere
@@ -37,11 +37,20 @@ require 'cucumber'
 require 'cucumber/formatter/unicode'
 require 'cucumber/webrat/element_locator' # Lets you do table.diff!(element_at('#my_table_or_dl_or_ul_or_ol').to_table)
 require 'cucumber/rails/rspec'
-
 require 'webrat'
 require 'webrat/core/matchers' 
+require 'database_cleaner'
+require 'database_cleaner/cucumber'
+
+DatabaseCleaner.strategy = :truncation
+
 Webrat.configure do |config|
-  config.mode = :rails
+  config.mode = :selenium
   config.open_error_files = false # Set to true if you want error pages to pop up in the browser
 end
 
+class ActiveSupport::TestCase 
+  setup do |session|
+    session.host! "localhost:3001" 
+  end
+end

@@ -10,6 +10,7 @@ Given /^a computer with serial number (.*)$/ do |serial|
       :is_transitory  => false)
   
   domain = Domain.find_by_name("test.com") || Domain.create!( :name => "test.com")
+  domain = Domain.find_by_name("othertest.com") || Domain.create!( :name => "othertest.com")
   
   @c = Computer.create!(
       :serial_number  => serial,
@@ -198,6 +199,7 @@ When /^I click the button to retrieve remote computer information$/ do
     "os"              => "Linux of Happiness",
     "serial_number"   => "7dsdsdgs"
   }
+  sleep 20
   srv1 = start_dummy_web_service(8985,"#{RAILS_ROOT}/tmp/temp_srv1")
   srv2 = start_dummy_web_service(8986,"#{RAILS_ROOT}/tmp/temp_srv2")
   FileUtils.makedirs(File.split("#{RAILS_ROOT}/tmp/temp_srv1/computers/23428.json")[0])
@@ -331,7 +333,9 @@ Given /^a stage is available with \[(.*)\] information$/ do |info_types|
   
   current_stage.available_stages << stage
 end
-
+When  /^I wait for (.*) seconds$/ do |time|
+  sleep time.to_i
+end
 def start_dummy_web_service(port,folder)
   IO.popen("ruby #{RAILS_ROOT}/features/support/dummy_web_server.rb #{port} #{folder}")
 end

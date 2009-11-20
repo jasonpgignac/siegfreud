@@ -2,31 +2,4 @@
 	<% @view = "/computers/edit_form_partials/current_status" %>
 	<%= closed_disclosure_area(@computer, @view) %>
 </div>
-<% if (@computer.stage != "Storage" && @computer.stage != "Disposal")%>
-	<div id='assigned_licenses'>
-		<% @view = "/computers/edit_form_partials/assigned_licenses" %>
-		<%= closed_disclosure_area(@computer, @view) %>
-	</div>
-	<div id='installed_peripherals'>
-		<% @view = "/computers/edit_form_partials/installed_peripherals" %>
-		<%= closed_disclosure_area(@computer, @view) %>
-	</div>
-<% end %>
 
-<%= drop_receiving_element('assigned_licenses', 
-	:accept => ['Package','Bundle'],
-	:complete => "$('spinner').hide();", 
-	:before => "$('spinner').show();", 
-	:hoverclass => 'hover', 
-	:with => "'pkg_or_bundle=' + encodeURIComponent(element.id)",
-	:url => {   :action      =>  :add_licensed_package_or_bundle, 
-				:computer_id  =>  @computer.id}) %>
-				
-<%= drop_receiving_element('installed_peripherals', 
-	:accept => ['Peripheral'],
-	:complete => "$('spinner').hide();", 
-	:before => "$('spinner').show();", 
-	:hoverclass => 'hover', 
-	:with => "'peripheral_id=' + encodeURIComponent(element.id.split('_').last())",
-	:url => {   :action      =>  :add_installed_peripheral, 
-				:computer_id  =>  @computer.id}) %>
