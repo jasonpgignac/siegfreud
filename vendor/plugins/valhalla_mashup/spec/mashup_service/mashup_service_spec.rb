@@ -13,6 +13,7 @@ module ValhallaMashup
         mashup.url.password.should == "pass"
         mashup.url.path.should == "/test/path/"
       end
+      it "should set other variables, if they are included as parameters"
     end
     context "a generic server" do
       before(:each) do
@@ -63,8 +64,8 @@ module ValhallaMashup
   describe ComputerInformationService do
     context "a generic server" do
       before(:each) do
-        @mashup = ComputerInformationService.new("http://user:pass@test.com/")
-        @sample_computer = {
+        @mashup = ComputerInformationService.new("http://user:pass@test.com/", :computer_key_field => :serial_number)
+        @sample_computer_data = {
           "domain"          => "PEROOT",
           "ip_addresses"    => ["10.133.220.41"],
           "freshness_date"  => "2009-10-09T12:42:21+00:00",
@@ -74,6 +75,7 @@ module ValhallaMashup
           "mac_addresses"   => ["00:1E:4F:C9:17:A1"],
           "os"              => "Microsoft Windows NT Workstation 5.1"
         }
+        @sample_computer = mock('Computer')
         @sample_computers = [
           {
             "domain"        => "PEROOT",
@@ -99,15 +101,19 @@ module ValhallaMashup
           }
         ]
       end
-      it "should return computer information given a serial number" do  
-        empty_stub(:get,'http://user:pass@test.com/computers/1234567.json', @sample_computer)
-        res = @mashup.info_for("1234567")
-        res.should == @sample_computer
+      it "should return computer information given a computer object" do
+        empty_stub(:get,'http://user:pass@test.com/computers/1234567.json', @sample_computer_data)
+        @sample_computer.should_receive(:serial_number).and_return("1234567")
+        res = @mashup.info_for(@sample_computer)
+        res.should == @sample_computer_data
       end
       it "should return a list of computers given a query" do
         empty_stub(:get,'http://user:pass@test.com/computers.json?query=umartar', @sample_computers)
         res = @mashup.search("umartar")
         res.should == @sample_computers
+      end
+      it "should throw a runtime error if a computer is created without a key field defined" do 
+        lambda{ComputerInformationService.new("http://user:pass@test.com/")}.should raise_error(RuntimeError)
       end
     end
   end
@@ -228,6 +234,7 @@ module ValhallaMashup
           }
         ]
       end
+      it "should be a child object of PackageInformationService"
       it "should return a list of assignments, given a computer name" do
         empty_stub(:get,'http://user:pass@test.com/computers/1234567/advertisements.json', @packages)
         res = @mashup.advertisements_for_computer("1234567")
@@ -317,6 +324,7 @@ module ValhallaMashup
           }
         ]
       end
+      it "should be a child object of ComputerInformationService"
       it "should return data on a given package" do
         empty_stub(:get, 'http://user:pass@test.com/packages/100000FB.json', @package)
         res = @mashup.info_for("100000FB")

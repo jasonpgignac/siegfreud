@@ -1,8 +1,10 @@
 ---
-title: Fafnir
-services:
+:title: Fafnir
+:services:
 -   :type: ComputerInformation
     :platform: Win32
+    :variables: 
+        :computer_key_field: :serial_number
 -   :type: PackageInformation
     :platform: Win32
 -   :type: SoftwareManagement

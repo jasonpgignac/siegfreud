@@ -12,6 +12,7 @@ class Computer < ActiveRecord::Base
   
   validates_presence_of :division
   validate :must_have_proper_stage_data
+  validates_uniqueness_of :serial_number
   define_index do
     indexes :name
     indexes serial_number
@@ -215,11 +216,11 @@ class Computer < ActiveRecord::Base
   end
   def get_data_set(species, name=nil)
     if name
-      return service_of_type_and_name(species, name).info_for(self.serial_number)
+      return service_of_type_and_name(species, name).info_for(self)
     else
       data = Hash.new()
       services_of_type(species).each do |s|
-        data[s.name] = s.info_for(self.serial_number)
+        data[s.name] = s.info_for(self)
       end
       return data
     end

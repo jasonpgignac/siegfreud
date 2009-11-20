@@ -8,16 +8,16 @@ describe Server do
     @server.address = "here.there.com/at_this/"
     
     @server_data = {
-      "title" => "Brunhilde",
+      :title => "Brunhilde",
 
-      "services" => [
+      :services => [
           { 
-              "type"      => "Test",
-              "platform"  =>  "Mac"
+              :type       => "Test",
+              :platform   =>  "Mac"
           },
           { 
-              "type"      => "Test2",
-              "platform"  => "Mac"
+              :type      => "Test2",
+              :platform  => "Mac"
           }
         ]
     }
@@ -54,7 +54,10 @@ describe Server do
         @server.species_description.should == @server_data
       end
       it "should return a list of services from the yml file" do
-        @server.services.should == @server_data["services"]
+        svcs = @server.services
+        @server_data[:services].each do |template|
+          svcs[template[:platform]][template[:type]].is_a?(ValhallaMashup::MashupService).should == true
+        end
       end
     end
     describe ":contains_service_of_type?" do
@@ -74,7 +77,27 @@ describe Server do
         ValhallaMashup::TestService.should_receive("new").with(@server.address).and_return(svc)
         svc.should_receive("name=").with(@server.name).and_return(true)
         @server.service_of_type("Test", "Mac").should == svc
-        
+      end
+      it "should set instance variables in the service, if they are defined" do
+        @server_data = {
+          :title => "Odin",
+
+          :services => [
+              { 
+                  :type       => "Test",
+                  :platform   =>  "Mac",
+                  :variables  => {
+                    :computer_key_field   => :serial_number,
+                    :person_key_field     => :login_name
+                  }
+              }
+            ]
+        }
+        YAML.stub!(:load_file).with("#{RAILS_ROOT}/config/mashups/server_types/TestServerType.yml").and_return(@server_data)
+        svc = mock(ValhallaMashup::TestService)
+        ValhallaMashup::TestService.should_receive("new").with(@server.address, @server_data[:services][0][:variables]).and_return(svc)
+        svc.should_receive("name=").with(@server.name).and_return(true)
+        @server.service_of_type("Test", "Mac").should == svc
       end
       it "should throw an exception if the server does not offer this service" do
         lambda{@server.service_of_type("Bad", "Mac")}.should raise_error(RuntimeError)

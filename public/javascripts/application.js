@@ -36,6 +36,26 @@ function installed_peripherals(request) {
 	new Insertion.Bottom('installed_peripherals'), '</ul>'; 
 }
 
+function software_management(request) {
+	info_sets = request.responseText.evalJSON();
+	var rows = new Array();
+	for(info_set_name in info_sets) {
+		info_set = info_sets[info_set_name];
+		info_set.each(
+			function(advert, index) {
+				rows.push([info_set_name,advert.name]);
+			}
+		)
+	}
+	
+	code = "<table><tr><th>Name</th><th>Server</th></tr>";
+	rows.each( function(row, index) {
+		code = code + "<tr><td>" + row[0] + "</td><td>" + row[1] + "</td></tr>"
+	})
+	code = code + "</table>"
+	new Insertion.Bottom('software_management', code)
+}
+
 function computer_information(request) {
 	info_sets = request.responseText.evalJSON();
 	var fields = new Array();

@@ -8,15 +8,27 @@ class Server < ActiveRecord::Base
     @sd ||= YAML.load_file("#{RAILS_ROOT}/config/mashups/server_types/#{species}.yml")
   end
   def services
-    species_description["services"]
+    return @services if @services
+    
+    @services = Hash.new
+    species_description[:services].each do |srv_desc|
+      services[srv_desc[:platform]] ||= Hash.new
+      if srv_desc[:variables]
+        @services[srv_desc[:platform]][srv_desc[:type]] = eval("ValhallaMashup::" + srv_desc[:type] + "Service").new(address, srv_desc[:variables])
+      else
+        @services[srv_desc[:platform]][srv_desc[:type]] = eval("ValhallaMashup::" + srv_desc[:type] + "Service").new(address)
+      end
+      @services[srv_desc[:platform]][srv_desc[:type]].name = name
+    end
+    return @services
   end
   def contains_service_of_type?(service_type, platform)
-    services.clone.delete_if { |s| !(s[:type] == service_type && s[:platform] == platform) }.size > 0
+    return false if services[platform].nil?
+    return false if services[platform][service_type].nil?
+    return true
   end
   def service_of_type(service_type, platform)
     raise(RuntimeError, "Server does not have a service to match [#{service_type}, #{platform}]") unless contains_service_of_type?(service_type, platform)
-    svc = eval("ValhallaMashup::" + service_type + "Service").new(address)
-    svc.name = name
-    svc
+    services[platform][service_type]
   end
 end

@@ -8,7 +8,7 @@ describe Computer do
     d.stub!(:display_name).and_return "Division X (100,101,102)"
     d.stub!(:valid?)
     @computer = Computer.new(
-        :serial_number  => "1234567",
+        :serial_number  => "12345678",
         :po_number      => "7654321",
         :model          => "Dell Platitudes E9000",
         :system_class   => "PC",
@@ -37,7 +37,20 @@ describe Computer do
         @computer.division = nil
         @computer.should_not be_valid
       end
-      it "should not validate if serial number is not unique"
+      it "should not validate if serial number is not unique" do
+        d = mock_model(Division)
+        d.stub!(:id) .and_return 1
+        d.stub!(:display_name).and_return "Division X (100,101,102)"
+        d.stub!(:valid?)
+        Computer.create(
+            :serial_number  => "12345678",
+            :po_number      => "7654321",
+            :model          => "Dell Platitudes Duplicate Serial",
+            :system_class   => "PC",
+            :division       => d,
+            :stage          => @stage).should be_valid
+        @computer.should_not be_valid
+      end
     end
     describe "#location_data" do
       before :each do

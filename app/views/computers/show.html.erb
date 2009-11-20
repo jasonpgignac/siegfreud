@@ -38,9 +38,9 @@
 		<%= closed_disclosure_area("computer_information", computer_path(@computer.serial_number, :format => :json, :service_class => "ComputerInformation")) %>
 		<div id="computer_information"></div>
 	<% end %>
-	<% @computer.services_of_type("SoftwareManagement").each do |service| %>
-		<%= closed_computer_service_disclosure_area(service, @computer) %>
-		<div id="<%=service_div_name(service)%>"></div>
+	<% if @computer.services_of_type("SoftwareManagement").size > 0 %>
+		<%= closed_disclosure_area("software_management", computer_path(@computer.serial_number, :format => :json, :service_class => "SoftwareManagement")) %>
+		<div id="software_management"></div>
 	<% end %>
 <% end %>
 

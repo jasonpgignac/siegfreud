@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe StageTransition do
   before(:each) do
-    src = Stage.new(:name => "Source", :has_location => false, :has_deployment => false, :is_transitory => false).save
-    dest = Stage.new(:name => "Source", :has_location => false, :has_deployment => false, :is_transitory => false).save
+    src = Stage.create!(:name => "Source", :has_location => false, :has_deployment => false, :is_transitory => false)
+    dest = Stage.create!(:name => "Destination", :has_location => false, :has_deployment => false, :is_transitory => false)
     valid_attributes = {
-      :source_id => src,
-      :destination_id => dest
+      :source => src,
+      :destination => dest
     }
     @transition = StageTransition.new(valid_attributes)
   end
