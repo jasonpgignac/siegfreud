@@ -16,6 +16,12 @@
 		<div class="header">
 			<h1>Siegfreud 0.3.0ß</h1>
 		</div>
+		<div>
+			<%=link_to "Home", "/main" %> | 
+			<%=link_to "Rollout System", divisions_path %> |
+			<%=link_to "Purchasing", new_purchase_order_path %>
+		</div>
+			
 		<div class="body">
 			<%= yield%>
 		</div>

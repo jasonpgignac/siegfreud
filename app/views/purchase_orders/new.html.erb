@@ -5,7 +5,7 @@
 	Division: <%= f.select(:division_id, 
 			  options_from_collection_for_select(Division.find(:all),
 			  "id",
-			  "display_name")) %>
+			  "display_name"), :include_blank => true) %>
   	<p>
     	<%= f.submit 'Create' %>
   	</p>

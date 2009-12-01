@@ -7938,3 +7938,9 @@
 [Tue Dec  1 09:45:29.882 2009] [21388] rotating indices (seamless=1)
 [Tue Dec  1 09:45:29.886 2009] [21388] rotating index 'peripheral_delta': success
 [Tue Dec  1 09:45:29.887 2009] [21388] rotating finished
+[Tue Dec  1 12:07:31.330 2009] [21388] rotating indices (seamless=1)
+[Tue Dec  1 12:07:31.393 2009] [21388] rotating index 'computer_delta': success
+[Tue Dec  1 12:07:31.393 2009] [21388] rotating finished
+[Tue Dec  1 12:09:32.438 2009] [21388] rotating indices (seamless=1)
+[Tue Dec  1 12:09:32.442 2009] [21388] rotating index 'computer_delta': success
+[Tue Dec  1 12:09:32.442 2009] [21388] rotating finished

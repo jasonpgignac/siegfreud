@@ -13,7 +13,7 @@
     <td><%= link_to 'Show', division %></td>
     <td><%= link_to 'Edit', edit_division_path(division) %></td>
     <td><%= link_to 'Destroy', division, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+	<td><%= link_to 'Available Computers', "/divisions/#{division.id}/computers.pdf?stage_id=1"%>
 <% end %>
 </table>
 

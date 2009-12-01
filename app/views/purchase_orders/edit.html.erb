@@ -2,6 +2,7 @@
 <h3>New Purchase</h3>
 <h4>Purchase Order Information<h4>
 <div>
+	<%= link_to "Done", :action => "index", :controller => "main"%>
 	<% form_remote_tag 	:url => new_computer_path,
 						:after	=> "RedBox.showInline('hidden_content_alert')" do %>
 		<%= hidden_field(:computer, :po_number, :value => @purchase_order.po_number) %>
@@ -56,4 +57,3 @@
 <div id="new_licenses" >
 	<%= render :partial =>	'licenses_in_po'%>
 </div>
-<%= link_to "Done", :action => "index", :controller => "main"%>

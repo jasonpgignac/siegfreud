@@ -45,7 +45,9 @@ class Computer < ActiveRecord::Base
     end
   end
   def current_location
-    self.stage.name + ": " + (self.owner.nil? ? self.location.to_s : self.owner.to_s)
+    self.stage.name + 
+      (self.stage.has_location ? ": #{self.location}" : "") +
+      (self.stage.has_deployment ? ": #{self.owner}(#{self.system_role})": "")
   end
 
   # Inventory Creation Functions

@@ -6344,3 +6344,7 @@
 [Tue Dec  1 09:44:09.031 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
 [Tue Dec  1 09:44:09.286 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
 [Tue Dec  1 09:45:43.981 2009] 0.029 sec [all/2/rel 2 (0,20)] [package_core] Acrobat
+[Tue Dec  1 12:07:30.666 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Tue Dec  1 12:07:31.440 2009] 0.000 sec [scan/2/rel 0 (0,20)] [computer_core] 
+[Tue Dec  1 12:09:32.236 2009] 0.013 sec [scan/2/rel 1 (0,20)] [computer_core] 
+[Tue Dec  1 12:09:32.552 2009] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core] 
