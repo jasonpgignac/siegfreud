@@ -179,3 +179,8 @@ table.itemlisting td{
 	background: #888888;
 	padding: 2px;
 }
+
+#user_nav {
+	float:right;
+	font-size: 12px;
+}

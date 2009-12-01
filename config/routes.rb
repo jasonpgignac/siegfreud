@@ -1,13 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :user_sessions
+  map.resources :users
   map.resources :domains
-
   map.resources :servers
-
   map.connect 'divisions/:division_id/computers.:format',
 	:controller => "computers",
 	:action => "index"
   map.resources :divisions
-
   map.resources :packages do |r|
     r.resources :maps, :controller => :package_maps
   end
@@ -19,8 +18,10 @@ ActionController::Routing::Routes.draw do |map|
     r.resources :peripherals
   end
   map.resources :purchase_orders
-  
-  map.connect ':controller/:action/:id', :controller => 'main'
+  map.login "login", :controller => "user_sessions", :action => "new"
+  map.logout "logout", :controller => "user_sessions", :action => "destroy"
+  map.root :controller => "main", :action => "index"
+  map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   
 end

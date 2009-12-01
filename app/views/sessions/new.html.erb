@@ -1,0 +1,13 @@
+<h1>Login</h1>
+
+<% form_for(@session) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+	<label for="openid_url">OpenID URL</label><br />
+	<%= text_field_tag "openid_url"%>
+    <%= f.submit 'Log in' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', sessions_path %>

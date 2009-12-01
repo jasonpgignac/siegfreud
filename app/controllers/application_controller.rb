@@ -18,6 +18,8 @@ class ApplicationController < ActionController::Base
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
   
+  helper_method :current_user
+  
   # Configuration variables for authentication
   TREEBASE = 'DC=PEROOT,DC=COM'
   DOMAIN = "PEROOT\\"
@@ -65,5 +67,13 @@ class ApplicationController < ActionController::Base
   def initialize_ldap_con(user_name, password)
     return Net::LDAP.new( { :host => "ussatx-ad-001.peroot.com", :port => 389, :auth => {:method => :simple, :username => "peroot\\ugignja", :password => "Car0lineBlack" }}) 
   end
-
+  private
+  def current_user_session
+    return @current_user_session if defined?(@current_user_session)
+    @current_user_session = UserSession.find
+  end
+  def current_user
+    return @current_user if defined?(@current_user)
+    @current_user = current_user_session && current_user_session.record
+  end
 end
