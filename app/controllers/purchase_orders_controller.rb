@@ -66,7 +66,7 @@ class PurchaseOrdersController < ApplicationController
     
     refresh_po_instance(params[:po_number], params[:division_id])
     update_page do |page|
-      page.set_redbox('edit_computer_form')
+      page.set_redbox('computers/embedded_new')
     end
   end
   def edit_computer

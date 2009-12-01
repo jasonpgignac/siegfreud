@@ -1,6 +1,6 @@
 Feature: Examine Computers
 
-	So that can get information about computers that are in inventory
+	So that I can get information about computers that are in inventory
 	As a technician
 	I want to look up information on computers
 	

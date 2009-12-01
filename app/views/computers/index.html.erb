@@ -12,9 +12,9 @@
 			<td><%= computer.serial_number %></td>
 			<td><%= computer.model %></td>
 			<td><%= computer.current_location %></td>
-    		<td><%= link_to 'Show', computer_path(computer.serial_number) %></td>
-    		<td><%= link_to 'Edit', edit_computer_path(computer.serial_number) %></td>
-    		<td><%= link_to 'Destroy', computer_path(computer.serial_number), :confirm => 'Are you sure?', :method => :delete %></td>
+    		<td><%= link_to 'Show', computer %></td>
+    		<td><%= link_to 'Edit', edit_computer_path(computer) %></td>
+    		<td><%= link_to 'Destroy', computer_path(computer), :confirm => 'Are you sure?', :method => :delete %></td>
   		</tr>
 	<% end %>
 </table>

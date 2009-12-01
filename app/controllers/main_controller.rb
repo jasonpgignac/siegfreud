@@ -9,7 +9,7 @@ class MainController < ApplicationController
     session[:search_string] = params[:query]
     get_tabset;
     #@sidebar_buttons = get_sidebar_buttons;
-    @sidebar_items = perform_search(session[:search_string], @sidebar_buttons)
+    @sidebar_items = perform_search(session[:search_string], @sidebar_buttons) 
     update_page do |page|
       page.redraw_item_list
     end
@@ -479,13 +479,8 @@ class MainController < ApplicationController
   
   # Session Variable Management
   def perform_search (search_field, sidebar_buttons)
-    foundset = Array.new;
-    if (search_field)
-      foundset = foundset + Computer.search(search_field)
-      foundset = foundset + Package.search(search_field)
-      foundset = foundset + Bundle.search(search_field)
-      foundset = foundset + Peripheral.search(search_field)
-    end
+    return Computer.search(search_field) if search_field
+    return Array.new
   end
   def get_active_content
     if @tabset.active_tab?
@@ -494,10 +489,13 @@ class MainController < ApplicationController
     end
   end
   def get_tabset
-    unless (session[:tabset_id])
-      session[:tabset_id] = Tabset.create.id;
-    end
-    @tabset = Tabset.find(session[:tabset_id])
+    begin
+      @tabset = Tabset.find(session[:tabset_id])
+    rescue ActiveRecord::RecordNotFound
+      @tabset = nil
+    end if (session[:tabset_id])
+    @tabset ||= Tabset.create
+    session[:tabset_id] = @tabset.id;
     get_active_content
   end
   def get_sidebar_buttons

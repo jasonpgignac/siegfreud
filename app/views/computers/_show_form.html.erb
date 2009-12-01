@@ -1,0 +1,38 @@
+<div>
+	<%= link_to "View History", 
+			computer_actions_path(@computer), 
+			:popup => true %>
+	<%= link_to "Print Record", 
+			{ 	:controller => "computers", 
+				:action => "show", 
+				:id => @computer.serial_number, 
+				:format => "pdf" }, 
+			:popup => true %>
+</div>
+<%= render :partial => 'computers/computer_data' %>
+<div class="databox">
+	Stage: <%= @computer.stage.name %>
+	<% if (@computer.stage.has_deployment)%>
+		Owner: <%= @computer.owner %><br />
+		System Role: <%= @computer.system_role %><br />
+		Name: <%= @computer.name%><br />
+		Domain: <%= @computer.domain.name%>
+	<% end %>
+	<% if (@computer.stage.has_location) %>
+		Location: <%= @computer.location %>
+	<% end %>
+</div>
+<% if (@computer.stage.has_deployment)%>
+	<%= closed_disclosure_area("assigned_licenses", computer_licenses_path(@computer.serial_number, :format => :json)) %>
+	<div id='assigned_licenses'></div>
+	<%= closed_disclosure_area("installed_peripherals", computer_peripherals_path(@computer.serial_number, :format => :json)) %>
+	<div id='installed_peripherals'></div>
+	<% if @computer.services_of_type("ComputerInformation").size > 0 %>
+		<%= closed_disclosure_area("computer_information", computer_path(@computer.serial_number, :format => :json, :service_class => "ComputerInformation")) %>
+		<div id="computer_information"></div>
+	<% end %>
+	<% if @computer.services_of_type("SoftwareManagement").size > 0 %>
+		<%= closed_disclosure_area("software_management", computer_path(@computer.serial_number, :format => :json, :service_class => "SoftwareManagement")) %>
+		<div id="software_management"></div>
+	<% end %>
+<% end %>

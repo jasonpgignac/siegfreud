@@ -161,6 +161,15 @@ div.info_box {
 	overflow: auto;	
 }
 
+div#hidden_content_alert {
+	display: 	none;
+	padding: 	5px; 
+	height: 	300px; 
+	width: 		500px; 
+	background: #FFF; 
+	overflow:	auto;
+}
+
 table.itemlisting th{
 	padding: 2px;
 	background: #FFFFFF;

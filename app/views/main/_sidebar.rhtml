@@ -3,7 +3,7 @@
 						:complete => "$('spinner').hide();", 
 						:before => "$('spinner').show();") do%>
 		<%= text_field_tag(:query, @query, :size => 15) %>
-		<%= submit_tag("->")%>
+		<%= submit_tag("Search")%>
 	<% end %>
 </div>
 <div class="content_list" id="content_list">

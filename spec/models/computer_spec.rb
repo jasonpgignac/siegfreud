@@ -51,6 +51,18 @@ describe Computer do
             :stage          => @stage).should be_valid
         @computer.should_not be_valid
       end
+      it "should not validate if there is no serial number" do
+        @computer.serial_number = nil
+        @computer.should_not be_valid
+      end
+      it "should not validate if there is no model" do
+        @computer.model = nil
+        @computer.should_not be_valid
+      end
+      it "should not validate if there is no po number" do
+        @computer.po_number = nil
+        @computer.should_not be_valid
+      end
     end
     describe "#location_data" do
       before :each do

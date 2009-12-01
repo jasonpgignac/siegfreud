@@ -1,5 +1,24 @@
-<div id='current_status'>
-	<% @view = "/computers/edit_form_partials/current_status" %>
-	<%= closed_disclosure_area(@computer, @view) %>
-</div>
+ <%= f.error_messages %> 
+<div class="databox">
+	<table>
+		<tr>
+			<td>Stage:</td>
+			<td>
+				<%= f.collection_select(	:stage_id, @computer.available_stages, :id, :name) %>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="databox">
+		<div id="location_data" style='display: <%= @computer.stage.has_location ? "inline" : "none" %>'>
+			<%= render :partial => 'location_form' %>
+		</div>
+		<div id="deployment_data" style='display: <%= @computer.stage.has_deployment ? "inline" : "none" %>'>
+			<%= render :partial => 'deployment_form' %>
+		</div>
+	</div>
+	<p><%= f.submit 'Save Changes' %></p>
 
+<%= observe_field('computer_stage_id',
+                  :frequency 	=> 0.5,
+                  :function 	=> stage_change) %>

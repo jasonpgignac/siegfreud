@@ -71,7 +71,6 @@ private
       puts url_options.values.join('_')
       result = result + url_to_id_string(url_options.values.join('_'))
     end
-    puts "Redbox id is " + result
     result
   end
   
@@ -83,7 +82,9 @@ private
   end
 
   def build_hidden_content(hidden_content_id)
-    content_tag("div", '', :id => hidden_content_id, :style => 'display: none;')
+    close_button = content_tag("p", link_to_close_redbox("close"), :style => "align:right")
+    content_div = content_tag("div",nil,:id => "redbox_content")
+    return content_tag("div", close_button + content_div, :id => hidden_content_id, :style => 'display: none;padding: 5px; height: 300px; width: 500px; background: #FFF; overflow:auto')
   end
   
   def redbox_remote_options(remote_options, hidden_content_id)

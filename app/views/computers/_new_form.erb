@@ -1,0 +1,54 @@
+<%= f.error_messages %>
+<div class="databox">
+	<table>
+		<tr>
+			<td>Serial:</td> 
+			<td><%= f.text_field(:serial_number) %></td>
+		</tr>
+		<tr>
+			<td>Model:</td> 
+			<td><%= f.text_field(:model) %></td>
+		</tr>
+		<tr>
+			<td>System Class:</td> 
+			<td><%= f.select(:system_class, system_classes) %></td>
+		</tr>
+	</table>
+</div>
+<div class="databox">
+	<table>
+		<tr>
+			<td>Stage:</td>
+			<td>
+				<%= f.select(	:stage_id, 
+								options_from_collection_for_select(
+									Stage.find(:all),
+			 			  			"id",
+			 			  			"name")) %>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="databox">
+	<div id="location_data" style='display: <%= (@computer.stage && @computer.stage.has_location) ? "inline" : "none" %>'>
+		<%= render :partial => 'location_form' %>
+	</div>
+	<div id="deployment_data" style='display: <%= (@computer.stage && @computer.stage.has_deployment) ? "inline" : "none" %>'>
+		<%= render :partial => 'deployment_form' %>
+	</div>
+</div>
+<div class="databox">
+	<table>
+		<tr>
+			<td>PO Number:</td> 
+			<td><%= f.text_field(:po_number) %></td>
+		</tr>
+		<tr>
+			<td>Division:</td> 
+			<td>
+				<%= collection_select(:computer, :division_id, Division.all, :id, :display_name) %>
+			</td>
+		</tr>
+	</table>
+</div>
+<p><%= f.submit 'Create' %></p>

@@ -2,6 +2,29 @@
 <h3>New Purchase</h3>
 <h4>Purchase Order Information<h4>
 <div>
+	<% form_remote_tag 	:url => new_computer_path,
+						:after	=> "RedBox.showInline('hidden_content_alert')" do %>
+		<%= hidden_field(:computer, :po_number, :value => @purchase_order.po_number) %>
+		<%= hidden_field(:computer, :division_id, :value => @purchase_order.division_id) %>
+		<%= submit_tag("New Computer")%>
+	<% end %>
+	<% form_remote_tag :url => { :action => :make_new_peripheral_in_po } do %>
+		<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+		<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
+		<%= submit_tag("New Peripheral")%>
+	<% end %>
+	<% form_remote_tag :url => { :action => :make_new_license_in_po } do %>
+		<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+		<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
+		<%= submit_tag("New License")%>
+	<% end %>
+	<% form_remote_tag :url => { :action => :make_new_bundle_in_po } do %>
+		<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
+		<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
+		<%= submit_tag("New Bundle")%>
+	<% end %>
+</div>
+<div>
 	<table>
 		<tr>
 			<td>

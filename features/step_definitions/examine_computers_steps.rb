@@ -336,6 +336,20 @@ end
 When  /^I wait for (.*) seconds$/ do |time|
   sleep time.to_i
 end
+
+When /^I type the (.*) of the computer into the search box$/ do |field|
+  item = @c
+  value = eval("item.#{field}")
+  fill_in('query', :with => value)
+end
+When /^the system updates the index$/ do
+  # Update all indexes
+  ThinkingSphinx::Test.index
+  sleep(0.25) # Wait for Sphinx to catch up
+end
+Then /^I should see an entry for the computer in the results list$/ do
+  response.should contain(@c.short_name)
+end
 def start_dummy_web_service(port,folder)
   IO.popen("ruby #{RAILS_ROOT}/features/support/dummy_web_server.rb #{port} #{folder}")
 end

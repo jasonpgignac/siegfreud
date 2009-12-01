@@ -64,5 +64,12 @@ module MainHelper
     return Array.new() unless @services[platform][domain].key?(service_type)
     return @services[platform][domain][service_type]
   end
-  
+  def remote_edit_link(content)
+    path_function = "edit_#{content.class.to_s.downcase}_path"
+    link_to_remote("Edit", :update => 'current_tab', :url => (eval("#{path_function}(content)")), :method => :get)
+  end
+  def remote_show_link(content)
+    path_function = "#{content.class.to_s.downcase}_path"
+    link_to_remote("Back", :update => 'current_tab', :url => (eval("#{path_function}(content)")), :method => :get)
+  end
 end

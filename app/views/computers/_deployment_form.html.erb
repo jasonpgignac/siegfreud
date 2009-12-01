@@ -14,12 +14,7 @@
 	<tr>
 		<td>Domain:</td>
 		<td>
-			<%= select(	:computer, 
-						:domain_id, 
-						options_from_collection_for_select(
-							Domain.find(:all),
-  							"id",
-  							"name"))%>
+			<%= collection_select(:computer, :domain_id, Domain.all, :id, :name)%>
 		</td>
 	</tr>
 </table>

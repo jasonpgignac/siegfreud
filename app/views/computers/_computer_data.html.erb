@@ -1,0 +1,8 @@
+<div id="computer_general_info" class="info_box">
+	Serial: <%= @computer.serial_number %><br />
+	Model: <%= @computer.model %><br />
+	System Class: <%= @computer.system_class %>
+	PO Number: <%= @computer.po_number %><br />
+	Division: <%= @computer.division.display_name %><br />
+	Last Audited: <%= @computer.last_audited.to_s %>
+</div>

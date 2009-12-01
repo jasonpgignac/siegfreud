@@ -3,7 +3,7 @@ class ComputersController < ApplicationController
     @computer = Computer.find_by_serial_number(params[:id])
     @computer_data = @computer.get_data_set(params[:service_class], params[:service_name]) if params[:service_class]
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render :partial => 'embedded_show' if request.xhr? }
       format.xml  { render :xml => (@computer_data.empty? ? @computer : @computer_data) }
       format.json  { render :json => (@computer_data.empty? ? @computer : @computer_data) }
     end
@@ -48,13 +48,20 @@ class ComputersController < ApplicationController
   end
   def edit
     @computer ||= Computer.find_by_serial_number(params[:id])
+    if request.xhr?
+      render :partial => 'embedded_edit'
+    end
   end
   def new
-    @computer ||= Computer.new
+    @computer ||= Computer.new(params[:computer])
     respond_to do |format|
-      format.html # new.html.erb
+      format.html
       format.xml  { render :xml => @computer }
       format.json { render :json => @computer }
+      format.js   { render :update do |page| 
+          page.replace_html 'redbox_content', :partial => 'embedded_new'
+        end
+      }
     end
   end
   def create
@@ -63,11 +70,22 @@ class ComputersController < ApplicationController
       respond_to do |format|
         if @computer.save
           flash[:notice] = 'Computer was successfully created.'
-          format.html { redirect_to(computer_path(@computer.serial_number)) }
+          format.html {redirect_to(computer_path(@computer.serial_number))}
           format.xml  { render :xml => @computer, :status => :created, :location => @computer }
+          format.js   {
+            render :update do |page|
+              page.insert_html :bottom, 'computer_table', :partial => "embedded_computer_row", :locals => {:computer => @computer}
+              page.replace_html 'redbox_content', :text => "Computer Creation Successful - #{@computer.short_name}"
+            end
+          }
         else
           format.html { redirect_to new_computer_path }
           format.xml  { render :xml => @computer.errors, :status => :unprocessable_entity }
+          format.js {
+            render :update do |page|
+              page.replace_html 'redbox_content', :partial => 'embedded_new'
+            end
+          }
         end
       end
   end
@@ -77,10 +95,22 @@ class ComputersController < ApplicationController
     respond_to do |format|
       if @computer.update_attributes(params[:computer])
         flash[:notice] = 'Computer was successfully updated.'
-        format.html { redirect_to(computer_path(@computer.serial_number)) }
+        format.html { 
+          if request.xhr?
+            render :partial => 'embedded_show'
+          else
+            redirect_to(computer_path(@computer))
+          end  
+        }
         format.xml  { head :ok }
       else
-        format.html { redirect_to(edit_computer_path(@computer.serial_number)) }
+        format.html { 
+          if request.xhr?
+            render :partial => 'embedded_edit'
+          else
+            redirect_to(edit_computer_path(@computer))
+          end  
+        }
         format.xml  { render :xml => @computer.errors, :status => :unprocessable_entity }
       end
     end

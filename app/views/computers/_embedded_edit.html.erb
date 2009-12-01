@@ -1,0 +1,6 @@
+<h3>Editing computer</h3>
+<%= render :partial => "computers/computer_data"%>
+<% remote_form_for(@computer, :update => 'current_tab') do |f| %>
+	<%= render :partial => 'edit_form', :locals => { :f => f } %>
+<% end %>
+<%= remote_show_link(@computer) %>

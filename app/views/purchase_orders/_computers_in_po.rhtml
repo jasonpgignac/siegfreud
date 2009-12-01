@@ -1,4 +1,4 @@
-<table>
+<table id="computer_table">
 	<tr>
 		<th>Serial Number</th>
 		<th>Model</th>
@@ -10,7 +10,7 @@
 			<td><%= computer.model%></td>
 			<td><%= computer.system_class%></td>
 			<td>
-				<% form_remote_tag :url => { 	:action => :edit_computer } do %>
+				<% form_remote_tag 	:url 	=> { 	:action => :edit_computer } do %>
 					<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
 					<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
 					<%= hidden_field_tag('id', computer.id)%>
@@ -28,13 +28,10 @@
 			</td>
 		</tr>
 	<% end %>
-	<tr>
-		<td>
-			<% form_remote_tag :url => { :action => :make_new_computer_in_po } do %>
-				<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
-				<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
-				<%= submit_tag("New Computer")%>
-			<% end %>
-		</td>
-	</tr>
 </table>
+<% form_remote_tag 	:url => new_computer_path,
+					:after	=> "RedBox.showInline('hidden_content_alert')" do %>
+	<%= hidden_field(:computer, :po_number, :value => @purchase_order.po_number) %>
+	<%= hidden_field(:computer, :division_id, :value => @purchase_order.division_id) %>
+	<%= submit_tag("New Computer")%>
+<% end %>

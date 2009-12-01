@@ -10,19 +10,24 @@ class Computer < ActiveRecord::Base
   has_many :server_domains, :through => :domain
   has_many :servers, :through => :server_domains
   
-  validates_presence_of :division
+  validates_presence_of :division, :serial_number, :model, :po_number
   validate :must_have_proper_stage_data
   validates_uniqueness_of :serial_number
   define_index do
     indexes :name
     indexes serial_number
-    indexes mac_address
     indexes owner
     indexes po_number
     indexes model
     set_property :delta => true
   end
   
+  def available_stages
+    stage.available_stages + stage
+  end
+  def to_param
+    serial_number
+  end
   # Virtual Attributes
   def servers
     server_domains.collect do |sd|

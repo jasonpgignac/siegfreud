@@ -54,3 +54,23 @@ class ActiveSupport::TestCase
     session.host! "localhost:3001" 
   end
 end
+
+# Thinking Sphinx Configuration
+require 'cucumber/thinking_sphinx/external_world'
+Cucumber::ThinkingSphinx::ExternalWorld.new
+
+ts = ThinkingSphinx::Configuration.instance
+ts.build
+FileUtils.mkdir_p ts.searchd_file_path
+ts.controller.index
+ts.controller.start
+at_exit do
+  ts.controller.stop
+end
+ThinkingSphinx.deltas_enabled = true
+ThinkingSphinx.updates_enabled = true
+ThinkingSphinx.suppress_delta_output = true
+
+Before do
+  ts.controller.index
+end

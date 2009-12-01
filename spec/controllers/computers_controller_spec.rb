@@ -140,13 +140,13 @@ describe ComputersController, "PUT update" do
     
     post :update, :id => "1234567", :computer => @computer_params
     
-    response.should redirect_to(edit_computer_path("1234567"))
+    response.should redirect_to(edit_computer_path(@c))
   end
   it "should go to the show window if the save succeeds" do
     @c.stub!(:update_attributes).and_return true
     
     post :update, :id => "1234567", :computer => @computer_params
     
-    response.should redirect_to(computer_path("1234567"))
+    response.should redirect_to(computer_path(@c))
   end
 end

@@ -30,7 +30,11 @@ Rails::Initializer.run do |config|on = {
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
   #	config.action_controller.relative_url_root = "/siegfreud"
   config.gem "prawn"
-  config.gem('freelancing-god-thinking-sphinx',:lib => 'thinking_sphinx')
+  config.gem(
+    'thinking-sphinx',
+    :lib     => 'thinking_sphinx/0.9.8',
+    :version => '1.3.7'
+  )
   config.gem 'rspec-rails', :lib => false
   config.gem 'rspec', :lib => false
   config.gem 'cucumber'

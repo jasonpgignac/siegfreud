@@ -1,5 +1,5 @@
 <% unless (@tabset.tabs.count == 0)%>
-	<%= render :partial => "#{@tabset.active_tab.content.class.to_s.downcase.pluralize}/edit_form" %>
+	<%= render :partial => "#{@tabset.active_tab.content.class.to_s.downcase.pluralize}/embedded_show" %>
 <% else %>
 	<%= render :partial => 'empty_tab' %>
 <% end %>

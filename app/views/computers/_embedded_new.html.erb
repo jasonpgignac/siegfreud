@@ -1,0 +1,7 @@
+<% remote_form_for(@computer, :format => 'js') do |f| %>
+  	<%= render :partial => "computers/new_form", :locals => {:f => f} %>
+<% end %>
+
+<%= observe_field('computer_stage_id',
+                  :frequency 	=> 0.5,
+                  :function 	=> stage_change) %>
