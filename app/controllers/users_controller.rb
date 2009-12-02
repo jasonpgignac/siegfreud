@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  skip_before_filter :authenticate, :only => [:new, :create]
   # GET /users
   # GET /users.xml
   def index
@@ -62,7 +63,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.update_attributes(params[:user])
         flash[:notice] = 'User was successfully updated.'
-        format.html { redirect_to(@user) }
+        format.html { redirect_to(root_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

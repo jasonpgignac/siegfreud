@@ -1,4 +1,6 @@
 class ComputersController < ApplicationController
+  filter_resource_access
+  
   def show
     @computer = Computer.find_by_serial_number(params[:id])
     @computer_data = @computer.get_data_set(params[:service_class], params[:service_name]) if params[:service_class]

@@ -1,5 +1,4 @@
 class MainController < ApplicationController
-  
   # Display response routines
   def index
     get_tabset;
