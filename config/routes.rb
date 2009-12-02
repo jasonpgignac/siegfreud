@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :licenses, :has_many => :actions
   map.resources :peripherals, :has_many => :actions
   map.resources :computers do |r| 
-    r.resources :actions
+    r.resources :actions, :only => [:index, :show]
     r.resources :licenses
     r.resources :peripherals
   end
