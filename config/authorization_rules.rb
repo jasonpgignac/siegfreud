@@ -1,14 +1,13 @@
 authorization do
   role :admin do
-    includes :user
-    has_permission_on [:users], :to => [:index, :new, :create, :edit, :update]
+    includes :inventory_specialist, :technician, :reporter, :user
+    has_permission_on [:users, :divisions, :domains], :to => [:index, :new, :create, :edit, :update]
   end
   role :inventory_specialist do
-    includes :user
-    has_permission_on [:computers], :to => [:index, :show, :new, :create, :edit, :update]
+    includes :technician, :reporter, :user
   end
   role :technician do
-    includes :user
+    includes :reporter, :user
     has_permission_on [:computers], :to => [:index, :show, :new, :create, :edit, :update]
   end
   role :reporter do

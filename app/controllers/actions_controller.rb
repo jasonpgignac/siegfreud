@@ -1,6 +1,5 @@
 class ActionsController < ApplicationController
-  # GET /actions
-  # GET /actions.xml
+  layout 'main'
   def index
     @inventory_object = find_inventory_object
     @actions = @inventory_object.actions.all

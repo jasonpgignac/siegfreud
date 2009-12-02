@@ -1,6 +1,7 @@
 class DivisionsController < ApplicationController
-  # GET /divisions
-  # GET /divisions.xml
+  layout 'main'
+  filter_resource_access
+  
   def index
     @divisions = Division.all
 
@@ -9,9 +10,6 @@ class DivisionsController < ApplicationController
       format.xml  { render :xml => @divisions }
     end
   end
-
-  # GET /divisions/1
-  # GET /divisions/1.xml
   def show
     @division = Division.find(params[:id])
 
@@ -20,9 +18,6 @@ class DivisionsController < ApplicationController
       format.xml  { render :xml => @division }
     end
   end
-
-  # GET /divisions/new
-  # GET /divisions/new.xml
   def new
     @division = Division.new
 
@@ -31,14 +26,9 @@ class DivisionsController < ApplicationController
       format.xml  { render :xml => @division }
     end
   end
-
-  # GET /divisions/1/edit
   def edit
     @division = Division.find(params[:id])
   end
-
-  # POST /divisions
-  # POST /divisions.xml
   def create
     @division = Division.new(params[:division])
 
@@ -53,9 +43,6 @@ class DivisionsController < ApplicationController
       end
     end
   end
-
-  # PUT /divisions/1
-  # PUT /divisions/1.xml
   def update
     @division = Division.find(params[:id])
 
@@ -70,9 +57,6 @@ class DivisionsController < ApplicationController
       end
     end
   end
-
-  # DELETE /divisions/1
-  # DELETE /divisions/1.xml
   def destroy
     @division = Division.find(params[:id])
     @division.destroy
