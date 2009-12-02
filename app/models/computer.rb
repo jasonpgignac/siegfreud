@@ -22,11 +22,11 @@ class Computer < ActiveRecord::Base
     set_property :delta => true
   end
   
-  def available_stages
-    stage.available_stages + stage
+  def stage_choices
+    self.available_stages.to_a.unshift(self.stage)
   end
   def to_param
-    serial_number
+    "#{serial_number}"
   end
   # Virtual Attributes
   def servers
