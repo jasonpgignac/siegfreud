@@ -1,5 +1,6 @@
 class UserSessionsController < ApplicationController
   skip_before_filter :authenticate, :only => [:new, :create]
+  filter_resource_access
   # GET /user_sessions/new
   # GET /user_sessions/new.xml
   def new

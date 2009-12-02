@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   skip_before_filter :authenticate, :only => [:new, :create]
+  filter_resource_access
   # GET /users
   # GET /users.xml
   def index
@@ -8,17 +9,6 @@ class UsersController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
-    end
-  end
-
-  # GET /users/1
-  # GET /users/1.xml
-  def show
-    @user = User.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @user }
     end
   end
 
@@ -35,7 +25,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    @user = current_user
+    @user = User.find(params[:id])
   end
 
   # POST /users
@@ -58,8 +48,7 @@ class UsersController < ApplicationController
   # PUT /users/1
   # PUT /users/1.xml
   def update
-    @user = current_user
-
+    @user = User.find(params[:id])
     respond_to do |format|
       if @user.update_attributes(params[:user])
         flash[:notice] = 'User was successfully updated.'

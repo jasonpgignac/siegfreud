@@ -11,7 +11,7 @@
 </div>
 <%= render :partial => 'computers/computer_data' %>
 <div class="databox">
-	Stage: <%= @computer.stage.name %>
+	Stage: <%= @computer.stage.name %><br />
 	<% if (@computer.stage.has_deployment)%>
 		Owner: <%= @computer.owner %><br />
 		System Role: <%= @computer.system_role %><br />

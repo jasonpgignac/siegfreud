@@ -19,11 +19,13 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation %>
   </p>
-	<p>
-		<%= f.check_box(:admin)%> <%= f.label :admin%><br/>
-		<%= f.check_box(:technician)%> <%= f.label :technician%><br/>
-		<%= f.check_box(:reporter)%> <%= f.label :reporter%>
-  <p>
+	<% if current_user.admin %>
+		<p>
+			<%= f.check_box(:admin)%> <%= f.label :admin%><br/>
+			<%= f.check_box(:technician)%> <%= f.label :technician%><br/>
+			<%= f.check_box(:reporter)%> <%= f.label :reporter%>
+  		<p>
+	<% end %>
     <%= f.submit 'Update' %>
   </p>
 <% end %>
