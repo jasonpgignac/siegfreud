@@ -9,7 +9,7 @@ class Computer < ActiveRecord::Base
   belongs_to :division
   has_many :server_domains, :through => :domain
   has_many :servers, :through => :server_domains
-  
+  has_many :available_stages, :through => :stage
   validates_presence_of :division, :serial_number, :model, :po_number
   validate :must_have_proper_stage_data
   validates_uniqueness_of :serial_number
@@ -22,7 +22,7 @@ class Computer < ActiveRecord::Base
     set_property :delta => true
   end
   
-  def stage_choices
+  def available_stages
     self.available_stages.to_a.unshift(self.stage)
   end
   def to_param
@@ -33,9 +33,6 @@ class Computer < ActiveRecord::Base
     server_domains.collect do |sd|
       sd.server
     end
-  end
-  def available_stages
-    stage.available_stages
   end
   def short_name
     if (self.stage == "active")

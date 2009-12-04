@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :peripherals
+
   map.resources :user_sessions
   map.resources :users
   map.resources :domains
@@ -11,11 +13,11 @@ ActionController::Routing::Routes.draw do |map|
     r.resources :maps, :controller => :package_maps
   end
   map.resources :licenses, :has_many => :actions
-  map.resources :peripherals, :has_many => :actions
+  map.resources :peripherals, :has_many => :actions, :only => [:index, :show]
   map.resources :computers do |r| 
     r.resources :actions, :only => [:index, :show]
     r.resources :licenses
-    r.resources :peripherals
+    r.resources :peripherals, :only => [:index, :show]
   end
   map.resources :purchase_orders
   map.login "login", :controller => "user_sessions", :action => "new"

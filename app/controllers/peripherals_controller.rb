@@ -2,16 +2,11 @@ class PeripheralsController < ApplicationController
   # GET /peripherals
   # GET /peripherals.xml
   def index
-    if(params[:computer_id])
-      @peripherals = Computer.find_by_serial_number(params[:computer_id]).peripherals
-    else
-      @peripherals = Peripheral.all
-    end
-    
+    @peripherals = Peripheral.all
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @peripherals }
-      format.json { render :json => @peripherals }
     end
   end
 
@@ -23,7 +18,6 @@ class PeripheralsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @peripheral }
-      format.json { render :json => @peripheral }
     end
   end
 

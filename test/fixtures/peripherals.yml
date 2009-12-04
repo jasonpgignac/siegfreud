@@ -1,7 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-# one:
-#   column: value
-#
-# two:
-#   column: value
+one:
+  serial_number: MyString
+  model: MyString
+  division_id: 1
+  location: MyString
+
+two:
+  serial_number: MyString
+  model: MyString
+  division_id: 1
+  location: MyString

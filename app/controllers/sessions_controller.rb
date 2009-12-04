@@ -65,22 +65,4 @@ class SessionsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-
-protected
-
-def open_id_authentication(openid_url)
-  authenticate_with_open_id(openid_url, :required => [:name, :email]) do |result, identity_url, registration|
-    if result.successful?
-      @user = User.find_or_initialize_by_identity_url(identity_url)
-      if @user.new_record?
-        @user.name = registration['name']
-        @user.email = registration['email']
-        @user.save
-      end
-      self.current_user = @user
-      successful_login
-    else
-      failed_login result.message
-    end
-  end
 end
