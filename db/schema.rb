@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091203213531) do
+ActiveRecord::Schema.define(:version => 20091204155919) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(:version => 20091203213531) do
     t.string   "site"
     t.date     "last_stage_change"
     t.integer  "division_id"
-    t.integer  "stage_id",          :default => 1
+    t.integer  "stage_id"
     t.integer  "domain_id"
   end
 

@@ -113,11 +113,13 @@ describe Peripheral do
     before(:each) do
       @available_stage_1 = make_a_stage("Deployment")
       @available_stage_1.has_location = false
-      @available_stage_1.has_deployment = true
+      @available_stage_1.has_deployment = false
       @available_stage_1.save
       @available_stage_2 = make_a_stage("Active")
       @available_stage_2.save
       @unavailable_stage = make_a_stage("Bad Stage")
+      @available_stage_1.has_location = false
+      @available_stage_1.has_deployment = false
       @unavailable_stage.save
       @stage.available_stages += [@available_stage_1, @available_stage_2]
     end
@@ -134,6 +136,39 @@ describe Peripheral do
         @peripheral.valid_change?(@unavailable_stage).should == false
       end
     end
+    describe "#transition validations" do
+      it "should validate on a legal stage transition" do 
+        @peripheral.save
+        @peripheral.stage = @available_stage_1
+        @peripheral.should be_valid
+      end
+      it "should not validate on an illegal stage transition" do
+        @peripheral.save
+        @peripheral.stage = @unavailable_stage
+        @peripheral.should_not be_valid
+      end
+      it "should validate on a transition from any stage to a host computer" do
+        c = mock_model(Computer)
+        c.stub!(:id) .and_return 1
+        
+        @peripheral.save
+        @peripheral.stage = nil
+        @peripheral.computer = c
+        @peripheral.should be_valid
+      end
+      it "should validate on a transition from a host computer to any stage" do
+        c = mock_model(Computer)
+        c.stub!(:id) .and_return 1
+        
+        @peripheral.stage = nil
+        @peripheral.computer = c
+        @peripheral.save
+        @peripheral.computer = nil
+        @peripheral.stage = @stage
+        @peripheral.should be_valid
+      end
+    end
+    
   end
 end
 

@@ -2,7 +2,14 @@ class PeripheralsController < ApplicationController
   # GET /peripherals
   # GET /peripherals.xml
   def index
-    @peripherals = Peripheral.all
+    conditions = Hash.new
+    conditions[:division_id] = params[:division_id] if params[:division_id]
+    conditions[:stage_id] = params[:stage_id] if params[:stage_id]
+    unless conditions.empty?
+      @peripherals = Peripheral.find(:all, :conditions => conditions)  
+    else
+      @peripherals = Peripheral.find(:all)
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -75,11 +82,20 @@ class PeripheralsController < ApplicationController
   # DELETE /peripherals/1.xml
   def destroy
     @peripheral = Peripheral.find(params[:id])
-    @peripheral.destroy
+    if @peripheral
+      @peripheral.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(peripherals_url) }
-      format.xml  { head :ok }
+      respond_to do |format|
+        format.html { redirect_to(peripherals_url) }
+        format.xml  { head :ok }
+      end
+    else
+      respond_to do |format|
+        flash[:error] = "Deletion failed: No peripheral with the id '#{params[:id]}' could be found"
+        format.html { redirect_to(peripherals_url) }
+        format.xml  { render :file => "#{RAILS_ROOT}/public/404.html", :status => 404}
+        format.json { render :file => "#{RAILS_ROOT}/public/404.html", :status => 404}
+      end
     end
   end
 end

@@ -11,6 +11,7 @@ class Peripheral < ActiveRecord::Base
   validates_presence_of :location, :if => Proc.new{ |p| p.stage && p.stage.has_location && !(p.computer)}
   validates_presence_of :owner, :description, :if => Proc.new { |p| p.stage && p.stage.has_deployment && !(p.computer)}
   validates_presence_of :stage, :unless => Proc.new { |p| p.computer }
+  validate :legal_stage_transition?
   define_index do
     indexes serial_number
     indexes model
@@ -39,21 +40,13 @@ class Peripheral < ActiveRecord::Base
                                           [ periph ])
     return periph
   end
-  def edit_with_params(params)
-    self.update_attributes(params)
-    self.save
-    
-    Action.create_with_inventory_objects( "Edit Record", 
-                                          params.to_s, 
-                                          [self])
-    return self
-  end
-  
   def current_location
     unless self.computer_id.nil?
       computer.short_name + ": " + (computer.owner.nil? ? computer.location : computer.owner)
     else
-      "Storage"
+      self.stage.name + 
+        (self.stage.has_location ? ": #{self.location}" : "") +
+        (self.stage.has_deployment ? ": #{self.owner}(#{self.description})": "")
     end
   end
   def short_name
@@ -62,5 +55,13 @@ class Peripheral < ActiveRecord::Base
   
   def remove_from_computer
     self.computer.remove_peripheral(self)
+  end
+  
+  def legal_stage_transition?
+    return true unless stage_id_changed?
+    return true unless stage_id_was
+    return true if computer
+    return true if computer_id_was
+    errors.add_to_base("Illegal Stage Transition: #{Stage.find(stage_id_was).name} to #{stage.name}") unless Stage.find(stage_id_was).available_stages.include?(stage)
   end
 end
