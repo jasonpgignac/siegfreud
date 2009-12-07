@@ -33,7 +33,7 @@ Rails::Initializer.run do |config|on = {
   config.gem(
     'thinking-sphinx',
     :lib     => 'thinking_sphinx/0.9.8',
-    :version => '1.3.7'
+    :version => '1.3.8'
   )
   config.gem 'rspec-rails', :lib => false
   config.gem 'rspec', :lib => false
