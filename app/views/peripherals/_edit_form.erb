@@ -1,0 +1,24 @@
+<%= f.error_messages %>
+<div class="databox">
+	<b>Stage:</b> <%= f.select(	:stage_id, 
+								@peripheral.available_stages.collect {
+									|p| [p.name, p.id]
+								} << ['Assigned to Computer', 0], 
+								:selected => (@peripheral.computer || !(@peripheral.stage)) ? 0 : @peripheral.stage_id) %><br />
+	<div id="computer_data" style='display: <%= @peripheral.computer || !(@peripheral.stage) ? "inline" : "none" %>'>
+		<%= render :partial => 'computer_form'%>
+	</div>
+	<div id="location_data" style='display: <%= (!(@peripheral.computer) && @peripheral.stage && @peripheral.stage.has_location) ? "inline" : "none" %>'>
+		<%= render :partial => 'location_form' %>
+	</div>
+	<div id="deployment_data" style='display: <%= (!(@peripheral.computer) && @peripheral.stage && @peripheral.stage.has_deployment) ? "inline" : "none" %>'>
+		<%= render :partial => 'deployment_form' %>
+	</div>
+</div>
+<p>
+<%= f.submit 'Save' %>
+</p>
+
+<%= observe_field('peripheral_stage_id',
+              :frequency 	=> 0.5,
+              :function 	=> peripheral_stage_change) %>

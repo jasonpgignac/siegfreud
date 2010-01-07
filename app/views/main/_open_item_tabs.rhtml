@@ -1,7 +1,7 @@
 <% unless @tabset.tabs.count == 0 %>
 	<ul class="openitemnav">
 		<% @tabset.tabs.each do |tab| %>
-			<li id="<%= tab.id %>"<%= (tab.id == @tabset.active_tab.id) ? ' class=active': '' %>> 
+			<li id="<%= "tab-#{tab.content.class.name}-#{tab.content.id}"%>"<%= (tab.id == @tabset.active_tab.id) ? ' class=active': '' %>> 
 				<div class="title">
 					<%= link_to_remote tab.title,
 							:url =>{ 	:action	=> 	:select_tab,

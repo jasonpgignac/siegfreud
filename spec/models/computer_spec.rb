@@ -3,10 +3,7 @@ require 'test_service_type'
 
 describe Computer do
   before(:each) do
-    d = mock_model(Division)
-    d.stub!(:id) .and_return 1
-    d.stub!(:display_name).and_return "Division X (100,101,102)"
-    d.stub!(:valid?)
+    d = Division.create(:name => "Division X", :divisions => "100,101,102")
     @computer = Computer.new(
         :serial_number  => "12345678",
         :po_number      => "7654321",
@@ -108,20 +105,43 @@ describe Computer do
       end
       describe "#attached_items" do
         before :each do
-          @peripheral = Peripheral.new(
+          @package = Package.create(
+              :manufacturer   => "Percosoft",
+              :name           => "Flummox",
+              :version        => "7",
+              :is_licensed    => true
+          )
+          @peripheral = Peripheral.create(
               :serial_number  => "12345678",
               :po_number      => "7654321",
               :model          => "Dell 897987x17",
               :division       => @computer.division)
+          @license = License.create(
+              :package        => @package,
+              :division       => @computer.division,
+              :po_number      => "12345",
+              :group_license  => false,
+              :license_key    => "424123j12k3h1l"
+          )
+          
         end
         it "should validate when stage.has deployment and there are installed peripherals" do
           @computer.save
           @computer.peripherals << @peripheral
-          @peripheral.save
           @computer.should be_valid
         end
-        it "should validate when ! stage.has_deplotment and there are installed licenses"
-        it "should not validate when ! stage.has_deplotment and there are installed licenses"
+        it "should validate when ! stage.has_deplotment and there are installed licenses" do
+          @computer.save
+          @computer.licenses << @license
+          @computer.should be_valid
+        end
+        it "should not validate when ! stage.has_deplotment and there are installed licenses" do
+          @stage.has_deployment = false
+          @computer.save
+          @computer.licenses << @license
+          @license.save
+          @computer.should_not be_valid
+        end
         it "should not validate when ! stage.has_deplotment and there are installed peripherals" do
           @stage.has_deployment = false
           @computer.save

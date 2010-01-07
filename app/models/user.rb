@@ -5,5 +5,6 @@ class User < ActiveRecord::Base
     roles << :admin if admin
     roles << :technician if technician
     roles << :reporter if reporter
+    return roles
   end
 end

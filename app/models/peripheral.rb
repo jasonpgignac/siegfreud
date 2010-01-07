@@ -12,6 +12,7 @@ class Peripheral < ActiveRecord::Base
   validates_presence_of :owner, :description, :if => Proc.new { |p| p.stage && p.stage.has_deployment && !(p.computer)}
   validates_presence_of :stage, :unless => Proc.new { |p| p.computer }
   validate :legal_stage_transition?
+  validate :legal_computer_assignment?
   define_index do
     indexes serial_number
     indexes model
@@ -20,7 +21,8 @@ class Peripheral < ActiveRecord::Base
   
   # Inventory Creation Functions
   def available_stages
-    self.stage.available_stages.to_a.unshift(self.stage)
+    return self.stage.available_stages.to_a.unshift(self.stage) if (self.stage && !(self.computer))
+    Stage.all
   end
   def valid_change?(new_stage)
     self.stage && self.stage.valid_change?(new_stage)
@@ -42,7 +44,7 @@ class Peripheral < ActiveRecord::Base
   end
   def current_location
     unless self.computer_id.nil?
-      computer.short_name + ": " + (computer.owner.nil? ? computer.location : computer.owner)
+      computer.short_name
     else
       self.stage.name + 
         (self.stage.has_location ? ": #{self.location}" : "") +
@@ -62,6 +64,13 @@ class Peripheral < ActiveRecord::Base
     return true unless stage_id_was
     return true if computer
     return true if computer_id_was
-    errors.add_to_base("Illegal Stage Transition: #{Stage.find(stage_id_was).name} to #{stage.name}") unless Stage.find(stage_id_was).available_stages.include?(stage)
+    return errors.add_to_base("Computer Id is not for a valid system") if computer_id
+    return errors.add_to_base("No computer or stage selected") unless self.stage
+    errors.add_to_base("Illegal Stage Transition: #{Stage.find(stage_id_was).name} to #{stage.name}") unless stage && Stage.find(stage_id_was).available_stages.include?(stage)
+  end
+  
+  def legal_computer_assignment?
+    return true unless computer_id
+    errors.add_to_base("The peripheral and computer are not in the same division") unless computer.division == division
   end
 end

@@ -478,7 +478,7 @@ class MainController < ApplicationController
   
   # Session Variable Management
   def perform_search (search_field, sidebar_buttons)
-    return Computer.search(search_field) if search_field
+    return Computer.search(search_field) + Peripheral.search(search_field) + Package.search(search_field) if search_field
     return Array.new
   end
   def get_active_content

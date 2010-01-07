@@ -1,0 +1,20 @@
+<div class="databox">
+	<b>Serial number:</b> <%=h @peripheral.serial_number %><br />
+	<b>Model:</b> <%=h @peripheral.model %><br />
+	<b>PO Number:</b> <%=h @peripheral.po_number %><br />
+	<b>Division:</b> <%=h @peripheral.division.display_name %>
+</div>
+<div class="databox">
+	<% if (@peripheral.computer)%>
+		<b>Computer:</b> <%=h @peripheral.computer.short_name %>
+	<% else %>
+		<b>Stage:</b> <%=h @peripheral.stage.name%>
+		<% if (@peripheral.stage.has_deployment)%>
+			Owner: <%= @peripheral.owner %><br />
+			Description: <%= @peripheral.description%>
+		<% end %>
+		<% if (@peripheral.stage.has_location) %>
+			Location: <%= @peripheral.location %>
+		<% end %>
+	<% end %>
+</div>

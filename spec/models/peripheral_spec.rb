@@ -94,6 +94,7 @@ describe Peripheral do
       it "should validate when stage is null and belongs to a valid computer" do
         c = mock_model(Computer)
         c.stub!(:id) .and_return 1
+        c.stub!(:division).and_return @peripheral.division
         @peripheral.computer = c
         @peripheral.stage = nil
         @peripheral.should be_valid
@@ -150,6 +151,7 @@ describe Peripheral do
       it "should validate on a transition from any stage to a host computer" do
         c = mock_model(Computer)
         c.stub!(:id) .and_return 1
+        c.stub!(:division).and_return @peripheral.division
         
         @peripheral.save
         @peripheral.stage = nil
@@ -159,6 +161,7 @@ describe Peripheral do
       it "should validate on a transition from a host computer to any stage" do
         c = mock_model(Computer)
         c.stub!(:id) .and_return 1
+        c.stub!(:division).and_return @peripheral.division
         
         @peripheral.stage = nil
         @peripheral.computer = c

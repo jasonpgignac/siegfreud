@@ -101,14 +101,14 @@ describe PeripheralsController do
     end
     it "should find the peripheral, update it and try to save it" do
       @p.stub!(:update_attributes).and_return true
-    
       Peripheral.should_receive(:find).with("1234567")
       @p.should_receive(:update_attributes).with(@peripheral_params)
-    
+      @p.stub!(:errors).and_return []
       post :update, :id => "1234567", :peripheral => @peripheral_params
     end
     it "should return to the edit window if the save fails" do
       @p.stub!(:update_attributes).and_return false
+      @p.stub!(:errors).and_return []
     
       post :update, :id => "1234567", :peripheral => @peripheral_params
     
@@ -116,6 +116,7 @@ describe PeripheralsController do
     end
     it "should go to the show window if the save succeeds" do
       @p.stub!(:update_attributes).and_return true
+      @p.stub!(:errors).and_return []
     
       post :update, :id => "1234567", :peripheral => @peripheral_params
     

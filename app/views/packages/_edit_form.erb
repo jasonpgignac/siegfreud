@@ -29,11 +29,5 @@
 	<% end %>
 </div>
 
-<%= drop_receiving_element('licensed_computers', 
-	:accept => 'Computer', 
-	:complete => "$('spinner').hide();", 
-	:before => "$('spinner').show();", 
-	:hoverclass => 'hover', 
-	:with => "'computer_id=' + encodeURIComponent(element.id.split('_').last())", 
-	:url => {   :action      =>  :add_licensed_computer, 
-				:package_id  =>  @package.id}) %>
+
+	

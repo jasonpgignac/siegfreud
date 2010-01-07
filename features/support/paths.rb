@@ -10,10 +10,16 @@ module NavigationHelpers
     
     when /the home\s?page/
       '/'
+    when /the login page/
+      login_path
     when /^the show page for computer (.*)$/ 
       computer_path($1)
+    when /^the show page for peripheral (.*)$/ 
+      peripheral_path(Peripheral.find_by_serial_number($1).id)
     when /^the edit page for computer (.*)$/ 
       edit_computer_path($1)  
+    when /^the edit page for peripheral (.*)$/ 
+      edit_peripheral_path(Peripheral.find_by_serial_number($1).id)  
     # Add more mappings here.
     # Here is a more fancy example:
     #

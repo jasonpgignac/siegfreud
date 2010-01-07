@@ -2,24 +2,16 @@
 	<tbody>
 		<% @sidebar_items.each do |p| %>
 			<% domid = (p.class.to_s + "_" + p.id.to_s)%>
-			<tr 	class=		"<%= cycle("even","odd") %>" 
-					ondblclick=	"<%= remote_function(	:url 	=> 	{	:action => :open_content, 
-																		:id 	=>	p.id,
-																		:type 	=> 	p.class},
-														:complete => "$('spinner').hide();", 
-														:before => "$('spinner').show();") %>">
+			<tr class="<%= cycle("even","odd") %>">
       			<td class="<%= p.class.to_s%>" id='<%= domid %>'>
-      				<%= p.short_name %>
+      				<%= link_to_remote(	p.short_name, 
+										:url 	=> 	{	:action => :open_content, 
+														:id 	=>	p.id,
+														:type 	=> 	p.class},
+										:complete => "$('spinner').hide();", 
+										:before => "$('spinner').show();" )%>
 					<%= draggable_element(domid, :ghosting=>true, :revert=>true) %>
  				</td>
-				<td>
-					<% if (p.class.to_s == "SmsComputerGroup") %>
-						<%= link_to_remote "X", :url => {  	:action		=> 	:delete_content_from_sidebar,
-															:id			=>	p.id,
-															:type		=> 	p.class},
-												:confirm	=>	("Are you sure you want to delete " + p.short_name + "?")%>
-					<% end %>
-				</td>
 			</tr>
     	<% end %>
   	</tbody>

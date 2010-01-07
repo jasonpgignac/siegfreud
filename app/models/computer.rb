@@ -16,6 +16,8 @@ class Computer < ActiveRecord::Base
   validates_presence_of :location, :if => Proc.new{ |c| c.stage && c.stage.has_location}
   validates_presence_of :owner, :domain, :system_role, :name, :if => Proc.new { |c| c.stage && c.stage.has_deployment}
   validates_length_of :peripherals, :maximum => 0, :unless => Proc.new { |c| c.stage && c.stage.has_deployment}
+  validates_length_of :licenses, :maximum => 0, :unless => Proc.new { |c| c.stage && c.stage.has_deployment}
+  
   validate :legal_stage_transition?
   define_index do
     indexes :name
@@ -109,69 +111,6 @@ class Computer < ActiveRecord::Base
   # Stage Changes
   def valid_change?(new_stage)
     stage.valid_change?(new_stage)
-  end
-  def change_stage(new_stage, attributes = nil)
-    attributes = Hash.new if attributes.nil?
-    puts "Changing from #{self.stage} to #{new_stage}"
-    case [self.stage, new_stage]
-    when  ["Storage", "Rollout"],
-          ["Active", "Repair"],
-          ["Storage", "Active"],
-	  ["Rollout", "Active"]
-      test_deployment_data(attributes)
-    when  ["Rollout", "Storage"],
-          ["Rollout", "Disposal"],
-          ["Active", "Storage"],
-          ["Active", "Disposal"],
-          ["Repair", "Storage"],
-          ["Retrieval", "Storage"],
-          ["Retrieval", "Disposal"],
-          ["Active", "Retrieval"],
-          ["Rollout", "Retrieval"],
-          ["Disposal", "Storage"],
-	  ["Storage", "Disposal"]
-      test_location_data(attributes)
-    when  ["Storage", "Retrieval"],
-          ["Active", "Rollout"],
-          ["Retrieval", "Rollout"],
-          ["Retrieval", "Active"],
-          ["Disposal", "Rollout"],
-          ["Disposal", "Active"],
-          ["Disposal", "Retrieval"]
-      illegal_transition_error
-    else
-      illegal_transition_error
-    end
-    case [self.stage, new_stage]
-    when  ["Rollout", "Storage"],
-          ["Rollout", "Disposal"],
-          ["Active", "Storage"],
-          ["Active", "Disposal"],
-          ["Repair", "Storage"],
-          ["Retrieval", "Storage"],
-          ["Retrieval", "Disposal"]
-      clear_deployment_data
-      clear_licensing_and_peripherals
-    end
-    old_stage = self.stage;
-    self.stage = new_stage;
-    self.last_stage_change = Date.today;
-    self.save
-    Action.create_with_inventory_objects("Stage Change", "Changed from #{old_stage} to #{new_stage}", [ self ])
-  end
-  def illegal_transition_error
-    raise(RuntimeError,"TransitionIsIllegal",caller)
-  end
-  def clear_deployment_data
-    self.owner = self.system_role = self.name = self.domain = nil
-  end
-  def clear_licensing_and_peripherals
-    self.licenses.each do |lic|
-      remove_license(lic)
-    end
-    self.peripherals.each do |periph|
-      remove_peripheral(periph)
-    end
   end
   def legal_stage_transition?
     return true unless stage_id_changed?

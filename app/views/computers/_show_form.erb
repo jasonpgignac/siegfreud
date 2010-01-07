@@ -23,10 +23,65 @@
 	<% end %>
 </div>
 <% if (@computer.stage.has_deployment)%>
-	<%= closed_disclosure_area("assigned_licenses", computer_licenses_path(@computer.serial_number, :format => :json)) %>
-	<div id='assigned_licenses'></div>
-	<%= closed_disclosure_area("installed_peripherals", computer_peripherals_path(@computer.serial_number, :format => :json)) %>
-	<div id='installed_peripherals'></div>
+	<div id="computer_license_drop_zone">
+		<%= closed_disclosure_area("assigned_licenses", computer_licenses_path(@computer.serial_number, :format => :json)) %>
+		<div id='assigned_licenses'>
+			<script type="text/javascript">
+				Droppables.add('computer_license_drop_zone', {
+					accept: 'Package',
+					hoverclass: 'hover',
+					onDrop:  function(element) {
+						$('spinner').show();
+						url_address = '/packages/' + encodeURIComponent(element.id.split('_').last()) + '/licenses.json'
+						url_query =  "division_id=<%= @computer.division_id %>&available=true"
+						url = url_address + "?" + url_query
+						computer_id = <%= @computer.id %>
+						new Ajax.Request( url, 
+							{
+								method:'get',
+								asynchronous:true, 
+								evalScripts:true,
+								onComplete:
+									function(request)
+									{
+										select_license(request, computer_id);
+									},
+							}
+						);
+						$('spinner').hide();
+					}
+				})
+			</script>
+		</div>
+	</div>
+	<div id="computer_peripheral_drop_zone">
+		<%= closed_disclosure_area("installed_peripherals", computer_peripherals_path(@computer.serial_number, :format => :json)) %>
+		<div id='installed_peripherals'>
+			<script type="text/javascript">
+				Droppables.add('computer_peripheral_drop_zone', {
+					accept: 'Peripheral',
+					hoverclass: 'hover',
+					onDrop:  function(element) {
+						$('spinner').show(); 
+						new Ajax.Request('/peripherals/' + encodeURIComponent(element.id.split('_').last()) + '.json', 
+							{
+								method:'put',
+								asynchronous:true, 
+								evalScripts:true,
+								onComplete:
+									function(request)
+									{
+										add_peripheral(request);
+									},
+								parameters: "peripheral[computer_id]=<%= @computer.id %>&authenticity_token=<%=form_authenticity_token%>"
+							}
+						);
+						$('spinner').hide();
+					}
+				})
+			</script>
+		</div>
+	</div>
 	<% if @computer.services_of_type("ComputerInformation").size > 0 %>
 		<%= closed_disclosure_area("computer_information", computer_path(@computer.serial_number, :format => :json, :service_class => "ComputerInformation")) %>
 		<div id="computer_information"></div>
