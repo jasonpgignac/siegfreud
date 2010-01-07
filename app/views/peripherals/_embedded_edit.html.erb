@@ -1,0 +1,6 @@
+<h3>Editing peripheral</h3>
+<%= render :partial => "peripherals/peripheral_data"%>
+<% remote_form_for(@peripheral, :update => 'current_tab') do |f| %>
+	<%= render :partial => 'edit_form', :locals => { :f => f } %>
+<% end %>
+<%= remote_show_link(@peripheral) %>

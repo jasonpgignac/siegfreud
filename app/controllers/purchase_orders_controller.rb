@@ -1,17 +1,4 @@
 class PurchaseOrdersController < ApplicationController
-  def show
-    @po = PurchaseOrder.new
-    @po.po_number = params[:id]
-
-    respond_to do |format|
-      #format.html # show.html.erb
-      #format.xml  { render :xml => @computer }
-      format.pdf
-    end
-  end
-  
-  # GET /purchase_orders/new
-  # GET /purchase_orders/new.xml
   def new
     @purchase_order = PurchaseOrder.new
     respond_to do |format|
@@ -19,9 +6,6 @@ class PurchaseOrdersController < ApplicationController
       format.xml  { render :xml => @action }
     end
   end
-  
-  # POST /purchase_orders
-  # POST /purchase_orders.xml
   def create
     @purchase_order = PurchaseOrder.new(params[:purchase_order])
 
@@ -37,9 +21,6 @@ class PurchaseOrdersController < ApplicationController
       end
     end
   end
-  
-  # GET /purchase_orders/1
-  # GET /purchase_orders/1.xml
   def show
     @purchase_order = PurchaseOrder.new()
     @purchase_order.po_number = params[:id]
@@ -51,8 +32,6 @@ class PurchaseOrdersController < ApplicationController
       format.pdf
     end
   end
-  
-  # GET /purchase_orders/1/edit
   def edit
     @purchase_order = PurchaseOrder.new()
     @purchase_order.po_number = params[:id]
@@ -61,45 +40,6 @@ class PurchaseOrdersController < ApplicationController
   end
   
   # Edit Actions (Associated objects)
-  def make_new_computer_in_po
-    @computer = Computer.new()
-    
-    refresh_po_instance(params[:po_number], params[:division_id])
-    update_page do |page|
-      page.set_redbox('computers/embedded_new')
-    end
-  end
-  def edit_computer
-    refresh_po_instance(params[:po_number], params[:division_id])
-    @computer = Computer.find(params[:id])
-    row_id = "new_computer_" + @computer.id.to_s
-    update_page do |page|
-      page.set_redbox('edit_computer_form')
-    end
-  end
-  def save_edited_computer
-    refresh_po_instance(params[:po_number], params[:division_id])
-    if params.key?(:id)
-      @computer = Computer.find(params[:id])
-      @computer.edit_with_params(params[:computer])
-      flash[:notice] = 'Computer was successfully updated.'
-    else
-      Computer.create_with_po(@purchase_order, params[:computer])
-      flash[:notice] = 'Computer was successfully created.'
-    end
-    update_page do |page|
-      page.close_redbox
-      page.redraw_new_computers
-    end
-  end
-  def delete_computer_from_po
-    refresh_po_instance(params[:po_number], params[:division_id])
-    Computer.find(params[:id]).delete
-    update_page do |page|
-      page.redraw_new_computers
-    end
-  end
-  
   def make_new_peripheral_in_po
     refresh_po_instance(params[:po_number], params[:division_id])
     @periph = Peripheral.new()

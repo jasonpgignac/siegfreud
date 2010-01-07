@@ -32,13 +32,19 @@ Rails::Initializer.run do |config|on = {
   config.gem "prawn"
   config.gem(
     'thinking-sphinx',
+<<<<<<< HEAD:config/environment.rb
     :lib     => 'thinking_sphinx',
+=======
+    :lib     => 'thinking_sphinx/0.9.8',
+>>>>>>> 94307ee3ee98747c19a27b95bc9edad8f3729d01:config/environment.rb
     :version => '1.3.8'
   )
   config.gem 'rspec-rails', :lib => false
   config.gem 'rspec', :lib => false
   config.gem 'cucumber'
   config.gem 'webrat'
+  config.gem 'authlogic'
+  config.gem "declarative_authorization"
   
   config.action_controller.session = { :key => "_siegfreud_session", :secret => "96bb8a78448163d608007fe7429d20a72de0cea6e9bcdc2866ba610767fa73a48f982e385852bb4e36734c05eaeb7b78575880415029c11488913fe2094a960f" }
   if RAILS_ENV=='production'

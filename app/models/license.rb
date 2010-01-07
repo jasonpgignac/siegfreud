@@ -1,9 +1,11 @@
 class License < ActiveRecord::Base
   belongs_to :package
   belongs_to :computer
+  belongs_to :division
   has_many :action_inventory_objects, :as => :inventory_object
   has_many :actions, :through => :action_inventory_objects
   
+  validates_presence_of :package, :po_number, :division
   # Inventory Creation Functions
   def self.create_with_po(po, params)
     license = License.new
@@ -27,7 +29,7 @@ class License < ActiveRecord::Base
     !(self.open?)
   end
   def short_name
-    package.short_name
+    package.short_name + " (#{license_key})"
   end  
   def current_location
     unless self.computer_id.nil?
@@ -35,10 +37,5 @@ class License < ActiveRecord::Base
     else
       "Unassigned"
     end
-  end
-  
-  
-  def remove_from_computer
-    self.computer.remove_license(self)
   end
 end

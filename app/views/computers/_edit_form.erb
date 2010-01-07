@@ -1,10 +1,10 @@
- <%= f.error_messages %> 
+<%= f.error_messages %> 
 <div class="databox">
 	<table>
 		<tr>
 			<td>Stage:</td>
 			<td>
-				<%= f.collection_select(	:stage_id, @computer.available_stages, :id, :name) %>
+				<%= f.collection_select(:stage_id, @computer.available_stages, :id, :name) %>
 				</td>
 			</tr>
 		</table>

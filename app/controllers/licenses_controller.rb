@@ -2,8 +2,16 @@ class LicensesController < ApplicationController
   # GET /licenses
   # GET /licenses.xml
   def index
-    @licenses = params[:computer_id] ? Computer.find_by_serial_number(params[:computer_id]).licenses : License.all
-
+    @licenses = Package.find(params[:package_id]).licenses if params[:package_id]
+    @licenses = Computer.find_by_serial_number(params[:computer_id]).licenses if params[:computer_id] 
+    @licenses = License unless @licenses
+    conditions = Hash.new
+    conditions[:division_id] = params[:division_id] if params[:division_id]
+    @licenses = @licenses.find(:all, :conditions => conditions)
+    if params[:available]
+      @licenses.delete_if { |x| x.computer } if params[:available].downcase == 'true'
+      @licenses.delete_if { |x| !(x.computer) } if params[:available].downcase == 'false'
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @licenses }
@@ -66,9 +74,11 @@ class LicensesController < ApplicationController
         flash[:notice] = 'License was successfully updated.'
         format.html { redirect_to(@license) }
         format.xml  { head :ok }
+        format.json { render :json => @license.to_json(:include => :package) }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @license.errors, :status => :unprocessable_entity }
+        format.json  { render :json => @license.errors, :status => :unprocessable_entity }
       end
     end
   end

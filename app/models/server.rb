@@ -22,13 +22,18 @@ class Server < ActiveRecord::Base
     end
     return @services
   end
-  def contains_service_of_type?(service_type, platform)
-    return false if services[platform].nil?
-    return false if services[platform][service_type].nil?
+  def contains_service_of_type?(service_type, platform= nil)
+    if platform
+      return false if services[platform].nil?
+      return false if services[platform][service_type].nil?
+    else
+      service_list = services.collect{|k,v| v[service_type]}.compact
+      return false if service_list.size == 0
+    end 
     return true
   end
-  def service_of_type(service_type, platform)
+  def service_of_type(service_type, platform=nil)
     raise(RuntimeError, "Server does not have a service to match [#{service_type}, #{platform}]") unless contains_service_of_type?(service_type, platform)
-    services[platform][service_type]
+    platform ? services[platform][service_type] : services.collect{|k,v| v[service_type]}.compact[0]
   end
 end

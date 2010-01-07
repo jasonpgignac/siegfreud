@@ -4,6 +4,22 @@
   <%= f.error_messages %>
 
   <p>
+    <%= f.label :serial_number %><br />
+    <%= f.text_field :serial_number %>
+  </p>
+  <p>
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </p>
+  <p>
+    <%= f.label :division_id %><br />
+    <%= f.text_field :division_id %>
+  </p>
+  <p>
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </p>
+  <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>

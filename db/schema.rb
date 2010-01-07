@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091110165021) do
+ActiveRecord::Schema.define(:version => 20091229174511) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(:version => 20091110165021) do
     t.string   "site"
     t.date     "last_stage_change"
     t.integer  "division_id"
-    t.integer  "stage_id",          :default => 1
+    t.integer  "stage_id"
     t.integer  "domain_id"
   end
 
@@ -92,7 +92,6 @@ ActiveRecord::Schema.define(:version => 20091110165021) do
     t.integer  "computer_id"
     t.string   "po_number"
     t.string   "notes"
-    t.string   "division"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "license_key"
@@ -100,14 +99,29 @@ ActiveRecord::Schema.define(:version => 20091110165021) do
     t.integer  "division_id"
   end
 
+  create_table "open_id_authentication_associations", :force => true do |t|
+    t.integer "issued"
+    t.integer "lifetime"
+    t.string  "handle"
+    t.string  "assoc_type"
+    t.binary  "server_url"
+    t.binary  "secret"
+  end
+
+  create_table "open_id_authentication_nonces", :force => true do |t|
+    t.integer "timestamp",  :null => false
+    t.string  "server_url"
+    t.string  "salt",       :null => false
+  end
+
   create_table "package_maps", :force => true do |t|
     t.string   "remote_package_id"
-    t.string   "service_name"
     t.string   "default_install_task"
     t.string   "default_uninstall_task"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "package_id"
+    t.integer  "server_id"
   end
 
   create_table "packages", :force => true do |t|
@@ -116,6 +130,7 @@ ActiveRecord::Schema.define(:version => 20091110165021) do
     t.string   "version"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_licensed"
   end
 
   create_table "peripherals", :force => true do |t|
@@ -128,6 +143,10 @@ ActiveRecord::Schema.define(:version => 20091110165021) do
     t.datetime "updated_at"
     t.boolean  "delta",         :default => true, :null => false
     t.integer  "division_id"
+    t.integer  "stage_id"
+    t.string   "location"
+    t.string   "owner"
+    t.string   "description"
   end
 
   create_table "server_domains", :force => true do |t|
@@ -186,6 +205,26 @@ ActiveRecord::Schema.define(:version => 20091110165021) do
     t.integer  "active_tab_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "user_sessions", :force => true do |t|
+    t.string   "username"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "crypted_password"
+    t.string   "password_salt"
+    t.string   "persistence_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "admin"
+    t.boolean  "technician"
+    t.boolean  "reporter"
   end
 
 end

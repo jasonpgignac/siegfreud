@@ -1,11 +1,7 @@
 <h1>Editing peripheral</h1>
-
+<%= render :partial => "peripherals/peripheral_data"%>
 <% form_for(@peripheral) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
+	<%= render :partial => 'edit_form', :locals => { :f => f } %>
 <% end %>
 
 <%= link_to 'Show', @peripheral %> |

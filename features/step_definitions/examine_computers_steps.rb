@@ -1,10 +1,12 @@
+require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "paths"))
+
 Given /^a computer with serial number (.*)$/ do |serial|
   division = Division.find_by_name("Division X") || Division.create!(
       :name           => "Division X",
       :divisions      => "100,101,102")
       
-  stage = Stage.find_by_name("Storage") || Stage.create!(
-      :name           => "Storage",
+  stage = Stage.find_by_name("Floating") || Stage.create!(
+      :name           => "Floating",
       :has_location   => false,
       :has_deployment => false,
       :is_transitory  => false)
@@ -12,7 +14,7 @@ Given /^a computer with serial number (.*)$/ do |serial|
   domain = Domain.find_by_name("test.com") || Domain.create!( :name => "test.com")
   domain = Domain.find_by_name("othertest.com") || Domain.create!( :name => "othertest.com")
   
-  @c = Computer.create!(
+  @computer = Computer.create!(
       :serial_number  => serial,
       :po_number      => "7654321",
       :model          => "Dell Platitudes E9000",
@@ -24,38 +26,76 @@ Given /^a computer with serial number (.*)$/ do |serial|
       :owner          => "asmith",
       :system_role    => "primary",
       :location       => "Under the Bed")
-    @c.save
+    @computer.save
 end
 Then /^I should see the basic inventory fields$/ do
-  response.should contain(@c.serial_number)
-  response.should contain(@c.model)
-  response.should contain(@c.system_class)
-  response.should contain(@c.po_number)
-  response.should contain(@c.division.display_name)
-  response.should contain(@c.stage.name)
+  response.should contain(@computer.serial_number)
+  response.should contain(@computer.model)
+  response.should contain(@computer.system_class)
+  response.should contain(@computer.po_number)
+  response.should contain(@computer.division.display_name)
+  response.should contain(@computer.stage.name)
 end
-Given /^a stage that offers location information$/ do
-  stage = Stage.create!(
-      :name           => "Disposal",
-      :has_location   => true,
-      :has_deployment => false,
-      :is_transitory  => false)
-  
-  @c.stage = stage
-  @c.save
+Then /^I should see the basic inventory fields for the peripheral$/ do
+  response.should contain(@peripheral.serial_number)
+  response.should contain(@peripheral.po_number)
+  response.should contain(@peripheral.division.display_name)
+  response.should contain(@peripheral.model)
+end
+Given /^the computer is in a stage that offers location information$/ do
+  @computer.stage.available_stages << storage_stage
+  @computer.stage = storage_stage
+  @computer.save
+  @computer.should be_valid
+end
+Given /^the peripheral is in a stage that offers location information$/ do
+  @peripheral.stage.available_stages << storage_stage
+  @peripheral.stage = storage_stage
+  @peripheral.save
+  @peripheral.should be_valid
+end
+Given /^there is a storage stage$/ do
+  storage_stage
 end
 Then /^I should see the location fields$/ do
-  response.should contain(@c.location)
+  response.should contain(@computer.location)
 end
-Given /^a stage that offers deployment information$/ do
-  @c.stage.has_deployment = true
-  @c.stage.save
+Then /^I should not see the location fields$/ do
+  response.should_not contain(@computer.location)
+end
+Then /^I should see the location fields for the peripheral$/ do
+  response.should contain(@peripheral.location)
+end
+Then /^I should not see the location fields for the peripheral$/ do
+  response.should_not contain(@peripheral.location)
+end
+Given /^the computer is in a stage that offers deployment information$/ do
+  @computer.stage.has_deployment=true
+  @computer.stage.save
+end
+Given /^the peripheral is in a stage that offers deployment information$/ do
+  @peripheral.stage.has_deployment=true
+  @peripheral.stage.save
 end
 Then /^I should see the deployment fields$/ do
-  response.should contain(@c.domain.name)
-  response.should contain(@c.owner)
-  response.should contain(@c.name)
-  response.should contain(@c.system_role)
+  response.should contain(@computer.domain.name)
+  response.should contain(@computer.owner)
+  response.should contain(@computer.name)
+  response.should contain(@computer.system_role)
+end
+Then /^I should see the deployment fields for the peripheral$/ do
+  response.should contain(@peripheral.owner)
+  response.should contain(@peripheral.description)
+end
+Then /^I should not see the deployment fields for the peripheral$/ do
+  response.should_not contain(@peripheral.owner)
+  response.should_not contain(@peripheral.description)
+end
+Then /^I should not see the stage field for the peripheral$/ do
+  response.should_not contain(@peripheral.stage.name)
+end
+Then /^I should see the computer information fields for the peripheral$/ do
+  response.should contain(@peripheral.computer.short_name)
 end
 Then /^I should see a button for peripherals$/ do
   response.should contain("Installed Peripherals")
@@ -64,8 +104,8 @@ Then /^I should see a button for licenses$/ do
   response.should contain("Assigned Licenses")
 end
 Given /^a stage that does not offer deployment information$/ do
-  @c.stage.has_deployment = false
-  @c.stage.save
+  @computer.stage.has_deployment = false
+  @computer.stage.save
 end
 Then /^I should not see a button for peripherals$/ do
   response.should_not contain("Installed Peripherals")
@@ -79,22 +119,22 @@ Given /^several attached licenses$/ do
       :po_number      => "347934",
       :license_key    => "sdbk3343bkj",
       :group_license  => false,
-      :division       => @c.division,
+      :division       => @computer.division,
       :package        => Package.create(
                             :manufacturer => "Apple",
                             :name         => "Pickaxe",
                             :version      => "4.3"),
-      :computer       => @c),
+      :computer       => @computer),
     License.create(
       :po_number      => "3sdf33",
       :license_key    => "ssdfsd",
       :group_license  => false,
-      :division       => @c.division,
+      :division       => @computer.division,
       :package        => Package.create(
                             :manufacturer => "Beauford",
                             :name         => "Lord of the Ring Simulator",
                             :version      => "7.5"),
-      :computer       => @c)]
+      :computer       => @computer)]
 end
 Then /^I should see each license$/ do
   @licenses.each do |l|
@@ -103,23 +143,23 @@ Then /^I should see each license$/ do
   end
 end
 Given /^several attached peripherals$/ do
-  @peripherals = [
+  @peripheraleripherals = [
     Peripheral.create(
       :po_number      => "347934",
       :serial_number  => "sdbk3343bkj",
       :model          => "Chicken Fried Steak (USB)",
-      :division       => @c.division,
-      :computer       => @c),
+      :division       => @computer.division,
+      :computer       => @computer),
       Peripheral.create(
         :po_number      => "347dsf4",
         :serial_number  => "sa2463bkj",
         :model          => "Chicken Fried Steak (Firewire)",
-        :division       => @c.division,
-        :computer       => @c)
+        :division       => @computer.division,
+        :computer       => @computer)
   ]
 end
 Then /^I should see each peripheral$/ do
-  @peripherals.each do |p|
+  @peripheraleripherals.each do |p|
     response.should contain(p.model)
     response.should contain(p.serial_number)
   end
@@ -130,16 +170,16 @@ Given /^(.*) services in the same domain and platform$/ do |service_type|
                             "http://localhost:8985/", 
                             "ServerType", 
                             [ {   :type       => service_class, 
-                                  :platform   => @c.system_class,
+                                  :platform   => @computer.system_class,
                                   :variables  => {
-                                    :computer_key_field => :serial_number}}]).domains = [@c.domain]
+                                    :computer_key_field => :serial_number}}]).domains = [@computer.domain]
   generate_sample_server(   "ServerB", 
                             "http://localhost:8986/", 
                             "ServerType", 
                             [ {   :type       => service_class, 
-                                  :platform   => @c.system_class,
+                                  :platform   => @computer.system_class,
                                   :variables  => {
-                                    :computer_key_field => :serial_number}} ] ).domains = [@c.domain]
+                                    :computer_key_field => :serial_number}} ] ).domains = [@computer.domain]
   
 end
 Given /^(.*) services in the same domain but a different platform$/ do |service_type|
@@ -150,14 +190,14 @@ Given /^(.*) services in the same domain but a different platform$/ do |service_
                             [ {   :type     => service_class, 
                                   :platform => "FakePlatform",
                                   :variables  => {
-                                    :computer_key_field => :serial_number} } ] ).domains = [@c.domain]
+                                    :computer_key_field => :serial_number} } ] ).domains = [@computer.domain]
   generate_sample_server(   "ServerB", 
                             "http://nowhereelse.com/", 
                             "ServerType", 
                             [ {   :type     => service_class, 
                                   :platform => "FakePlatform",
                                   :variables  => {
-                                    :computer_key_field => :serial_number} } ] ).domains = [@c.domain]
+                                    :computer_key_field => :serial_number} } ] ).domains = [@computer.domain]
   
 end
 Given /^(.*) services in the same platform but a different domain$/ do |service_type|
@@ -167,14 +207,14 @@ Given /^(.*) services in the same platform but a different domain$/ do |service_
                             "http://nowhere.com/", 
                             "ServerType", 
                             [ {   :type     => service_class, 
-                                  :platform => @c.system_class,
+                                  :platform => @computer.system_class,
                                   :variables  => {
                                     :computer_key_field => :serial_number} } ] ).domains = [domain]
   generate_sample_server(   "ServerB", 
                             "http://nowhereelse.com/", 
                             "ServerType", 
                             [ {   :type     => service_class, 
-                                  :platform => @c.system_class,
+                                  :platform => @computer.system_class,
                                   :variables  => {
                                     :computer_key_field => :serial_number} } ] ).domains = [domain]
 end
@@ -199,18 +239,22 @@ When /^I click the button to retrieve remote computer information$/ do
     "os"              => "Linux of Happiness",
     "serial_number"   => "7dsdsdgs"
   }
-  sleep 20
+  puts "Starting dummy web services..."
   srv1 = start_dummy_web_service(8985,"#{RAILS_ROOT}/tmp/temp_srv1")
   srv2 = start_dummy_web_service(8986,"#{RAILS_ROOT}/tmp/temp_srv2")
   FileUtils.makedirs(File.split("#{RAILS_ROOT}/tmp/temp_srv1/computers/23428.json")[0])
   File.open("#{RAILS_ROOT}/tmp/temp_srv1/computers/23428.json", 'w') {|f| f.write(@data1.to_json)}
   FileUtils.makedirs(File.split("#{RAILS_ROOT}/tmp/temp_srv2/computers/23428.json")[0])
   File.open("#{RAILS_ROOT}/tmp/temp_srv2/computers/23428.json", 'w') {|f| f.write(@data2.to_json)}
-  
-  click_link("computer_information_closed_link")
   sleep 20
+  puts "Clicking the link..."
+  click_link("computer_information_closed_link")
+  puts "Waiting for 20 seconds"
+  sleep 20
+  puts "Stopping Dummy web services..."
   stop_dummy_web_service(srv1)
   stop_dummy_web_service(srv2)
+  puts "Complete"
 end
 When /^I click the button to retrieve remote software management information$/ do
   @data1 = [
@@ -292,7 +336,7 @@ Then /^I should see the software management information from each service$/ do
   end
 end
 
-Given /^a computer in a stage with \[(.*)\] information with serial number (.*)$/ do |info_types, serial| 
+Given /^a (.*) in a stage with \[(.*)\] information with serial number (.*)$/ do |object_type, info_types, serial| 
   
   division = Division.find_by_name("Division X") || Division.new(:name => "Division X")
   division.divisions = "100,101,102"
@@ -305,21 +349,35 @@ Given /^a computer in a stage with \[(.*)\] information with serial number (.*)$
   stage.save
   
   domain = Domain.find_or_create_by_name("test.com")
-  
-  fields = {
-    :serial_number  => serial,
-    :po_number      => "7654321",
-    :model          => "Dell Platitudes E9000",
-    :system_class   => "PC",
-    :stage          => stage,
-    :division       => division,
-    :domain         => (info_types.include?("deployment") ? domain : nil),
-    :name           => (info_types.include?("deployment") ? "Comp-1234567" : nil),
-    :owner          => (info_types.include?("deployment") ? "asmith" : nil),
-    :system_role    => (info_types.include?("deployment") ? "Primary" : nil),
-    :location       => (info_types.include?("location") ? "Behind the Carwash" : nil)
-  }
-  @c = Computer.create!(fields)
+  if object_type == 'computer'
+    fields = {
+      :serial_number  => serial,
+      :po_number      => "7654321",
+      :model          => "Dell Platitudes E9000",
+      :system_class   => "PC",
+      :stage          => stage,
+      :division       => division,
+      :domain         => (info_types.include?("deployment") ? domain : nil),
+      :name           => (info_types.include?("deployment") ? "Comp-#{serial}" : nil),
+      :owner          => (info_types.include?("deployment") ? "asmith" : nil),
+      :system_role    => (info_types.include?("deployment") ? "Primary" : nil),
+      :location       => (info_types.include?("location") ? "Behind the Carwash" : nil)
+    }
+    @computer = Computer.create!(fields)
+  else
+    fields = {
+      :serial_number  => serial,
+      :po_number      => "7654321",
+      :model          => "Dell Monitor 89 inch",
+      :stage          => stage,
+      :division       => division,
+      :owner          => (info_types.include?("deployment") ? "asmith" : nil),
+      :description    => (info_types.include?("deployment") ? "Used as a communications satellite" : nil),
+      :location       => (info_types.include?("location") ? "Behind the Carwash" : nil)
+    }
+    @peripheral = Peripheral.create!(fields)
+    @peripheral.should be_valid
+  end
 end
 Given /^a stage is available with \[(.*)\] information$/ do |info_types|
   current_stage = Stage.find_by_name("Stage A")
@@ -337,8 +395,15 @@ When  /^I wait for (.*) seconds$/ do |time|
   sleep time.to_i
 end
 
-When /^I type the (.*) of the computer into the search box$/ do |field|
-  item = @c
+When /^I type the (.*) of the (.*) into the search box$/ do |field, type|
+  item = case type
+  when "computer"
+    @computer
+  when "peripheral"
+    @peripheral
+  when "package"
+    @package
+  end
   value = eval("item.#{field}")
   fill_in('query', :with => value)
 end
@@ -347,8 +412,173 @@ When /^the system updates the index$/ do
   ThinkingSphinx::Test.index
   sleep(0.25) # Wait for Sphinx to catch up
 end
-Then /^I should see an entry for the computer in the results list$/ do
-  response.should contain(@c.short_name)
+Then /^I should see an entry for the (.*) in the results list$/ do |type|
+  item = case type
+  when "computer"
+    @computer
+  when "peripheral"
+    @peripheral
+  when "package"
+    @package
+  end
+  response.should contain(item.short_name)
+end
+
+Given /^a user '(.*)' that has '(.*)' privileges$/ do |name, rights|
+  
+end
+When /^I log in as "(.*)"$/ do |name|
+  visit path_to('the login page')
+  fill_in(:username, :with => name)
+  fill_in(:password, :with => 'Test')
+  click_button('Create')
+end
+
+Given /^a peripheral with serial number (.*)/ do |serial|
+  division = Division.find_by_name("Division X") || Division.create!(
+      :name           => "Division X",
+      :divisions      => "100,101,102")
+      
+  stage = Stage.find_by_name("StorageP") || Stage.create!(
+      :name           => "StorageP",
+      :has_location   => false,
+      :has_deployment => false,
+      :is_transitory  => false)
+  
+  @peripheral = Peripheral.create!(
+      :serial_number  => serial,
+      :po_number      => "7654321",
+      :model          => "Dell 897987x17",
+      :division       => division,
+      :stage          => stage,
+      :location       => "Beneath the blue sea",
+      :owner          => "UKISSHE",
+      :description    => "Currently being used as a paperweight")
+  @peripheral.save
+end
+Given /^a package with name (.*)$/ do |name|
+  @package = Package.create(
+      :manufacturer   => "Percosoft",
+      :name           => name,
+      :version        => "7",
+      :is_licensed    => true
+  )
+  @package.should be_valid
+end
+
+When /^I follow the link for the (.*)$/ do |type|
+  item = case type
+  when "computer"
+    @computer
+  when "peripheral"
+    @peripheral
+  when "package"
+    @package
+  end
+  click_link(item.short_name)
+end
+Then /^I should have a tab for the (.*)$/ do |type|
+  item = case type
+  when "computer"
+    @computer
+  when "peripheral"
+    @peripheral
+  when "package"
+    @package
+  end
+  tab_id = "tab-#{item.class.name}-#{item.id}"
+  response.should have_selector('#' + tab_id)  
+end
+
+When /^I drag the peripheral onto the computer$/ do
+  periph_item = 'css=td#' + @peripheral.class.to_s + "_" + @peripheral.id.to_s + ".Peripheral"
+  selenium.drag_and_drop_to_object(periph_item, 'css=#computer_peripheral_drop_zone')
+end
+When /^I drag the package onto the computer$/ do
+  pkg_item = 'css=td#' + @package.class.to_s + "_" + @package.id.to_s + ".Package"
+  selenium.drag_and_drop_to_object(pkg_item, 'css=#computer_license_drop_zone')
+end
+Then /^I should see the peripheral listed$/ do
+  response.should contain(@peripheral.model + ':' + @peripheral.serial_number)
+end
+Then /^I should not see the peripheral listed$/ do
+  response.should_not contain(@peripheral.model + ':' + @peripheral.serial_number)
+end
+Then /^I should see the license listed$/ do
+  response.should contain(@license.short_name)
+end
+Then /^I should not see the license listed$/ do
+  response.should_not contain(@license.short_name)
+end
+
+Then /^the peripheral record should be assigned to the computer$/ do
+  @peripheral.reload
+  @peripheral.computer_id.should == @computer.id
+end
+Then /^the peripheral record should not be assigned to the computer$/ do
+  @peripheral.reload
+  @peripheral.computer_id.should_not == @computer.id
+end
+Then /^the license record should be assigned to the computer$/ do
+  @license.reload
+  @license.computer_id.should == @computer.id
+end
+Then /^the license record should not be assigned to the computer$/ do
+  @license.reload
+  @license.computer_id.should_not == @computer.id
+end
+When /^the peripheral is in a different division$/ do
+  division = Division.find_by_name("Division Y") || Division.create!(
+      :name           => "Division Y",
+      :divisions      => "103,104,105")
+  
+  @peripheral.division = division
+  @peripheral.save
+end
+When /^the license is in a different division$/ do
+  division = Division.find_by_name("Division Y") || Division.create!(
+      :name           => "Division Y",
+      :divisions      => "103,104,105")
+  
+  @license.division = division
+  @license.save
+end
+
+Given /^a license of package "(.*)" with serial number (.*)$/ do |package_name, serial|
+  pkg = Package.find_by_name(package_name)
+  division = Division.find_by_name("Division X") || Division.create!(
+      :name           => "Division X",
+      :divisions      => "100,101,102")
+  @license = License.create(
+    :license_key    => serial,
+    :package        => pkg,
+    :po_number      => "32342398", 
+    :division       => division
+  )
+end
+When /^I delete the first license$/ do
+  @computer.reload
+  @license = @computer.licenses.first
+  click_link("remove_license_#{@license.id}")
+end
+When /^I delete the first peripheral$/ do
+  @computer.reload
+  @peripheral = @computer.peripherals.first
+  click_link("remove_peripheral_#{@peripheral.id}")
+end
+
+Given /^the peripheral is installed on the computer$/ do
+  @peripheral.computer = @computer
+  @peripheral.save
+end
+
+def storage_stage
+  stage = Stage.find_by_name("Storage") || Stage.create!(
+      :name           => "Storage",
+      :has_location   => true,
+      :has_deployment => false,
+      :is_transitory  => false)
+  return stage
 end
 def start_dummy_web_service(port,folder)
   IO.popen("ruby #{RAILS_ROOT}/features/support/dummy_web_server.rb #{port} #{folder}")

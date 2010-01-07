@@ -9,8 +9,16 @@
 
 </head>
 <body>
+	<p style="color: blue"><%= flash[:notice] %></p>
 	<div class="spinner">
 		<%= image_tag 'spinner.gif', :id=>'spinner', :style=>"display:none; float:right;" %>
+	</div>
+	<div id="user_nav">
+		<% if current_user %>
+			Welcome <%=h current_user.username%>!
+			(<%= link_to "Edit Profile", edit_user_path(current_user) %>
+			<%= link_to "Logout", logout_path %>)
+		<% end %>
 	</div>
 	<div class="maincontainer">
 		<div class="header">

@@ -70,6 +70,9 @@ describe Server do
       it "should return false if server does not off this service for this platform" do
         @server.contains_service_of_type?("Test", "Win32").should == false
       end
+      it "should return true if server offers this service, and no system type is offered" do
+        @server.contains_service_of_type?("Test").should == true
+      end
     end
     describe ":service_of_type" do
       it "should return a service object if the service exists" do
@@ -101,6 +104,12 @@ describe Server do
       end
       it "should throw an exception if the server does not offer this service" do
         lambda{@server.service_of_type("Bad", "Mac")}.should raise_error(RuntimeError)
+      end
+      it "should return a service object if the service exists, and no system type is offered" do
+        svc = mock(ValhallaMashup::TestService)
+        ValhallaMashup::TestService.should_receive("new").with(@server.address).and_return(svc)
+        svc.should_receive("name=").with(@server.name).and_return(true)
+        @server.service_of_type("Test").should == svc
       end
     end  
   end

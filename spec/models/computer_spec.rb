@@ -3,10 +3,7 @@ require 'test_service_type'
 
 describe Computer do
   before(:each) do
-    d = mock_model(Division)
-    d.stub!(:id) .and_return 1
-    d.stub!(:display_name).and_return "Division X (100,101,102)"
-    d.stub!(:valid?)
+    d = Division.create(:name => "Division X", :divisions => "100,101,102")
     @computer = Computer.new(
         :serial_number  => "12345678",
         :po_number      => "7654321",
@@ -106,17 +103,66 @@ describe Computer do
         @computer.name = nil
         @computer.should_not be_valid
       end
+      describe "#attached_items" do
+        before :each do
+          @package = Package.create(
+              :manufacturer   => "Percosoft",
+              :name           => "Flummox",
+              :version        => "7",
+              :is_licensed    => true
+          )
+          @peripheral = Peripheral.create(
+              :serial_number  => "12345678",
+              :po_number      => "7654321",
+              :model          => "Dell 897987x17",
+              :division       => @computer.division)
+          @license = License.create(
+              :package        => @package,
+              :division       => @computer.division,
+              :po_number      => "12345",
+              :group_license  => false,
+              :license_key    => "424123j12k3h1l"
+          )
+          
+        end
+        it "should validate when stage.has deployment and there are installed peripherals" do
+          @computer.save
+          @computer.peripherals << @peripheral
+          @computer.should be_valid
+        end
+        it "should validate when ! stage.has_deplotment and there are installed licenses" do
+          @computer.save
+          @computer.licenses << @license
+          @computer.should be_valid
+        end
+        it "should not validate when ! stage.has_deplotment and there are installed licenses" do
+          @stage.has_deployment = false
+          @computer.save
+          @computer.licenses << @license
+          @license.save
+          @computer.should_not be_valid
+        end
+        it "should not validate when ! stage.has_deplotment and there are installed peripherals" do
+          @stage.has_deployment = false
+          @computer.save
+          @computer.peripherals << @peripheral
+          @peripheral.save
+          @computer.should_not be_valid
+        end
+      end
     end
   end
   describe "#stage_transition_functions" do
     before(:each) do
       @available_stage_1 = make_a_stage("Deployment")
       @available_stage_1.has_location = false
-      @available_stage_1.has_deployment = true
+      @available_stage_1.has_deployment = false
       @available_stage_1.save
       @available_stage_2 = make_a_stage("Active")
       @available_stage_2.save
       @unavailable_stage = make_a_stage("Bad Stage")
+      @unavailable_stage.has_location = false
+      @unavailable_stage.has_deployment = false
       @unavailable_stage.save
       @stage.available_stages += [@available_stage_1, @available_stage_2]
     end
@@ -133,9 +179,28 @@ describe Computer do
         @computer.valid_change?(@unavailable_stage).should == false
       end
     end
+    describe "#transition_validations" do
+      it "should validate on a legal stage transition" do
+        @computer.save
+        @computer.stage = @available_stage_1
+        @computer.should be_valid
+      end
+      it "should not validate on an illegal stage transition" do
+        @computer.save
+        @computer.stage = @unavailable_stage
+        @computer.stage_id_was.should == @stage.id
+        @stage.available_stages.include?(@unavailable_stage).should == false
+        ((@computer.stage_id_was == nil) || Stage.find(@computer.stage_id_was).available_stages.include?(@computer.stage)).should == false
+        @computer.should_not be_valid
+      end
+    end
+    
   end
   describe "Remote Data Functions" do
     before :each do
+      @available_stage_1 = make_a_stage("Deployment")
+      @available_stage_1.has_location = false
+      @available_stage_1.has_deployment = true
       @computer.stage = @available_stage_1
       @computer.owner = "lastyfirst"
       @computer.domain = @domain

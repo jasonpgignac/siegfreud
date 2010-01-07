@@ -15,7 +15,7 @@ Feature: Edit Computers
 		And I select "test.com" from "computer_domain_id"
 		And I press "Save"
 		And I wait for 5 seconds
-		Then I should be on the show page for computer B000
+		Then I should not see "error"
 		
 		Given a computer in a stage with [location] information with serial number B001
 		And a stage is available with [deployment] information
@@ -26,7 +26,7 @@ Feature: Edit Computers
 		And I select "test.com" from "computer_domain_id"
 		And I press "Save"
 		And I wait for 5 seconds
-		Then I should be on the edit page for computer B001
+		Then I should see "error"
 	
 	Scenario: Changing the stage of a computer to one that requires location information
 		Given a computer in a stage with [deployment] information with serial number B002
@@ -36,7 +36,7 @@ Feature: Edit Computers
 		And I fill in "computer_location" with "Under the Mistletoe"
 		And I press "Save"
 		And I wait for 5 seconds
-		Then I should be on the show page for computer B002
+		Then I should not see "error"
 		
 		Given a computer in a stage with [deployment] information with serial number B003
 		And a stage is available with [location] information
@@ -44,7 +44,7 @@ Feature: Edit Computers
 		And I select "Stage B" from "computer_stage_id"
 		And I press "Save"
 		And I wait for 5 seconds
-		Then I should be on the edit page for computer B003
+		Then I should see "error"
 	
 	Scenario: Changing the stage of a computer to one that requires deployment and location information
 		Given a computer in a stage with [deployment] information with serial number B004
@@ -58,7 +58,7 @@ Feature: Edit Computers
 		And I select "test.com" from "computer_domain_id"
 		And I press "Save"
 		And I wait for 5 seconds
-		Then I should be on the show page for computer B004
+		Then I should not see "error"
 		
 		Given a computer in a stage with [deployment] information with serial number B003
 		And a stage is available with [location,deployment] information
@@ -70,7 +70,7 @@ Feature: Edit Computers
 		And I select "test.com" from "computer_domain_id"
 		And I press "Save"
 		And I wait for 5 seconds
-		Then I should be on the edit page for computer B003
+		Then I should see "error"
 	
 	
 	Scenario: Changing the deployment information on a computer without changing the stage
@@ -79,7 +79,7 @@ Feature: Edit Computers
 		And I fill in "computer_owner" with "ugignja"
 		And I press "Save"
 		And I wait for 5 seconds
-		Then I should be on the show page for computer B005
+		Then I should not see "error"
 	
 	Scenario: Changing the location information on a computer without changing the stage
 		Given a computer in a stage with [location] information with serial number B006
@@ -87,7 +87,7 @@ Feature: Edit Computers
 		And I fill in "computer_location" with "In my nose"
 		And I press "Save"
 		And I wait for 5 seconds
-		Then I should be on the show page for computer B006
+		Then I should not see "error"
 	
 
 	

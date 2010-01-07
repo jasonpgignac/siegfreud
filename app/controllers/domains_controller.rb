@@ -1,4 +1,6 @@
 class DomainsController < ApplicationController
+  layout 'main'
+  filter_resource_access
   # GET /domains
   # GET /domains.xml
   def index
