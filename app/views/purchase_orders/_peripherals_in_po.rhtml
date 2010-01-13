@@ -4,6 +4,6 @@
 		<th>Model</th>
 	</tr>
 	<% Peripheral.find_all_by_po_number(@purchase_order.po_number).each do |periph|%>
-		<%= render :partial => 'embedded_peripheral_row', :locals => {:periph => periph} %>
+		<%= render :partial => 'peripherals/embedded_peripheral_row', :locals => {:periph => periph} %>
 	<% end %>
 </table>
