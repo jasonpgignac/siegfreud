@@ -51,7 +51,7 @@ function add_peripheral(request) {
 		}
 		RedBox.showInline('hidden_content_alert')
 		$('redbox_content').innerHTML = ' ';
-		new Insertion.Bottom('redbox_content', "License added")
+		new Insertion.Bottom('redbox_content', "Peripheral added")
 	} else {
 		RedBox.showInline('hidden_content_alert')
 		$('redbox_content').innerHTML = ' ';

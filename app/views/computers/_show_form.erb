@@ -32,7 +32,7 @@
 					hoverclass: 'hover',
 					onDrop:  function(element) {
 						$('spinner').show();
-						url_address = '/packages/' + encodeURIComponent(element.id.split('_').last()) + '/licenses.json'
+						url_address = 'packages/' + encodeURIComponent(element.id.split('_').last()) + '/licenses.json'
 						url_query =  "division_id=<%= @computer.division_id %>&available=true"
 						url = url_address + "?" + url_query
 						computer_id = <%= @computer.id %>
@@ -63,7 +63,7 @@
 					hoverclass: 'hover',
 					onDrop:  function(element) {
 						$('spinner').show(); 
-						new Ajax.Request('/peripherals/' + encodeURIComponent(element.id.split('_').last()) + '.json', 
+						new Ajax.Request('peripherals/' + encodeURIComponent(element.id.split('_').last()) + '.json', 
 							{
 								method:'put',
 								asynchronous:true, 
