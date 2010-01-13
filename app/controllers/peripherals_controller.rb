@@ -33,11 +33,16 @@ class PeripheralsController < ApplicationController
   # GET /peripherals/new
   # GET /peripherals/new.xml
   def new
-    @peripheral = Peripheral.new
+    @peripheral = Peripheral.new(params[:peripheral])
 
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @peripheral }
+      format.js   { 
+        render :update do |page| 
+          page.replace_html 'redbox_content', :partial => 'embedded_new'
+        end
+      }
     end
   end
 
@@ -52,16 +57,35 @@ class PeripheralsController < ApplicationController
   # POST /peripherals
   # POST /peripherals.xml
   def create
+    params[:peripheral][:stage_id] = nil if params[:peripheral][:stage_id] == '0'
+    if params[:computer_name] && params[:peripheral][:stage_id].nil?
+      c = Computer.find_by_name(params[:computer_name])
+      if c
+        params[:peripheral][:computer_id] = c.id
+      else
+        params[:peripheral][:computer_id] = nil
+      end
+    end
     @peripheral = Peripheral.new(params[:peripheral])
-
     respond_to do |format|
       if @peripheral.save
         flash[:notice] = 'Peripheral was successfully created.'
         format.html { redirect_to(@peripheral) }
         format.xml  { render :xml => @peripheral, :status => :created, :location => @peripheral }
+        format.js   {
+          render :update do |page|
+            page.insert_html :bottom, 'peripheral_table', :partial => "embedded_peripheral_row", :locals => {:periph => @peripheral}
+            page.replace_html 'redbox_content', :text => "Peripheral Creation Successful - #{@peripheral.short_name}"
+          end
+        }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @peripheral.errors, :status => :unprocessable_entity }
+        format.js {
+          render :update do |page|
+            page.replace_html 'redbox_content', :partial => 'embedded_new'
+          end
+        }
       end
     end
   end

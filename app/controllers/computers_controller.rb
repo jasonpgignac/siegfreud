@@ -61,7 +61,8 @@ class ComputersController < ApplicationController
       format.html
       format.xml  { render :xml => @computer }
       format.json { render :json => @computer }
-      format.js   { render :update do |page| 
+      format.js   { 
+        render :update do |page| 
           page.replace_html 'redbox_content', :partial => 'embedded_new'
         end
       }

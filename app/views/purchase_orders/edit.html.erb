@@ -9,9 +9,10 @@
 		<%= hidden_field(:computer, :division_id, :value => @purchase_order.division_id) %>
 		<%= submit_tag("New Computer")%>
 	<% end %>
-	<% form_remote_tag :url => { :action => :make_new_peripheral_in_po } do %>
-		<%= hidden_field_tag('po_number', @purchase_order.po_number) %>
-		<%= hidden_field_tag('division_id', @purchase_order.division_id) %>
+	<% form_remote_tag 	:url => new_peripheral_path,
+	 					:after => "RedBox.showInline('hidden_content_alert')" do %>
+		<%= hidden_field(:peripheral, :po_number, :value => @purchase_order.po_number) %>
+		<%= hidden_field(:peripheral, :division_id, :value => @purchase_order.division_id) %>
 		<%= submit_tag("New Peripheral")%>
 	<% end %>
 	<% form_remote_tag :url => { :action => :make_new_license_in_po } do %>

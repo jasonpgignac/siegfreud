@@ -1,0 +1,39 @@
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :serial_number %><br />
+  <%= f.text_field :serial_number %>
+</p>
+<p>
+  <%= f.label :model %><br />
+  <%= f.text_field :model %>
+</p>
+	<p>
+		<%= f.label :po_number%><br />
+		<%= f.text_field :po_number %>
+	</p>
+<p>
+  <%= f.label :division_id %><br />
+ 	<%= collection_select(:peripheral, :division_id, Division.all, :id, :display_name) %>
+</p>
+	<div class="databox">
+		<b>Stage:</b> <%= f.select(	:stage_id, 
+									@peripheral.available_stages.collect {
+										|p| [p.name, p.id]
+									} << ['Assigned to Computer', 0], 
+									:selected => (@peripheral.computer || !(@peripheral.stage)) ? 0 : @peripheral.stage_id) %><br />
+		<div id="computer_data" style='display: <%= @peripheral.computer || !(@peripheral.stage) ? "inline" : "none" %>'>
+			<%= render :partial => 'computer_form'%>
+		</div>
+		<div id="location_data" style='display: <%= (!(@peripheral.computer) && @peripheral.stage && @peripheral.stage.has_location) ? "inline" : "none" %>'>
+			<%= render :partial => 'location_form' %>
+		</div>
+		<div id="deployment_data" style='display: <%= (!(@peripheral.computer) && @peripheral.stage && @peripheral.stage.has_deployment) ? "inline" : "none" %>'>
+			<%= render :partial => 'deployment_form' %>
+		</div>
+	</div>
+	<%= observe_field('peripheral_stage_id',
+	              :frequency 	=> 0.5,
+	              :function 	=> peripheral_stage_change) %>
+  <%= f.submit 'Create' %>
+</p>

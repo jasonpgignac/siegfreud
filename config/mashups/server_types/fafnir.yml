@@ -5,10 +5,9 @@
     :platform: Win32
     :variables: 
         :computer_key_field: :serial_number
--   :type: PackageInformation
-    :platform: Win32
 -   :type: SoftwareManagement
     :platform: Win32
     :variables: 
         :computer_key_field: :serial_number
-    
+-   :type: PackageInformation
+    :platform: Win32
