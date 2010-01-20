@@ -1,5 +1,7 @@
 class Server < ActiveRecord::Base
   has_many :server_domains
+  has_many :site_maps
+  has_many :package_maps
   has_many :domains, :through => :server_domains
   
   validates_presence_of :name, :species, :address

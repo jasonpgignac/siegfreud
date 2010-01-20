@@ -19,7 +19,11 @@ module NavigationHelpers
     when /^the edit page for computer (.*)$/ 
       edit_computer_path($1)  
     when /^the edit page for peripheral (.*)$/ 
-      edit_peripheral_path(Peripheral.find_by_serial_number($1).id)  
+      edit_peripheral_path(Peripheral.find_by_serial_number($1).id) 
+    when /^the edit page for purchase order "(.*)"$/
+      edit_purchase_order_path($1) 
+    when /^the new page for purchase orders$/
+      new_purchase_order_path
     # Add more mappings here.
     # Here is a more fancy example:
     #

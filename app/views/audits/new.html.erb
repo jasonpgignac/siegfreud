@@ -1,0 +1,27 @@
+<h1>New audit</h1>
+
+<% form_for(@audit) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :platform %><br />
+    <%= f.text_field :platform %>
+  </p>
+  <p>
+    <%= f.label :server_id %><br />
+    <%= f.text_field :server_id %>
+  </p>
+  <p>
+    <%= f.label :domain_id %><br />
+    <%= f.text_field :domain_id %>
+  </p>
+  <p>
+    <%= f.label :site_id %><br />
+    <%= f.text_field :site_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', audits_path %>

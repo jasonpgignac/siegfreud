@@ -194,7 +194,6 @@ describe Computer do
         @computer.should_not be_valid
       end
     end
-    
   end
   describe "Remote Data Functions" do
     before :each do

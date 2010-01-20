@@ -24,6 +24,7 @@ module ValhallaMashup
     end
     def get(page, query = {})
       begin
+        puts "Will now access #{generate_child_url(page,query)}"
         req = Net::HTTP::Get.new(generate_child_url(page,query))
         perform_request(req)
       rescue SocketError

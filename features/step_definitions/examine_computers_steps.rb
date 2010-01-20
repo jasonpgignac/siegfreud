@@ -523,6 +523,13 @@ Then /^the license record should be assigned to the computer$/ do
   @license.reload
   @license.computer_id.should == @computer.id
 end
+Then /^there should be record for a computer with serial number "(.*)"$/ do |serial|
+  Computer.find_by_serial_number(serial).should_not == nil
+end
+
+Then /^there should be a record for a peripheral with serial number "(.*)"$/ do |serial|
+  Peripheral.find_by_serial_number(serial).should_not == nil
+end
 Then /^the license record should not be assigned to the computer$/ do
   @license.reload
   @license.computer_id.should_not == @computer.id
@@ -572,6 +579,11 @@ Given /^the peripheral is installed on the computer$/ do
   @peripheral.save
 end
 
+Given /^a division$/ do
+  @division = Division.find_by_name("Division X") || Division.create!(
+      :name           => "Division X",
+      :divisions      => "100,101,102")
+end
 def storage_stage
   stage = Stage.find_by_name("Storage") || Stage.create!(
       :name           => "Storage",

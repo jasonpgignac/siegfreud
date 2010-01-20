@@ -1,0 +1,24 @@
+<h1>Listing site_maps</h1>
+
+<table>
+  <tr>
+    <th>Site</th>
+    <th>Server</th>
+    <th>Remote site</th>
+  </tr>
+
+<% @site_maps.each do |site_map| %>
+  <tr>
+    <td><%=h site_map.site_id %></td>
+    <td><%=h site_map.server_id %></td>
+    <td><%=h site_map.remote_site_id %></td>
+    <td><%= link_to 'Show', site_map %></td>
+    <td><%= link_to 'Edit', edit_site_map_path(site_map) %></td>
+    <td><%= link_to 'Destroy', site_map, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New site_map', new_site_map_path %>

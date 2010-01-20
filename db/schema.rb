@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091229174511) do
+ActiveRecord::Schema.define(:version => 20100120184502) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(:version => 20091229174511) do
     t.integer  "division_id"
     t.integer  "stage_id"
     t.integer  "domain_id"
+    t.integer  "site_id"
   end
 
   create_table "content_servers", :force => true do |t|
@@ -173,6 +174,20 @@ ActiveRecord::Schema.define(:version => 20091229174511) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "site_maps", :force => true do |t|
+    t.integer  "site_id"
+    t.integer  "server_id"
+    t.string   "remote_site_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sites", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "stage_transitions", :force => true do |t|
     t.integer  "source_id"

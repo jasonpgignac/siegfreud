@@ -1,0 +1,24 @@
+<h1>Editing site_map</h1>
+
+<% form_for(@site_map) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :site_id %><br />
+    <%= f.text_field :site_id %>
+  </p>
+  <p>
+    <%= f.label :server_id %><br />
+    <%= f.text_field :server_id %>
+  </p>
+  <p>
+    <%= f.label :remote_site_id %><br />
+    <%= f.text_field :remote_site_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @site_map %> |
+<%= link_to 'Back', site_maps_path %>

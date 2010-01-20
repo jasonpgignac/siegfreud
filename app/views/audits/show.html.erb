@@ -1,0 +1,76 @@
+<h1>Audit</h1>
+<h3>Machines on <%= @audit.server.name %> but not in the database</h3>
+<table>
+	<tr>
+		<th>Serial</th>
+		<th>Name</th>
+		<th>User</th>
+		<th>Freshness</th>
+	</tr>
+	<% @audit.unmatched_server_entries.each do |e| %>
+		<tr>
+			<td><%=h e["serial_number"] %></td>
+			<td><%=h e["name"] %></td>
+			<td><%=h e["user"] %></td>
+			<td><%=h e["freshness_date"] %></td>
+		</tr>
+	<% end %>
+</table>
+<h3>Machines in the database but not on <%= @audit.server.name %></h3>
+<table>
+	<tr>
+		<th>Serial</th>
+		<th>Name</th>
+		<th>Owner</th>
+		<th>System Role</th>
+		<th>Stage</th>
+		<th>Last Updated</th>
+	</tr>
+	<% @audit.unmatched_db_entries.each do |e| %>
+		<tr>
+			<td><%=h e.serial_number %></td>
+			<td><%=h e.name %></td>
+			<td><%=h e.owner %></td>
+			<td><%=h e.system_role %></td>
+			<td><%=h e.stage.name %></td>
+			<td><%=h e.updated_at %></td>
+			<td><%= link_to 'Edit', edit_computer_path(e) %></td>
+		</tr>
+	<% end %>
+</table>
+
+
+
+<h3>Machines with mismatched data between <%= @audit.server.name %> and the database</h3>
+(Data is in the format database_data(server_data) )<br />
+
+<table>
+	<tr>
+		<th>Serial</th>
+		<th>Errors</th>
+		<th>Name</th>
+		<th>Owner</th>
+		<th>Domain</th>
+		<th>System Role</th>
+		<th>Stage</th>
+		<th>Last Updated</th>
+	</tr>
+	<% @audit.entry_conflicts.each do |x, e| %>
+		<tr>
+			<td><%=h e[:db].serial_number %></td>
+			<td>
+				<% e[:errors].each do |err| %>
+				 	<%=h err %><br />
+				<% end%>
+			</td>
+			
+			<td><%=h "#{e[:db].name} (#{e[:server]["name"]})" %></td>
+			<td><%=h "#{e[:db].owner} (#{e[:server]["user"]})" %></td>
+			<td><%=h "#{e[:db].domain.name} (#{e[:server]["domain"]})" %></td>
+			<td><%=h e[:db].system_role %></td>
+			<td><%=h e[:db].stage.name %></td>
+			<td><%=h "#{e[:db].updated_at} (#{e[:server]["freshness_date"]})" %></td>
+			<td><%= link_to 'Edit', edit_computer_path(e[:db]) %></td>
+		</tr>
+	<% end %>
+</table>

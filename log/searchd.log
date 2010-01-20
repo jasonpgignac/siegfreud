@@ -31923,3 +31923,706 @@
 [Thu Jan  7 12:21:55.778 2010] [ 3714] caught SIGTERM, shutting down
 [Thu Jan  7 12:21:55.779 2010] [ 3714] shutdown complete
 [Thu Jan  7 12:27:02.273 2010] [ 4143] accepting connections
+[Thu Jan 14 09:11:12.442 2010] [34603] accepting connections
+[Thu Jan 14 09:11:13.599 2010] [34603] rotating indices (seamless=1)
+[Thu Jan 14 09:11:13.630 2010] [34603] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:11:13.635 2010] [34603] rotating index 'peripheral_core': success
+[Thu Jan 14 09:11:13.654 2010] [34603] rotating index 'package_core': success
+[Thu Jan 14 09:11:13.670 2010] [34603] rotating index 'computer_delta': success
+[Thu Jan 14 09:11:13.686 2010] [34603] rotating index 'computer_core': success
+[Thu Jan 14 09:11:13.690 2010] [34603] rotating index 'bundle_core': success
+[Thu Jan 14 09:11:13.690 2010] [34603] rotating finished
+[Thu Jan 14 09:11:14.141 2010] [34603] rotating indices (seamless=1)
+[Thu Jan 14 09:11:14.145 2010] [34603] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:11:14.150 2010] [34603] rotating index 'peripheral_core': success
+[Thu Jan 14 09:11:14.154 2010] [34603] rotating index 'package_core': success
+[Thu Jan 14 09:11:14.158 2010] [34603] rotating index 'computer_delta': success
+[Thu Jan 14 09:11:14.163 2010] [34603] rotating index 'computer_core': success
+[Thu Jan 14 09:11:14.169 2010] [34603] rotating index 'bundle_core': success
+[Thu Jan 14 09:11:14.169 2010] [34603] rotating finished
+[Thu Jan 14 09:11:41.678 2010] [34603] caught SIGTERM, shutting down
+[Thu Jan 14 09:11:41.679 2010] [34603] shutdown complete
+[Thu Jan 14 09:13:05.060 2010] [34672] accepting connections
+[Thu Jan 14 09:13:09.018 2010] [34672] rotating indices (seamless=1)
+[Thu Jan 14 09:13:09.023 2010] [34672] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:13:09.028 2010] [34672] rotating index 'peripheral_core': success
+[Thu Jan 14 09:13:09.033 2010] [34672] rotating index 'package_core': success
+[Thu Jan 14 09:13:09.038 2010] [34672] rotating index 'computer_delta': success
+[Thu Jan 14 09:13:09.043 2010] [34672] rotating index 'computer_core': success
+[Thu Jan 14 09:13:09.048 2010] [34672] rotating index 'bundle_core': success
+[Thu Jan 14 09:13:09.048 2010] [34672] rotating finished
+[Thu Jan 14 09:13:09.514 2010] [34672] rotating indices (seamless=1)
+[Thu Jan 14 09:13:09.525 2010] [34672] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:13:09.533 2010] [34672] rotating index 'peripheral_core': success
+[Thu Jan 14 09:13:09.537 2010] [34672] rotating index 'package_core': success
+[Thu Jan 14 09:13:09.541 2010] [34672] rotating index 'computer_delta': success
+[Thu Jan 14 09:13:09.545 2010] [34672] rotating index 'computer_core': success
+[Thu Jan 14 09:13:09.548 2010] [34672] rotating index 'bundle_core': success
+[Thu Jan 14 09:13:09.548 2010] [34672] rotating finished
+[Thu Jan 14 09:13:31.567 2010] [34672] caught SIGTERM, shutting down
+[Thu Jan 14 09:13:31.568 2010] [34672] shutdown complete
+[Thu Jan 14 09:15:53.146 2010] [34742] accepting connections
+[Thu Jan 14 09:15:54.313 2010] [34742] rotating indices (seamless=1)
+[Thu Jan 14 09:15:54.335 2010] [34742] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:15:54.339 2010] [34742] rotating index 'peripheral_core': success
+[Thu Jan 14 09:15:54.343 2010] [34742] rotating index 'package_core': success
+[Thu Jan 14 09:15:54.348 2010] [34742] rotating index 'computer_delta': success
+[Thu Jan 14 09:15:54.368 2010] [34742] rotating index 'computer_core': success
+[Thu Jan 14 09:15:54.371 2010] [34742] rotating index 'bundle_core': success
+[Thu Jan 14 09:15:54.371 2010] [34742] rotating finished
+[Thu Jan 14 09:15:54.815 2010] [34742] rotating indices (seamless=1)
+[Thu Jan 14 09:15:54.819 2010] [34742] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:15:54.824 2010] [34742] rotating index 'peripheral_core': success
+[Thu Jan 14 09:15:54.827 2010] [34742] rotating index 'package_core': success
+[Thu Jan 14 09:15:54.831 2010] [34742] rotating index 'computer_delta': success
+[Thu Jan 14 09:15:54.837 2010] [34742] rotating index 'computer_core': success
+[Thu Jan 14 09:15:54.840 2010] [34742] rotating index 'bundle_core': success
+[Thu Jan 14 09:15:54.841 2010] [34742] rotating finished
+[Thu Jan 14 09:16:12.338 2010] [34742] caught SIGTERM, shutting down
+[Thu Jan 14 09:16:12.339 2010] [34742] shutdown complete
+[Thu Jan 14 09:16:39.429 2010] [34806] accepting connections
+[Thu Jan 14 09:16:40.621 2010] [34806] rotating indices (seamless=1)
+[Thu Jan 14 09:16:40.625 2010] [34806] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:16:40.630 2010] [34806] rotating index 'peripheral_core': success
+[Thu Jan 14 09:16:40.634 2010] [34806] rotating index 'package_core': success
+[Thu Jan 14 09:16:40.639 2010] [34806] rotating index 'computer_delta': success
+[Thu Jan 14 09:16:40.644 2010] [34806] rotating index 'computer_core': success
+[Thu Jan 14 09:16:40.649 2010] [34806] rotating index 'bundle_core': success
+[Thu Jan 14 09:16:40.649 2010] [34806] rotating finished
+[Thu Jan 14 09:16:41.156 2010] [34806] rotating indices (seamless=1)
+[Thu Jan 14 09:16:41.167 2010] [34806] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:16:41.172 2010] [34806] rotating index 'peripheral_core': success
+[Thu Jan 14 09:16:41.176 2010] [34806] rotating index 'package_core': success
+[Thu Jan 14 09:16:41.186 2010] [34806] rotating index 'computer_delta': success
+[Thu Jan 14 09:16:41.194 2010] [34806] rotating index 'computer_core': success
+[Thu Jan 14 09:16:41.200 2010] [34806] rotating index 'bundle_core': success
+[Thu Jan 14 09:16:41.200 2010] [34806] rotating finished
+[Thu Jan 14 09:17:03.235 2010] [34806] caught SIGTERM, shutting down
+[Thu Jan 14 09:17:03.247 2010] [34806] shutdown complete
+[Thu Jan 14 09:17:31.918 2010] [34874] accepting connections
+[Thu Jan 14 09:17:33.822 2010] [34874] rotating indices (seamless=1)
+[Thu Jan 14 09:17:33.844 2010] [34874] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:17:33.861 2010] [34874] rotating index 'peripheral_core': success
+[Thu Jan 14 09:17:33.866 2010] [34874] rotating index 'package_core': success
+[Thu Jan 14 09:17:34.738 2010] [34874] rotating index 'computer_delta': success
+[Thu Jan 14 09:17:34.744 2010] [34874] rotating index 'computer_core': success
+[Thu Jan 14 09:17:34.755 2010] [34874] rotating index 'bundle_core': success
+[Thu Jan 14 09:17:34.755 2010] [34874] rotating finished
+[Thu Jan 14 09:17:34.840 2010] [34874] rotating indices (seamless=1)
+[Thu Jan 14 09:17:34.844 2010] [34874] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:17:34.849 2010] [34874] rotating index 'peripheral_core': success
+[Thu Jan 14 09:17:34.853 2010] [34874] rotating index 'package_core': success
+[Thu Jan 14 09:17:34.858 2010] [34874] rotating index 'computer_delta': success
+[Thu Jan 14 09:17:34.862 2010] [34874] rotating index 'computer_core': success
+[Thu Jan 14 09:17:34.866 2010] [34874] rotating index 'bundle_core': success
+[Thu Jan 14 09:17:34.866 2010] [34874] rotating finished
+[Thu Jan 14 09:17:51.997 2010] [34874] caught SIGTERM, shutting down
+[Thu Jan 14 09:17:51.998 2010] [34874] shutdown complete
+[Thu Jan 14 09:27:52.428 2010] [  458] accepting connections
+[Thu Jan 14 09:27:53.592 2010] [  458] rotating indices (seamless=1)
+[Thu Jan 14 09:27:53.598 2010] [  458] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:27:53.610 2010] [  458] rotating index 'peripheral_core': success
+[Thu Jan 14 09:27:53.613 2010] [  458] rotating index 'package_core': success
+[Thu Jan 14 09:27:53.617 2010] [  458] rotating index 'computer_delta': success
+[Thu Jan 14 09:27:53.620 2010] [  458] rotating index 'computer_core': success
+[Thu Jan 14 09:27:53.623 2010] [  458] rotating index 'bundle_core': success
+[Thu Jan 14 09:27:53.623 2010] [  458] rotating finished
+[Thu Jan 14 09:27:54.299 2010] [  458] rotating indices (seamless=1)
+[Thu Jan 14 09:27:54.304 2010] [  458] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:27:54.312 2010] [  458] rotating index 'peripheral_core': success
+[Thu Jan 14 09:27:54.316 2010] [  458] rotating index 'package_core': success
+[Thu Jan 14 09:27:54.319 2010] [  458] rotating index 'computer_delta': success
+[Thu Jan 14 09:27:54.322 2010] [  458] rotating index 'computer_core': success
+[Thu Jan 14 09:27:54.326 2010] [  458] rotating index 'bundle_core': success
+[Thu Jan 14 09:27:54.326 2010] [  458] rotating finished
+[Thu Jan 14 09:28:17.754 2010] [  458] caught SIGTERM, shutting down
+[Thu Jan 14 09:28:17.755 2010] [  458] shutdown complete
+[Thu Jan 14 09:28:43.919 2010] [  522] accepting connections
+[Thu Jan 14 09:28:45.405 2010] [  522] rotating indices (seamless=1)
+[Thu Jan 14 09:28:45.410 2010] [  522] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:28:45.414 2010] [  522] rotating index 'peripheral_core': success
+[Thu Jan 14 09:28:45.419 2010] [  522] rotating index 'package_core': success
+[Thu Jan 14 09:28:45.424 2010] [  522] rotating index 'computer_delta': success
+[Thu Jan 14 09:28:45.428 2010] [  522] rotating index 'computer_core': success
+[Thu Jan 14 09:28:45.432 2010] [  522] rotating index 'bundle_core': success
+[Thu Jan 14 09:28:45.432 2010] [  522] rotating finished
+[Thu Jan 14 09:28:46.586 2010] [  522] rotating indices (seamless=1)
+[Thu Jan 14 09:28:46.591 2010] [  522] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:28:46.595 2010] [  522] rotating index 'peripheral_core': success
+[Thu Jan 14 09:28:46.600 2010] [  522] rotating index 'package_core': success
+[Thu Jan 14 09:28:46.604 2010] [  522] rotating index 'computer_delta': success
+[Thu Jan 14 09:28:46.608 2010] [  522] rotating index 'computer_core': success
+[Thu Jan 14 09:28:46.614 2010] [  522] rotating index 'bundle_core': success
+[Thu Jan 14 09:28:46.615 2010] [  522] rotating finished
+[Thu Jan 14 09:29:42.382 2010] [  522] caught SIGTERM, shutting down
+[Thu Jan 14 09:29:42.382 2010] [  522] shutdown complete
+[Thu Jan 14 09:36:22.705 2010] [  638] accepting connections
+[Thu Jan 14 09:36:23.878 2010] [  638] rotating indices (seamless=1)
+[Thu Jan 14 09:36:23.883 2010] [  638] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:36:23.888 2010] [  638] rotating index 'peripheral_core': success
+[Thu Jan 14 09:36:23.892 2010] [  638] rotating index 'package_core': success
+[Thu Jan 14 09:36:23.899 2010] [  638] rotating index 'computer_delta': success
+[Thu Jan 14 09:36:23.904 2010] [  638] rotating index 'computer_core': success
+[Thu Jan 14 09:36:23.927 2010] [  638] rotating index 'bundle_core': success
+[Thu Jan 14 09:36:23.927 2010] [  638] rotating finished
+[Thu Jan 14 09:36:24.368 2010] [  638] rotating indices (seamless=1)
+[Thu Jan 14 09:36:24.372 2010] [  638] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:36:24.376 2010] [  638] rotating index 'peripheral_core': success
+[Thu Jan 14 09:36:24.380 2010] [  638] rotating index 'package_core': success
+[Thu Jan 14 09:36:24.384 2010] [  638] rotating index 'computer_delta': success
+[Thu Jan 14 09:36:24.387 2010] [  638] rotating index 'computer_core': success
+[Thu Jan 14 09:36:24.392 2010] [  638] rotating index 'bundle_core': success
+[Thu Jan 14 09:36:24.392 2010] [  638] rotating finished
+[Thu Jan 14 09:36:49.313 2010] [  638] caught SIGTERM, shutting down
+[Thu Jan 14 09:36:49.313 2010] [  638] shutdown complete
+[Thu Jan 14 09:37:49.744 2010] [  706] accepting connections
+[Thu Jan 14 09:37:50.985 2010] [  706] rotating indices (seamless=1)
+[Thu Jan 14 09:37:50.989 2010] [  706] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:37:50.993 2010] [  706] rotating index 'peripheral_core': success
+[Thu Jan 14 09:37:50.997 2010] [  706] rotating index 'package_core': success
+[Thu Jan 14 09:37:51.001 2010] [  706] rotating index 'computer_delta': success
+[Thu Jan 14 09:37:51.006 2010] [  706] rotating index 'computer_core': success
+[Thu Jan 14 09:37:51.010 2010] [  706] rotating index 'bundle_core': success
+[Thu Jan 14 09:37:51.010 2010] [  706] rotating finished
+[Thu Jan 14 09:37:55.348 2010] [  706] rotating indices (seamless=1)
+[Thu Jan 14 09:37:55.352 2010] [  706] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:37:55.356 2010] [  706] rotating index 'peripheral_core': success
+[Thu Jan 14 09:37:55.365 2010] [  706] rotating index 'package_core': success
+[Thu Jan 14 09:37:55.369 2010] [  706] rotating index 'computer_delta': success
+[Thu Jan 14 09:37:55.374 2010] [  706] rotating index 'computer_core': success
+[Thu Jan 14 09:37:55.378 2010] [  706] rotating index 'bundle_core': success
+[Thu Jan 14 09:37:55.378 2010] [  706] rotating finished
+[Thu Jan 14 09:38:31.081 2010] [  706] caught SIGTERM, shutting down
+[Thu Jan 14 09:38:31.082 2010] [  706] shutdown complete
+[Thu Jan 14 09:38:47.958 2010] [  773] accepting connections
+[Thu Jan 14 09:38:49.133 2010] [  773] rotating indices (seamless=1)
+[Thu Jan 14 09:38:49.138 2010] [  773] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:38:49.155 2010] [  773] rotating index 'peripheral_core': success
+[Thu Jan 14 09:38:49.159 2010] [  773] rotating index 'package_core': success
+[Thu Jan 14 09:38:49.162 2010] [  773] rotating index 'computer_delta': success
+[Thu Jan 14 09:38:49.169 2010] [  773] rotating index 'computer_core': success
+[Thu Jan 14 09:38:49.172 2010] [  773] rotating index 'bundle_core': success
+[Thu Jan 14 09:38:49.173 2010] [  773] rotating finished
+[Thu Jan 14 09:38:49.642 2010] [  773] rotating indices (seamless=1)
+[Thu Jan 14 09:38:49.646 2010] [  773] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:38:49.650 2010] [  773] rotating index 'peripheral_core': success
+[Thu Jan 14 09:38:49.653 2010] [  773] rotating index 'package_core': success
+[Thu Jan 14 09:38:49.657 2010] [  773] rotating index 'computer_delta': success
+[Thu Jan 14 09:38:49.661 2010] [  773] rotating index 'computer_core': success
+[Thu Jan 14 09:38:49.664 2010] [  773] rotating index 'bundle_core': success
+[Thu Jan 14 09:38:49.664 2010] [  773] rotating finished
+[Thu Jan 14 09:39:06.813 2010] [  773] caught SIGTERM, shutting down
+[Thu Jan 14 09:39:07.231 2010] [  773] shutdown complete
+[Thu Jan 14 09:44:27.545 2010] [  843] accepting connections
+[Thu Jan 14 09:44:28.790 2010] [  843] rotating indices (seamless=1)
+[Thu Jan 14 09:44:28.795 2010] [  843] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:44:28.804 2010] [  843] rotating index 'peripheral_core': success
+[Thu Jan 14 09:44:28.809 2010] [  843] rotating index 'package_core': success
+[Thu Jan 14 09:44:28.813 2010] [  843] rotating index 'computer_delta': success
+[Thu Jan 14 09:44:28.819 2010] [  843] rotating index 'computer_core': success
+[Thu Jan 14 09:44:28.823 2010] [  843] rotating index 'bundle_core': success
+[Thu Jan 14 09:44:28.824 2010] [  843] rotating finished
+[Thu Jan 14 09:44:29.900 2010] [  843] rotating indices (seamless=1)
+[Thu Jan 14 09:44:29.905 2010] [  843] rotating index 'peripheral_delta': success
+[Thu Jan 14 09:44:29.910 2010] [  843] rotating index 'peripheral_core': success
+[Thu Jan 14 09:44:29.914 2010] [  843] rotating index 'package_core': success
+[Thu Jan 14 09:44:29.921 2010] [  843] rotating index 'computer_delta': success
+[Thu Jan 14 09:44:29.939 2010] [  843] rotating index 'computer_core': success
+[Thu Jan 14 09:44:29.947 2010] [  843] rotating index 'bundle_core': success
+[Thu Jan 14 09:44:29.947 2010] [  843] rotating finished
+[Thu Jan 14 09:44:50.528 2010] [  843] caught SIGTERM, shutting down
+[Thu Jan 14 09:44:50.530 2010] [  843] shutdown complete
+[Thu Jan 14 10:07:12.927 2010] [ 1837] accepting connections
+[Thu Jan 14 10:07:14.219 2010] [ 1837] rotating indices (seamless=1)
+[Thu Jan 14 10:07:14.253 2010] [ 1837] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:07:14.258 2010] [ 1837] rotating index 'peripheral_core': success
+[Thu Jan 14 10:07:14.264 2010] [ 1837] rotating index 'package_core': success
+[Thu Jan 14 10:07:14.270 2010] [ 1837] rotating index 'computer_delta': success
+[Thu Jan 14 10:07:14.276 2010] [ 1837] rotating index 'computer_core': success
+[Thu Jan 14 10:07:14.282 2010] [ 1837] rotating index 'bundle_core': success
+[Thu Jan 14 10:07:14.282 2010] [ 1837] rotating finished
+[Thu Jan 14 10:07:15.275 2010] [ 1837] rotating indices (seamless=1)
+[Thu Jan 14 10:07:15.303 2010] [ 1837] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:07:15.308 2010] [ 1837] rotating index 'peripheral_core': success
+[Thu Jan 14 10:07:15.313 2010] [ 1837] rotating index 'package_core': success
+[Thu Jan 14 10:07:15.317 2010] [ 1837] rotating index 'computer_delta': success
+[Thu Jan 14 10:07:15.323 2010] [ 1837] rotating index 'computer_core': success
+[Thu Jan 14 10:07:15.327 2010] [ 1837] rotating index 'bundle_core': success
+[Thu Jan 14 10:07:15.327 2010] [ 1837] rotating finished
+[Thu Jan 14 10:07:45.742 2010] [ 1837] caught SIGTERM, shutting down
+[Thu Jan 14 10:07:45.743 2010] [ 1837] shutdown complete
+[Thu Jan 14 10:15:35.784 2010] [ 1958] accepting connections
+[Thu Jan 14 10:15:36.962 2010] [ 1958] rotating indices (seamless=1)
+[Thu Jan 14 10:15:36.968 2010] [ 1958] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:15:36.974 2010] [ 1958] rotating index 'peripheral_core': success
+[Thu Jan 14 10:15:36.980 2010] [ 1958] rotating index 'package_core': success
+[Thu Jan 14 10:15:36.985 2010] [ 1958] rotating index 'computer_delta': success
+[Thu Jan 14 10:15:36.992 2010] [ 1958] rotating index 'computer_core': success
+[Thu Jan 14 10:15:37.002 2010] [ 1958] rotating index 'bundle_core': success
+[Thu Jan 14 10:15:37.002 2010] [ 1958] rotating finished
+[Thu Jan 14 10:15:37.544 2010] [ 1958] rotating indices (seamless=1)
+[Thu Jan 14 10:15:37.549 2010] [ 1958] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:15:37.556 2010] [ 1958] rotating index 'peripheral_core': success
+[Thu Jan 14 10:15:37.561 2010] [ 1958] rotating index 'package_core': success
+[Thu Jan 14 10:15:37.567 2010] [ 1958] rotating index 'computer_delta': success
+[Thu Jan 14 10:15:37.573 2010] [ 1958] rotating index 'computer_core': success
+[Thu Jan 14 10:15:37.582 2010] [ 1958] rotating index 'bundle_core': success
+[Thu Jan 14 10:15:37.582 2010] [ 1958] rotating finished
+[Thu Jan 14 10:16:04.990 2010] [ 1958] caught SIGTERM, shutting down
+[Thu Jan 14 10:16:04.991 2010] [ 1958] shutdown complete
+[Thu Jan 14 10:16:54.587 2010] [ 2025] accepting connections
+[Thu Jan 14 10:16:55.766 2010] [ 2025] rotating indices (seamless=1)
+[Thu Jan 14 10:16:55.771 2010] [ 2025] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:16:55.777 2010] [ 2025] rotating index 'peripheral_core': success
+[Thu Jan 14 10:16:55.781 2010] [ 2025] rotating index 'package_core': success
+[Thu Jan 14 10:16:55.786 2010] [ 2025] rotating index 'computer_delta': success
+[Thu Jan 14 10:16:55.792 2010] [ 2025] rotating index 'computer_core': success
+[Thu Jan 14 10:16:55.795 2010] [ 2025] rotating index 'bundle_core': success
+[Thu Jan 14 10:16:55.796 2010] [ 2025] rotating finished
+[Thu Jan 14 10:16:56.353 2010] [ 2025] rotating indices (seamless=1)
+[Thu Jan 14 10:16:56.359 2010] [ 2025] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:16:56.364 2010] [ 2025] rotating index 'peripheral_core': success
+[Thu Jan 14 10:16:56.370 2010] [ 2025] rotating index 'package_core': success
+[Thu Jan 14 10:16:56.374 2010] [ 2025] rotating index 'computer_delta': success
+[Thu Jan 14 10:16:56.381 2010] [ 2025] rotating index 'computer_core': success
+[Thu Jan 14 10:16:56.386 2010] [ 2025] rotating index 'bundle_core': success
+[Thu Jan 14 10:16:56.386 2010] [ 2025] rotating finished
+[Thu Jan 14 10:17:33.501 2010] [ 2025] caught SIGTERM, shutting down
+[Thu Jan 14 10:17:33.501 2010] [ 2025] shutdown complete
+[Thu Jan 14 10:18:06.556 2010] [ 2092] accepting connections
+[Thu Jan 14 10:18:07.738 2010] [ 2092] rotating indices (seamless=1)
+[Thu Jan 14 10:18:07.743 2010] [ 2092] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:18:07.748 2010] [ 2092] rotating index 'peripheral_core': success
+[Thu Jan 14 10:18:07.753 2010] [ 2092] rotating index 'package_core': success
+[Thu Jan 14 10:18:07.758 2010] [ 2092] rotating index 'computer_delta': success
+[Thu Jan 14 10:18:07.770 2010] [ 2092] rotating index 'computer_core': success
+[Thu Jan 14 10:18:07.775 2010] [ 2092] rotating index 'bundle_core': success
+[Thu Jan 14 10:18:07.775 2010] [ 2092] rotating finished
+[Thu Jan 14 10:18:08.324 2010] [ 2092] rotating indices (seamless=1)
+[Thu Jan 14 10:18:08.329 2010] [ 2092] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:18:08.333 2010] [ 2092] rotating index 'peripheral_core': success
+[Thu Jan 14 10:18:08.343 2010] [ 2092] rotating index 'package_core': success
+[Thu Jan 14 10:18:08.347 2010] [ 2092] rotating index 'computer_delta': success
+[Thu Jan 14 10:18:08.352 2010] [ 2092] rotating index 'computer_core': success
+[Thu Jan 14 10:18:08.356 2010] [ 2092] rotating index 'bundle_core': success
+[Thu Jan 14 10:18:08.356 2010] [ 2092] rotating finished
+[Thu Jan 14 10:18:34.309 2010] [ 2092] caught SIGTERM, shutting down
+[Thu Jan 14 10:18:34.317 2010] [ 2092] shutdown complete
+[Thu Jan 14 10:19:04.950 2010] [ 2159] accepting connections
+[Thu Jan 14 10:19:06.326 2010] [ 2159] rotating indices (seamless=1)
+[Thu Jan 14 10:19:06.433 2010] [ 2159] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:19:06.437 2010] [ 2159] rotating index 'peripheral_core': success
+[Thu Jan 14 10:19:06.441 2010] [ 2159] rotating index 'package_core': success
+[Thu Jan 14 10:19:06.445 2010] [ 2159] rotating index 'computer_delta': success
+[Thu Jan 14 10:19:06.450 2010] [ 2159] rotating index 'computer_core': success
+[Thu Jan 14 10:19:06.455 2010] [ 2159] rotating index 'bundle_core': success
+[Thu Jan 14 10:19:06.455 2010] [ 2159] rotating finished
+[Thu Jan 14 10:19:06.956 2010] [ 2159] rotating indices (seamless=1)
+[Thu Jan 14 10:19:07.053 2010] [ 2159] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:19:07.058 2010] [ 2159] rotating index 'peripheral_core': success
+[Thu Jan 14 10:19:07.062 2010] [ 2159] rotating index 'package_core': success
+[Thu Jan 14 10:19:07.067 2010] [ 2159] rotating index 'computer_delta': success
+[Thu Jan 14 10:19:07.070 2010] [ 2159] rotating index 'computer_core': success
+[Thu Jan 14 10:19:07.074 2010] [ 2159] rotating index 'bundle_core': success
+[Thu Jan 14 10:19:07.075 2010] [ 2159] rotating finished
+[Thu Jan 14 10:19:39.048 2010] [ 2159] caught SIGTERM, shutting down
+[Thu Jan 14 10:19:39.235 2010] [ 2159] shutdown complete
+[Thu Jan 14 10:20:15.623 2010] [ 2226] accepting connections
+[Thu Jan 14 10:20:16.809 2010] [ 2226] rotating indices (seamless=1)
+[Thu Jan 14 10:20:16.837 2010] [ 2226] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:20:16.842 2010] [ 2226] rotating index 'peripheral_core': success
+[Thu Jan 14 10:20:16.847 2010] [ 2226] rotating index 'package_core': success
+[Thu Jan 14 10:20:16.852 2010] [ 2226] rotating index 'computer_delta': success
+[Thu Jan 14 10:20:16.857 2010] [ 2226] rotating index 'computer_core': success
+[Thu Jan 14 10:20:16.861 2010] [ 2226] rotating index 'bundle_core': success
+[Thu Jan 14 10:20:16.861 2010] [ 2226] rotating finished
+[Thu Jan 14 10:20:17.402 2010] [ 2226] rotating indices (seamless=1)
+[Thu Jan 14 10:20:17.407 2010] [ 2226] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:20:17.412 2010] [ 2226] rotating index 'peripheral_core': success
+[Thu Jan 14 10:20:17.418 2010] [ 2226] rotating index 'package_core': success
+[Thu Jan 14 10:20:17.422 2010] [ 2226] rotating index 'computer_delta': success
+[Thu Jan 14 10:20:17.427 2010] [ 2226] rotating index 'computer_core': success
+[Thu Jan 14 10:20:17.432 2010] [ 2226] rotating index 'bundle_core': success
+[Thu Jan 14 10:20:17.432 2010] [ 2226] rotating finished
+[Thu Jan 14 10:20:50.656 2010] [ 2226] caught SIGTERM, shutting down
+[Thu Jan 14 10:20:50.657 2010] [ 2226] shutdown complete
+[Thu Jan 14 10:22:12.474 2010] [ 2294] accepting connections
+[Thu Jan 14 10:22:13.684 2010] [ 2294] rotating indices (seamless=1)
+[Thu Jan 14 10:22:13.695 2010] [ 2294] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:22:13.700 2010] [ 2294] rotating index 'peripheral_core': success
+[Thu Jan 14 10:22:13.704 2010] [ 2294] rotating index 'package_core': success
+[Thu Jan 14 10:22:13.708 2010] [ 2294] rotating index 'computer_delta': success
+[Thu Jan 14 10:22:13.714 2010] [ 2294] rotating index 'computer_core': success
+[Thu Jan 14 10:22:13.718 2010] [ 2294] rotating index 'bundle_core': success
+[Thu Jan 14 10:22:13.719 2010] [ 2294] rotating finished
+[Thu Jan 14 10:22:14.253 2010] [ 2294] rotating indices (seamless=1)
+[Thu Jan 14 10:22:14.258 2010] [ 2294] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:22:14.262 2010] [ 2294] rotating index 'peripheral_core': success
+[Thu Jan 14 10:22:14.267 2010] [ 2294] rotating index 'package_core': success
+[Thu Jan 14 10:22:14.270 2010] [ 2294] rotating index 'computer_delta': success
+[Thu Jan 14 10:22:14.275 2010] [ 2294] rotating index 'computer_core': success
+[Thu Jan 14 10:22:14.280 2010] [ 2294] rotating index 'bundle_core': success
+[Thu Jan 14 10:22:14.280 2010] [ 2294] rotating finished
+[Thu Jan 14 10:22:33.363 2010] [ 2294] caught SIGTERM, shutting down
+[Thu Jan 14 10:22:54.322 2010] [ 2294] shutdown complete
+[Thu Jan 14 10:23:23.455 2010] [ 2360] accepting connections
+[Thu Jan 14 10:23:24.645 2010] [ 2360] rotating indices (seamless=1)
+[Thu Jan 14 10:23:24.650 2010] [ 2360] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:23:24.654 2010] [ 2360] rotating index 'peripheral_core': success
+[Thu Jan 14 10:23:24.659 2010] [ 2360] rotating index 'package_core': success
+[Thu Jan 14 10:23:24.664 2010] [ 2360] rotating index 'computer_delta': success
+[Thu Jan 14 10:23:24.669 2010] [ 2360] rotating index 'computer_core': success
+[Thu Jan 14 10:23:24.674 2010] [ 2360] rotating index 'bundle_core': success
+[Thu Jan 14 10:23:24.674 2010] [ 2360] rotating finished
+[Thu Jan 14 10:23:25.877 2010] [ 2360] rotating indices (seamless=1)
+[Thu Jan 14 10:23:25.881 2010] [ 2360] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:23:25.889 2010] [ 2360] rotating index 'peripheral_core': success
+[Thu Jan 14 10:23:25.895 2010] [ 2360] rotating index 'package_core': success
+[Thu Jan 14 10:23:25.900 2010] [ 2360] rotating index 'computer_delta': success
+[Thu Jan 14 10:23:25.906 2010] [ 2360] rotating index 'computer_core': success
+[Thu Jan 14 10:23:25.910 2010] [ 2360] rotating index 'bundle_core': success
+[Thu Jan 14 10:23:25.911 2010] [ 2360] rotating finished
+[Thu Jan 14 10:23:50.276 2010] [ 2360] caught SIGTERM, shutting down
+[Thu Jan 14 10:23:50.277 2010] [ 2360] shutdown complete
+[Thu Jan 14 10:24:25.483 2010] [ 2426] accepting connections
+[Thu Jan 14 10:24:26.667 2010] [ 2426] rotating indices (seamless=1)
+[Thu Jan 14 10:24:26.673 2010] [ 2426] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:24:26.678 2010] [ 2426] rotating index 'peripheral_core': success
+[Thu Jan 14 10:24:26.683 2010] [ 2426] rotating index 'package_core': success
+[Thu Jan 14 10:24:26.688 2010] [ 2426] rotating index 'computer_delta': success
+[Thu Jan 14 10:24:26.694 2010] [ 2426] rotating index 'computer_core': success
+[Thu Jan 14 10:24:26.698 2010] [ 2426] rotating index 'bundle_core': success
+[Thu Jan 14 10:24:26.699 2010] [ 2426] rotating finished
+[Thu Jan 14 10:24:32.982 2010] [ 2426] rotating indices (seamless=1)
+[Thu Jan 14 10:24:32.997 2010] [ 2426] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:24:33.009 2010] [ 2426] rotating index 'peripheral_core': success
+[Thu Jan 14 10:24:33.014 2010] [ 2426] rotating index 'package_core': success
+[Thu Jan 14 10:24:33.024 2010] [ 2426] rotating index 'computer_delta': success
+[Thu Jan 14 10:24:33.033 2010] [ 2426] rotating index 'computer_core': success
+[Thu Jan 14 10:24:33.058 2010] [ 2426] rotating index 'bundle_core': success
+[Thu Jan 14 10:24:33.058 2010] [ 2426] rotating finished
+[Thu Jan 14 10:25:02.061 2010] [ 2426] caught SIGTERM, shutting down
+[Thu Jan 14 10:25:02.062 2010] [ 2426] shutdown complete
+[Thu Jan 14 10:26:26.625 2010] [ 2497] accepting connections
+[Thu Jan 14 10:26:27.843 2010] [ 2497] rotating indices (seamless=1)
+[Thu Jan 14 10:26:27.847 2010] [ 2497] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:26:27.852 2010] [ 2497] rotating index 'peripheral_core': success
+[Thu Jan 14 10:26:27.857 2010] [ 2497] rotating index 'package_core': success
+[Thu Jan 14 10:26:27.863 2010] [ 2497] rotating index 'computer_delta': success
+[Thu Jan 14 10:26:27.867 2010] [ 2497] rotating index 'computer_core': success
+[Thu Jan 14 10:26:27.872 2010] [ 2497] rotating index 'bundle_core': success
+[Thu Jan 14 10:26:27.872 2010] [ 2497] rotating finished
+[Thu Jan 14 10:26:28.423 2010] [ 2497] rotating indices (seamless=1)
+[Thu Jan 14 10:26:28.428 2010] [ 2497] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:26:28.432 2010] [ 2497] rotating index 'peripheral_core': success
+[Thu Jan 14 10:26:28.437 2010] [ 2497] rotating index 'package_core': success
+[Thu Jan 14 10:26:28.443 2010] [ 2497] rotating index 'computer_delta': success
+[Thu Jan 14 10:26:28.447 2010] [ 2497] rotating index 'computer_core': success
+[Thu Jan 14 10:26:28.453 2010] [ 2497] rotating index 'bundle_core': success
+[Thu Jan 14 10:26:28.453 2010] [ 2497] rotating finished
+[Thu Jan 14 10:26:47.144 2010] [ 2497] caught SIGTERM, shutting down
+[Thu Jan 14 10:26:47.166 2010] [ 2497] shutdown complete
+[Thu Jan 14 10:29:37.325 2010] [ 2578] accepting connections
+[Thu Jan 14 10:29:38.543 2010] [ 2578] rotating indices (seamless=1)
+[Thu Jan 14 10:29:38.549 2010] [ 2578] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:29:38.554 2010] [ 2578] rotating index 'peripheral_core': success
+[Thu Jan 14 10:29:38.559 2010] [ 2578] rotating index 'package_core': success
+[Thu Jan 14 10:29:38.564 2010] [ 2578] rotating index 'computer_delta': success
+[Thu Jan 14 10:29:38.569 2010] [ 2578] rotating index 'computer_core': success
+[Thu Jan 14 10:29:38.573 2010] [ 2578] rotating index 'bundle_core': success
+[Thu Jan 14 10:29:38.573 2010] [ 2578] rotating finished
+[Thu Jan 14 10:29:39.179 2010] [ 2578] rotating indices (seamless=1)
+[Thu Jan 14 10:29:39.185 2010] [ 2578] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:29:39.189 2010] [ 2578] rotating index 'peripheral_core': success
+[Thu Jan 14 10:29:39.195 2010] [ 2578] rotating index 'package_core': success
+[Thu Jan 14 10:29:39.200 2010] [ 2578] rotating index 'computer_delta': success
+[Thu Jan 14 10:29:39.206 2010] [ 2578] rotating index 'computer_core': success
+[Thu Jan 14 10:29:39.212 2010] [ 2578] rotating index 'bundle_core': success
+[Thu Jan 14 10:29:39.212 2010] [ 2578] rotating finished
+[Thu Jan 14 10:30:24.588 2010] [ 2578] caught SIGTERM, shutting down
+[Thu Jan 14 10:30:24.590 2010] [ 2578] shutdown complete
+[Thu Jan 14 10:31:08.265 2010] [ 2650] accepting connections
+[Thu Jan 14 10:31:09.473 2010] [ 2650] rotating indices (seamless=1)
+[Thu Jan 14 10:31:09.478 2010] [ 2650] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:31:09.486 2010] [ 2650] rotating index 'peripheral_core': success
+[Thu Jan 14 10:31:09.497 2010] [ 2650] rotating index 'package_core': success
+[Thu Jan 14 10:31:09.503 2010] [ 2650] rotating index 'computer_delta': success
+[Thu Jan 14 10:31:09.512 2010] [ 2650] rotating index 'computer_core': success
+[Thu Jan 14 10:31:09.523 2010] [ 2650] rotating index 'bundle_core': success
+[Thu Jan 14 10:31:09.524 2010] [ 2650] rotating finished
+[Thu Jan 14 10:31:10.228 2010] [ 2650] rotating indices (seamless=1)
+[Thu Jan 14 10:31:10.233 2010] [ 2650] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:31:10.237 2010] [ 2650] rotating index 'peripheral_core': success
+[Thu Jan 14 10:31:10.242 2010] [ 2650] rotating index 'package_core': success
+[Thu Jan 14 10:31:10.246 2010] [ 2650] rotating index 'computer_delta': success
+[Thu Jan 14 10:31:10.251 2010] [ 2650] rotating index 'computer_core': success
+[Thu Jan 14 10:31:10.256 2010] [ 2650] rotating index 'bundle_core': success
+[Thu Jan 14 10:31:10.256 2010] [ 2650] rotating finished
+[Thu Jan 14 10:31:30.098 2010] [ 2650] caught SIGTERM, shutting down
+[Thu Jan 14 10:31:30.099 2010] [ 2650] shutdown complete
+[Thu Jan 14 10:31:55.398 2010] [ 2715] accepting connections
+[Thu Jan 14 10:31:56.613 2010] [ 2715] rotating indices (seamless=1)
+[Thu Jan 14 10:31:56.617 2010] [ 2715] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:31:56.623 2010] [ 2715] rotating index 'peripheral_core': success
+[Thu Jan 14 10:31:56.628 2010] [ 2715] rotating index 'package_core': success
+[Thu Jan 14 10:31:56.632 2010] [ 2715] rotating index 'computer_delta': success
+[Thu Jan 14 10:31:56.637 2010] [ 2715] rotating index 'computer_core': success
+[Thu Jan 14 10:31:56.646 2010] [ 2715] rotating index 'bundle_core': success
+[Thu Jan 14 10:31:56.647 2010] [ 2715] rotating finished
+[Thu Jan 14 10:31:57.230 2010] [ 2715] rotating indices (seamless=1)
+[Thu Jan 14 10:31:57.236 2010] [ 2715] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:31:57.249 2010] [ 2715] rotating index 'peripheral_core': success
+[Thu Jan 14 10:31:57.254 2010] [ 2715] rotating index 'package_core': success
+[Thu Jan 14 10:31:57.259 2010] [ 2715] rotating index 'computer_delta': success
+[Thu Jan 14 10:31:57.264 2010] [ 2715] rotating index 'computer_core': success
+[Thu Jan 14 10:31:57.269 2010] [ 2715] rotating index 'bundle_core': success
+[Thu Jan 14 10:31:57.269 2010] [ 2715] rotating finished
+[Thu Jan 14 10:32:19.646 2010] [ 2715] caught SIGTERM, shutting down
+[Thu Jan 14 10:32:19.648 2010] [ 2715] shutdown complete
+[Thu Jan 14 10:33:04.215 2010] [ 2782] accepting connections
+[Thu Jan 14 10:33:05.408 2010] [ 2782] rotating indices (seamless=1)
+[Thu Jan 14 10:33:05.415 2010] [ 2782] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:33:05.436 2010] [ 2782] rotating index 'peripheral_core': success
+[Thu Jan 14 10:33:05.457 2010] [ 2782] rotating index 'package_core': success
+[Thu Jan 14 10:33:05.461 2010] [ 2782] rotating index 'computer_delta': success
+[Thu Jan 14 10:33:05.466 2010] [ 2782] rotating index 'computer_core': success
+[Thu Jan 14 10:33:05.471 2010] [ 2782] rotating index 'bundle_core': success
+[Thu Jan 14 10:33:05.471 2010] [ 2782] rotating finished
+[Thu Jan 14 10:33:06.037 2010] [ 2782] rotating indices (seamless=1)
+[Thu Jan 14 10:33:06.043 2010] [ 2782] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:33:06.051 2010] [ 2782] rotating index 'peripheral_core': success
+[Thu Jan 14 10:33:06.055 2010] [ 2782] rotating index 'package_core': success
+[Thu Jan 14 10:33:06.060 2010] [ 2782] rotating index 'computer_delta': success
+[Thu Jan 14 10:33:06.066 2010] [ 2782] rotating index 'computer_core': success
+[Thu Jan 14 10:33:06.071 2010] [ 2782] rotating index 'bundle_core': success
+[Thu Jan 14 10:33:06.072 2010] [ 2782] rotating finished
+[Thu Jan 14 10:33:40.544 2010] [ 2782] caught SIGTERM, shutting down
+[Thu Jan 14 10:33:40.545 2010] [ 2782] shutdown complete
+[Thu Jan 14 10:43:33.501 2010] [ 2883] accepting connections
+[Thu Jan 14 10:43:34.687 2010] [ 2883] rotating indices (seamless=1)
+[Thu Jan 14 10:43:34.692 2010] [ 2883] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:43:34.698 2010] [ 2883] rotating index 'peripheral_core': success
+[Thu Jan 14 10:43:34.702 2010] [ 2883] rotating index 'package_core': success
+[Thu Jan 14 10:43:34.708 2010] [ 2883] rotating index 'computer_delta': success
+[Thu Jan 14 10:43:34.713 2010] [ 2883] rotating index 'computer_core': success
+[Thu Jan 14 10:43:34.717 2010] [ 2883] rotating index 'bundle_core': success
+[Thu Jan 14 10:43:34.717 2010] [ 2883] rotating finished
+[Thu Jan 14 10:43:35.258 2010] [ 2883] rotating indices (seamless=1)
+[Thu Jan 14 10:43:35.262 2010] [ 2883] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:43:35.268 2010] [ 2883] rotating index 'peripheral_core': success
+[Thu Jan 14 10:43:35.272 2010] [ 2883] rotating index 'package_core': success
+[Thu Jan 14 10:43:35.278 2010] [ 2883] rotating index 'computer_delta': success
+[Thu Jan 14 10:43:35.283 2010] [ 2883] rotating index 'computer_core': success
+[Thu Jan 14 10:43:35.287 2010] [ 2883] rotating index 'bundle_core': success
+[Thu Jan 14 10:43:35.288 2010] [ 2883] rotating finished
+[Thu Jan 14 10:44:06.305 2010] [ 2883] caught SIGTERM, shutting down
+[Thu Jan 14 10:44:06.306 2010] [ 2883] shutdown complete
+[Thu Jan 14 10:48:56.238 2010] [ 2979] accepting connections
+[Thu Jan 14 10:48:57.489 2010] [ 2979] rotating indices (seamless=1)
+[Thu Jan 14 10:48:57.496 2010] [ 2979] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:48:57.515 2010] [ 2979] rotating index 'peripheral_core': success
+[Thu Jan 14 10:48:57.530 2010] [ 2979] rotating index 'package_core': success
+[Thu Jan 14 10:48:57.540 2010] [ 2979] rotating index 'computer_delta': success
+[Thu Jan 14 10:48:57.550 2010] [ 2979] rotating index 'computer_core': success
+[Thu Jan 14 10:48:57.558 2010] [ 2979] rotating index 'bundle_core': success
+[Thu Jan 14 10:48:57.559 2010] [ 2979] rotating finished
+[Thu Jan 14 10:48:58.346 2010] [ 2979] rotating indices (seamless=1)
+[Thu Jan 14 10:48:58.371 2010] [ 2979] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:48:58.376 2010] [ 2979] rotating index 'peripheral_core': success
+[Thu Jan 14 10:48:58.380 2010] [ 2979] rotating index 'package_core': success
+[Thu Jan 14 10:48:58.386 2010] [ 2979] rotating index 'computer_delta': success
+[Thu Jan 14 10:48:58.391 2010] [ 2979] rotating index 'computer_core': success
+[Thu Jan 14 10:48:58.396 2010] [ 2979] rotating index 'bundle_core': success
+[Thu Jan 14 10:48:58.396 2010] [ 2979] rotating finished
+[Thu Jan 14 10:49:19.567 2010] [ 2979] caught SIGTERM, shutting down
+[Thu Jan 14 10:49:19.568 2010] [ 2979] shutdown complete
+[Thu Jan 14 10:49:44.817 2010] [ 3044] accepting connections
+[Thu Jan 14 10:49:48.932 2010] [ 3044] rotating indices (seamless=1)
+[Thu Jan 14 10:49:48.974 2010] [ 3044] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:49:48.979 2010] [ 3044] rotating index 'peripheral_core': success
+[Thu Jan 14 10:49:48.984 2010] [ 3044] rotating index 'package_core': success
+[Thu Jan 14 10:49:48.989 2010] [ 3044] rotating index 'computer_delta': success
+[Thu Jan 14 10:49:48.995 2010] [ 3044] rotating index 'computer_core': success
+[Thu Jan 14 10:49:49.000 2010] [ 3044] rotating index 'bundle_core': success
+[Thu Jan 14 10:49:49.000 2010] [ 3044] rotating finished
+[Thu Jan 14 10:49:49.656 2010] [ 3044] rotating indices (seamless=1)
+[Thu Jan 14 10:49:50.869 2010] [ 3044] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:49:50.879 2010] [ 3044] rotating index 'peripheral_core': success
+[Thu Jan 14 10:49:50.883 2010] [ 3044] rotating index 'package_core': success
+[Thu Jan 14 10:49:50.888 2010] [ 3044] rotating index 'computer_delta': success
+[Thu Jan 14 10:49:50.892 2010] [ 3044] rotating index 'computer_core': success
+[Thu Jan 14 10:49:50.895 2010] [ 3044] rotating index 'bundle_core': success
+[Thu Jan 14 10:49:50.896 2010] [ 3044] rotating finished
+[Thu Jan 14 10:50:39.754 2010] [ 3044] caught SIGTERM, shutting down
+[Thu Jan 14 10:50:39.755 2010] [ 3044] shutdown complete
+[Thu Jan 14 10:52:12.036 2010] [ 3115] accepting connections
+[Thu Jan 14 10:52:13.268 2010] [ 3115] rotating indices (seamless=1)
+[Thu Jan 14 10:52:13.275 2010] [ 3115] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:52:13.280 2010] [ 3115] rotating index 'peripheral_core': success
+[Thu Jan 14 10:52:13.286 2010] [ 3115] rotating index 'package_core': success
+[Thu Jan 14 10:52:13.291 2010] [ 3115] rotating index 'computer_delta': success
+[Thu Jan 14 10:52:13.295 2010] [ 3115] rotating index 'computer_core': success
+[Thu Jan 14 10:52:13.300 2010] [ 3115] rotating index 'bundle_core': success
+[Thu Jan 14 10:52:13.301 2010] [ 3115] rotating finished
+[Thu Jan 14 10:52:13.848 2010] [ 3115] rotating indices (seamless=1)
+[Thu Jan 14 10:52:13.852 2010] [ 3115] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:52:13.856 2010] [ 3115] rotating index 'peripheral_core': success
+[Thu Jan 14 10:52:13.862 2010] [ 3115] rotating index 'package_core': success
+[Thu Jan 14 10:52:13.868 2010] [ 3115] rotating index 'computer_delta': success
+[Thu Jan 14 10:52:13.875 2010] [ 3115] rotating index 'computer_core': success
+[Thu Jan 14 10:52:13.886 2010] [ 3115] rotating index 'bundle_core': success
+[Thu Jan 14 10:52:13.886 2010] [ 3115] rotating finished
+[Thu Jan 14 10:52:31.376 2010] [ 3115] caught SIGTERM, shutting down
+[Thu Jan 14 10:52:31.377 2010] [ 3115] shutdown complete
+[Thu Jan 14 10:53:02.185 2010] [ 3177] accepting connections
+[Thu Jan 14 10:53:03.365 2010] [ 3177] rotating indices (seamless=1)
+[Thu Jan 14 10:53:03.371 2010] [ 3177] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:53:03.378 2010] [ 3177] rotating index 'peripheral_core': success
+[Thu Jan 14 10:53:03.382 2010] [ 3177] rotating index 'package_core': success
+[Thu Jan 14 10:53:03.387 2010] [ 3177] rotating index 'computer_delta': success
+[Thu Jan 14 10:53:03.392 2010] [ 3177] rotating index 'computer_core': success
+[Thu Jan 14 10:53:03.397 2010] [ 3177] rotating index 'bundle_core': success
+[Thu Jan 14 10:53:03.397 2010] [ 3177] rotating finished
+[Thu Jan 14 10:53:03.957 2010] [ 3177] rotating indices (seamless=1)
+[Thu Jan 14 10:53:03.962 2010] [ 3177] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:53:03.967 2010] [ 3177] rotating index 'peripheral_core': success
+[Thu Jan 14 10:53:03.979 2010] [ 3177] rotating index 'package_core': success
+[Thu Jan 14 10:53:03.984 2010] [ 3177] rotating index 'computer_delta': success
+[Thu Jan 14 10:53:03.988 2010] [ 3177] rotating index 'computer_core': success
+[Thu Jan 14 10:53:03.993 2010] [ 3177] rotating index 'bundle_core': success
+[Thu Jan 14 10:53:03.993 2010] [ 3177] rotating finished
+[Thu Jan 14 10:53:20.506 2010] [ 3177] caught SIGTERM, shutting down
+[Thu Jan 14 10:53:20.507 2010] [ 3177] shutdown complete
+[Thu Jan 14 10:54:51.064 2010] [ 3251] accepting connections
+[Thu Jan 14 10:54:52.250 2010] [ 3251] rotating indices (seamless=1)
+[Thu Jan 14 10:54:52.255 2010] [ 3251] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:54:52.259 2010] [ 3251] rotating index 'peripheral_core': success
+[Thu Jan 14 10:54:52.264 2010] [ 3251] rotating index 'package_core': success
+[Thu Jan 14 10:54:52.269 2010] [ 3251] rotating index 'computer_delta': success
+[Thu Jan 14 10:54:52.274 2010] [ 3251] rotating index 'computer_core': success
+[Thu Jan 14 10:54:52.279 2010] [ 3251] rotating index 'bundle_core': success
+[Thu Jan 14 10:54:52.279 2010] [ 3251] rotating finished
+[Thu Jan 14 10:54:52.844 2010] [ 3251] rotating indices (seamless=1)
+[Thu Jan 14 10:54:52.848 2010] [ 3251] rotating index 'peripheral_delta': success
+[Thu Jan 14 10:54:52.853 2010] [ 3251] rotating index 'peripheral_core': success
+[Thu Jan 14 10:54:52.857 2010] [ 3251] rotating index 'package_core': success
+[Thu Jan 14 10:54:52.861 2010] [ 3251] rotating index 'computer_delta': success
+[Thu Jan 14 10:54:52.868 2010] [ 3251] rotating index 'computer_core': success
+[Thu Jan 14 10:54:52.872 2010] [ 3251] rotating index 'bundle_core': success
+[Thu Jan 14 10:54:52.872 2010] [ 3251] rotating finished
+[Thu Jan 14 10:56:04.381 2010] [ 3251] caught SIGTERM, shutting down
+[Thu Jan 14 10:56:04.381 2010] [ 3251] shutdown complete
+[Thu Jan 14 11:55:26.627 2010] [ 3605] accepting connections
+[Thu Jan 14 11:55:28.194 2010] [ 3605] rotating indices (seamless=1)
+[Thu Jan 14 11:55:28.199 2010] [ 3605] rotating index 'peripheral_delta': success
+[Thu Jan 14 11:55:28.206 2010] [ 3605] rotating index 'peripheral_core': success
+[Thu Jan 14 11:55:28.210 2010] [ 3605] rotating index 'package_core': success
+[Thu Jan 14 11:55:28.215 2010] [ 3605] rotating index 'computer_delta': success
+[Thu Jan 14 11:55:28.220 2010] [ 3605] rotating index 'computer_core': success
+[Thu Jan 14 11:55:28.223 2010] [ 3605] rotating index 'bundle_core': success
+[Thu Jan 14 11:55:28.223 2010] [ 3605] rotating finished
+[Thu Jan 14 11:55:28.824 2010] [ 3605] rotating indices (seamless=1)
+[Thu Jan 14 11:55:29.831 2010] [ 3605] rotating index 'peripheral_delta': success
+[Thu Jan 14 11:55:29.837 2010] [ 3605] rotating index 'peripheral_core': success
+[Thu Jan 14 11:55:29.841 2010] [ 3605] rotating index 'package_core': success
+[Thu Jan 14 11:55:29.845 2010] [ 3605] rotating index 'computer_delta': success
+[Thu Jan 14 11:55:29.849 2010] [ 3605] rotating index 'computer_core': success
+[Thu Jan 14 11:55:29.853 2010] [ 3605] rotating index 'bundle_core': success
+[Thu Jan 14 11:55:29.853 2010] [ 3605] rotating finished
+[Thu Jan 14 11:55:48.662 2010] [ 3605] caught SIGTERM, shutting down
+[Thu Jan 14 11:55:48.663 2010] [ 3605] shutdown complete
+[Tue Jan 19 09:05:51.478 2010] [14766] accepting connections
+[Tue Jan 19 09:05:52.817 2010] [14766] rotating indices (seamless=1)
+[Tue Jan 19 09:05:52.836 2010] [14766] rotating index 'peripheral_delta': success
+[Tue Jan 19 09:05:52.840 2010] [14766] rotating index 'peripheral_core': success
+[Tue Jan 19 09:05:52.844 2010] [14766] rotating index 'package_core': success
+[Tue Jan 19 09:05:52.848 2010] [14766] rotating index 'computer_delta': success
+[Tue Jan 19 09:05:52.906 2010] [14766] rotating index 'computer_core': success
+[Tue Jan 19 09:05:52.911 2010] [14766] rotating index 'bundle_core': success
+[Tue Jan 19 09:05:52.911 2010] [14766] rotating finished
+[Tue Jan 19 09:05:54.425 2010] [14766] rotating indices (seamless=1)
+[Tue Jan 19 09:05:54.430 2010] [14766] rotating index 'peripheral_delta': success
+[Tue Jan 19 09:05:54.435 2010] [14766] rotating index 'peripheral_core': success
+[Tue Jan 19 09:05:54.440 2010] [14766] rotating index 'package_core': success
+[Tue Jan 19 09:05:54.445 2010] [14766] rotating index 'computer_delta': success
+[Tue Jan 19 09:05:54.448 2010] [14766] rotating index 'computer_core': success
+[Tue Jan 19 09:05:54.452 2010] [14766] rotating index 'bundle_core': success
+[Tue Jan 19 09:05:54.452 2010] [14766] rotating finished
+[Tue Jan 19 09:06:37.133 2010] [14766] caught SIGTERM, shutting down
+[Tue Jan 19 09:06:37.181 2010] [14766] shutdown complete
+[Tue Jan 19 09:09:36.947 2010] [14841] accepting connections
+[Tue Jan 19 09:09:38.330 2010] [14841] rotating indices (seamless=1)
+[Tue Jan 19 09:09:38.334 2010] [14841] rotating index 'peripheral_delta': success
+[Tue Jan 19 09:09:38.341 2010] [14841] rotating index 'peripheral_core': success
+[Tue Jan 19 09:09:38.345 2010] [14841] rotating index 'package_core': success
+[Tue Jan 19 09:09:38.349 2010] [14841] rotating index 'computer_delta': success
+[Tue Jan 19 09:09:38.357 2010] [14841] rotating index 'computer_core': success
+[Tue Jan 19 09:09:38.371 2010] [14841] rotating index 'bundle_core': success
+[Tue Jan 19 09:09:38.371 2010] [14841] rotating finished
+[Tue Jan 19 09:09:43.510 2010] [14841] rotating indices (seamless=1)
+[Tue Jan 19 09:09:43.524 2010] [14841] rotating index 'peripheral_delta': success
+[Tue Jan 19 09:09:43.571 2010] [14841] rotating index 'peripheral_core': success
+[Tue Jan 19 09:09:43.574 2010] [14841] rotating index 'package_core': success
+[Tue Jan 19 09:09:43.587 2010] [14841] rotating index 'computer_delta': success
+[Tue Jan 19 09:09:43.592 2010] [14841] rotating index 'computer_core': success
+[Tue Jan 19 09:09:43.596 2010] [14841] rotating index 'bundle_core': success
+[Tue Jan 19 09:09:43.596 2010] [14841] rotating finished
+[Tue Jan 19 09:10:25.949 2010] [14841] caught SIGTERM, shutting down
+[Tue Jan 19 09:10:25.998 2010] [14841] shutdown complete
+[Tue Jan 19 09:20:51.997 2010] [  502] accepting connections
+[Tue Jan 19 09:20:53.165 2010] [  502] rotating indices (seamless=1)
+[Tue Jan 19 09:20:53.171 2010] [  502] rotating index 'peripheral_delta': success
+[Tue Jan 19 09:20:53.175 2010] [  502] rotating index 'peripheral_core': success
+[Tue Jan 19 09:20:53.180 2010] [  502] rotating index 'package_core': success
+[Tue Jan 19 09:20:53.185 2010] [  502] rotating index 'computer_delta': success
+[Tue Jan 19 09:20:53.189 2010] [  502] rotating index 'computer_core': success
+[Tue Jan 19 09:20:53.192 2010] [  502] rotating index 'bundle_core': success
+[Tue Jan 19 09:20:53.192 2010] [  502] rotating finished
+[Tue Jan 19 09:20:54.091 2010] [  502] rotating indices (seamless=1)
+[Tue Jan 19 09:20:54.095 2010] [  502] rotating index 'peripheral_delta': success
+[Tue Jan 19 09:20:54.099 2010] [  502] rotating index 'peripheral_core': success
+[Tue Jan 19 09:20:54.103 2010] [  502] rotating index 'package_core': success
+[Tue Jan 19 09:20:54.107 2010] [  502] rotating index 'computer_delta': success
+[Tue Jan 19 09:20:54.111 2010] [  502] rotating index 'computer_core': success
+[Tue Jan 19 09:20:54.115 2010] [  502] rotating index 'bundle_core': success
+[Tue Jan 19 09:20:54.115 2010] [  502] rotating finished
+[Tue Jan 19 09:21:19.157 2010] [  502] caught SIGTERM, shutting down
+[Tue Jan 19 09:21:19.158 2010] [  502] shutdown complete
+[Tue Jan 19 09:22:10.798 2010] [  568] accepting connections
+[Tue Jan 19 09:22:11.999 2010] [  568] rotating indices (seamless=1)
+[Tue Jan 19 09:22:12.003 2010] [  568] rotating index 'peripheral_delta': success
+[Tue Jan 19 09:22:12.006 2010] [  568] rotating index 'peripheral_core': success
+[Tue Jan 19 09:22:12.010 2010] [  568] rotating index 'package_core': success
+[Tue Jan 19 09:22:12.033 2010] [  568] rotating index 'computer_delta': success
+[Tue Jan 19 09:22:12.037 2010] [  568] rotating index 'computer_core': success
+[Tue Jan 19 09:22:12.041 2010] [  568] rotating index 'bundle_core': success
+[Tue Jan 19 09:22:12.041 2010] [  568] rotating finished
+[Tue Jan 19 09:22:12.533 2010] [  568] rotating indices (seamless=1)
+[Tue Jan 19 09:22:12.537 2010] [  568] rotating index 'peripheral_delta': success
+[Tue Jan 19 09:22:12.541 2010] [  568] rotating index 'peripheral_core': success
+[Tue Jan 19 09:22:12.545 2010] [  568] rotating index 'package_core': success
+[Tue Jan 19 09:22:12.549 2010] [  568] rotating index 'computer_delta': success
+[Tue Jan 19 09:22:12.553 2010] [  568] rotating index 'computer_core': success
+[Tue Jan 19 09:22:12.556 2010] [  568] rotating index 'bundle_core': success
+[Tue Jan 19 09:22:12.557 2010] [  568] rotating finished
+[Tue Jan 19 09:23:03.164 2010] [  568] caught SIGTERM, shutting down
+[Tue Jan 19 09:23:03.165 2010] [  568] shutdown complete
+[Tue Jan 19 13:52:27.266 2010] [ 3975] accepting connections
+[Tue Jan 19 13:52:28.546 2010] [ 3975] rotating indices (seamless=1)
+[Tue Jan 19 13:52:28.568 2010] [ 3975] rotating index 'peripheral_delta': success
+[Tue Jan 19 13:52:28.573 2010] [ 3975] rotating index 'peripheral_core': success
+[Tue Jan 19 13:52:28.577 2010] [ 3975] rotating index 'package_core': success
+[Tue Jan 19 13:52:28.581 2010] [ 3975] rotating index 'computer_delta': success
+[Tue Jan 19 13:52:28.584 2010] [ 3975] rotating index 'computer_core': success
+[Tue Jan 19 13:52:28.588 2010] [ 3975] rotating index 'bundle_core': success
+[Tue Jan 19 13:52:28.588 2010] [ 3975] rotating finished
+[Tue Jan 19 13:52:29.407 2010] [ 3975] rotating indices (seamless=1)
+[Tue Jan 19 13:52:29.411 2010] [ 3975] rotating index 'peripheral_delta': success
+[Tue Jan 19 13:52:29.414 2010] [ 3975] rotating index 'peripheral_core': success
+[Tue Jan 19 13:52:29.419 2010] [ 3975] rotating index 'package_core': success
+[Tue Jan 19 13:52:29.427 2010] [ 3975] rotating index 'computer_delta': success
+[Tue Jan 19 13:52:29.436 2010] [ 3975] rotating index 'computer_core': success
+[Tue Jan 19 13:52:29.440 2010] [ 3975] rotating index 'bundle_core': success
+[Tue Jan 19 13:52:29.440 2010] [ 3975] rotating finished
+[Tue Jan 19 13:53:18.648 2010] [ 3975] caught SIGTERM, shutting down
+[Tue Jan 19 13:53:18.649 2010] [ 3975] shutdown complete

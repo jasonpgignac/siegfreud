@@ -1,8 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :audits
+
+  map.resources :audits, :only => [:index, :show]
+  
+  map.resources :site_maps
+  map.resources :sites
   map.resources :peripherals
 
-  map.resources :user_sessions
-  map.resources :users
+  map.resources :user_sessions, :only => [:new, :create, :destroy]
+  map.resources :users, :only => [:edit, :update, :new, :create]
   map.resources :domains
   map.resources :servers
   map.connect 'divisions/:division_id/computers.:format',

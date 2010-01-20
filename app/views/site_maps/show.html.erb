@@ -1,0 +1,18 @@
+<p>
+  <b>Site:</b>
+  <%=h @site_map.site_id %>
+</p>
+
+<p>
+  <b>Server:</b>
+  <%=h @site_map.server_id %>
+</p>
+
+<p>
+  <b>Remote site:</b>
+  <%=h @site_map.remote_site_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_map_path(@site_map) %> |
+<%= link_to 'Back', site_maps_path %>
