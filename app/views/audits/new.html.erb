@@ -5,19 +5,19 @@
 
   <p>
     <%= f.label :platform %><br />
-    <%= f.text_field :platform %>
+    <td><%= f.select(:platform, system_classes) %></td>
   </p>
   <p>
     <%= f.label :server_id %><br />
-    <%= f.text_field :server_id %>
+    <%= collection_select :audit, :server_id, @servers, :id, :name %>
   </p>
   <p>
     <%= f.label :domain_id %><br />
-    <%= f.text_field :domain_id %>
+    <%= collection_select :audit, :domain_id, @domains, :id, :name %>
   </p>
   <p>
     <%= f.label :site_id %><br />
-    <%= f.text_field :site_id %>
+    <%= collection_select :audit, :site_id, @sites, :id, :name %>
   </p>
   <p>
     <%= f.submit 'Create' %>

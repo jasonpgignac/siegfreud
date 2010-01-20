@@ -1,15 +1,16 @@
 class AuditsController < ApplicationController
   def new
+    @audit = Audit.new
     @domains = Domain.all
     @servers = Server.all
     @sites = Site.all
   end
 
   def create
-    redirect_to(audit_path(params[:id]))
+    redirect_to(audit_path("computers", :audit => params[:audit]))
   end
   def show
-    @audit = Audit.new(:server_id => params["server_id"], :site_id => params["site_id"], :domain_id => params["domain_id"], :platform => params["platform"])
+    @audit = Audit.new(params[:audit])
     if @audit.valid?
       respond_to do |format|
         format.html
