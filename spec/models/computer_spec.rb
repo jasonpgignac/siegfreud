@@ -9,7 +9,8 @@ describe Computer do
         :po_number      => "7654321",
         :model          => "Dell Platitudes E9000",
         :system_class   => "PC",
-        :division       => d)
+        :division       => d,
+        :site           => Site.create(:name => "Test Site"))
         
     @stage = make_a_stage("Storage")
     @stage.has_location = false
@@ -45,7 +46,8 @@ describe Computer do
             :model          => "Dell Platitudes Duplicate Serial",
             :system_class   => "PC",
             :division       => d,
-            :stage          => @stage).should be_valid
+            :stage          => @stage,
+            :site           => @computer.site).should be_valid
         @computer.should_not be_valid
       end
       it "should not validate if there is no serial number" do
@@ -58,6 +60,10 @@ describe Computer do
       end
       it "should not validate if there is no po number" do
         @computer.po_number = nil
+        @computer.should_not be_valid
+      end
+      it "should not validate if there is no site" do
+        @computer.site = nil
         @computer.should_not be_valid
       end
     end

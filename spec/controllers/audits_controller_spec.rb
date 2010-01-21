@@ -9,13 +9,13 @@ describe AuditsController do
     end
     it "should create audit" do
       @audit.should_receive(:valid?).and_return true
-      Audit.should_receive(:new).with(:server_id => "1", :site_id => "2", :domain_id => "3", :platform => "Win32").and_return @audit
-      get :show, :id => "computers", :server_id => "1", :site_id => "2", :domain_id => "3", :platform => "Win32"
+      Audit.should_receive(:new).with("server_id" => "1", "site_id" => "2", "domain_id" => "3", "platform" => "Win32").and_return @audit
+      get :show, :id => "computers", :audit => {:server_id => "1", :site_id => "2", :domain_id => "3", :platform => "Win32"}
     end
     it "should redirect to new if the machine is invalid" do
       @audit.should_receive(:valid?).and_return false
-      Audit.should_receive(:new).with(:server_id => "1", :site_id => "2", :domain_id => "3", :platform => nil).and_return @audit
-      get :show, :id => "computers", :server_id => "1", :site_id => "2", :domain_id => "3"
+      Audit.should_receive(:new).with("server_id" => "1", "site_id" => "2", "domain_id" => "3").and_return @audit
+      get :show, :id => "computers", :audit => {:server_id => "1", :site_id => "2", :domain_id => "3"}
       response.should redirect_to(new_audit_url)
     end
   end

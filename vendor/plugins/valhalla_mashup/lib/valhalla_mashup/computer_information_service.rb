@@ -12,7 +12,7 @@ module ValhallaMashup
 
     def info_for(item)
       if item.is_a?(Computer)
-        self.get self.path(eval("computer.#{@computer_key_field}"))
+        self.get self.path(eval("item.#{@computer_key_field}"))
       elsif item.is_a?(SiteMap)
         self.get "computer_groups/#{item.remote_site_id}/members.json"
       else 

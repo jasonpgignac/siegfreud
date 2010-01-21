@@ -32626,3 +32626,2703 @@
 [Tue Jan 19 13:52:29.440 2010] [ 3975] rotating finished
 [Tue Jan 19 13:53:18.648 2010] [ 3975] caught SIGTERM, shutting down
 [Tue Jan 19 13:53:18.649 2010] [ 3975] shutdown complete
+[Thu Jan 21 08:42:38.315 2010] [12799] accepting connections
+[Thu Jan 21 08:42:39.504 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:42:39.517 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:42:39.521 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:42:39.525 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:42:39.529 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:42:39.564 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:42:39.571 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:42:39.571 2010] [12799] rotating finished
+[Thu Jan 21 08:42:41.523 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:42:41.529 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:42:41.534 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:42:42.540 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:42:42.544 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:42:42.549 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:42:42.561 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:42:42.561 2010] [12799] rotating finished
+[Thu Jan 21 08:43:19.811 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:19.816 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:19.823 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:19.827 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:19.831 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:19.835 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:19.838 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:19.838 2010] [12799] rotating finished
+[Thu Jan 21 08:43:20.424 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:20.428 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:20.437 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:20.441 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:20.444 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:20.448 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:20.451 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:20.451 2010] [12799] rotating finished
+[Thu Jan 21 08:43:20.924 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:20.928 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:20.938 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:20.942 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:20.945 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:20.950 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:20.954 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:20.954 2010] [12799] rotating finished
+[Thu Jan 21 08:43:21.226 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:21.231 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:21.235 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:21.239 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:21.243 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:21.246 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:21.249 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:21.249 2010] [12799] rotating finished
+[Thu Jan 21 08:43:21.701 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:21.705 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:21.714 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:21.718 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:21.724 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:21.730 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:21.735 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:21.735 2010] [12799] rotating finished
+[Thu Jan 21 08:43:22.074 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:22.078 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:22.082 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:22.086 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:22.090 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:22.094 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:22.097 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:22.097 2010] [12799] rotating finished
+[Thu Jan 21 08:43:22.383 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:22.387 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:22.394 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:22.399 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:22.404 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:22.408 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:22.413 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:22.413 2010] [12799] rotating finished
+[Thu Jan 21 08:43:22.908 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:22.913 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:22.917 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:22.920 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:22.927 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:22.931 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:22.936 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:22.936 2010] [12799] rotating finished
+[Thu Jan 21 08:43:23.243 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:23.248 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:23.252 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:23.257 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:23.261 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:23.266 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:23.270 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:23.270 2010] [12799] rotating finished
+[Thu Jan 21 08:43:23.547 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:23.551 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:23.555 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:23.562 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:23.569 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:23.574 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:23.583 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:23.583 2010] [12799] rotating finished
+[Thu Jan 21 08:43:23.885 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:23.890 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:23.895 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:23.899 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:23.903 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:23.907 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:23.912 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:23.912 2010] [12799] rotating finished
+[Thu Jan 21 08:43:24.257 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:24.261 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:24.268 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:24.272 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:24.276 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:24.280 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:24.284 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:24.284 2010] [12799] rotating finished
+[Thu Jan 21 08:43:24.603 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:24.607 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:24.612 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:24.615 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:24.620 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:24.625 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:24.628 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:24.628 2010] [12799] rotating finished
+[Thu Jan 21 08:43:24.986 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:24.991 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:25.011 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:25.016 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:25.020 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:25.025 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:25.029 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:25.029 2010] [12799] rotating finished
+[Thu Jan 21 08:43:25.580 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:25.584 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:25.588 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:25.591 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:25.595 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:25.600 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:25.603 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:25.603 2010] [12799] rotating finished
+[Thu Jan 21 08:43:25.901 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:25.905 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:25.910 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:25.914 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:25.918 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:25.923 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:25.927 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:25.927 2010] [12799] rotating finished
+[Thu Jan 21 08:43:26.215 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:26.219 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:26.224 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:26.227 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:26.231 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:26.235 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:26.239 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:26.239 2010] [12799] rotating finished
+[Thu Jan 21 08:43:26.553 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:26.557 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:26.562 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:26.566 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:26.570 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:26.575 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:26.579 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:26.579 2010] [12799] rotating finished
+[Thu Jan 21 08:43:26.869 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:26.875 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:26.878 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:26.882 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:26.887 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:26.890 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:26.894 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:26.894 2010] [12799] rotating finished
+[Thu Jan 21 08:43:27.218 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:27.223 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:27.229 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:27.236 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:27.240 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:27.245 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:27.252 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:27.253 2010] [12799] rotating finished
+[Thu Jan 21 08:43:27.722 2010] [12799] rotating indices (seamless=1)
+[Thu Jan 21 08:43:27.727 2010] [12799] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:43:27.735 2010] [12799] rotating index 'peripheral_core': success
+[Thu Jan 21 08:43:27.743 2010] [12799] rotating index 'package_core': success
+[Thu Jan 21 08:43:27.747 2010] [12799] rotating index 'computer_delta': success
+[Thu Jan 21 08:43:27.752 2010] [12799] rotating index 'computer_core': success
+[Thu Jan 21 08:43:27.757 2010] [12799] rotating index 'bundle_core': success
+[Thu Jan 21 08:43:27.758 2010] [12799] rotating finished
+[Thu Jan 21 08:43:29.615 2010] [12799] caught SIGTERM, shutting down
+[Thu Jan 21 08:43:29.616 2010] [12799] shutdown complete
+[Thu Jan 21 08:44:07.288 2010] [13141] accepting connections
+[Thu Jan 21 08:44:08.483 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:08.490 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:08.496 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:08.501 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:08.505 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:08.509 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:08.512 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:08.512 2010] [13141] rotating finished
+[Thu Jan 21 08:44:10.606 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:10.610 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:10.617 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:10.622 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:10.626 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:10.633 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:10.638 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:10.638 2010] [13141] rotating finished
+[Thu Jan 21 08:44:36.627 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:36.633 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:37.236 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:37.256 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:37.263 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:37.266 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:37.271 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:37.271 2010] [13141] rotating finished
+[Thu Jan 21 08:44:37.857 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:37.869 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:37.877 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:37.881 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:37.885 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:37.889 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:37.893 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:37.893 2010] [13141] rotating finished
+[Thu Jan 21 08:44:39.433 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:39.762 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:39.766 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:39.771 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:39.777 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:39.788 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:39.791 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:39.792 2010] [13141] rotating finished
+[Thu Jan 21 08:44:45.317 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:45.830 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:46.388 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:46.397 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:46.401 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:46.405 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:46.409 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:46.409 2010] [13141] rotating finished
+[Thu Jan 21 08:44:49.048 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:49.053 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:49.057 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:49.061 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:49.066 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:49.070 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:49.074 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:49.074 2010] [13141] rotating finished
+[Thu Jan 21 08:44:51.224 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:51.228 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:51.235 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:51.239 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:51.245 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:51.253 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:51.259 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:51.259 2010] [13141] rotating finished
+[Thu Jan 21 08:44:51.654 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:51.659 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:51.666 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:51.671 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:51.675 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:51.680 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:51.685 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:51.685 2010] [13141] rotating finished
+[Thu Jan 21 08:44:52.204 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:52.208 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:52.212 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:52.216 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:52.220 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:52.225 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:52.229 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:52.229 2010] [13141] rotating finished
+[Thu Jan 21 08:44:52.591 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:52.597 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:52.604 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:52.609 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:52.613 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:52.616 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:52.622 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:52.622 2010] [13141] rotating finished
+[Thu Jan 21 08:44:53.013 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:53.367 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:53.368 2010] [13141] WARNING: rotating index 'peripheral_delta': new to cur rename failed: rename /Users/ugignja/Repositories/siegfreud0.2/db/sphinx/cucumber/peripheral_delta.new.spl to /Users/ugignja/Repositories/siegfreud0.2/db/sphinx/cucumber/peripheral_delta.spl failed: No such file or directory
+[Thu Jan 21 08:44:53.377 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:53.382 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:53.385 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:53.390 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:53.395 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:53.395 2010] [13141] rotating finished
+[Thu Jan 21 08:44:53.770 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:53.776 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:53.781 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:53.785 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:53.790 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:53.794 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:53.799 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:53.799 2010] [13141] rotating finished
+[Thu Jan 21 08:44:54.175 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:54.179 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:54.183 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:54.187 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:54.192 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:54.195 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:54.199 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:54.199 2010] [13141] rotating finished
+[Thu Jan 21 08:44:54.478 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:54.482 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:54.487 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:54.490 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:54.494 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:54.499 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:54.502 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:54.502 2010] [13141] rotating finished
+[Thu Jan 21 08:44:54.913 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:54.917 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:54.921 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:54.928 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:54.932 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:54.937 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:54.941 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:54.941 2010] [13141] rotating finished
+[Thu Jan 21 08:44:55.234 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:55.240 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:55.244 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:55.248 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:55.252 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:55.258 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:55.263 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:55.263 2010] [13141] rotating finished
+[Thu Jan 21 08:44:55.568 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:55.573 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:55.577 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:55.581 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:55.586 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:55.589 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:55.593 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:55.593 2010] [13141] rotating finished
+[Thu Jan 21 08:44:56.355 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:56.358 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:56.362 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:56.365 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:56.369 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:56.373 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:56.376 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:56.376 2010] [13141] rotating finished
+[Thu Jan 21 08:44:56.678 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:56.682 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:56.686 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:56.691 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:56.695 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:56.699 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:56.702 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:56.703 2010] [13141] rotating finished
+[Thu Jan 21 08:44:56.989 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:56.993 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:56.999 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:57.003 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:57.007 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:57.011 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:57.015 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:57.015 2010] [13141] rotating finished
+[Thu Jan 21 08:44:58.419 2010] [13141] rotating indices (seamless=1)
+[Thu Jan 21 08:44:58.424 2010] [13141] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:44:58.429 2010] [13141] rotating index 'peripheral_core': success
+[Thu Jan 21 08:44:58.437 2010] [13141] rotating index 'package_core': success
+[Thu Jan 21 08:44:58.442 2010] [13141] rotating index 'computer_delta': success
+[Thu Jan 21 08:44:58.447 2010] [13141] rotating index 'computer_core': success
+[Thu Jan 21 08:44:58.451 2010] [13141] rotating index 'bundle_core': success
+[Thu Jan 21 08:44:58.451 2010] [13141] rotating finished
+[Thu Jan 21 08:44:59.709 2010] [13141] caught SIGTERM, shutting down
+[Thu Jan 21 08:44:59.710 2010] [13141] shutdown complete
+[Thu Jan 21 08:53:18.924 2010] [13520] accepting connections
+[Thu Jan 21 08:53:20.154 2010] [13520] rotating indices (seamless=1)
+[Thu Jan 21 08:53:20.160 2010] [13520] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:53:20.169 2010] [13520] rotating index 'peripheral_core': success
+[Thu Jan 21 08:53:20.186 2010] [13520] rotating index 'package_core': success
+[Thu Jan 21 08:53:20.190 2010] [13520] rotating index 'computer_delta': success
+[Thu Jan 21 08:53:20.194 2010] [13520] rotating index 'computer_core': success
+[Thu Jan 21 08:53:20.198 2010] [13520] rotating index 'bundle_core': success
+[Thu Jan 21 08:53:20.198 2010] [13520] rotating finished
+[Thu Jan 21 08:53:22.212 2010] [13520] rotating indices (seamless=1)
+[Thu Jan 21 08:53:22.219 2010] [13520] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:53:22.224 2010] [13520] rotating index 'peripheral_core': success
+[Thu Jan 21 08:53:22.229 2010] [13520] rotating index 'package_core': success
+[Thu Jan 21 08:53:22.234 2010] [13520] rotating index 'computer_delta': success
+[Thu Jan 21 08:53:22.238 2010] [13520] rotating index 'computer_core': success
+[Thu Jan 21 08:53:22.244 2010] [13520] rotating index 'bundle_core': success
+[Thu Jan 21 08:53:22.245 2010] [13520] rotating finished
+[Thu Jan 21 08:53:50.774 2010] [13520] rotating indices (seamless=1)
+[Thu Jan 21 08:53:50.896 2010] [13520] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:53:50.901 2010] [13520] rotating index 'peripheral_core': success
+[Thu Jan 21 08:53:50.905 2010] [13520] rotating index 'package_core': success
+[Thu Jan 21 08:53:50.909 2010] [13520] rotating index 'computer_delta': success
+[Thu Jan 21 08:53:50.913 2010] [13520] rotating index 'computer_core': success
+[Thu Jan 21 08:53:50.917 2010] [13520] rotating index 'bundle_core': success
+[Thu Jan 21 08:53:50.917 2010] [13520] rotating finished
+[Thu Jan 21 08:56:19.261 2010] [13520] caught SIGTERM, shutting down
+[Thu Jan 21 08:56:19.289 2010] [13520] shutdown complete
+[Thu Jan 21 08:56:43.387 2010] [13607] accepting connections
+[Thu Jan 21 08:56:44.623 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:56:44.633 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:56:44.636 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:56:44.642 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:56:44.649 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:56:44.666 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:56:44.672 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:56:44.673 2010] [13607] rotating finished
+[Thu Jan 21 08:56:46.646 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:56:46.649 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:56:46.655 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:56:46.658 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:56:46.663 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:56:46.668 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:56:46.674 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:56:46.675 2010] [13607] rotating finished
+[Thu Jan 21 08:57:16.245 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:57:16.249 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:57:16.270 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:57:16.275 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:57:16.281 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:57:16.286 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:57:16.290 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:57:16.290 2010] [13607] rotating finished
+[Thu Jan 21 08:57:29.787 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:57:30.002 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:57:30.009 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:57:30.015 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:57:30.058 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:57:30.062 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:57:30.067 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:57:30.067 2010] [13607] rotating finished
+[Thu Jan 21 08:57:38.777 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:57:38.868 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:57:38.875 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:57:38.880 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:57:38.886 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:57:38.897 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:57:38.902 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:57:38.903 2010] [13607] rotating finished
+[Thu Jan 21 08:57:43.694 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:57:43.702 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:57:43.710 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:57:43.715 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:57:43.719 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:57:43.724 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:57:43.728 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:57:43.728 2010] [13607] rotating finished
+[Thu Jan 21 08:57:47.441 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:57:47.445 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:57:47.450 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:57:47.456 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:57:47.461 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:57:47.465 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:57:47.468 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:57:47.468 2010] [13607] rotating finished
+[Thu Jan 21 08:57:50.986 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:57:50.991 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:57:50.991 2010] [13607] rotating finished
+[Thu Jan 21 08:58:02.454 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:58:02.470 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:58:02.470 2010] [13607] rotating finished
+[Thu Jan 21 08:58:08.637 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:58:08.642 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:58:08.648 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:58:08.653 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:58:08.661 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:58:08.667 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:58:08.672 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:58:08.672 2010] [13607] rotating finished
+[Thu Jan 21 08:58:12.159 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:58:12.163 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:58:12.163 2010] [13607] rotating finished
+[Thu Jan 21 08:58:22.765 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:58:22.769 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:58:22.771 2010] [13607] rotating finished
+[Thu Jan 21 08:58:29.022 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:58:29.027 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:58:29.034 2010] [13607] rotating index 'peripheral_core': success
+[Thu Jan 21 08:58:29.042 2010] [13607] rotating index 'package_core': success
+[Thu Jan 21 08:58:29.048 2010] [13607] rotating index 'computer_delta': success
+[Thu Jan 21 08:58:29.057 2010] [13607] rotating index 'computer_core': success
+[Thu Jan 21 08:58:29.062 2010] [13607] rotating index 'bundle_core': success
+[Thu Jan 21 08:58:29.062 2010] [13607] rotating finished
+[Thu Jan 21 08:58:32.414 2010] [13607] rotating indices (seamless=1)
+[Thu Jan 21 08:58:32.418 2010] [13607] rotating index 'peripheral_delta': success
+[Thu Jan 21 08:58:32.419 2010] [13607] rotating finished
+[Thu Jan 21 08:58:37.918 2010] [13607] caught SIGTERM, shutting down
+[Thu Jan 21 08:58:37.920 2010] [13607] shutdown complete
+[Thu Jan 21 09:14:15.159 2010] [13905] accepting connections
+[Thu Jan 21 09:14:16.449 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:14:16.455 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:14:16.459 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:14:16.466 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:14:16.472 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:14:16.476 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:14:16.492 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:14:16.492 2010] [13905] rotating finished
+[Thu Jan 21 09:14:18.634 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:14:18.638 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:14:18.652 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:14:18.657 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:14:18.663 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:14:18.667 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:14:18.675 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:14:18.675 2010] [13905] rotating finished
+[Thu Jan 21 09:14:50.481 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:14:50.489 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:14:50.501 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:14:50.508 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:14:50.513 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:14:50.517 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:14:50.521 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:14:50.521 2010] [13905] rotating finished
+[Thu Jan 21 09:14:54.388 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:14:54.393 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:14:54.398 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:14:54.408 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:14:54.411 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:14:54.416 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:14:54.422 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:14:54.422 2010] [13905] rotating finished
+[Thu Jan 21 09:14:58.082 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:14:58.086 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:14:58.097 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:14:58.101 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:14:58.109 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:14:58.114 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:14:58.118 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:14:58.118 2010] [13905] rotating finished
+[Thu Jan 21 09:15:02.229 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:02.233 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:02.238 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:15:02.242 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:15:02.247 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:15:02.251 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:15:02.255 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:15:02.255 2010] [13905] rotating finished
+[Thu Jan 21 09:15:08.257 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:08.262 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:08.275 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:15:08.280 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:15:08.286 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:15:08.292 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:15:08.298 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:15:08.299 2010] [13905] rotating finished
+[Thu Jan 21 09:15:13.846 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:13.850 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:13.851 2010] [13905] rotating finished
+[Thu Jan 21 09:15:25.568 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:25.574 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:25.574 2010] [13905] rotating finished
+[Thu Jan 21 09:15:31.515 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:31.527 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:31.534 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:15:31.540 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:15:31.547 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:15:31.553 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:15:31.558 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:15:31.558 2010] [13905] rotating finished
+[Thu Jan 21 09:15:35.022 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:35.028 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:35.028 2010] [13905] rotating finished
+[Thu Jan 21 09:15:45.977 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:45.982 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:45.982 2010] [13905] rotating finished
+[Thu Jan 21 09:15:51.691 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:51.696 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:51.701 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:15:51.710 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:15:51.716 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:15:51.721 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:15:51.725 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:15:51.725 2010] [13905] rotating finished
+[Thu Jan 21 09:15:55.110 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:15:55.114 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:15:55.114 2010] [13905] rotating finished
+[Thu Jan 21 09:16:06.011 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:06.017 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:06.017 2010] [13905] rotating finished
+[Thu Jan 21 09:16:11.764 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:11.769 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:11.773 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:16:11.778 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:16:11.784 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:16:11.789 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:16:11.797 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:16:11.797 2010] [13905] rotating finished
+[Thu Jan 21 09:16:15.182 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:15.186 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:15.186 2010] [13905] rotating finished
+[Thu Jan 21 09:16:26.144 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:26.148 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:26.152 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:16:26.159 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:16:26.163 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:16:26.171 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:16:26.177 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:16:26.178 2010] [13905] rotating finished
+[Thu Jan 21 09:16:29.532 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:29.536 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:29.536 2010] [13905] rotating finished
+[Thu Jan 21 09:16:40.273 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:40.279 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:40.283 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:16:40.289 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:16:40.294 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:16:40.297 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:16:40.302 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:16:40.302 2010] [13905] rotating finished
+[Thu Jan 21 09:16:43.672 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:43.677 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:43.677 2010] [13905] rotating finished
+[Thu Jan 21 09:16:54.772 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:54.776 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:54.781 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:16:54.787 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:16:54.793 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:16:54.803 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:16:54.810 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:16:54.810 2010] [13905] rotating finished
+[Thu Jan 21 09:16:58.165 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:58.170 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:58.170 2010] [13905] rotating finished
+[Thu Jan 21 09:16:58.543 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:16:58.548 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:16:58.554 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:16:58.559 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:16:58.563 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:16:58.568 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:16:58.572 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:16:58.572 2010] [13905] rotating finished
+[Thu Jan 21 09:17:19.603 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:19.607 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:19.613 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:19.617 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:19.620 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:19.624 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:19.629 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:19.629 2010] [13905] rotating finished
+[Thu Jan 21 09:17:24.517 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:24.523 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:24.528 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:24.532 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:24.537 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:24.543 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:24.552 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:24.552 2010] [13905] rotating finished
+[Thu Jan 21 09:17:28.352 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:28.357 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:28.362 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:28.367 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:28.371 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:28.376 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:28.379 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:28.380 2010] [13905] rotating finished
+[Thu Jan 21 09:17:32.346 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:32.352 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:32.358 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:32.364 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:32.373 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:32.378 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:32.385 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:32.385 2010] [13905] rotating finished
+[Thu Jan 21 09:17:36.302 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:36.307 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:36.312 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:36.318 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:36.323 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:36.328 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:36.338 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:36.338 2010] [13905] rotating finished
+[Thu Jan 21 09:17:39.811 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:39.816 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:39.816 2010] [13905] rotating finished
+[Thu Jan 21 09:17:39.864 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:39.870 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:39.870 2010] [13905] rotating finished
+[Thu Jan 21 09:17:40.318 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:40.323 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:40.324 2010] [13905] rotating finished
+[Thu Jan 21 09:17:40.373 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:40.385 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:40.385 2010] [13905] rotating finished
+[Thu Jan 21 09:17:40.496 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:40.502 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:40.502 2010] [13905] rotating finished
+[Thu Jan 21 09:17:40.925 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:40.930 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:40.930 2010] [13905] rotating finished
+[Thu Jan 21 09:17:40.988 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:40.994 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:40.994 2010] [13905] rotating finished
+[Thu Jan 21 09:17:41.317 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:41.325 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:41.325 2010] [13905] rotating finished
+[Thu Jan 21 09:17:41.396 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:41.400 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:41.400 2010] [13905] rotating finished
+[Thu Jan 21 09:17:41.477 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:41.482 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:41.482 2010] [13905] rotating finished
+[Thu Jan 21 09:17:42.255 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:42.260 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:42.265 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:42.271 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:42.276 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:42.281 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:42.286 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:42.286 2010] [13905] rotating finished
+[Thu Jan 21 09:17:45.991 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:45.995 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:46.004 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:46.015 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:46.019 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:46.027 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:46.033 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:46.033 2010] [13905] rotating finished
+[Thu Jan 21 09:17:49.981 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:49.986 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:50.009 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:50.016 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:50.028 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:50.033 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:50.039 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:50.039 2010] [13905] rotating finished
+[Thu Jan 21 09:17:53.895 2010] [13905] rotating indices (seamless=1)
+[Thu Jan 21 09:17:53.899 2010] [13905] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:17:53.903 2010] [13905] rotating index 'peripheral_core': success
+[Thu Jan 21 09:17:53.907 2010] [13905] rotating index 'package_core': success
+[Thu Jan 21 09:17:53.911 2010] [13905] rotating index 'computer_delta': success
+[Thu Jan 21 09:17:53.916 2010] [13905] rotating index 'computer_core': success
+[Thu Jan 21 09:17:53.920 2010] [13905] rotating index 'bundle_core': success
+[Thu Jan 21 09:17:53.920 2010] [13905] rotating finished
+[Thu Jan 21 09:18:00.702 2010] [13905] caught SIGTERM, shutting down
+[Thu Jan 21 09:18:00.703 2010] [13905] shutdown complete
+[Thu Jan 21 09:18:50.221 2010] [14361] accepting connections
+[Thu Jan 21 09:18:52.443 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:18:52.447 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:18:52.464 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:18:52.468 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:18:52.480 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:18:52.484 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:18:52.488 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:18:52.488 2010] [14361] rotating finished
+[Thu Jan 21 09:18:56.959 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:18:56.967 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:18:56.972 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:18:56.978 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:18:56.983 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:18:56.988 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:18:56.992 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:18:56.992 2010] [14361] rotating finished
+[Thu Jan 21 09:19:23.851 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:19:23.855 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:19:23.860 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:19:23.866 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:19:23.870 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:19:23.875 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:19:23.879 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:19:23.879 2010] [14361] rotating finished
+[Thu Jan 21 09:19:27.896 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:19:27.901 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:19:27.905 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:19:27.910 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:19:27.915 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:19:27.921 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:19:27.928 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:19:27.928 2010] [14361] rotating finished
+[Thu Jan 21 09:19:31.580 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:19:31.585 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:19:31.589 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:19:31.592 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:19:31.596 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:19:31.601 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:19:31.605 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:19:31.605 2010] [14361] rotating finished
+[Thu Jan 21 09:19:35.442 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:19:35.447 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:19:35.450 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:19:35.454 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:19:35.457 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:19:35.462 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:19:35.465 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:19:35.465 2010] [14361] rotating finished
+[Thu Jan 21 09:19:39.214 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:19:39.219 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:19:39.223 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:19:39.227 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:19:39.238 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:19:39.249 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:19:39.261 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:19:39.261 2010] [14361] rotating finished
+[Thu Jan 21 09:19:42.639 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:19:42.644 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:19:42.644 2010] [14361] rotating finished
+[Thu Jan 21 09:19:53.636 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:19:53.640 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:19:53.640 2010] [14361] rotating finished
+[Thu Jan 21 09:19:59.537 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:19:59.543 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:19:59.549 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:19:59.555 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:19:59.560 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:19:59.565 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:19:59.571 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:19:59.571 2010] [14361] rotating finished
+[Thu Jan 21 09:20:02.996 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:03.001 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:03.001 2010] [14361] rotating finished
+[Thu Jan 21 09:20:13.909 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:13.913 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:13.913 2010] [14361] rotating finished
+[Thu Jan 21 09:20:19.686 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:19.690 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:19.696 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:20:19.700 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:20:19.705 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:20:19.710 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:20:19.715 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:20:19.715 2010] [14361] rotating finished
+[Thu Jan 21 09:20:23.126 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:23.130 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:23.131 2010] [14361] rotating finished
+[Thu Jan 21 09:20:34.001 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:34.007 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:34.007 2010] [14361] rotating finished
+[Thu Jan 21 09:20:39.800 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:39.805 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:39.812 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:20:39.819 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:20:39.823 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:20:39.831 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:20:39.836 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:20:39.836 2010] [14361] rotating finished
+[Thu Jan 21 09:20:43.221 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:43.225 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:43.225 2010] [14361] rotating finished
+[Thu Jan 21 09:20:54.247 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:54.252 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:54.256 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:20:54.263 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:20:54.268 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:20:54.273 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:20:54.279 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:20:54.279 2010] [14361] rotating finished
+[Thu Jan 21 09:20:57.647 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:20:57.652 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:20:57.652 2010] [14361] rotating finished
+[Thu Jan 21 09:21:08.571 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:08.579 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:21:08.583 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:21:08.589 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:21:08.595 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:08.603 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:21:08.609 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:21:08.609 2010] [14361] rotating finished
+[Thu Jan 21 09:21:12.062 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:12.067 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:21:12.067 2010] [14361] rotating finished
+[Thu Jan 21 09:21:23.309 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:23.314 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:21:23.319 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:21:23.324 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:21:23.328 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:23.333 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:21:23.337 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:21:23.337 2010] [14361] rotating finished
+[Thu Jan 21 09:21:26.705 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:26.709 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:21:26.709 2010] [14361] rotating finished
+[Thu Jan 21 09:21:27.110 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:27.114 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:21:27.120 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:21:27.125 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:21:27.129 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:27.136 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:21:27.140 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:21:27.140 2010] [14361] rotating finished
+[Thu Jan 21 09:21:53.682 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:53.693 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:21:53.700 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:21:53.705 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:21:53.712 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:53.720 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:21:53.726 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:21:53.726 2010] [14361] rotating finished
+[Thu Jan 21 09:21:57.163 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:57.168 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:57.168 2010] [14361] rotating finished
+[Thu Jan 21 09:21:57.242 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:57.247 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:57.247 2010] [14361] rotating finished
+[Thu Jan 21 09:21:57.845 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:57.849 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:57.850 2010] [14361] rotating finished
+[Thu Jan 21 09:21:57.920 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:57.926 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:57.927 2010] [14361] rotating finished
+[Thu Jan 21 09:21:58.026 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:58.050 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:58.051 2010] [14361] rotating finished
+[Thu Jan 21 09:21:58.461 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:58.467 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:58.467 2010] [14361] rotating finished
+[Thu Jan 21 09:21:58.549 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:58.554 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:58.554 2010] [14361] rotating finished
+[Thu Jan 21 09:21:59.185 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:59.190 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:59.190 2010] [14361] rotating finished
+[Thu Jan 21 09:21:59.253 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:59.258 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:59.258 2010] [14361] rotating finished
+[Thu Jan 21 09:21:59.361 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:21:59.371 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:21:59.371 2010] [14361] rotating finished
+[Thu Jan 21 09:22:00.077 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:00.081 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:22:00.085 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:22:00.089 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:22:00.094 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:00.098 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:22:00.101 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:22:00.102 2010] [14361] rotating finished
+[Thu Jan 21 09:22:03.454 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:03.458 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:03.459 2010] [14361] rotating finished
+[Thu Jan 21 09:22:03.509 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:03.513 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:03.513 2010] [14361] rotating finished
+[Thu Jan 21 09:22:04.018 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:04.023 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:04.023 2010] [14361] rotating finished
+[Thu Jan 21 09:22:04.078 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:04.083 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:04.083 2010] [14361] rotating finished
+[Thu Jan 21 09:22:14.922 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:14.926 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:14.926 2010] [14361] rotating finished
+[Thu Jan 21 09:22:14.988 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:14.999 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:14.999 2010] [14361] rotating finished
+[Thu Jan 21 09:22:15.664 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:15.669 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:15.670 2010] [14361] rotating finished
+[Thu Jan 21 09:22:15.718 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:15.723 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:15.723 2010] [14361] rotating finished
+[Thu Jan 21 09:22:15.785 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:15.791 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:22:15.791 2010] [14361] rotating finished
+[Thu Jan 21 09:22:15.845 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:15.850 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:22:15.850 2010] [14361] rotating finished
+[Thu Jan 21 09:22:16.552 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:16.557 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:22:16.561 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:22:16.565 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:22:16.569 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:16.572 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:22:16.576 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:22:16.576 2010] [14361] rotating finished
+[Thu Jan 21 09:22:20.078 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:20.082 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:20.082 2010] [14361] rotating finished
+[Thu Jan 21 09:22:20.132 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:20.137 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:20.137 2010] [14361] rotating finished
+[Thu Jan 21 09:22:20.730 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:20.734 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:20.734 2010] [14361] rotating finished
+[Thu Jan 21 09:22:20.923 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:20.927 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:20.927 2010] [14361] rotating finished
+[Thu Jan 21 09:22:26.716 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:26.720 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:26.721 2010] [14361] rotating finished
+[Thu Jan 21 09:22:26.830 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:26.834 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:26.835 2010] [14361] rotating finished
+[Thu Jan 21 09:22:32.970 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:32.974 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:32.974 2010] [14361] rotating finished
+[Thu Jan 21 09:22:33.030 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:33.035 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:33.035 2010] [14361] rotating finished
+[Thu Jan 21 09:22:38.607 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:38.617 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:38.617 2010] [14361] rotating finished
+[Thu Jan 21 09:22:38.680 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:22:38.688 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:22:38.689 2010] [14361] rotating finished
+[Thu Jan 21 09:23:25.138 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:25.145 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:23:25.150 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:23:25.154 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:23:25.159 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:25.168 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:23:25.173 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:23:25.173 2010] [14361] rotating finished
+[Thu Jan 21 09:23:28.621 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:28.627 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:28.627 2010] [14361] rotating finished
+[Thu Jan 21 09:23:28.677 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:28.682 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:28.682 2010] [14361] rotating finished
+[Thu Jan 21 09:23:29.215 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:29.220 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:29.220 2010] [14361] rotating finished
+[Thu Jan 21 09:23:29.273 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:29.279 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:29.279 2010] [14361] rotating finished
+[Thu Jan 21 09:23:34.900 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:34.905 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:34.905 2010] [14361] rotating finished
+[Thu Jan 21 09:23:34.968 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:34.976 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:34.976 2010] [14361] rotating finished
+[Thu Jan 21 09:23:40.597 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:40.608 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:40.608 2010] [14361] rotating finished
+[Thu Jan 21 09:23:40.668 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:23:40.674 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:23:40.674 2010] [14361] rotating finished
+[Thu Jan 21 09:24:01.769 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:01.776 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:01.784 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:24:01.790 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:24:01.794 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:24:01.798 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:24:01.804 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:24:01.804 2010] [14361] rotating finished
+[Thu Jan 21 09:24:05.162 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:05.166 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:05.166 2010] [14361] rotating finished
+[Thu Jan 21 09:24:05.216 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:05.220 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:05.221 2010] [14361] rotating finished
+[Thu Jan 21 09:24:05.634 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:05.638 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:05.639 2010] [14361] rotating finished
+[Thu Jan 21 09:24:05.688 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:05.693 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:05.693 2010] [14361] rotating finished
+[Thu Jan 21 09:24:05.772 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:05.777 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:05.777 2010] [14361] rotating finished
+[Thu Jan 21 09:24:06.261 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:06.266 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:06.266 2010] [14361] rotating finished
+[Thu Jan 21 09:24:06.316 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:06.321 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:06.321 2010] [14361] rotating finished
+[Thu Jan 21 09:24:06.639 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:06.644 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:06.644 2010] [14361] rotating finished
+[Thu Jan 21 09:24:06.697 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:06.701 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:06.701 2010] [14361] rotating finished
+[Thu Jan 21 09:24:06.778 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:06.782 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:06.782 2010] [14361] rotating finished
+[Thu Jan 21 09:24:07.162 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:07.166 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:24:07.166 2010] [14361] rotating finished
+[Thu Jan 21 09:24:07.222 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:07.226 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:24:07.226 2010] [14361] rotating finished
+[Thu Jan 21 09:24:07.302 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:07.317 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:07.318 2010] [14361] rotating finished
+[Thu Jan 21 09:24:07.375 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:07.379 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:07.380 2010] [14361] rotating finished
+[Thu Jan 21 09:24:07.436 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:07.443 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:07.443 2010] [14361] rotating finished
+[Thu Jan 21 09:24:29.091 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:29.095 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:29.099 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:24:29.108 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:24:29.115 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:24:29.120 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:24:29.125 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:24:29.125 2010] [14361] rotating finished
+[Thu Jan 21 09:24:32.673 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:32.678 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:24:32.678 2010] [14361] rotating finished
+[Thu Jan 21 09:24:32.757 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:32.762 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:24:32.762 2010] [14361] rotating finished
+[Thu Jan 21 09:24:33.216 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:24:33.221 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:24:33.225 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:24:33.228 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:24:33.232 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:24:33.235 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:24:33.238 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:24:33.238 2010] [14361] rotating finished
+[Thu Jan 21 09:25:42.538 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:25:42.552 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:25:42.552 2010] [14361] rotating finished
+[Thu Jan 21 09:25:42.655 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:25:42.660 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:25:42.660 2010] [14361] rotating finished
+[Thu Jan 21 09:25:44.668 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:25:44.672 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:25:44.676 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:25:44.680 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:25:44.683 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:25:44.687 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:25:44.691 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:25:44.692 2010] [14361] rotating finished
+[Thu Jan 21 09:25:52.130 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:25:52.136 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:25:52.143 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:25:52.149 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:25:52.155 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:25:52.159 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:25:52.164 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:25:52.164 2010] [14361] rotating finished
+[Thu Jan 21 09:25:55.576 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:25:55.581 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:25:55.581 2010] [14361] rotating finished
+[Thu Jan 21 09:25:55.630 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:25:55.635 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:25:55.635 2010] [14361] rotating finished
+[Thu Jan 21 09:25:56.087 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:25:56.091 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:25:56.097 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:25:56.100 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:25:56.103 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:25:56.106 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:25:56.110 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:25:56.110 2010] [14361] rotating finished
+[Thu Jan 21 09:26:06.420 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:06.430 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:06.438 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:26:06.444 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:26:06.449 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:06.453 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:26:06.459 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:26:06.459 2010] [14361] rotating finished
+[Thu Jan 21 09:26:09.848 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:09.852 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:09.852 2010] [14361] rotating finished
+[Thu Jan 21 09:26:09.904 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:09.916 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:09.916 2010] [14361] rotating finished
+[Thu Jan 21 09:26:09.986 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:10.000 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:10.000 2010] [14361] rotating finished
+[Thu Jan 21 09:26:10.044 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:10.056 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:10.056 2010] [14361] rotating finished
+[Thu Jan 21 09:26:10.456 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:10.464 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:10.469 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:26:10.473 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:26:10.478 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:10.482 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:26:10.487 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:26:10.487 2010] [14361] rotating finished
+[Thu Jan 21 09:26:17.849 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:17.854 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:17.854 2010] [14361] rotating finished
+[Thu Jan 21 09:26:17.929 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:17.933 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:17.933 2010] [14361] rotating finished
+[Thu Jan 21 09:26:17.999 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:18.004 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:18.004 2010] [14361] rotating finished
+[Thu Jan 21 09:26:18.073 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:18.078 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:18.078 2010] [14361] rotating finished
+[Thu Jan 21 09:26:18.141 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:18.145 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:18.146 2010] [14361] rotating finished
+[Thu Jan 21 09:26:18.793 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:18.797 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:18.801 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:26:18.804 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:26:18.809 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:18.813 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:26:18.817 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:26:18.817 2010] [14361] rotating finished
+[Thu Jan 21 09:26:27.899 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:27.905 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:27.912 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:26:27.916 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:26:27.922 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:27.927 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:26:27.933 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:26:27.933 2010] [14361] rotating finished
+[Thu Jan 21 09:26:31.437 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:31.441 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:31.442 2010] [14361] rotating finished
+[Thu Jan 21 09:26:31.512 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:31.517 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:31.517 2010] [14361] rotating finished
+[Thu Jan 21 09:26:31.581 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:31.586 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:31.586 2010] [14361] rotating finished
+[Thu Jan 21 09:26:31.660 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:31.665 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:31.665 2010] [14361] rotating finished
+[Thu Jan 21 09:26:32.293 2010] [14361] rotating indices (seamless=1)
+[Thu Jan 21 09:26:32.297 2010] [14361] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:26:32.301 2010] [14361] rotating index 'peripheral_core': success
+[Thu Jan 21 09:26:32.304 2010] [14361] rotating index 'package_core': success
+[Thu Jan 21 09:26:32.307 2010] [14361] rotating index 'computer_delta': success
+[Thu Jan 21 09:26:32.310 2010] [14361] rotating index 'computer_core': success
+[Thu Jan 21 09:26:32.313 2010] [14361] rotating index 'bundle_core': success
+[Thu Jan 21 09:26:32.313 2010] [14361] rotating finished
+[Thu Jan 21 09:27:13.729 2010] [14361] caught SIGTERM, shutting down
+[Thu Jan 21 09:27:13.730 2010] [14361] shutdown complete
+[Thu Jan 21 09:28:18.293 2010] [15262] accepting connections
+[Thu Jan 21 09:28:20.092 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:28:20.097 2010] [15262] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:28:20.101 2010] [15262] rotating index 'peripheral_core': success
+[Thu Jan 21 09:28:20.106 2010] [15262] rotating index 'package_core': success
+[Thu Jan 21 09:28:20.110 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:28:20.115 2010] [15262] rotating index 'computer_core': success
+[Thu Jan 21 09:28:20.119 2010] [15262] rotating index 'bundle_core': success
+[Thu Jan 21 09:28:20.119 2010] [15262] rotating finished
+[Thu Jan 21 09:28:20.937 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:28:20.942 2010] [15262] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:28:20.947 2010] [15262] rotating index 'peripheral_core': success
+[Thu Jan 21 09:28:20.953 2010] [15262] rotating index 'package_core': success
+[Thu Jan 21 09:28:20.959 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:28:20.963 2010] [15262] rotating index 'computer_core': success
+[Thu Jan 21 09:28:20.968 2010] [15262] rotating index 'bundle_core': success
+[Thu Jan 21 09:28:20.968 2010] [15262] rotating finished
+[Thu Jan 21 09:28:39.410 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:28:39.416 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:28:39.416 2010] [15262] rotating finished
+[Thu Jan 21 09:28:51.469 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:28:51.473 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:28:51.473 2010] [15262] rotating finished
+[Thu Jan 21 09:28:58.495 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:28:58.503 2010] [15262] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:28:58.509 2010] [15262] rotating index 'peripheral_core': success
+[Thu Jan 21 09:28:58.514 2010] [15262] rotating index 'package_core': success
+[Thu Jan 21 09:28:58.522 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:28:58.526 2010] [15262] rotating index 'computer_core': success
+[Thu Jan 21 09:28:58.532 2010] [15262] rotating index 'bundle_core': success
+[Thu Jan 21 09:28:58.532 2010] [15262] rotating finished
+[Thu Jan 21 09:29:01.906 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:01.917 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:01.918 2010] [15262] rotating finished
+[Thu Jan 21 09:29:12.683 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:12.687 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:12.687 2010] [15262] rotating finished
+[Thu Jan 21 09:29:18.522 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:18.526 2010] [15262] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:29:18.532 2010] [15262] rotating index 'peripheral_core': success
+[Thu Jan 21 09:29:18.537 2010] [15262] rotating index 'package_core': success
+[Thu Jan 21 09:29:18.544 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:18.550 2010] [15262] rotating index 'computer_core': success
+[Thu Jan 21 09:29:18.555 2010] [15262] rotating index 'bundle_core': success
+[Thu Jan 21 09:29:18.555 2010] [15262] rotating finished
+[Thu Jan 21 09:29:22.011 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:22.015 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:22.015 2010] [15262] rotating finished
+[Thu Jan 21 09:29:33.063 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:33.068 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:33.068 2010] [15262] rotating finished
+[Thu Jan 21 09:29:39.364 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:39.368 2010] [15262] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:29:39.373 2010] [15262] rotating index 'peripheral_core': success
+[Thu Jan 21 09:29:39.384 2010] [15262] rotating index 'package_core': success
+[Thu Jan 21 09:29:39.391 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:39.396 2010] [15262] rotating index 'computer_core': success
+[Thu Jan 21 09:29:39.401 2010] [15262] rotating index 'bundle_core': success
+[Thu Jan 21 09:29:39.401 2010] [15262] rotating finished
+[Thu Jan 21 09:29:42.768 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:42.773 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:42.773 2010] [15262] rotating finished
+[Thu Jan 21 09:29:53.704 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:53.708 2010] [15262] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:29:53.718 2010] [15262] rotating index 'peripheral_core': success
+[Thu Jan 21 09:29:53.723 2010] [15262] rotating index 'package_core': success
+[Thu Jan 21 09:29:53.727 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:53.732 2010] [15262] rotating index 'computer_core': success
+[Thu Jan 21 09:29:53.736 2010] [15262] rotating index 'bundle_core': success
+[Thu Jan 21 09:29:53.736 2010] [15262] rotating finished
+[Thu Jan 21 09:29:57.128 2010] [15262] rotating indices (seamless=1)
+[Thu Jan 21 09:29:57.132 2010] [15262] rotating index 'computer_delta': success
+[Thu Jan 21 09:29:57.132 2010] [15262] rotating finished
+[Thu Jan 21 09:30:11.596 2010] [15262] caught SIGTERM, shutting down
+[Thu Jan 21 09:30:11.597 2010] [15262] shutdown complete
+[Thu Jan 21 09:30:52.149 2010] [15426] accepting connections
+[Thu Jan 21 09:30:53.418 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:30:53.423 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:30:53.427 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:30:53.431 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:30:53.445 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:30:53.449 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:30:53.453 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:30:53.453 2010] [15426] rotating finished
+[Thu Jan 21 09:30:55.193 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:30:55.197 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:30:55.201 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:30:55.209 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:30:55.213 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:30:55.217 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:30:55.223 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:30:55.223 2010] [15426] rotating finished
+[Thu Jan 21 09:31:15.706 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:31:15.712 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:31:15.712 2010] [15426] rotating finished
+[Thu Jan 21 09:31:26.686 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:31:26.690 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:31:26.690 2010] [15426] rotating finished
+[Thu Jan 21 09:31:32.808 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:31:32.813 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:31:32.829 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:31:32.836 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:31:32.841 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:31:32.845 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:31:32.850 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:31:32.850 2010] [15426] rotating finished
+[Thu Jan 21 09:31:36.342 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:31:36.346 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:31:36.348 2010] [15426] rotating finished
+[Thu Jan 21 09:31:47.424 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:31:47.428 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:31:47.429 2010] [15426] rotating finished
+[Thu Jan 21 09:31:53.311 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:31:53.316 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:31:53.327 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:31:53.332 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:31:53.336 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:31:53.341 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:31:53.345 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:31:53.345 2010] [15426] rotating finished
+[Thu Jan 21 09:31:56.777 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:31:56.781 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:31:56.782 2010] [15426] rotating finished
+[Thu Jan 21 09:32:07.711 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:32:07.715 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:32:07.715 2010] [15426] rotating finished
+[Thu Jan 21 09:32:13.851 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:32:13.855 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:32:13.859 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:32:13.864 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:32:13.873 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:32:13.881 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:32:13.888 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:32:13.888 2010] [15426] rotating finished
+[Thu Jan 21 09:32:17.297 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:32:17.306 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:32:17.306 2010] [15426] rotating finished
+[Thu Jan 21 09:32:28.322 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:32:28.327 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:32:28.343 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:32:28.350 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:32:28.360 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:32:28.365 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:32:28.370 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:32:28.370 2010] [15426] rotating finished
+[Thu Jan 21 09:32:31.734 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:32:31.738 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:32:31.738 2010] [15426] rotating finished
+[Thu Jan 21 09:32:42.990 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:32:42.995 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:32:43.000 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:32:43.006 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:32:43.012 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:32:43.018 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:32:43.024 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:32:43.024 2010] [15426] rotating finished
+[Thu Jan 21 09:32:46.487 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:32:46.492 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:32:46.492 2010] [15426] rotating finished
+[Thu Jan 21 09:32:57.424 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:32:57.433 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:32:57.433 2010] [15426] rotating finished
+[Thu Jan 21 09:33:03.440 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:03.446 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:03.451 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:33:03.455 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:33:03.460 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:33:03.466 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:33:03.471 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:33:03.471 2010] [15426] rotating finished
+[Thu Jan 21 09:33:06.855 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:06.860 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:06.860 2010] [15426] rotating finished
+[Thu Jan 21 09:33:17.478 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:17.482 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:17.482 2010] [15426] rotating finished
+[Thu Jan 21 09:33:23.394 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:23.401 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:23.407 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:33:23.416 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:33:23.424 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:33:23.434 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:33:23.441 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:33:23.441 2010] [15426] rotating finished
+[Thu Jan 21 09:33:26.803 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:26.807 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:26.807 2010] [15426] rotating finished
+[Thu Jan 21 09:33:37.717 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:37.721 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:37.722 2010] [15426] rotating finished
+[Thu Jan 21 09:33:43.826 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:43.832 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:43.843 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:33:43.847 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:33:43.852 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:33:43.858 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:33:43.862 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:33:43.863 2010] [15426] rotating finished
+[Thu Jan 21 09:33:47.321 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:47.327 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:47.327 2010] [15426] rotating finished
+[Thu Jan 21 09:33:58.465 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:33:58.470 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:33:58.477 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:33:58.481 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:33:58.486 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:33:58.491 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:33:58.499 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:33:58.499 2010] [15426] rotating finished
+[Thu Jan 21 09:34:02.055 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:02.060 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:34:02.060 2010] [15426] rotating finished
+[Thu Jan 21 09:34:13.168 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:13.175 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:34:13.180 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:34:13.184 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:34:13.192 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:34:13.198 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:34:13.203 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:34:13.203 2010] [15426] rotating finished
+[Thu Jan 21 09:34:16.576 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:16.580 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:34:16.580 2010] [15426] rotating finished
+[Thu Jan 21 09:34:27.545 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:27.550 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:34:27.558 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:34:27.562 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:34:27.568 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:34:27.576 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:34:27.582 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:34:27.583 2010] [15426] rotating finished
+[Thu Jan 21 09:34:30.947 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:30.952 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:34:30.952 2010] [15426] rotating finished
+[Thu Jan 21 09:34:31.037 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:31.042 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:34:31.042 2010] [15426] rotating finished
+[Thu Jan 21 09:34:41.823 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:41.828 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:34:41.828 2010] [15426] rotating finished
+[Thu Jan 21 09:34:41.913 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:41.921 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:34:41.921 2010] [15426] rotating finished
+[Thu Jan 21 09:34:49.737 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:34:49.751 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:34:49.759 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:34:49.766 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:34:49.772 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:34:49.778 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:34:49.785 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:34:49.786 2010] [15426] rotating finished
+[Thu Jan 21 09:35:10.767 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:10.771 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:35:10.776 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:35:10.782 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:35:10.787 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:10.796 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:35:10.801 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:35:10.801 2010] [15426] rotating finished
+[Thu Jan 21 09:35:14.283 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:14.287 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:14.288 2010] [15426] rotating finished
+[Thu Jan 21 09:35:14.345 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:14.352 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:14.352 2010] [15426] rotating finished
+[Thu Jan 21 09:35:14.867 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:14.873 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:14.873 2010] [15426] rotating finished
+[Thu Jan 21 09:35:14.929 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:14.934 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:14.934 2010] [15426] rotating finished
+[Thu Jan 21 09:35:15.035 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:15.040 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:15.041 2010] [15426] rotating finished
+[Thu Jan 21 09:35:15.348 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:15.352 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:15.353 2010] [15426] rotating finished
+[Thu Jan 21 09:35:15.405 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:15.410 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:15.410 2010] [15426] rotating finished
+[Thu Jan 21 09:35:15.940 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:15.945 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:15.945 2010] [15426] rotating finished
+[Thu Jan 21 09:35:15.997 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:16.009 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:16.012 2010] [15426] rotating finished
+[Thu Jan 21 09:35:16.213 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:16.217 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:16.217 2010] [15426] rotating finished
+[Thu Jan 21 09:35:18.135 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:18.140 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:35:18.145 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:35:18.149 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:35:18.154 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:18.158 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:35:18.161 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:35:18.161 2010] [15426] rotating finished
+[Thu Jan 21 09:35:21.580 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:21.585 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:21.585 2010] [15426] rotating finished
+[Thu Jan 21 09:35:21.634 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:21.638 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:21.638 2010] [15426] rotating finished
+[Thu Jan 21 09:35:22.013 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:22.017 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:22.017 2010] [15426] rotating finished
+[Thu Jan 21 09:35:22.067 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:22.072 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:22.072 2010] [15426] rotating finished
+[Thu Jan 21 09:35:32.839 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:32.843 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:32.844 2010] [15426] rotating finished
+[Thu Jan 21 09:35:32.901 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:32.906 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:32.906 2010] [15426] rotating finished
+[Thu Jan 21 09:35:33.830 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:33.835 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:33.835 2010] [15426] rotating finished
+[Thu Jan 21 09:35:33.893 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:33.897 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:33.897 2010] [15426] rotating finished
+[Thu Jan 21 09:35:33.970 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:33.978 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:35:33.978 2010] [15426] rotating finished
+[Thu Jan 21 09:35:34.048 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:34.055 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:35:34.055 2010] [15426] rotating finished
+[Thu Jan 21 09:35:34.938 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:34.943 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:35:34.947 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:35:34.950 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:35:34.955 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:34.960 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:35:34.964 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:35:34.964 2010] [15426] rotating finished
+[Thu Jan 21 09:35:38.402 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:38.407 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:38.407 2010] [15426] rotating finished
+[Thu Jan 21 09:35:38.459 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:38.463 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:38.464 2010] [15426] rotating finished
+[Thu Jan 21 09:35:39.925 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:39.929 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:39.929 2010] [15426] rotating finished
+[Thu Jan 21 09:35:39.980 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:39.985 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:39.985 2010] [15426] rotating finished
+[Thu Jan 21 09:35:45.651 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:45.656 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:45.656 2010] [15426] rotating finished
+[Thu Jan 21 09:35:45.729 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:45.743 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:45.744 2010] [15426] rotating finished
+[Thu Jan 21 09:35:51.318 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:51.346 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:51.347 2010] [15426] rotating finished
+[Thu Jan 21 09:35:51.424 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:51.431 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:51.431 2010] [15426] rotating finished
+[Thu Jan 21 09:35:57.039 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:57.045 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:57.045 2010] [15426] rotating finished
+[Thu Jan 21 09:35:57.099 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:35:57.109 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:35:57.109 2010] [15426] rotating finished
+[Thu Jan 21 09:36:47.889 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:36:47.893 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:36:47.899 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:36:47.908 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:36:47.914 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:36:47.919 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:36:47.923 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:36:47.923 2010] [15426] rotating finished
+[Thu Jan 21 09:36:53.358 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:36:53.364 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:36:53.364 2010] [15426] rotating finished
+[Thu Jan 21 09:36:53.453 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:36:53.467 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:36:53.467 2010] [15426] rotating finished
+[Thu Jan 21 09:36:55.209 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:36:55.696 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:36:55.696 2010] [15426] rotating finished
+[Thu Jan 21 09:36:57.164 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:36:57.170 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:36:57.170 2010] [15426] rotating finished
+[Thu Jan 21 09:37:05.548 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:05.565 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:37:05.566 2010] [15426] rotating finished
+[Thu Jan 21 09:37:07.204 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:07.209 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:37:07.209 2010] [15426] rotating finished
+[Thu Jan 21 09:37:13.357 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:13.426 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:37:13.426 2010] [15426] rotating finished
+[Thu Jan 21 09:37:13.506 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:13.522 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:37:13.522 2010] [15426] rotating finished
+[Thu Jan 21 09:37:40.043 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:40.053 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:40.065 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:37:40.071 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:37:40.080 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:37:40.086 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:37:40.090 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:37:40.090 2010] [15426] rotating finished
+[Thu Jan 21 09:37:43.899 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:43.905 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:43.905 2010] [15426] rotating finished
+[Thu Jan 21 09:37:43.953 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:43.958 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:43.958 2010] [15426] rotating finished
+[Thu Jan 21 09:37:44.400 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:44.409 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:44.409 2010] [15426] rotating finished
+[Thu Jan 21 09:37:44.454 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:44.458 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:44.458 2010] [15426] rotating finished
+[Thu Jan 21 09:37:44.533 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:44.537 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:44.537 2010] [15426] rotating finished
+[Thu Jan 21 09:37:44.889 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:44.894 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:44.894 2010] [15426] rotating finished
+[Thu Jan 21 09:37:44.945 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:44.957 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:44.957 2010] [15426] rotating finished
+[Thu Jan 21 09:37:45.301 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:45.305 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:45.305 2010] [15426] rotating finished
+[Thu Jan 21 09:37:45.355 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:45.359 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:45.359 2010] [15426] rotating finished
+[Thu Jan 21 09:37:45.426 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:45.432 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:45.432 2010] [15426] rotating finished
+[Thu Jan 21 09:37:45.823 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:45.827 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:37:45.827 2010] [15426] rotating finished
+[Thu Jan 21 09:37:45.879 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:45.884 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:37:45.884 2010] [15426] rotating finished
+[Thu Jan 21 09:37:45.948 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:45.952 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:45.952 2010] [15426] rotating finished
+[Thu Jan 21 09:37:46.006 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:46.021 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:46.021 2010] [15426] rotating finished
+[Thu Jan 21 09:37:46.093 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:37:46.098 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:37:46.098 2010] [15426] rotating finished
+[Thu Jan 21 09:38:07.878 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:38:07.883 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:38:07.888 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:38:07.891 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:38:07.895 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:38:07.900 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:38:07.905 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:38:07.905 2010] [15426] rotating finished
+[Thu Jan 21 09:38:11.504 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:38:11.510 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:38:11.510 2010] [15426] rotating finished
+[Thu Jan 21 09:38:11.564 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:38:11.569 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:38:11.570 2010] [15426] rotating finished
+[Thu Jan 21 09:38:11.984 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:38:11.992 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:38:11.995 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:38:11.999 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:38:12.002 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:38:12.005 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:38:12.009 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:38:12.009 2010] [15426] rotating finished
+[Thu Jan 21 09:39:21.246 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:21.252 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:21.252 2010] [15426] rotating finished
+[Thu Jan 21 09:39:21.341 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:21.360 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:21.360 2010] [15426] rotating finished
+[Thu Jan 21 09:39:21.946 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:21.951 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:21.954 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:39:21.959 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:39:21.963 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:21.967 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:39:21.971 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:39:21.971 2010] [15426] rotating finished
+[Thu Jan 21 09:39:29.080 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:29.085 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:29.090 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:39:29.094 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:39:29.098 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:29.102 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:39:29.106 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:39:29.106 2010] [15426] rotating finished
+[Thu Jan 21 09:39:32.836 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:32.840 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:32.841 2010] [15426] rotating finished
+[Thu Jan 21 09:39:32.894 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:32.899 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:32.899 2010] [15426] rotating finished
+[Thu Jan 21 09:39:33.340 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:33.344 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:33.348 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:39:33.351 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:39:33.354 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:33.358 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:39:33.361 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:39:33.361 2010] [15426] rotating finished
+[Thu Jan 21 09:39:43.712 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:43.720 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:43.724 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:39:43.729 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:39:43.734 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:43.738 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:39:43.743 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:39:43.743 2010] [15426] rotating finished
+[Thu Jan 21 09:39:47.185 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:47.189 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:47.189 2010] [15426] rotating finished
+[Thu Jan 21 09:39:47.247 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:47.252 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:47.252 2010] [15426] rotating finished
+[Thu Jan 21 09:39:47.331 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:47.343 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:47.344 2010] [15426] rotating finished
+[Thu Jan 21 09:39:47.400 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:47.407 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:47.407 2010] [15426] rotating finished
+[Thu Jan 21 09:39:47.756 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:47.761 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:47.764 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:39:47.767 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:39:47.770 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:47.774 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:39:47.776 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:39:47.777 2010] [15426] rotating finished
+[Thu Jan 21 09:39:54.858 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:54.863 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:54.863 2010] [15426] rotating finished
+[Thu Jan 21 09:39:54.915 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:54.920 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:54.920 2010] [15426] rotating finished
+[Thu Jan 21 09:39:54.982 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:54.987 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:54.987 2010] [15426] rotating finished
+[Thu Jan 21 09:39:55.033 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:55.037 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:55.038 2010] [15426] rotating finished
+[Thu Jan 21 09:39:55.095 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:55.100 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:55.100 2010] [15426] rotating finished
+[Thu Jan 21 09:39:55.507 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:39:55.511 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:39:55.514 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:39:55.517 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:39:55.521 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:39:55.524 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:39:55.527 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:39:55.527 2010] [15426] rotating finished
+[Thu Jan 21 09:40:04.757 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:40:04.761 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:40:04.767 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:40:04.771 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:40:04.777 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:40:04.782 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:40:04.786 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:40:04.786 2010] [15426] rotating finished
+[Thu Jan 21 09:40:08.229 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:40:08.234 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:40:08.234 2010] [15426] rotating finished
+[Thu Jan 21 09:40:08.288 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:40:08.299 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:40:08.299 2010] [15426] rotating finished
+[Thu Jan 21 09:40:08.363 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:40:08.373 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:40:08.373 2010] [15426] rotating finished
+[Thu Jan 21 09:40:08.429 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:40:08.440 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:40:08.440 2010] [15426] rotating finished
+[Thu Jan 21 09:40:08.868 2010] [15426] rotating indices (seamless=1)
+[Thu Jan 21 09:40:08.872 2010] [15426] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:40:08.876 2010] [15426] rotating index 'peripheral_core': success
+[Thu Jan 21 09:40:08.879 2010] [15426] rotating index 'package_core': success
+[Thu Jan 21 09:40:08.883 2010] [15426] rotating index 'computer_delta': success
+[Thu Jan 21 09:40:08.887 2010] [15426] rotating index 'computer_core': success
+[Thu Jan 21 09:40:08.890 2010] [15426] rotating index 'bundle_core': success
+[Thu Jan 21 09:40:08.890 2010] [15426] rotating finished
+[Thu Jan 21 09:40:51.942 2010] [15426] caught SIGTERM, shutting down
+[Thu Jan 21 09:40:51.943 2010] [15426] shutdown complete
+[Thu Jan 21 09:41:49.117 2010] [16397] accepting connections
+[Thu Jan 21 09:41:50.379 2010] [16397] rotating indices (seamless=1)
+[Thu Jan 21 09:41:50.384 2010] [16397] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:41:50.388 2010] [16397] rotating index 'peripheral_core': success
+[Thu Jan 21 09:41:50.392 2010] [16397] rotating index 'package_core': success
+[Thu Jan 21 09:41:50.401 2010] [16397] rotating index 'computer_delta': success
+[Thu Jan 21 09:41:50.406 2010] [16397] rotating index 'computer_core': success
+[Thu Jan 21 09:41:50.412 2010] [16397] rotating index 'bundle_core': success
+[Thu Jan 21 09:41:50.412 2010] [16397] rotating finished
+[Thu Jan 21 09:41:50.955 2010] [16397] rotating indices (seamless=1)
+[Thu Jan 21 09:41:50.962 2010] [16397] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:41:50.966 2010] [16397] rotating index 'peripheral_core': success
+[Thu Jan 21 09:41:50.971 2010] [16397] rotating index 'package_core': success
+[Thu Jan 21 09:41:50.976 2010] [16397] rotating index 'computer_delta': success
+[Thu Jan 21 09:41:50.980 2010] [16397] rotating index 'computer_core': success
+[Thu Jan 21 09:41:50.985 2010] [16397] rotating index 'bundle_core': success
+[Thu Jan 21 09:41:50.985 2010] [16397] rotating finished
+[Thu Jan 21 09:42:34.699 2010] [16397] caught SIGTERM, shutting down
+[Thu Jan 21 09:42:34.700 2010] [16397] shutdown complete
+[Thu Jan 21 09:49:32.170 2010] [16487] accepting connections
+[Thu Jan 21 09:49:33.703 2010] [16487] rotating indices (seamless=1)
+[Thu Jan 21 09:49:33.708 2010] [16487] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:49:33.722 2010] [16487] rotating index 'peripheral_core': success
+[Thu Jan 21 09:49:33.725 2010] [16487] rotating index 'package_core': success
+[Thu Jan 21 09:49:33.731 2010] [16487] rotating index 'computer_delta': success
+[Thu Jan 21 09:49:33.736 2010] [16487] rotating index 'computer_core': success
+[Thu Jan 21 09:49:33.740 2010] [16487] rotating index 'bundle_core': success
+[Thu Jan 21 09:49:33.741 2010] [16487] rotating finished
+[Thu Jan 21 09:49:39.062 2010] [16487] rotating indices (seamless=1)
+[Thu Jan 21 09:49:39.087 2010] [16487] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:49:39.093 2010] [16487] rotating index 'peripheral_core': success
+[Thu Jan 21 09:49:39.100 2010] [16487] rotating index 'package_core': success
+[Thu Jan 21 09:49:39.106 2010] [16487] rotating index 'computer_delta': success
+[Thu Jan 21 09:49:39.110 2010] [16487] rotating index 'computer_core': success
+[Thu Jan 21 09:49:39.115 2010] [16487] rotating index 'bundle_core': success
+[Thu Jan 21 09:49:39.115 2010] [16487] rotating finished
+[Thu Jan 21 09:50:16.286 2010] [16487] caught SIGTERM, shutting down
+[Thu Jan 21 09:50:16.287 2010] [16487] shutdown complete
+[Thu Jan 21 09:50:50.332 2010] [16554] accepting connections
+[Thu Jan 21 09:50:51.541 2010] [16554] rotating indices (seamless=1)
+[Thu Jan 21 09:50:51.545 2010] [16554] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:50:51.549 2010] [16554] rotating index 'peripheral_core': success
+[Thu Jan 21 09:50:51.553 2010] [16554] rotating index 'package_core': success
+[Thu Jan 21 09:50:51.558 2010] [16554] rotating index 'computer_delta': success
+[Thu Jan 21 09:50:51.563 2010] [16554] rotating index 'computer_core': success
+[Thu Jan 21 09:50:51.567 2010] [16554] rotating index 'bundle_core': success
+[Thu Jan 21 09:50:51.567 2010] [16554] rotating finished
+[Thu Jan 21 09:50:52.334 2010] [16554] rotating indices (seamless=1)
+[Thu Jan 21 09:50:52.339 2010] [16554] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:50:52.342 2010] [16554] rotating index 'peripheral_core': success
+[Thu Jan 21 09:50:52.347 2010] [16554] rotating index 'package_core': success
+[Thu Jan 21 09:50:52.350 2010] [16554] rotating index 'computer_delta': success
+[Thu Jan 21 09:50:52.354 2010] [16554] rotating index 'computer_core': success
+[Thu Jan 21 09:50:52.358 2010] [16554] rotating index 'bundle_core': success
+[Thu Jan 21 09:50:52.358 2010] [16554] rotating finished
+[Thu Jan 21 09:51:13.951 2010] [16554] rotating indices (seamless=1)
+[Thu Jan 21 09:51:13.958 2010] [16554] rotating index 'computer_delta': success
+[Thu Jan 21 09:51:13.958 2010] [16554] rotating finished
+[Thu Jan 21 09:51:14.023 2010] [16554] rotating indices (seamless=1)
+[Thu Jan 21 09:51:14.028 2010] [16554] rotating index 'computer_delta': success
+[Thu Jan 21 09:51:14.029 2010] [16554] rotating finished
+[Thu Jan 21 09:56:16.336 2010] [16554] rotating indices (seamless=1)
+[Thu Jan 21 09:56:16.346 2010] [16554] rotating index 'peripheral_delta': success
+[Thu Jan 21 09:56:16.350 2010] [16554] rotating index 'peripheral_core': success
+[Thu Jan 21 09:56:16.358 2010] [16554] rotating index 'package_core': success
+[Thu Jan 21 09:56:16.366 2010] [16554] rotating index 'computer_delta': success
+[Thu Jan 21 09:56:16.373 2010] [16554] rotating index 'computer_core': success
+[Thu Jan 21 09:56:16.378 2010] [16554] rotating index 'bundle_core': success
+[Thu Jan 21 09:56:16.378 2010] [16554] rotating finished
+[Thu Jan 21 09:57:22.662 2010] [16554] caught SIGTERM, shutting down
+[Thu Jan 21 09:57:22.664 2010] [16554] shutdown complete
+[Thu Jan 21 10:01:16.701 2010] [16684] accepting connections
+[Thu Jan 21 10:01:18.909 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:18.913 2010] [16684] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:01:18.918 2010] [16684] rotating index 'peripheral_core': success
+[Thu Jan 21 10:01:18.923 2010] [16684] rotating index 'package_core': success
+[Thu Jan 21 10:01:18.929 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:18.932 2010] [16684] rotating index 'computer_core': success
+[Thu Jan 21 10:01:18.937 2010] [16684] rotating index 'bundle_core': success
+[Thu Jan 21 10:01:18.937 2010] [16684] rotating finished
+[Thu Jan 21 10:01:19.809 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:19.813 2010] [16684] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:01:19.818 2010] [16684] rotating index 'peripheral_core': success
+[Thu Jan 21 10:01:19.821 2010] [16684] rotating index 'package_core': success
+[Thu Jan 21 10:01:19.825 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:19.831 2010] [16684] rotating index 'computer_core': success
+[Thu Jan 21 10:01:19.836 2010] [16684] rotating index 'bundle_core': success
+[Thu Jan 21 10:01:19.836 2010] [16684] rotating finished
+[Thu Jan 21 10:01:38.103 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:38.107 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:38.108 2010] [16684] rotating finished
+[Thu Jan 21 10:01:38.158 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:38.168 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:38.168 2010] [16684] rotating finished
+[Thu Jan 21 10:01:39.106 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:39.110 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:39.110 2010] [16684] rotating finished
+[Thu Jan 21 10:01:39.174 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:39.179 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:39.179 2010] [16684] rotating finished
+[Thu Jan 21 10:01:39.313 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:39.317 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:39.317 2010] [16684] rotating finished
+[Thu Jan 21 10:01:39.760 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:39.766 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:39.766 2010] [16684] rotating finished
+[Thu Jan 21 10:01:39.818 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:39.828 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:39.828 2010] [16684] rotating finished
+[Thu Jan 21 10:01:40.625 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:40.630 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:40.630 2010] [16684] rotating finished
+[Thu Jan 21 10:01:40.682 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:40.688 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:40.688 2010] [16684] rotating finished
+[Thu Jan 21 10:01:40.771 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:40.775 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:40.775 2010] [16684] rotating finished
+[Thu Jan 21 10:01:42.390 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:42.394 2010] [16684] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:01:42.397 2010] [16684] rotating index 'peripheral_core': success
+[Thu Jan 21 10:01:42.402 2010] [16684] rotating index 'package_core': success
+[Thu Jan 21 10:01:42.408 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:42.413 2010] [16684] rotating index 'computer_core': success
+[Thu Jan 21 10:01:42.418 2010] [16684] rotating index 'bundle_core': success
+[Thu Jan 21 10:01:42.418 2010] [16684] rotating finished
+[Thu Jan 21 10:01:45.857 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:45.862 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:45.862 2010] [16684] rotating finished
+[Thu Jan 21 10:01:45.911 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:45.916 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:45.916 2010] [16684] rotating finished
+[Thu Jan 21 10:01:46.300 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:46.305 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:46.305 2010] [16684] rotating finished
+[Thu Jan 21 10:01:46.355 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:46.360 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:46.360 2010] [16684] rotating finished
+[Thu Jan 21 10:01:57.092 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:57.096 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:57.096 2010] [16684] rotating finished
+[Thu Jan 21 10:01:57.155 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:57.164 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:57.164 2010] [16684] rotating finished
+[Thu Jan 21 10:01:57.834 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:57.840 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:57.841 2010] [16684] rotating finished
+[Thu Jan 21 10:01:57.902 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:57.915 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:57.916 2010] [16684] rotating finished
+[Thu Jan 21 10:01:57.988 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:58.013 2010] [16684] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:01:58.013 2010] [16684] rotating finished
+[Thu Jan 21 10:01:58.094 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:58.098 2010] [16684] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:01:58.098 2010] [16684] rotating finished
+[Thu Jan 21 10:01:59.263 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:01:59.267 2010] [16684] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:01:59.273 2010] [16684] rotating index 'peripheral_core': success
+[Thu Jan 21 10:01:59.277 2010] [16684] rotating index 'package_core': success
+[Thu Jan 21 10:01:59.283 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:01:59.289 2010] [16684] rotating index 'computer_core': success
+[Thu Jan 21 10:01:59.293 2010] [16684] rotating index 'bundle_core': success
+[Thu Jan 21 10:01:59.293 2010] [16684] rotating finished
+[Thu Jan 21 10:02:02.673 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:02.677 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:02.677 2010] [16684] rotating finished
+[Thu Jan 21 10:02:02.727 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:02.732 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:02.732 2010] [16684] rotating finished
+[Thu Jan 21 10:02:03.194 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:03.198 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:03.198 2010] [16684] rotating finished
+[Thu Jan 21 10:02:03.249 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:03.254 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:03.254 2010] [16684] rotating finished
+[Thu Jan 21 10:02:08.703 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:08.711 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:08.711 2010] [16684] rotating finished
+[Thu Jan 21 10:02:08.760 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:08.765 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:08.765 2010] [16684] rotating finished
+[Thu Jan 21 10:02:14.478 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:14.482 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:14.482 2010] [16684] rotating finished
+[Thu Jan 21 10:02:14.536 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:14.540 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:14.540 2010] [16684] rotating finished
+[Thu Jan 21 10:02:20.045 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:20.049 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:20.052 2010] [16684] rotating finished
+[Thu Jan 21 10:02:20.113 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:02:20.117 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:02:20.118 2010] [16684] rotating finished
+[Thu Jan 21 10:03:06.662 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:06.668 2010] [16684] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:03:06.675 2010] [16684] rotating index 'peripheral_core': success
+[Thu Jan 21 10:03:06.680 2010] [16684] rotating index 'package_core': success
+[Thu Jan 21 10:03:06.688 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:06.694 2010] [16684] rotating index 'computer_core': success
+[Thu Jan 21 10:03:06.700 2010] [16684] rotating index 'bundle_core': success
+[Thu Jan 21 10:03:06.700 2010] [16684] rotating finished
+[Thu Jan 21 10:03:10.141 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:10.145 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:10.145 2010] [16684] rotating finished
+[Thu Jan 21 10:03:10.195 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:10.201 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:10.201 2010] [16684] rotating finished
+[Thu Jan 21 10:03:10.627 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:10.633 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:10.634 2010] [16684] rotating finished
+[Thu Jan 21 10:03:10.683 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:10.687 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:10.688 2010] [16684] rotating finished
+[Thu Jan 21 10:03:16.418 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:16.423 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:16.423 2010] [16684] rotating finished
+[Thu Jan 21 10:03:16.479 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:16.484 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:16.484 2010] [16684] rotating finished
+[Thu Jan 21 10:03:23.947 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:24.508 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:24.508 2010] [16684] rotating finished
+[Thu Jan 21 10:03:24.770 2010] [16684] rotating indices (seamless=1)
+[Thu Jan 21 10:03:25.678 2010] [16684] rotating index 'computer_delta': success
+[Thu Jan 21 10:03:25.678 2010] [16684] rotating finished
+[Thu Jan 21 10:03:48.819 2010] [16684] caught SIGTERM, shutting down
+[Thu Jan 21 10:03:48.820 2010] [16684] shutdown complete
+[Thu Jan 21 10:10:00.249 2010] [17019] accepting connections
+[Thu Jan 21 10:10:01.679 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:01.683 2010] [17019] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:10:01.692 2010] [17019] rotating index 'peripheral_core': success
+[Thu Jan 21 10:10:01.696 2010] [17019] rotating index 'package_core': success
+[Thu Jan 21 10:10:01.703 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:01.706 2010] [17019] rotating index 'computer_core': success
+[Thu Jan 21 10:10:01.711 2010] [17019] rotating index 'bundle_core': success
+[Thu Jan 21 10:10:01.711 2010] [17019] rotating finished
+[Thu Jan 21 10:10:02.452 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:02.457 2010] [17019] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:10:02.462 2010] [17019] rotating index 'peripheral_core': success
+[Thu Jan 21 10:10:02.468 2010] [17019] rotating index 'package_core': success
+[Thu Jan 21 10:10:02.474 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:02.480 2010] [17019] rotating index 'computer_core': success
+[Thu Jan 21 10:10:02.485 2010] [17019] rotating index 'bundle_core': success
+[Thu Jan 21 10:10:02.485 2010] [17019] rotating finished
+[Thu Jan 21 10:10:30.408 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:30.413 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:30.413 2010] [17019] rotating finished
+[Thu Jan 21 10:10:30.471 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:30.476 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:30.476 2010] [17019] rotating finished
+[Thu Jan 21 10:10:34.307 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:34.313 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:34.314 2010] [17019] rotating finished
+[Thu Jan 21 10:10:34.396 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:34.404 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:34.404 2010] [17019] rotating finished
+[Thu Jan 21 10:10:35.093 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:35.099 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:35.099 2010] [17019] rotating finished
+[Thu Jan 21 10:10:36.709 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:36.714 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:36.714 2010] [17019] rotating finished
+[Thu Jan 21 10:10:36.769 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:36.780 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:36.780 2010] [17019] rotating finished
+[Thu Jan 21 10:10:37.559 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:37.563 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:37.563 2010] [17019] rotating finished
+[Thu Jan 21 10:10:37.896 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:37.908 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:37.908 2010] [17019] rotating finished
+[Thu Jan 21 10:10:40.004 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:41.254 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:41.254 2010] [17019] rotating finished
+[Thu Jan 21 10:10:44.519 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:44.524 2010] [17019] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:10:44.531 2010] [17019] rotating index 'peripheral_core': success
+[Thu Jan 21 10:10:44.536 2010] [17019] rotating index 'package_core': success
+[Thu Jan 21 10:10:44.542 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:44.548 2010] [17019] rotating index 'computer_core': success
+[Thu Jan 21 10:10:44.555 2010] [17019] rotating index 'bundle_core': success
+[Thu Jan 21 10:10:44.555 2010] [17019] rotating finished
+[Thu Jan 21 10:10:48.576 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:48.582 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:48.582 2010] [17019] rotating finished
+[Thu Jan 21 10:10:48.637 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:48.642 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:48.642 2010] [17019] rotating finished
+[Thu Jan 21 10:10:49.182 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:49.194 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:49.194 2010] [17019] rotating finished
+[Thu Jan 21 10:10:49.605 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:10:49.611 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:10:49.611 2010] [17019] rotating finished
+[Thu Jan 21 10:11:01.501 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:01.505 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:01.506 2010] [17019] rotating finished
+[Thu Jan 21 10:11:01.556 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:01.561 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:01.561 2010] [17019] rotating finished
+[Thu Jan 21 10:11:05.085 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:05.091 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:05.091 2010] [17019] rotating finished
+[Thu Jan 21 10:11:05.144 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:05.148 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:05.148 2010] [17019] rotating finished
+[Thu Jan 21 10:11:05.822 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:05.827 2010] [17019] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:11:05.827 2010] [17019] rotating finished
+[Thu Jan 21 10:11:05.884 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:05.889 2010] [17019] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:11:05.890 2010] [17019] rotating finished
+[Thu Jan 21 10:11:06.682 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:07.689 2010] [17019] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:11:07.694 2010] [17019] rotating index 'peripheral_core': success
+[Thu Jan 21 10:11:07.699 2010] [17019] rotating index 'package_core': success
+[Thu Jan 21 10:11:07.703 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:07.706 2010] [17019] rotating index 'computer_core': success
+[Thu Jan 21 10:11:07.711 2010] [17019] rotating index 'bundle_core': success
+[Thu Jan 21 10:11:07.711 2010] [17019] rotating finished
+[Thu Jan 21 10:11:10.136 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:10.140 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:10.140 2010] [17019] rotating finished
+[Thu Jan 21 10:11:10.195 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:10.200 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:10.200 2010] [17019] rotating finished
+[Thu Jan 21 10:11:10.760 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:10.787 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:10.787 2010] [17019] rotating finished
+[Thu Jan 21 10:11:11.551 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:11.556 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:11.556 2010] [17019] rotating finished
+[Thu Jan 21 10:11:17.213 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:17.219 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:17.220 2010] [17019] rotating finished
+[Thu Jan 21 10:11:17.280 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:17.285 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:17.285 2010] [17019] rotating finished
+[Thu Jan 21 10:11:22.850 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:22.855 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:22.855 2010] [17019] rotating finished
+[Thu Jan 21 10:11:23.038 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:23.045 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:23.045 2010] [17019] rotating finished
+[Thu Jan 21 10:11:28.606 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:28.612 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:28.612 2010] [17019] rotating finished
+[Thu Jan 21 10:11:28.670 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:11:28.677 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:11:28.677 2010] [17019] rotating finished
+[Thu Jan 21 10:12:10.913 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:10.923 2010] [17019] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:12:10.928 2010] [17019] rotating index 'peripheral_core': success
+[Thu Jan 21 10:12:10.937 2010] [17019] rotating index 'package_core': success
+[Thu Jan 21 10:12:10.944 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:10.953 2010] [17019] rotating index 'computer_core': success
+[Thu Jan 21 10:12:10.959 2010] [17019] rotating index 'bundle_core': success
+[Thu Jan 21 10:12:10.959 2010] [17019] rotating finished
+[Thu Jan 21 10:12:14.406 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:14.411 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:14.411 2010] [17019] rotating finished
+[Thu Jan 21 10:12:14.458 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:14.463 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:14.463 2010] [17019] rotating finished
+[Thu Jan 21 10:12:14.931 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:14.944 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:14.944 2010] [17019] rotating finished
+[Thu Jan 21 10:12:14.991 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:14.996 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:14.996 2010] [17019] rotating finished
+[Thu Jan 21 10:12:20.466 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:20.470 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:20.471 2010] [17019] rotating finished
+[Thu Jan 21 10:12:20.537 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:20.543 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:20.543 2010] [17019] rotating finished
+[Thu Jan 21 10:12:26.153 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:26.157 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:26.157 2010] [17019] rotating finished
+[Thu Jan 21 10:12:26.208 2010] [17019] rotating indices (seamless=1)
+[Thu Jan 21 10:12:26.213 2010] [17019] rotating index 'computer_delta': success
+[Thu Jan 21 10:12:26.213 2010] [17019] rotating finished
+[Thu Jan 21 10:12:49.156 2010] [17019] caught SIGTERM, shutting down
+[Thu Jan 21 10:12:49.157 2010] [17019] shutdown complete
+[Thu Jan 21 10:13:28.652 2010] [17333] accepting connections
+[Thu Jan 21 10:13:30.302 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:13:30.358 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:13:30.362 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:13:30.366 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:13:30.371 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:13:30.376 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:13:30.380 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:13:30.380 2010] [17333] rotating finished
+[Thu Jan 21 10:13:33.335 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:13:33.572 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:13:34.458 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:13:34.464 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:13:34.467 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:13:34.471 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:13:34.478 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:13:34.478 2010] [17333] rotating finished
+[Thu Jan 21 10:14:01.403 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:01.407 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:01.408 2010] [17333] rotating finished
+[Thu Jan 21 10:14:12.885 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:12.889 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:12.889 2010] [17333] rotating finished
+[Thu Jan 21 10:14:18.933 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:18.942 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:14:18.946 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:14:18.951 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:14:18.956 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:18.960 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:14:18.966 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:14:18.966 2010] [17333] rotating finished
+[Thu Jan 21 10:14:22.328 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:22.332 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:22.332 2010] [17333] rotating finished
+[Thu Jan 21 10:14:32.994 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:32.998 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:32.998 2010] [17333] rotating finished
+[Thu Jan 21 10:14:38.926 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:38.930 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:14:38.937 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:14:38.941 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:14:38.945 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:38.951 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:14:38.956 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:14:38.956 2010] [17333] rotating finished
+[Thu Jan 21 10:14:42.381 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:42.385 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:42.386 2010] [17333] rotating finished
+[Thu Jan 21 10:14:53.288 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:53.294 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:53.294 2010] [17333] rotating finished
+[Thu Jan 21 10:14:59.420 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:14:59.430 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:14:59.434 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:14:59.439 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:14:59.446 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:14:59.453 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:14:59.459 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:14:59.459 2010] [17333] rotating finished
+[Thu Jan 21 10:15:02.835 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:15:02.840 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:15:02.840 2010] [17333] rotating finished
+[Thu Jan 21 10:15:13.780 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:15:13.790 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:15:13.796 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:15:13.804 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:15:13.815 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:15:13.821 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:15:13.827 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:15:13.827 2010] [17333] rotating finished
+[Thu Jan 21 10:15:17.177 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:15:17.182 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:15:17.182 2010] [17333] rotating finished
+[Thu Jan 21 10:15:28.254 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:15:28.259 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:15:28.263 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:15:28.268 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:15:28.274 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:15:28.282 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:15:28.289 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:15:28.289 2010] [17333] rotating finished
+[Thu Jan 21 10:15:31.701 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:15:31.705 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:15:31.705 2010] [17333] rotating finished
+[Thu Jan 21 10:15:42.569 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:15:42.574 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:15:42.574 2010] [17333] rotating finished
+[Thu Jan 21 10:15:48.616 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:15:48.630 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:15:48.637 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:15:48.641 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:15:48.646 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:15:48.652 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:15:48.657 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:15:48.657 2010] [17333] rotating finished
+[Thu Jan 21 10:15:52.066 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:15:52.070 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:15:52.070 2010] [17333] rotating finished
+[Thu Jan 21 10:16:02.661 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:02.667 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:02.667 2010] [17333] rotating finished
+[Thu Jan 21 10:16:08.504 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:08.511 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:08.514 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:16:08.519 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:16:08.524 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:16:08.528 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:16:08.533 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:16:08.533 2010] [17333] rotating finished
+[Thu Jan 21 10:16:12.882 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:12.887 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:12.887 2010] [17333] rotating finished
+[Thu Jan 21 10:16:23.879 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:23.888 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:23.888 2010] [17333] rotating finished
+[Thu Jan 21 10:16:29.796 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:29.801 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:29.805 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:16:29.810 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:16:29.815 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:16:29.819 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:16:29.824 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:16:29.824 2010] [17333] rotating finished
+[Thu Jan 21 10:16:33.217 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:33.225 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:33.225 2010] [17333] rotating finished
+[Thu Jan 21 10:16:44.238 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:44.242 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:44.247 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:16:44.253 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:16:44.259 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:16:44.268 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:16:44.275 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:16:44.275 2010] [17333] rotating finished
+[Thu Jan 21 10:16:47.778 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:47.782 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:47.782 2010] [17333] rotating finished
+[Thu Jan 21 10:16:58.899 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:16:58.905 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:16:58.909 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:16:58.914 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:16:58.919 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:16:58.924 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:16:58.929 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:16:58.929 2010] [17333] rotating finished
+[Thu Jan 21 10:17:02.302 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:02.307 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:17:02.307 2010] [17333] rotating finished
+[Thu Jan 21 10:17:13.486 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:13.492 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:17:13.509 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:17:13.513 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:17:13.517 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:13.522 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:17:13.527 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:17:13.527 2010] [17333] rotating finished
+[Thu Jan 21 10:17:16.940 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:16.945 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:17:16.945 2010] [17333] rotating finished
+[Thu Jan 21 10:17:17.025 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:17.029 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:17.030 2010] [17333] rotating finished
+[Thu Jan 21 10:17:27.808 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:27.812 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:17:27.812 2010] [17333] rotating finished
+[Thu Jan 21 10:17:27.899 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:27.904 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:27.904 2010] [17333] rotating finished
+[Thu Jan 21 10:17:36.117 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:36.123 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:17:36.127 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:17:36.132 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:17:36.137 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:36.141 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:17:36.148 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:17:36.148 2010] [17333] rotating finished
+[Thu Jan 21 10:17:55.333 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:55.343 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:17:55.348 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:17:55.353 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:17:55.358 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:55.363 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:17:55.368 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:17:55.368 2010] [17333] rotating finished
+[Thu Jan 21 10:17:58.790 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:58.795 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:58.795 2010] [17333] rotating finished
+[Thu Jan 21 10:17:58.844 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:58.848 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:58.849 2010] [17333] rotating finished
+[Thu Jan 21 10:17:59.431 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:59.435 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:59.436 2010] [17333] rotating finished
+[Thu Jan 21 10:17:59.484 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:59.488 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:59.488 2010] [17333] rotating finished
+[Thu Jan 21 10:17:59.566 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:59.571 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:59.571 2010] [17333] rotating finished
+[Thu Jan 21 10:17:59.876 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:59.881 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:59.881 2010] [17333] rotating finished
+[Thu Jan 21 10:17:59.931 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:17:59.935 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:17:59.935 2010] [17333] rotating finished
+[Thu Jan 21 10:18:00.529 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:00.534 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:00.534 2010] [17333] rotating finished
+[Thu Jan 21 10:18:00.587 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:00.591 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:00.591 2010] [17333] rotating finished
+[Thu Jan 21 10:18:00.671 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:00.675 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:00.676 2010] [17333] rotating finished
+[Thu Jan 21 10:18:01.562 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:01.566 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:18:01.570 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:18:01.574 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:18:01.577 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:01.582 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:18:01.587 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:18:01.587 2010] [17333] rotating finished
+[Thu Jan 21 10:18:05.523 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:05.527 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:05.527 2010] [17333] rotating finished
+[Thu Jan 21 10:18:05.599 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:05.604 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:05.605 2010] [17333] rotating finished
+[Thu Jan 21 10:18:06.011 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:06.016 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:06.016 2010] [17333] rotating finished
+[Thu Jan 21 10:18:06.085 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:06.092 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:06.092 2010] [17333] rotating finished
+[Thu Jan 21 10:18:16.931 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:16.935 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:16.936 2010] [17333] rotating finished
+[Thu Jan 21 10:18:16.991 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:16.998 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:16.998 2010] [17333] rotating finished
+[Thu Jan 21 10:18:17.605 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:17.609 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:17.609 2010] [17333] rotating finished
+[Thu Jan 21 10:18:17.665 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:17.678 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:17.697 2010] [17333] rotating finished
+[Thu Jan 21 10:18:17.738 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:17.750 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:18:17.750 2010] [17333] rotating finished
+[Thu Jan 21 10:18:17.953 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:17.959 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:18:17.959 2010] [17333] rotating finished
+[Thu Jan 21 10:18:19.660 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:19.666 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:18:19.670 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:18:19.675 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:18:19.680 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:19.683 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:18:19.687 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:18:19.688 2010] [17333] rotating finished
+[Thu Jan 21 10:18:23.538 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:23.543 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:23.543 2010] [17333] rotating finished
+[Thu Jan 21 10:18:23.590 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:23.594 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:23.595 2010] [17333] rotating finished
+[Thu Jan 21 10:18:25.062 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:25.067 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:25.067 2010] [17333] rotating finished
+[Thu Jan 21 10:18:25.116 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:25.121 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:25.121 2010] [17333] rotating finished
+[Thu Jan 21 10:18:30.596 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:30.601 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:30.601 2010] [17333] rotating finished
+[Thu Jan 21 10:18:30.653 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:30.658 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:30.658 2010] [17333] rotating finished
+[Thu Jan 21 10:18:36.279 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:36.285 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:36.285 2010] [17333] rotating finished
+[Thu Jan 21 10:18:36.339 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:36.351 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:36.351 2010] [17333] rotating finished
+[Thu Jan 21 10:18:42.040 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:42.044 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:42.044 2010] [17333] rotating finished
+[Thu Jan 21 10:18:42.107 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:18:42.111 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:18:42.111 2010] [17333] rotating finished
+[Thu Jan 21 10:19:24.137 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:24.141 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:19:24.146 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:19:24.157 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:19:24.163 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:24.170 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:19:24.174 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:19:24.175 2010] [17333] rotating finished
+[Thu Jan 21 10:19:27.592 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:27.596 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:27.597 2010] [17333] rotating finished
+[Thu Jan 21 10:19:27.647 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:27.651 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:27.651 2010] [17333] rotating finished
+[Thu Jan 21 10:19:28.058 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:28.064 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:28.064 2010] [17333] rotating finished
+[Thu Jan 21 10:19:28.113 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:28.118 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:28.118 2010] [17333] rotating finished
+[Thu Jan 21 10:19:33.730 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:33.734 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:33.734 2010] [17333] rotating finished
+[Thu Jan 21 10:19:33.788 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:33.793 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:33.793 2010] [17333] rotating finished
+[Thu Jan 21 10:19:39.318 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:39.322 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:39.323 2010] [17333] rotating finished
+[Thu Jan 21 10:19:39.387 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:19:39.391 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:19:39.391 2010] [17333] rotating finished
+[Thu Jan 21 10:20:00.551 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:00.565 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:00.572 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:20:00.581 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:20:00.589 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:20:00.595 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:20:00.599 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:20:00.600 2010] [17333] rotating finished
+[Thu Jan 21 10:20:04.799 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:04.803 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:04.803 2010] [17333] rotating finished
+[Thu Jan 21 10:20:06.029 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:06.389 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:06.389 2010] [17333] rotating finished
+[Thu Jan 21 10:20:06.618 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:06.622 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:06.623 2010] [17333] rotating finished
+[Thu Jan 21 10:20:06.669 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:06.674 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:06.674 2010] [17333] rotating finished
+[Thu Jan 21 10:20:06.751 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:06.755 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:06.755 2010] [17333] rotating finished
+[Thu Jan 21 10:20:07.045 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:07.050 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:07.050 2010] [17333] rotating finished
+[Thu Jan 21 10:20:07.098 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:07.106 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:07.107 2010] [17333] rotating finished
+[Thu Jan 21 10:20:07.506 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:07.510 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:07.510 2010] [17333] rotating finished
+[Thu Jan 21 10:20:07.558 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:07.562 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:07.562 2010] [17333] rotating finished
+[Thu Jan 21 10:20:07.634 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:07.638 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:07.638 2010] [17333] rotating finished
+[Thu Jan 21 10:20:08.017 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:08.022 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:20:08.022 2010] [17333] rotating finished
+[Thu Jan 21 10:20:08.071 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:08.075 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:20:08.075 2010] [17333] rotating finished
+[Thu Jan 21 10:20:08.167 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:08.172 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:08.172 2010] [17333] rotating finished
+[Thu Jan 21 10:20:08.228 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:08.236 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:08.236 2010] [17333] rotating finished
+[Thu Jan 21 10:20:08.290 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:08.294 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:08.294 2010] [17333] rotating finished
+[Thu Jan 21 10:20:29.721 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:29.730 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:29.735 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:20:29.739 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:20:29.744 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:20:29.749 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:20:29.755 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:20:29.755 2010] [17333] rotating finished
+[Thu Jan 21 10:20:33.277 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:33.281 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:20:33.282 2010] [17333] rotating finished
+[Thu Jan 21 10:20:33.334 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:33.340 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:20:33.340 2010] [17333] rotating finished
+[Thu Jan 21 10:20:33.850 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:20:33.855 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:20:33.859 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:20:33.864 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:20:33.868 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:20:33.871 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:20:33.875 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:20:33.875 2010] [17333] rotating finished
+[Thu Jan 21 10:21:49.430 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:21:49.434 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:21:49.435 2010] [17333] rotating finished
+[Thu Jan 21 10:21:49.505 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:21:49.509 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:21:49.510 2010] [17333] rotating finished
+[Thu Jan 21 10:21:50.119 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:21:50.123 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:21:50.127 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:21:50.132 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:21:50.136 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:21:50.140 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:21:50.143 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:21:50.143 2010] [17333] rotating finished
+[Thu Jan 21 10:21:57.288 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:21:57.292 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:21:57.296 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:21:57.300 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:21:57.304 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:21:57.308 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:21:57.312 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:21:57.312 2010] [17333] rotating finished
+[Thu Jan 21 10:22:00.864 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:00.868 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:00.868 2010] [17333] rotating finished
+[Thu Jan 21 10:22:00.948 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:00.954 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:00.954 2010] [17333] rotating finished
+[Thu Jan 21 10:22:01.581 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:01.585 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:01.589 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:22:01.592 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:22:01.596 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:01.600 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:22:01.605 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:22:01.605 2010] [17333] rotating finished
+[Thu Jan 21 10:22:12.014 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:12.018 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:12.022 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:22:12.027 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:22:12.031 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:12.036 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:22:12.041 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:22:12.041 2010] [17333] rotating finished
+[Thu Jan 21 10:22:15.776 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:15.781 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:15.781 2010] [17333] rotating finished
+[Thu Jan 21 10:22:15.885 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:15.890 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:15.890 2010] [17333] rotating finished
+[Thu Jan 21 10:22:15.964 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:15.978 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:16.005 2010] [17333] rotating finished
+[Thu Jan 21 10:22:16.057 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:16.062 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:16.062 2010] [17333] rotating finished
+[Thu Jan 21 10:22:16.569 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:16.573 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:16.577 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:22:16.581 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:22:16.585 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:16.590 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:22:16.594 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:22:16.594 2010] [17333] rotating finished
+[Thu Jan 21 10:22:24.070 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:24.075 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:24.075 2010] [17333] rotating finished
+[Thu Jan 21 10:22:24.143 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:24.148 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:24.148 2010] [17333] rotating finished
+[Thu Jan 21 10:22:24.217 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:24.223 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:24.223 2010] [17333] rotating finished
+[Thu Jan 21 10:22:24.297 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:24.302 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:24.302 2010] [17333] rotating finished
+[Thu Jan 21 10:22:24.374 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:24.378 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:24.378 2010] [17333] rotating finished
+[Thu Jan 21 10:22:24.974 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:24.978 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:24.982 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:22:24.985 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:22:24.988 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:24.991 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:22:24.994 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:22:24.994 2010] [17333] rotating finished
+[Thu Jan 21 10:22:34.248 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:34.253 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:34.262 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:22:34.269 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:22:34.277 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:34.282 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:22:34.286 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:22:34.287 2010] [17333] rotating finished
+[Thu Jan 21 10:22:37.840 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:37.845 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:37.845 2010] [17333] rotating finished
+[Thu Jan 21 10:22:37.923 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:37.930 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:37.930 2010] [17333] rotating finished
+[Thu Jan 21 10:22:38.008 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:38.013 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:38.014 2010] [17333] rotating finished
+[Thu Jan 21 10:22:38.099 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:38.114 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:38.114 2010] [17333] rotating finished
+[Thu Jan 21 10:22:38.690 2010] [17333] rotating indices (seamless=1)
+[Thu Jan 21 10:22:38.695 2010] [17333] rotating index 'peripheral_delta': success
+[Thu Jan 21 10:22:38.700 2010] [17333] rotating index 'peripheral_core': success
+[Thu Jan 21 10:22:38.705 2010] [17333] rotating index 'package_core': success
+[Thu Jan 21 10:22:38.711 2010] [17333] rotating index 'computer_delta': success
+[Thu Jan 21 10:22:38.715 2010] [17333] rotating index 'computer_core': success
+[Thu Jan 21 10:22:38.719 2010] [17333] rotating index 'bundle_core': success
+[Thu Jan 21 10:22:38.719 2010] [17333] rotating finished
+[Thu Jan 21 10:23:23.078 2010] [17333] caught SIGTERM, shutting down
+[Thu Jan 21 10:23:23.080 2010] [17333] shutdown complete

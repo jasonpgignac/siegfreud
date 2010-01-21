@@ -100,21 +100,6 @@ ActiveRecord::Schema.define(:version => 20100120184502) do
     t.integer  "division_id"
   end
 
-  create_table "open_id_authentication_associations", :force => true do |t|
-    t.integer "issued"
-    t.integer "lifetime"
-    t.string  "handle"
-    t.string  "assoc_type"
-    t.binary  "server_url"
-    t.binary  "secret"
-  end
-
-  create_table "open_id_authentication_nonces", :force => true do |t|
-    t.integer "timestamp",  :null => false
-    t.string  "server_url"
-    t.string  "salt",       :null => false
-  end
-
   create_table "package_maps", :force => true do |t|
     t.string   "remote_package_id"
     t.string   "default_install_task"
@@ -178,7 +163,7 @@ ActiveRecord::Schema.define(:version => 20100120184502) do
   create_table "site_maps", :force => true do |t|
     t.integer  "site_id"
     t.integer  "server_id"
-    t.string   "remote_site_id"
+    t.integer  "remote_site_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

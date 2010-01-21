@@ -11,6 +11,7 @@ Given /^a computer with serial number (.*)$/ do |serial|
       :has_deployment => false,
       :is_transitory  => false)
   
+  site = Site.find_by_name("Test Site") || Site.create!( :name => "Test Site")
   domain = Domain.find_by_name("test.com") || Domain.create!( :name => "test.com")
   domain = Domain.find_by_name("othertest.com") || Domain.create!( :name => "othertest.com")
   
@@ -25,7 +26,8 @@ Given /^a computer with serial number (.*)$/ do |serial|
       :name           => "Comp-1234567",
       :owner          => "asmith",
       :system_role    => "primary",
-      :location       => "Under the Bed")
+      :location       => "Under the Bed",
+      :site           => site)
     @computer.save
 end
 Then /^I should see the basic inventory fields$/ do
@@ -347,7 +349,7 @@ Given /^a (.*) in a stage with \[(.*)\] information with serial number (.*)$/ do
   stage.has_deployment  = info_types.include?("deployment")
   stage.is_transitory   = false
   stage.save
-  
+  site = Site.find_by_name("Test Site") || Site.create!( :name => "Site Create")
   domain = Domain.find_or_create_by_name("test.com")
   if object_type == 'computer'
     fields = {
@@ -361,7 +363,8 @@ Given /^a (.*) in a stage with \[(.*)\] information with serial number (.*)$/ do
       :name           => (info_types.include?("deployment") ? "Comp-#{serial}" : nil),
       :owner          => (info_types.include?("deployment") ? "asmith" : nil),
       :system_role    => (info_types.include?("deployment") ? "Primary" : nil),
-      :location       => (info_types.include?("location") ? "Behind the Carwash" : nil)
+      :location       => (info_types.include?("location") ? "Behind the Carwash" : nil),
+      :site           => site
     }
     @computer = Computer.create!(fields)
   else
@@ -584,6 +587,10 @@ Given /^a division$/ do
       :name           => "Division X",
       :divisions      => "100,101,102")
 end
+Given /^there is a site named "(.*)"$/ do |name|
+  @site = Site.find_by_name(name) || Site.create!( :name => name)
+end
+
 def storage_stage
   stage = Stage.find_by_name("Storage") || Stage.create!(
       :name           => "Storage",
