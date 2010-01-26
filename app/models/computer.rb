@@ -12,7 +12,7 @@ class Computer < ActiveRecord::Base
   has_many :servers, :through => :server_domains
   has_many :available_stages, :through => :stage
   
-  validates_presence_of :division, :serial_number, :model, :po_number, :stage, :site
+  validates_presence_of :division, :serial_number, :model, :po_number, :stage, :site, :system_class
   validates_uniqueness_of :serial_number
   validates_presence_of :location, :if => Proc.new{ |c| c.stage && c.stage.has_location}
   validates_presence_of :owner, :domain, :system_role, :name, :if => Proc.new { |c| c.stage && c.stage.has_deployment}
