@@ -45,9 +45,9 @@ class Audit < ActiveRecord::Base
         unless e[:db].stage.has_deployment
           e[:errors] << "Deployment status mismatch"
         else
-          e[:errors] << "Name mismatch" unless e[:db].name.downcase == e[:server]['name'].downcase
-          e[:errors] << "Domain mismatch" unless e[:db].domain.name.downcase == e[:server]['domain'].downcase || e[:db].domain.bare_name.downcase == e[:server]['domain'].downcase
-          e[:errors] << "Owner mismatch" unless e[:db].owner.downcase == e[:server]['user'].downcase
+          e[:errors] << "Name mismatch" unless e[:db].name.downcase == e[:server]['name'].to_s.downcase
+          e[:errors] << "Domain mismatch" unless e[:db].domain.name.downcase == e[:server]['domain'].to_s.downcase || e[:db].domain.bare_name.downcase == e[:server]['domain'].downcase
+          e[:errors] << "Owner mismatch" unless e[:db].owner.downcase == e[:server]['user'].to_s.downcase
         end
       end
       @entry_conflicts.delete_if{ |x,e| e[:errors].size == 0}
