@@ -1,5 +1,5 @@
 <h1>Audit</h1>
-<h3>Machines on <%= @audit.server.name %> but not in the database</h3>
+<h3>Machines on <%= @audit.server.name %> but not in the database (<%=h @audit.unmatched_server_entries.size %>)</h3>
 <table>
 	<tr>
 		<th>Serial</th>
@@ -16,7 +16,7 @@
 		</tr>
 	<% end %>
 </table>
-<h3>Machines in the database but not on <%= @audit.server.name %></h3>
+<h3>Machines in the database but not on <%= @audit.server.name %>  (<%=h @audit.unmatched_db_entries.size %>)</h3>
 <table>
 	<tr>
 		<th>Serial</th>
@@ -41,7 +41,7 @@
 
 
 
-<h3>Machines with mismatched data between <%= @audit.server.name %> and the database</h3>
+<h3>Machines with mismatched data between <%= @audit.server.name %> and the database  (<%=h @audit.entry_conflicts.size %>)</h3>
 (Data is in the format database_data(server_data) )<br />
 
 <table>
