@@ -1,5 +1,9 @@
 <%= f.error_messages %>
 <div class="databox">
+	<p>
+		<%= f.label :notes %><br />
+		<%= f.text_area :notes %><br />
+	</p>
 	<b>Stage:</b> <%= f.select(	:stage_id, 
 								@peripheral.available_stages.collect {
 									|p| [p.name, p.id]
