@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100120184502) do
+ActiveRecord::Schema.define(:version => 20100127150457) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20100120184502) do
     t.integer  "stage_id"
     t.integer  "domain_id"
     t.integer  "site_id"
+    t.string   "notes"
   end
 
   create_table "content_servers", :force => true do |t|
@@ -133,6 +134,7 @@ ActiveRecord::Schema.define(:version => 20100120184502) do
     t.string   "location"
     t.string   "owner"
     t.string   "description"
+    t.string   "notes"
   end
 
   create_table "server_domains", :force => true do |t|

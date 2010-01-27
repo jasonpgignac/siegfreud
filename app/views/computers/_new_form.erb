@@ -53,6 +53,10 @@
 				<%= collection_select(:computer, :division_id, Division.all, :id, :display_name) %>
 			</td>
 		</tr>
+		<tr>
+			<td>Notes:</td>
+			<td><%= f.text_area(:notes) %></td>
+		</tr>
 	</table>
 </div>
 <p><%= f.submit 'Create' %></p>

@@ -17,6 +17,11 @@
 			<%= render :partial => 'deployment_form' %>
 		</div>
 	</div>
+	
+	<div class="databox">
+		Notes:<br />
+		<%= f.text_area(:notes) %>
+	</div>
 	<p><%= f.submit 'Save Changes' %></p>
 
 <%= observe_field('computer_stage_id',
