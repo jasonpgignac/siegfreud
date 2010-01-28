@@ -24,8 +24,8 @@ class Audit < ActiveRecord::Base
   def combined_entries
     unless @combined_entries
       @combined_entries = Hash.new
-      server_entries.each { |e| @combined_entries[e['serial_number']] ||= Hash.new; @combined_entries[e['serial_number'].downcase][:server] = e }
-      db_entries.each { |e| @combined_entries[e.serial_number] ||= Hash.new; @combined_entries[e.serial_number.downcase][:db] = e }
+      server_entries.each { |e| @combined_entries[e['serial_number'].downcase] ||= Hash.new; @combined_entries[e['serial_number'].downcase][:server] = e }
+      db_entries.each { |e| @combined_entries[e.serial_number.downcase] ||= Hash.new; @combined_entries[e.serial_number.downcase][:db] = e }
     end
     return @combined_entries
   end
