@@ -28,13 +28,13 @@ function installed_peripherals(request) {
 	new Insertion.Bottom('installed_peripherals', list);
 }
 function output_peripheral_in_list(peripheral) {
-	url = "/peripherals/" + peripheral.peripheral.id + ".json"
+	url = "peripherals/" + peripheral.peripheral.id + ".json"
 	return '<li  id=\'installed_peripheral_' + peripheral.peripheral.id + '\'>' + 
 	peripheral.peripheral.model + ':' + peripheral.peripheral.serial_number + " " + 
 	'<a href="#" id= "remove_peripheral_' + peripheral.peripheral.id + '" onclick="select_new_home_for_peripheral(' + peripheral.peripheral.id + ')">X</a></li>';
 }
 function output_license_in_list(license) {
-	url = "/licenses/" + license.license.id + ".json"
+	url = "licenses/" + license.license.id + ".json"
 	return '<li id=\'assigned_license_' + license.license.id + '\'>' + license.license.package.manufacturer + 
 	' ' + license.license.package.name +
 	' ' + license.license.package.version + 
