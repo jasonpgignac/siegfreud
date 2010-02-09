@@ -591,8 +591,8 @@ Given /^there is a site named "(.*)"$/ do |name|
   @site = Site.find_by_name(name) || Site.create!( :name => name)
 end
 When /^I click on remove for the first peripheral$/ do
-  @peripheral_to_remove = @computer.peirhperals.find(:first)
-  click_link("removoe_peripheral_#{@peripheral_to_remove.id}")
+  @peripheral_to_remove = @computer.peripherals.find(:first)
+  click_link("remove_peripheral_#{@peripheral_to_remove.id}")
 end
 
 Then /^I should not see the first peripheral$/ do
@@ -600,7 +600,7 @@ Then /^I should not see the first peripheral$/ do
 end
 
 Then /^the first peripheral should not be assigned to the computer$/ do
-  @peripheral_to_remove.computer_id.nil?.should == true
+  @peripheral_to_remove.computer.should != @computer
 end
 When /^I click on remove for the first license$/ do
   @license_to_remove = @computer.licenses.find(:first)
@@ -610,7 +610,7 @@ Then /^I should not see the first license$/ do
   response.should_not contain(@license_to_remove.short_name)
 end
 Then /^the first license should not be assigned to the computer$/ do
-  @license_to_remove.computer_id.nil?.should == true
+  @license_to_remove.computer.should != @computer
 end
 def storage_stage
   stage = Stage.find_by_name("Storage") || Stage.create!(

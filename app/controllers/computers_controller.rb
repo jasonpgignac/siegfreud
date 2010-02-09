@@ -15,6 +15,7 @@ class ComputersController < ApplicationController
     conditions = Hash.new
     conditions[:division_id] = params[:division_id] if params[:division_id]
     conditions[:stage_id] = params[:stage_id] if params[:stage_id]
+    conditions[:system_role] = params[:system_role] if params[:system_role]
     unless conditions.empty?
       @computers = Computer.find(:all, :conditions => conditions)  
     else

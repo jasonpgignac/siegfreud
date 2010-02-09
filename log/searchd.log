@@ -37515,3 +37515,217 @@
 [Tue Feb  9 11:37:21.124 2010] [13207] rotating finished
 [Tue Feb  9 11:37:22.678 2010] [13207] caught SIGTERM, shutting down
 [Tue Feb  9 11:37:22.679 2010] [13207] shutdown complete
+[Tue Feb  9 12:15:39.910 2010] [13463] accepting connections
+[Tue Feb  9 12:15:41.102 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:15:41.108 2010] [13463] rotating index 'peripheral_delta': success
+[Tue Feb  9 12:15:41.118 2010] [13463] rotating index 'peripheral_core': success
+[Tue Feb  9 12:15:41.122 2010] [13463] rotating index 'package_core': success
+[Tue Feb  9 12:15:41.133 2010] [13463] rotating index 'computer_delta': success
+[Tue Feb  9 12:15:41.138 2010] [13463] rotating index 'computer_core': success
+[Tue Feb  9 12:15:41.144 2010] [13463] rotating index 'bundle_core': success
+[Tue Feb  9 12:15:41.144 2010] [13463] rotating finished
+[Tue Feb  9 12:15:41.713 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:15:41.717 2010] [13463] rotating index 'peripheral_delta': success
+[Tue Feb  9 12:15:41.721 2010] [13463] rotating index 'peripheral_core': success
+[Tue Feb  9 12:15:41.731 2010] [13463] rotating index 'package_core': success
+[Tue Feb  9 12:15:41.736 2010] [13463] rotating index 'computer_delta': success
+[Tue Feb  9 12:15:41.741 2010] [13463] rotating index 'computer_core': success
+[Tue Feb  9 12:15:41.746 2010] [13463] rotating index 'bundle_core': success
+[Tue Feb  9 12:15:41.746 2010] [13463] rotating finished
+[Tue Feb  9 12:16:04.255 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:16:04.261 2010] [13463] rotating index 'computer_delta': success
+[Tue Feb  9 12:16:04.261 2010] [13463] rotating finished
+[Tue Feb  9 12:16:04.323 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:16:04.335 2010] [13463] rotating index 'computer_delta': success
+[Tue Feb  9 12:16:04.335 2010] [13463] rotating finished
+[Tue Feb  9 12:16:10.506 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:16:10.517 2010] [13463] rotating index 'peripheral_delta': success
+[Tue Feb  9 12:16:10.522 2010] [13463] rotating index 'peripheral_core': success
+[Tue Feb  9 12:16:10.526 2010] [13463] rotating index 'package_core': success
+[Tue Feb  9 12:16:10.538 2010] [13463] rotating index 'computer_delta': success
+[Tue Feb  9 12:16:10.543 2010] [13463] rotating index 'computer_core': success
+[Tue Feb  9 12:16:10.548 2010] [13463] rotating index 'bundle_core': success
+[Tue Feb  9 12:16:10.548 2010] [13463] rotating finished
+[Tue Feb  9 12:16:14.007 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:16:14.012 2010] [13463] rotating index 'computer_delta': success
+[Tue Feb  9 12:16:14.012 2010] [13463] rotating finished
+[Tue Feb  9 12:16:14.059 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:16:14.064 2010] [13463] rotating index 'computer_delta': success
+[Tue Feb  9 12:16:14.064 2010] [13463] rotating finished
+[Tue Feb  9 12:16:14.141 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:16:14.152 2010] [13463] rotating index 'peripheral_delta': success
+[Tue Feb  9 12:16:14.153 2010] [13463] rotating finished
+[Tue Feb  9 12:16:14.198 2010] [13463] rotating indices (seamless=1)
+[Tue Feb  9 12:16:14.202 2010] [13463] rotating index 'peripheral_delta': success
+[Tue Feb  9 12:16:14.202 2010] [13463] rotating finished
+[Tue Feb  9 12:16:15.774 2010] [13463] caught SIGTERM, shutting down
+[Tue Feb  9 12:16:15.775 2010] [13463] shutdown complete
+[Tue Feb  9 12:33:46.167 2010] [13639] accepting connections
+[Tue Feb  9 12:33:47.360 2010] [13639] rotating indices (seamless=1)
+[Tue Feb  9 12:33:47.364 2010] [13639] rotating index 'peripheral_delta': success
+[Tue Feb  9 12:33:47.385 2010] [13639] rotating index 'peripheral_core': success
+[Tue Feb  9 12:33:47.394 2010] [13639] rotating index 'package_core': success
+[Tue Feb  9 12:33:47.410 2010] [13639] rotating index 'computer_delta': success
+[Tue Feb  9 12:33:47.426 2010] [13639] rotating index 'computer_core': success
+[Tue Feb  9 12:33:47.442 2010] [13639] rotating index 'bundle_core': success
+[Tue Feb  9 12:33:47.442 2010] [13639] rotating finished
+[Tue Feb  9 12:33:47.916 2010] [13639] rotating indices (seamless=1)
+[Tue Feb  9 12:33:47.920 2010] [13639] rotating index 'peripheral_delta': success
+[Tue Feb  9 12:33:47.925 2010] [13639] rotating index 'peripheral_core': success
+[Tue Feb  9 12:33:47.930 2010] [13639] rotating index 'package_core': success
+[Tue Feb  9 12:33:47.934 2010] [13639] rotating index 'computer_delta': success
+[Tue Feb  9 12:33:47.938 2010] [13639] rotating index 'computer_core': success
+[Tue Feb  9 12:33:47.943 2010] [13639] rotating index 'bundle_core': success
+[Tue Feb  9 12:33:47.943 2010] [13639] rotating finished
+[Tue Feb  9 12:34:07.139 2010] [13639] rotating indices (seamless=1)
+[Tue Feb  9 12:34:07.144 2010] [13639] rotating index 'computer_delta': success
+[Tue Feb  9 12:34:07.144 2010] [13639] rotating finished
+[Tue Feb  9 12:34:07.209 2010] [13639] rotating indices (seamless=1)
+[Tue Feb  9 12:34:07.217 2010] [13639] rotating index 'computer_delta': success
+[Tue Feb  9 12:34:07.217 2010] [13639] rotating finished
+[Tue Feb  9 12:36:42.033 2010] [13639] caught SIGTERM, shutting down
+[Tue Feb  9 12:36:42.036 2010] [13639] shutdown complete
+[Tue Feb  9 13:05:40.228 2010] [13826] accepting connections
+[Tue Feb  9 13:05:41.430 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:05:41.436 2010] [13826] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:05:41.440 2010] [13826] rotating index 'peripheral_core': success
+[Tue Feb  9 13:05:41.445 2010] [13826] rotating index 'package_core': success
+[Tue Feb  9 13:05:41.449 2010] [13826] rotating index 'computer_delta': success
+[Tue Feb  9 13:05:41.457 2010] [13826] rotating index 'computer_core': success
+[Tue Feb  9 13:05:41.462 2010] [13826] rotating index 'bundle_core': success
+[Tue Feb  9 13:05:41.462 2010] [13826] rotating finished
+[Tue Feb  9 13:05:42.010 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:05:42.015 2010] [13826] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:05:42.020 2010] [13826] rotating index 'peripheral_core': success
+[Tue Feb  9 13:05:42.025 2010] [13826] rotating index 'package_core': success
+[Tue Feb  9 13:05:42.029 2010] [13826] rotating index 'computer_delta': success
+[Tue Feb  9 13:05:42.034 2010] [13826] rotating index 'computer_core': success
+[Tue Feb  9 13:05:42.038 2010] [13826] rotating index 'bundle_core': success
+[Tue Feb  9 13:05:42.038 2010] [13826] rotating finished
+[Tue Feb  9 13:06:04.814 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:06:04.821 2010] [13826] rotating index 'computer_delta': success
+[Tue Feb  9 13:06:04.821 2010] [13826] rotating finished
+[Tue Feb  9 13:06:04.876 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:06:04.882 2010] [13826] rotating index 'computer_delta': success
+[Tue Feb  9 13:06:04.882 2010] [13826] rotating finished
+[Tue Feb  9 13:06:09.571 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:06:09.574 2010] [13826] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:06:09.579 2010] [13826] rotating index 'peripheral_core': success
+[Tue Feb  9 13:06:09.584 2010] [13826] rotating index 'package_core': success
+[Tue Feb  9 13:06:09.588 2010] [13826] rotating index 'computer_delta': success
+[Tue Feb  9 13:06:09.592 2010] [13826] rotating index 'computer_core': success
+[Tue Feb  9 13:06:09.596 2010] [13826] rotating index 'bundle_core': success
+[Tue Feb  9 13:06:09.597 2010] [13826] rotating finished
+[Tue Feb  9 13:06:13.535 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:06:13.540 2010] [13826] rotating index 'computer_delta': success
+[Tue Feb  9 13:06:13.540 2010] [13826] rotating finished
+[Tue Feb  9 13:06:13.593 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:06:13.598 2010] [13826] rotating index 'computer_delta': success
+[Tue Feb  9 13:06:13.598 2010] [13826] rotating finished
+[Tue Feb  9 13:06:13.676 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:06:13.680 2010] [13826] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:06:13.680 2010] [13826] rotating finished
+[Tue Feb  9 13:06:13.734 2010] [13826] rotating indices (seamless=1)
+[Tue Feb  9 13:06:13.741 2010] [13826] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:06:13.741 2010] [13826] rotating finished
+[Tue Feb  9 13:06:20.406 2010] [13826] caught SIGTERM, shutting down
+[Tue Feb  9 13:06:20.407 2010] [13826] shutdown complete
+[Tue Feb  9 13:09:36.905 2010] [13980] accepting connections
+[Tue Feb  9 13:09:38.182 2010] [13980] rotating indices (seamless=1)
+[Tue Feb  9 13:09:38.241 2010] [13980] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:09:38.256 2010] [13980] rotating index 'peripheral_core': success
+[Tue Feb  9 13:09:38.260 2010] [13980] rotating index 'package_core': success
+[Tue Feb  9 13:09:38.266 2010] [13980] rotating index 'computer_delta': success
+[Tue Feb  9 13:09:38.270 2010] [13980] rotating index 'computer_core': success
+[Tue Feb  9 13:09:38.276 2010] [13980] rotating index 'bundle_core': success
+[Tue Feb  9 13:09:38.285 2010] [13980] rotating finished
+[Tue Feb  9 13:09:38.901 2010] [13980] rotating indices (seamless=1)
+[Tue Feb  9 13:09:38.906 2010] [13980] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:09:38.912 2010] [13980] rotating index 'peripheral_core': success
+[Tue Feb  9 13:09:38.919 2010] [13980] rotating index 'package_core': success
+[Tue Feb  9 13:09:38.925 2010] [13980] rotating index 'computer_delta': success
+[Tue Feb  9 13:09:38.930 2010] [13980] rotating index 'computer_core': success
+[Tue Feb  9 13:09:38.940 2010] [13980] rotating index 'bundle_core': success
+[Tue Feb  9 13:09:38.940 2010] [13980] rotating finished
+[Tue Feb  9 13:09:59.707 2010] [13980] rotating indices (seamless=1)
+[Tue Feb  9 13:09:59.713 2010] [13980] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:09:59.721 2010] [13980] rotating index 'peripheral_core': success
+[Tue Feb  9 13:09:59.728 2010] [13980] rotating index 'package_core': success
+[Tue Feb  9 13:09:59.732 2010] [13980] rotating index 'computer_delta': success
+[Tue Feb  9 13:09:59.740 2010] [13980] rotating index 'computer_core': success
+[Tue Feb  9 13:09:59.745 2010] [13980] rotating index 'bundle_core': success
+[Tue Feb  9 13:09:59.745 2010] [13980] rotating finished
+[Tue Feb  9 13:10:01.259 2010] [13980] caught SIGTERM, shutting down
+[Tue Feb  9 13:10:01.260 2010] [13980] shutdown complete
+[Tue Feb  9 13:10:40.049 2010] [14059] accepting connections
+[Tue Feb  9 13:10:41.349 2010] [14059] rotating indices (seamless=1)
+[Tue Feb  9 13:10:41.354 2010] [14059] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:10:41.360 2010] [14059] rotating index 'peripheral_core': success
+[Tue Feb  9 13:10:41.365 2010] [14059] rotating index 'package_core': success
+[Tue Feb  9 13:10:41.370 2010] [14059] rotating index 'computer_delta': success
+[Tue Feb  9 13:10:41.376 2010] [14059] rotating index 'computer_core': success
+[Tue Feb  9 13:10:41.381 2010] [14059] rotating index 'bundle_core': success
+[Tue Feb  9 13:10:41.381 2010] [14059] rotating finished
+[Tue Feb  9 13:10:45.615 2010] [14059] rotating indices (seamless=1)
+[Tue Feb  9 13:10:45.621 2010] [14059] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:10:45.625 2010] [14059] rotating index 'peripheral_core': success
+[Tue Feb  9 13:10:45.637 2010] [14059] rotating index 'package_core': success
+[Tue Feb  9 13:10:45.642 2010] [14059] rotating index 'computer_delta': success
+[Tue Feb  9 13:10:45.648 2010] [14059] rotating index 'computer_core': success
+[Tue Feb  9 13:10:45.651 2010] [14059] rotating index 'bundle_core': success
+[Tue Feb  9 13:10:45.651 2010] [14059] rotating finished
+[Tue Feb  9 13:11:10.053 2010] [14059] rotating indices (seamless=1)
+[Tue Feb  9 13:11:10.059 2010] [14059] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:11:10.066 2010] [14059] rotating index 'peripheral_core': success
+[Tue Feb  9 13:11:10.071 2010] [14059] rotating index 'package_core': success
+[Tue Feb  9 13:11:10.077 2010] [14059] rotating index 'computer_delta': success
+[Tue Feb  9 13:11:10.082 2010] [14059] rotating index 'computer_core': success
+[Tue Feb  9 13:11:10.088 2010] [14059] rotating index 'bundle_core': success
+[Tue Feb  9 13:11:10.088 2010] [14059] rotating finished
+[Tue Feb  9 13:11:12.367 2010] [14059] caught SIGTERM, shutting down
+[Tue Feb  9 13:11:12.368 2010] [14059] shutdown complete
+[Tue Feb  9 13:12:45.850 2010] [14141] accepting connections
+[Tue Feb  9 13:12:47.022 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:12:47.027 2010] [14141] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:12:47.033 2010] [14141] rotating index 'peripheral_core': success
+[Tue Feb  9 13:12:47.038 2010] [14141] rotating index 'package_core': success
+[Tue Feb  9 13:12:47.043 2010] [14141] rotating index 'computer_delta': success
+[Tue Feb  9 13:12:47.053 2010] [14141] rotating index 'computer_core': success
+[Tue Feb  9 13:12:47.059 2010] [14141] rotating index 'bundle_core': success
+[Tue Feb  9 13:12:47.059 2010] [14141] rotating finished
+[Tue Feb  9 13:12:47.646 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:12:47.651 2010] [14141] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:12:47.654 2010] [14141] rotating index 'peripheral_core': success
+[Tue Feb  9 13:12:47.668 2010] [14141] rotating index 'package_core': success
+[Tue Feb  9 13:12:47.673 2010] [14141] rotating index 'computer_delta': success
+[Tue Feb  9 13:12:47.681 2010] [14141] rotating index 'computer_core': success
+[Tue Feb  9 13:12:47.692 2010] [14141] rotating index 'bundle_core': success
+[Tue Feb  9 13:12:47.692 2010] [14141] rotating finished
+[Tue Feb  9 13:13:11.705 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:13:11.717 2010] [14141] rotating index 'computer_delta': success
+[Tue Feb  9 13:13:11.717 2010] [14141] rotating finished
+[Tue Feb  9 13:13:11.806 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:13:11.811 2010] [14141] rotating index 'computer_delta': success
+[Tue Feb  9 13:13:11.812 2010] [14141] rotating finished
+[Tue Feb  9 13:13:16.324 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:13:16.330 2010] [14141] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:13:16.335 2010] [14141] rotating index 'peripheral_core': success
+[Tue Feb  9 13:13:16.340 2010] [14141] rotating index 'package_core': success
+[Tue Feb  9 13:13:16.344 2010] [14141] rotating index 'computer_delta': success
+[Tue Feb  9 13:13:16.350 2010] [14141] rotating index 'computer_core': success
+[Tue Feb  9 13:13:16.355 2010] [14141] rotating index 'bundle_core': success
+[Tue Feb  9 13:13:16.355 2010] [14141] rotating finished
+[Tue Feb  9 13:13:20.700 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:13:20.711 2010] [14141] rotating index 'computer_delta': success
+[Tue Feb  9 13:13:20.711 2010] [14141] rotating finished
+[Tue Feb  9 13:13:20.772 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:13:20.784 2010] [14141] rotating index 'computer_delta': success
+[Tue Feb  9 13:13:20.784 2010] [14141] rotating finished
+[Tue Feb  9 13:13:20.901 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:13:20.906 2010] [14141] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:13:20.906 2010] [14141] rotating finished
+[Tue Feb  9 13:13:20.969 2010] [14141] rotating indices (seamless=1)
+[Tue Feb  9 13:13:20.976 2010] [14141] rotating index 'peripheral_delta': success
+[Tue Feb  9 13:13:20.976 2010] [14141] rotating finished
+[Tue Feb  9 13:13:28.839 2010] [14141] caught SIGTERM, shutting down
+[Tue Feb  9 13:13:29.008 2010] [14141] shutdown complete
