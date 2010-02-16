@@ -135,7 +135,7 @@ function assign_license(form) {
 	);
 }
 function remove_peripheral(form, id) {
-	url = "/peripherals/" + id + ".json";
+	url = "peripherals/" + id + ".json";
 	new Ajax.Request (url, {
 		method: 'put',
 		asynchronous: true,
