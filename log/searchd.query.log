@@ -15868,3 +15868,10 @@
 [Tue Feb  9 13:13:20.914 2010] 0.000 sec [scan/2/rel 0 (0,20)] [peripheral_core] 
 [Tue Feb  9 13:13:20.932 2010] 0.000 sec [scan/2/rel 0 (0,20)] [peripheral_core] 
 [Tue Feb  9 13:13:20.980 2010] 0.000 sec [scan/2/rel 0 (0,20)] [peripheral_core] 
+[Mon Mar 29 12:57:01.890 2010] 0.000 sec [all/2/rel 1 (0,20)] [computer_core,computer_delta] test6
+[Mon Mar 29 12:57:01.900 2010] 0.000 sec [all/2/rel 0 (0,20)] [peripheral_core,peripheral_delta] test6
+[Mon Mar 29 12:57:01.902 2010] 0.000 sec [all/2/rel 0 (0,20)] [package_core] test6
+[Mon Mar 29 12:57:20.323 2010] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core]
+[Mon Mar 29 13:22:30.719 2010] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core]
+[Mon Mar 29 13:24:25.210 2010] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core]
+[Mon Mar 29 13:26:41.299 2010] 0.000 sec [scan/2/rel 1 (0,20)] [computer_core]

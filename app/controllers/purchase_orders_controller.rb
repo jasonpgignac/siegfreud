@@ -40,13 +40,6 @@ class PurchaseOrdersController < ApplicationController
   end
   
   # Edit Actions (Associated objects)
-  def make_new_peripheral_in_po
-    refresh_po_instance(params[:po_number], params[:division_id])
-    @periph = Peripheral.new()
-    update_page do |page|
-      page.set_redbox('edit_peripheral_form')
-    end
-  end
   def edit_peripheral
     refresh_po_instance(params[:po_number], params[:division_id])
     @periph = Peripheral.find(params[:id])

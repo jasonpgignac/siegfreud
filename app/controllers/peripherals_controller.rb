@@ -70,6 +70,7 @@ class PeripheralsController < ApplicationController
     respond_to do |format|
       if @peripheral.save
         flash[:notice] = 'Peripheral was successfully created.'
+        Action.create_with_inventory_objects("Created Peripheral", "#{params[:peripheral]}", [ @peripheral ], current_user)
         format.html { redirect_to(@peripheral) }
         format.xml  { render :xml => @peripheral, :status => :created, :location => @peripheral }
         format.js   {
@@ -110,9 +111,11 @@ class PeripheralsController < ApplicationController
         @peripheral.errors.add_to_base("Peripheral is already assigned to this computer")
       end
     end
-
+    @peripheral.attributes = params[:peripheral]
+    changes = @peripheral.changes
     respond_to do |format|
-      if @peripheral.errors.size == 0 && @peripheral.update_attributes(params[:peripheral])
+      if @peripheral.errors.size == 0 && @peripheral.save
+        Action.create_with_inventory_objects("Updated Peripheral", "#{changes}", [ @peripheral ], current_user)
         flash[:notice] = 'Peripheral was successfully updated.'
         format.html { redirect_to(@peripheral) }
         format.xml  { head :ok }
@@ -135,7 +138,7 @@ class PeripheralsController < ApplicationController
     @peripheral = Peripheral.find(params[:id])
     if @peripheral
       @peripheral.destroy
-
+      Action.create_with_inventory_objects("Deleted Perihperal", "", [ @peripheral ], current_user)
       respond_to do |format|
         format.html { redirect_to(peripherals_url) }
         format.xml  { head :ok }

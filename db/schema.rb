@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100127150457) do
+ActiveRecord::Schema.define(:version => 20100329175133) do
 
   create_table "action_inventory_objects", :force => true do |t|
     t.integer  "action_id"
@@ -21,8 +21,17 @@ ActiveRecord::Schema.define(:version => 20100127150457) do
 
   create_table "actions", :force => true do |t|
     t.string   "title"
-    t.string   "description"
+    t.text     "description"
     t.date     "date_of_occurrence"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "user"
+  end
+
+  create_table "audit_logs", :force => true do |t|
+    t.string   "author"
+    t.string   "summary"
+    t.text     "changes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -165,7 +174,7 @@ ActiveRecord::Schema.define(:version => 20100127150457) do
   create_table "site_maps", :force => true do |t|
     t.integer  "site_id"
     t.integer  "server_id"
-    t.integer  "remote_site_id"
+    t.string   "remote_site_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

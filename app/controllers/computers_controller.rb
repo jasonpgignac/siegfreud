@@ -39,6 +39,7 @@ class ComputersController < ApplicationController
     respond_to do |format|
       if(deleted)
         flash[:notice] = "The computer has been deleted successfully."
+        Action.create_with_inventory_objects("Deleted Computer", "", [ @computer ], current_user)
         format.html { redirect_to(computers_url) }
         format.xml  { head :ok }
         format.json { head :ok }
@@ -76,6 +77,7 @@ class ComputersController < ApplicationController
     respond_to do |format|
       if @computer.save
         flash[:notice] = 'Computer was successfully created.'
+        Action.create_with_inventory_objects("Created Computer", "#{params[:computer]}", [ @computer ], current_user)
         format.html {redirect_to(computer_path(@computer.serial_number))}
         format.xml  { render :xml => @computer, :status => :created, :location => @computer }
         format.js   {
@@ -97,9 +99,12 @@ class ComputersController < ApplicationController
   end
   def update
     @computer = Computer.find_by_serial_number(params[:id])
+    @computer.attributes = params[:computer]
+    changes = @computer.changes
     respond_to do |format|
-      if @computer.update_attributes(params[:computer])
+      if @computer.save
         flash[:notice] = 'Computer was successfully updated.'
+        Action.create_with_inventory_objects("Updated Computer", "#{changes}", [ @computer ], current_user)
         format.html { redirect_to(@computer) }
         format.xml  { head :ok }
         format.js   { render :partial => 'embedded_show' }

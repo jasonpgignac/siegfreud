@@ -6,13 +6,15 @@
 		<th>Name</th>
 		<th>User</th>
 		<th>Freshness</th>
+		<th>IP Addresses</th>
 	</tr>
-	<% @audit.unmatched_server_entries.each do |e| %>
+	<% @audit.unmatched_server_entries.sort!{ |a,b| a["ip_addresses"] <=> b["ip_addresses"]}.each do |e| %>
 		<tr>
 			<td><%=h e["serial_number"] %></td>
 			<td><%=h e["name"] %></td>
 			<td><%=h e["user"] %></td>
 			<td><%=h e["freshness_date"] %></td>
+			<td><%=h e["ip_addresses"]%></td>
 		</tr>
 	<% end %>
 </table>

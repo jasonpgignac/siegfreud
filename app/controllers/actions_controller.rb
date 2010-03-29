@@ -26,7 +26,9 @@ class ActionsController < ApplicationController
   def find_inventory_object
     params.each do |name, value|
       if name =~ /(.+)_id$/
-        return $1.classify.constantize.find(value)
+        the_class = $1.classify.constantize
+        return the_class.find_by_serial_number(value) if the_class = Computer
+        return the_class.find(value)
       end
     end
     nil

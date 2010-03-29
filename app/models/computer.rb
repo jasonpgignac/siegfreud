@@ -18,8 +18,8 @@ class Computer < ActiveRecord::Base
   validates_presence_of :owner, :domain, :system_role, :name, :if => Proc.new { |c| c.stage && c.stage.has_deployment}
   validates_length_of :peripherals, :maximum => 0, :unless => Proc.new { |c| c.stage && c.stage.has_deployment}
   validates_length_of :licenses, :maximum => 0, :unless => Proc.new { |c| c.stage && c.stage.has_deployment}
-  
   validate :legal_stage_transition?
+
   define_index do
     indexes :name
     indexes serial_number

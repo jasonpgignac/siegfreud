@@ -29,7 +29,8 @@ Rails::Initializer.run do |config|on = {
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
   #	config.action_controller.relative_url_root = "/siegfreud"
-  config.gem "prawn"
+  config.gem 'prawn'
+  config.gem 'prawnto'
   config.gem(
     'thinking-sphinx',
     :lib     => 'thinking_sphinx',
@@ -38,6 +39,9 @@ Rails::Initializer.run do |config|on = {
   config.gem 'rspec-rails', :lib => false
   config.gem 'rspec', :lib => false
   config.gem 'cucumber'
+  # config.gem 'cucumber-rails'
+  config.gem 'Selenium'
+  # config.gem 'selenium-client'
   config.gem 'webrat'
   config.gem 'authlogic'
   config.gem "declarative_authorization"

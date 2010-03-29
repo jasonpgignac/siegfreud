@@ -16,7 +16,10 @@ class Audit < ActiveRecord::Base
   validates_presence_of :platform, :server, :domain, :site
   
   def server_entries
-    @server_entries ||= server.service_of_type("ComputerInformation",platform).info_for(site.site_maps.find_by_server_id(server.id))
+    return @server_entries if @server_entries
+    @server_entries = server.service_of_type("ComputerInformation",platform).info_for(site.site_maps.find_by_server_id(server.id))
+    @server_entries.each { |se| se["ip_addresses"] = se["ip_addresses"].delete_if{ |ip| ip == "0.0.0.0"}.sort.join(",")}
+    return @server_entries
   end
   def db_entries
     @db_entries ||= Computer.find_all_by_site_id(site_id, :conditions => {:system_class => platform, :domain_id => domain_id})

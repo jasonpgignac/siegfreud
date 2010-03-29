@@ -14,6 +14,7 @@
 			<%= aio.inventory_object.short_name %><br/>
 		<% end %>
 	</td>
+	<td><%= User.find(action.user).username %></td>
   </tr>
 <% end %>
 </table>

@@ -55,6 +55,7 @@ class LicensesController < ApplicationController
     respond_to do |format|
       if @license.save
         flash[:notice] = 'License was successfully created.'
+        Action.create_with_inventory_objects("Created License", "#{params[:license]}", [ @license ], current_user)
         format.html { redirect_to(@license) }
         format.xml  { render :xml => @license, :status => :created, :location => @license }
       else
@@ -68,10 +69,12 @@ class LicensesController < ApplicationController
   # PUT /licenses/1.xml
   def update
     @license = License.find(params[:id])
-
+    @license.attributes = params[:license]
+    changes = @license.changes
     respond_to do |format|
-      if @license.update_attributes(params[:license])
+      if @license.save
         flash[:notice] = 'License was successfully updated.'
+        Action.create_with_inventory_objects("Updated License", "#{changes}", [ @license ], current_user)
         format.html { redirect_to(@license) }
         format.xml  { head :ok }
         format.json { render :json => @license.to_json(:include => :package) }
@@ -88,7 +91,7 @@ class LicensesController < ApplicationController
   def destroy
     @license = License.find(params[:id])
     @license.destroy
-
+    Action.create_with_inventory_objects("Deleted License", "", [ @license ], current_user)
     respond_to do |format|
       format.html { redirect_to(licenses_url) }
       format.xml  { head :ok }
